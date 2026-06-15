@@ -70,10 +70,10 @@ export default function Testimonials() {
     <section
       ref={sectionRef}
       id="testimonials"
-      className="py-24 bg-gray-50"
+      className="py-12 md:py-16 bg-white border-t border-border"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2 className="text-3xl sm:text-4xl font-bold text-dark mb-4">
             What Our Clients Say
           </h2>

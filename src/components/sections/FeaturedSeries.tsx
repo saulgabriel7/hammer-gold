@@ -80,15 +80,15 @@ export default function FeaturedSeries() {
     <section
       ref={sectionRef}
       id="series"
-      className="bg-[#111111] py-20 md:py-28"
+      className="bg-[#111111] py-12 md:py-16"
     >
       <div className="mx-auto max-w-7xl px-6">
         {/* Heading */}
-        <div className="mb-12 text-center">
-          <h2 className="mb-3 text-3xl font-bold text-white sm:text-4xl">
+        <div className="mb-8 text-center">
+          <h2 className="mb-2 text-3xl font-bold text-white sm:text-4xl">
             Explore Our Series
           </h2>
-          <p className="mx-auto max-w-xl text-[#6B7280]">
+          <p className="mx-auto max-w-xl text-[#9CA3AF]">
             Six equipment lines engineered for different training goals,
             budgets, and floor plans.
           </p>
@@ -102,7 +102,7 @@ export default function FeaturedSeries() {
           onPointerUp={handlePointerUp}
           onPointerLeave={handlePointerUp}
           className={cn(
-            "flex gap-6 overflow-x-auto pb-4",
+            "flex gap-4 overflow-x-auto pb-4",
             "scroll-snap-x-mandatory",
             isDragging ? "cursor-grabbing" : "cursor-grab",
             "select-none"
@@ -119,9 +119,9 @@ export default function FeaturedSeries() {
               href={`/strength-equipment/${s.slug}`}
               data-series-card
               className={cn(
-                "group relative flex-shrink-0 overflow-hidden rounded-2xl",
-                "w-[280px] sm:w-[300px]",
-                "transition-transform duration-300 hover:scale-105",
+                "group relative flex flex-col overflow-hidden rounded-xl bg-[#111111] border border-neutral-800",
+                "w-[240px] sm:w-[260px] flex-shrink-0",
+                "transition-all duration-300 hover:border-[#CC0000] hover:scale-102",
                 "snap-start"
               )}
               style={{ scrollSnapAlign: "start" }}
@@ -130,29 +130,33 @@ export default function FeaturedSeries() {
                 if (isDragging) e.preventDefault();
               }}
             >
-              {/* Image */}
-              <div className="relative h-[400px] w-full">
+              {/* Image Container */}
+              <div className="relative h-[200px] w-full bg-[#1c1c1e] p-4 flex items-center justify-center overflow-hidden">
                 <Image
                   src={s.image}
                   alt={s.name}
-                  fill
-                  sizes="300px"
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  width={240}
+                  height={200}
+                  className="object-contain transition-transform duration-500 group-hover:scale-105"
+                  style={{ mixBlendMode: "multiply" }}
                   draggable={false}
                 />
-
-                {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
               </div>
 
-              {/* Text */}
-              <div className="absolute bottom-0 left-0 right-0 p-5">
-                <h3 className="mb-1 text-lg font-semibold text-white">
-                  {s.name}
-                </h3>
-                <p className="text-sm leading-snug text-white/70">
-                  {s.description}
-                </p>
+              {/* Text Area */}
+              <div className="p-4 flex-grow flex flex-col justify-between">
+                <div>
+                  <h3 className="mb-1 text-base font-bold text-white group-hover:text-[#CC0000] transition-colors">
+                    {s.name}
+                  </h3>
+                  <p className="text-xs text-neutral-400 line-clamp-2 leading-relaxed">
+                    {s.description}
+                  </p>
+                </div>
+                <div className="mt-3 flex items-center gap-1 text-xs font-semibold text-[#CC0000]">
+                  <span>View Line</span>
+                  <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                </div>
               </div>
             </a>
           ))}

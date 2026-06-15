@@ -51,7 +51,7 @@ export default function HeroSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative h-screen w-full overflow-hidden"
+      className="relative h-screen w-full overflow-hidden bg-black"
     >
       {/* Video Background */}
       {!videoFailed && (

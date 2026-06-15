@@ -67,9 +67,9 @@ export default function ComparisonTable() {
   }, [reducedMotion]);
 
   return (
-    <section ref={sectionRef} id="comparison" className="py-24 bg-white">
+    <section ref={sectionRef} id="comparison" className="py-12 md:py-16 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2 className="text-3xl sm:text-4xl font-bold text-dark mb-4">
             Compare Our Series
           </h2>

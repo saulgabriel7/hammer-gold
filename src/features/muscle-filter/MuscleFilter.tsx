@@ -16,9 +16,9 @@ export default function MuscleFilter() {
   const activeIds = getActivePathIds(activeFilter);
 
   return (
-    <section id="muscle-filter" className="py-24 bg-gray-50">
+    <section id="muscle-filter" className="py-12 md:py-16 bg-white border-t border-border">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <h2 className="text-3xl sm:text-4xl font-bold text-dark mb-4">
             Shop by Muscle Group
           </h2>
@@ -67,7 +67,7 @@ export default function MuscleFilter() {
             </p>
             <svg
               viewBox="0 0 200 450"
-              className="w-32 sm:w-44 h-auto"
+              className="h-[400px] md:h-[500px] w-auto max-w-full mx-auto"
               xmlns="http://www.w3.org/2000/svg"
             >
               {/* Head */}
@@ -141,7 +141,7 @@ export default function MuscleFilter() {
             </p>
             <svg
               viewBox="0 0 200 450"
-              className="w-32 sm:w-44 h-auto"
+              className="h-[400px] md:h-[500px] w-auto max-w-full mx-auto"
               xmlns="http://www.w3.org/2000/svg"
             >
               {/* Head */}

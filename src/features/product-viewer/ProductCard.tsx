@@ -7,7 +7,7 @@ interface ProductCardProps {
 
 export default function ProductCard({ product }: ProductCardProps) {
   return (
-    <article className="group overflow-hidden rounded-xl bg-white shadow-sm transition-shadow hover:shadow-lg">
+    <article className="group overflow-hidden rounded-xl bg-white border border-[#E5E7EB] transition-all duration-300 hover:border-[#CC0000] hover:shadow-md">
       {/* Image Container */}
       <div className="relative aspect-square overflow-hidden bg-gray-50">
         {/* Model Code Badge */}

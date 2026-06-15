@@ -70,12 +70,12 @@ export default function BeforeAfterSlider() {
   }, [prefersReducedMotion]);
 
   return (
-    <section ref={sectionRef} className="bg-white py-20 md:py-28">
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 md:grid-cols-2 md:items-center md:gap-16">
-        {/* Left side — Text */}
-        <div data-ba-content>
+    <section ref={sectionRef} className="bg-white py-12 md:py-16">
+      <div className="mx-auto grid max-w-7xl gap-12 px-6 md:grid-cols-5 md:items-center md:gap-16">
+        {/* Left side — Text (40%) */}
+        <div data-ba-content className="md:col-span-2">
           {/* Red accent line */}
-          <div className="mb-6 h-1 w-16 rounded-full bg-[#CC0000]" />
+          <div className="mb-4 h-1 w-16 rounded-full bg-[#CC0000]" />
 
           <h2 className="mb-6 text-3xl font-bold text-[#1A1A2E] sm:text-4xl">
             Designed by Athletes,
@@ -97,8 +97,8 @@ export default function BeforeAfterSlider() {
           </p>
         </div>
 
-        {/* Right side — Slider */}
-        <div data-ba-slider>
+        {/* Right side — Slider (60%) */}
+        <div data-ba-slider className="md:col-span-3">
           <div
             ref={containerRef}
             onPointerDown={prefersReducedMotion ? undefined : handlePointerDown}

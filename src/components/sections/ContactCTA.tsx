@@ -49,7 +49,7 @@ export default function ContactCTA() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-dark">
+    <section id="contact" className="relative py-16 md:py-20 bg-dark">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Left: CTA text */}

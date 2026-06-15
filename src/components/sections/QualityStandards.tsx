@@ -72,7 +72,7 @@ export default function QualityStandards() {
     <section
       ref={sectionRef}
       id="quality"
-      className="relative py-32 overflow-hidden"
+      className="relative py-16 md:py-20 overflow-hidden"
     >
       {/* Background image */}
       <div

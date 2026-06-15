@@ -57,10 +57,10 @@ export default function ProductGrid() {
   }, [page, muscleFilter, prefersReducedMotion]);
 
   return (
-    <section ref={sectionRef} id="products" className="bg-gray-50 py-20 md:py-28">
+    <section ref={sectionRef} id="products" className="bg-white py-12 md:py-16">
       <div className="mx-auto max-w-7xl px-6">
         {/* Heading */}
-        <div className="mb-12 text-center">
+        <div className="mb-8 text-center">
           <h2 className="mb-3 text-3xl font-bold text-[#1A1A2E] sm:text-4xl">
             Our Products
           </h2>
