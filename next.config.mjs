@@ -5,12 +5,10 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "cdn.yanrefitness.com",
-        pathname: "/**",
       },
       {
         protocol: "https",
         hostname: "www.yanrefitness.com",
-        pathname: "/**",
       },
     ],
   },

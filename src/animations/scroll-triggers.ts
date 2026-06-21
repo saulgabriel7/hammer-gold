@@ -1,36 +1,45 @@
 import { gsap, ScrollTrigger } from "./gsap-config";
 
-interface FadeInOptions {
+export interface FadeInOptions {
   y?: number;
   duration?: number;
   delay?: number;
+  stagger?: number;
   start?: string;
+  ease?: string;
 }
 
 export function createFadeIn(
-  element: Element,
+  selector: gsap.DOMTarget,
+  triggerSelector: gsap.DOMTarget,
   options: FadeInOptions = {}
-): ScrollTrigger {
-  const { y = 40, duration = 0.8, delay = 0, start = "top 85%" } = options;
+): gsap.core.Tween {
+  const {
+    y = 40,
+    duration = 0.7,
+    delay = 0,
+    stagger,
+    start = "top 85%",
+    ease = "power2.out",
+  } = options;
 
-  gsap.fromTo(
-    element,
+  return gsap.fromTo(
+    selector,
     { opacity: 0, y },
     {
       opacity: 1,
       y: 0,
       duration,
       delay,
-      ease: "power2.out",
+      stagger,
+      ease,
       scrollTrigger: {
-        trigger: element,
+        trigger: triggerSelector,
         start,
         toggleActions: "play none none none",
       },
     }
   );
-
-  return ScrollTrigger.getAll().pop()!;
 }
 
 interface StaggerOptions {

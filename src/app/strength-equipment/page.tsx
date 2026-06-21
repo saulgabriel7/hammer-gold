@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import HeroSection from "@/components/sections/HeroSection";
 import FeaturedSeries from "@/components/sections/FeaturedSeries";
-import Testimonials from "@/components/sections/Testimonials";
-import QualityStandards from "@/components/sections/QualityStandards";
+import ManufacturingQuality from "@/components/sections/ManufacturingQuality";
+import OriginalDesign from "@/components/sections/OriginalDesign";
 import ComparisonTable from "@/components/sections/ComparisonTable";
 import ContactCTA from "@/components/sections/ContactCTA";
 
@@ -36,8 +36,8 @@ export default function StrengthEquipmentPage() {
       <ProductGrid />
       <MuscleFilter />
       <BeforeAfterSlider />
-      <Testimonials />
-      <QualityStandards />
+      <ManufacturingQuality />
+      <OriginalDesign />
       <ComparisonTable />
       <ContactCTA />
     </>

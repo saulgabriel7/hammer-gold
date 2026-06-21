@@ -1,98 +1,87 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
-import { gsap, ScrollTrigger } from "@/animations/gsap-config";
-import { useReducedMotion } from "@/hooks/useReducedMotion";
-import { cn } from "@/lib/utils";
-import { NAV_LINKS } from "@/lib/constants";
+import { NAV_LINKS, type NavLink } from "@/lib/constants";
 import MobileNav from "./MobileNav";
 
 export default function Header() {
-  const headerRef = useRef<HTMLElement>(null);
-  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const reducedMotion = useReducedMotion();
-
-  useEffect(() => {
-    if (!headerRef.current) return;
-
-    const ctx = gsap.context(() => {
-      ScrollTrigger.create({
-        trigger: document.body,
-        start: "80px top",
-        onEnter: () => setScrolled(true),
-        onLeaveBack: () => setScrolled(false),
-      });
-    }, headerRef);
-
-    return () => ctx.revert();
-  }, [reducedMotion]);
 
   return (
     <>
       <header
-        ref={headerRef}
-        className={cn(
-          "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-          scrolled
-            ? "bg-white shadow-md"
-            : "bg-transparent"
-        )}
+        className="fixed top-0 left-0 right-0 z-50 bg-black text-white h-20 flex items-center border-b border-white/10"
+        id="main-header"
       >
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex h-20 items-center justify-between">
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link href="/strength-equipment" className="flex items-center gap-2">
-              <div
-                className={cn(
-                  "text-2xl font-bold tracking-tight transition-colors duration-300",
-                  scrolled ? "text-dark" : "text-white"
-                )}
-              >
-                <span className="text-primary">HAMMER</span> GOLD
+            <Link
+              href="/strength-equipment"
+              className="flex items-center gap-1.5 group"
+              id="header-logo"
+            >
+              <div className="bg-primary px-3.5 py-1 text-white font-black italic text-xl tracking-tighter skew-x-[-12deg] flex items-center justify-center">
+                <span className="skew-x-[12deg] font-extrabold">HAMMER</span>
               </div>
+              <span className="text-white text-2xl font-black italic tracking-wide uppercase">
+                GOLD
+              </span>
             </Link>
 
             {/* Desktop Nav */}
-            <nav className="hidden md:flex items-center gap-8">
-              {NAV_LINKS.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={cn(
-                    "text-sm font-medium transition-colors duration-300 hover:text-primary",
-                    scrolled ? "text-dark" : "text-white"
-                  )}
-                >
-                  {link.label}
-                </Link>
-              ))}
-              <Link
-                href="/contact"
-                className="rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-red-700 hover:shadow-lg"
-              >
-                Quick Quote
-              </Link>
+            <nav className="hidden xl:flex items-center gap-6" id="desktop-nav">
+              {NAV_LINKS.map((link: NavLink) => {
+                if (link.isRed) {
+                  return (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      id={`nav-${link.label.toLowerCase().replace(/\s+/g, "-")}`}
+                      className="flex items-center text-primary font-bold italic text-sm transition-colors hover:text-red-500"
+                    >
+                      <span className="text-red-600/50 font-normal mr-2">|</span>
+                      {link.label}
+                      {link.hasArrow && (
+                        <span className="text-[8px] ml-1.5 align-middle select-none">▼</span>
+                      )}
+                      <span className="text-red-600/50 font-normal ml-2">|</span>
+                    </Link>
+                  );
+                }
+
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    id={`nav-${link.label.toLowerCase().replace(/\s+/g, "-")}`}
+                    className="flex items-center text-sm font-medium text-white/90 hover:text-primary transition-colors"
+                  >
+                    {link.label}
+                    {link.hasArrow && (
+                      <span className="text-[8px] ml-1.5 align-middle text-white/50 select-none">▼</span>
+                    )}
+                  </Link>
+                );
+              })}
             </nav>
 
-            {/* Mobile Hamburger */}
-            <button
-              type="button"
-              onClick={() => setMobileOpen(true)}
-              className="md:hidden flex flex-col gap-1.5 p-2"
-              aria-label="Open menu"
-            >
-              {[0, 1, 2].map((i) => (
-                <span
-                  key={i}
-                  className={cn(
-                    "block h-0.5 w-6 transition-colors duration-300",
-                    scrolled ? "bg-dark" : "bg-white"
-                  )}
-                />
-              ))}
-            </button>
+            {/* Right Side Controls */}
+            <div className="flex items-center gap-4" id="header-controls">
+              {/* Mobile Hamburger */}
+              <button
+                type="button"
+                onClick={() => setMobileOpen(true)}
+                id="header-mobile-toggle"
+                className="xl:hidden flex flex-col gap-1.5 p-2 text-white hover:opacity-85"
+                aria-label="Open menu"
+              >
+                <span className="block h-0.5 w-6 bg-white" />
+                <span className="block h-0.5 w-6 bg-white" />
+                <span className="block h-0.5 w-6 bg-white" />
+              </button>
+            </div>
           </div>
         </div>
       </header>

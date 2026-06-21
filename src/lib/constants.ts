@@ -5,11 +5,24 @@ export const SITE_DESCRIPTION =
 export const CDN_BASE =
   "https://cdn.yanrefitness.com/cdn-cgi/imagedelivery/m94-xP3Y6Xwv_FOE9Rj47w/www.yanrefitness.com/";
 
-export const NAV_LINKS = [
-  { label: "Strength Equipment", href: "/strength-equipment" },
-  { label: "By Muscle Groups", href: "/by-muscle-groups" },
+export interface NavLink {
+  label: string;
+  href: string;
+  hasArrow?: boolean;
+  isRed?: boolean;
+}
+
+export const NAV_LINKS: readonly NavLink[] = [
+  { label: "Home", href: "/strength-equipment" },
+  { label: "Products", href: "/strength-equipment#products", hasArrow: true, isRed: true },
+  { label: "⚡ Design", href: "/strength-equipment#series" },
+  { label: "Quality", href: "/strength-equipment#manufacturing-quality" },
+  { label: "Showcase", href: "/strength-equipment#comparison", hasArrow: true },
+  { label: "Gym Layout", href: "/strength-equipment#muscle-filter" },
+  { label: "Blog", href: "/strength-equipment", hasArrow: true },
+  { label: "About", href: "/strength-equipment#manufacturing-quality", hasArrow: true },
   { label: "Contact", href: "/contact" },
-] as const;
+];
 
 export const FOOTER_COLUMNS = [
   {
@@ -27,7 +40,7 @@ export const FOOTER_COLUMNS = [
     title: "Resources",
     links: [
       { label: "Product Catalogue", href: "/strength-equipment" },
-      { label: "Certifications", href: "/strength-equipment#quality" },
+      { label: "Quality Standard", href: "/strength-equipment#manufacturing-quality" },
       { label: "Compare Series", href: "/strength-equipment#comparison" },
     ],
   },
@@ -36,7 +49,7 @@ export const FOOTER_COLUMNS = [
     links: [
       { label: "About Us", href: "/strength-equipment" },
       { label: "Factory Tour", href: "/strength-equipment" },
-      { label: "Testimonials", href: "/strength-equipment#testimonials" },
+      { label: "Quality Standard", href: "/strength-equipment#manufacturing-quality" },
     ],
   },
 ] as const;

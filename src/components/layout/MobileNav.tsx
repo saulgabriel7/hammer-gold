@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { NAV_LINKS } from "@/lib/constants";
+import { NAV_LINKS, type NavLink } from "@/lib/constants";
 
 interface MobileNavProps {
   open: boolean;
@@ -30,9 +30,12 @@ export default function MobileNav({ open, onClose }: MobileNavProps) {
         )}
       >
         <div className="flex items-center justify-between p-6 border-b border-border">
-          <span className="text-xl font-bold text-dark">
-            <span className="text-primary">HAMMER</span> GOLD
-          </span>
+          <Link href="/strength-equipment" onClick={onClose} className="flex items-center font-black italic text-lg tracking-tight">
+            <div className="bg-primary px-2.5 py-0.5 text-white skew-x-[-12deg] flex items-center justify-center mr-1.5">
+              <span className="skew-x-[12deg] font-extrabold">HAMMER</span>
+            </div>
+            <span className="text-dark font-black tracking-normal uppercase">GOLD</span>
+          </Link>
           <button
             type="button"
             onClick={onClose}
@@ -56,14 +59,20 @@ export default function MobileNav({ open, onClose }: MobileNavProps) {
         </div>
 
         <nav className="flex flex-col p-6 gap-1">
-          {NAV_LINKS.map((link) => (
+          {NAV_LINKS.map((link: NavLink) => (
             <Link
               key={link.href}
               href={link.href}
               onClick={onClose}
-              className="rounded-lg px-4 py-3 text-base font-medium text-dark hover:bg-gray-50 hover:text-primary transition-colors"
+              className={cn(
+                "rounded-lg px-4 py-3 text-base font-medium transition-colors flex items-center justify-between",
+                link.isRed 
+                  ? "text-primary font-bold hover:bg-red-50" 
+                  : "text-dark hover:bg-gray-50 hover:text-primary"
+              )}
             >
-              {link.label}
+              <span>{link.label}</span>
+              {link.hasArrow && <span className="text-[10px]">▼</span>}
             </Link>
           ))}
           <div className="mt-4 pt-4 border-t border-border">

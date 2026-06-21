@@ -1,174 +1,98 @@
-"use client";
-
-import { useEffect, useRef, useCallback, useState } from "react";
 import Image from "next/image";
-import { gsap } from "@/animations/gsap-config";
-import { useReducedMotion } from "@/hooks/useReducedMotion";
 import { cn } from "@/lib/utils";
 import { series } from "@/data/series";
 
+const SERIES_IMAGES: Record<string, string> = {
+  "c4-revival": "/assets/images/1.avif",
+  "61a-racing": "/assets/images/2.avif",
+  "73-tough": "/assets/images/3.avif",
+  "c4d-dual": "/assets/images/5.avif",
+  "multi-station": "/assets/images/6.avif",
+  "82-plate-loaded": "/assets/images/7.avif",
+};
+
+const SERIES_TITLES: Record<string, string> = {
+  "c4-revival": "C4 REVIVAL SERIES",
+  "61a-racing": "61A RACING SERIES",
+  "73-tough": "73 TOUGH SERIES",
+  "c4d-dual": "C4D DUAL FUNCTION SERIES",
+  "multi-station": "MULTI STATION SERIES",
+  "82-plate-loaded": "82 PLATE LOADED SERIES",
+};
+
+const orderedSeries = [
+  series.find((s) => s.id === "c4-revival"),
+  series.find((s) => s.id === "61a-racing"),
+  series.find((s) => s.id === "73-tough"),
+  series.find((s) => s.id === "c4d-dual"),
+  series.find((s) => s.id === "multi-station"),
+  series.find((s) => s.id === "82-plate-loaded"),
+].filter(Boolean);
+
 export default function FeaturedSeries() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const prefersReducedMotion = useReducedMotion();
-
-  // ── Drag-to-scroll state ──
-  const [isDragging, setIsDragging] = useState(false);
-  const dragState = useRef({ isDown: false, startX: 0, scrollLeft: 0 });
-
-  const handlePointerDown = useCallback(
-    (e: React.PointerEvent<HTMLDivElement>) => {
-      const el = scrollContainerRef.current;
-      if (!el) return;
-      dragState.current.isDown = true;
-      dragState.current.startX = e.pageX - el.offsetLeft;
-      dragState.current.scrollLeft = el.scrollLeft;
-      setIsDragging(true);
-      el.setPointerCapture(e.pointerId);
-    },
-    []
-  );
-
-  const handlePointerMove = useCallback(
-    (e: React.PointerEvent<HTMLDivElement>) => {
-      if (!dragState.current.isDown) return;
-      const el = scrollContainerRef.current;
-      if (!el) return;
-      e.preventDefault();
-      const x = e.pageX - el.offsetLeft;
-      const walk = (x - dragState.current.startX) * 1.5;
-      el.scrollLeft = dragState.current.scrollLeft - walk;
-    },
-    []
-  );
-
-  const handlePointerUp = useCallback(
-    (e: React.PointerEvent<HTMLDivElement>) => {
-      dragState.current.isDown = false;
-      setIsDragging(false);
-      const el = scrollContainerRef.current;
-      if (el) el.releasePointerCapture(e.pointerId);
-    },
-    []
-  );
-
-  // ── GSAP stagger reveal ──
-  useEffect(() => {
-    if (!sectionRef.current) return;
-
-    const ctx = gsap.context(() => {
-      const duration = prefersReducedMotion ? 0 : 0.6;
-
-      gsap.from("[data-series-card]", {
-        y: 60,
-        opacity: 0,
-        duration,
-        stagger: prefersReducedMotion ? 0 : 0.12,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 80%",
-          once: true,
-        },
-      });
-    }, sectionRef);
-
-    return () => ctx.revert();
-  }, [prefersReducedMotion]);
-
   return (
-    <section
-      ref={sectionRef}
-      id="series"
-      className="bg-[#111111] py-12 md:py-16"
-    >
+    <section id="series" className="bg-white py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-6">
         {/* Heading */}
-        <div className="mb-8 text-center">
-          <h2 className="mb-2 text-3xl font-bold text-white sm:text-4xl">
-            Explore Our Series
+        <div className="text-center mb-16">
+          <h2 className="text-4xl sm:text-5xl font-black text-text uppercase tracking-tight">
+            Featured Product Series
           </h2>
-          <p className="mx-auto max-w-xl text-[#9CA3AF]">
-            Six equipment lines engineered for different training goals,
-            budgets, and floor plans.
-          </p>
         </div>
 
-        {/* Scroll Container */}
-        <div
-          ref={scrollContainerRef}
-          onPointerDown={handlePointerDown}
-          onPointerMove={handlePointerMove}
-          onPointerUp={handlePointerUp}
-          onPointerLeave={handlePointerUp}
-          className={cn(
-            "flex gap-4 overflow-x-auto pb-4",
-            "scroll-snap-x-mandatory",
-            isDragging ? "cursor-grabbing" : "cursor-grab",
-            "select-none"
-          )}
-          style={{
-            scrollSnapType: "x mandatory",
-            scrollbarWidth: "none",
-            msOverflowStyle: "none",
-          }}
-        >
-          {series.map((s) => (
-            <a
-              key={s.id}
-              href={`/strength-equipment/${s.slug}`}
-              data-series-card
-              className={cn(
-                "group relative flex flex-col overflow-hidden rounded-xl bg-[#111111] border border-neutral-800",
-                "w-[240px] sm:w-[260px] flex-shrink-0",
-                "transition-all duration-300 hover:border-[#CC0000] hover:scale-102",
-                "snap-start"
-              )}
-              style={{ scrollSnapAlign: "start" }}
-              draggable={false}
-              onClick={(e) => {
-                if (isDragging) e.preventDefault();
-              }}
-            >
-              {/* Image Container */}
-              <div className="relative h-[200px] w-full bg-[#1c1c1e] p-4 flex items-center justify-center overflow-hidden">
-                <Image
-                  src={s.image}
-                  alt={s.name}
-                  width={240}
-                  height={200}
-                  className="object-contain transition-transform duration-500 group-hover:scale-105"
-                  style={{ mixBlendMode: "multiply" }}
-                  draggable={false}
-                />
-              </div>
+        {/* Bento Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {orderedSeries.map((s) => {
+            if (!s) return null;
 
-              {/* Text Area */}
-              <div className="p-4 flex-grow flex flex-col justify-between">
-                <div>
-                  <h3 className="mb-1 text-base font-bold text-white group-hover:text-[#CC0000] transition-colors">
-                    {s.name}
+            const isC4Revival = s.id === "c4-revival";
+            const colSpanClass =
+              s.id === "c4-revival" || s.id === "82-plate-loaded"
+                ? "md:col-span-2 lg:col-span-2"
+                : "md:col-span-1 lg:col-span-1";
+
+            const textPositionClass = isC4Revival
+              ? "top-6 left-6"
+              : "bottom-6 left-6";
+
+            return (
+              <a
+                key={s.id}
+                href={`/strength-equipment/${s.slug}`}
+                className={cn(
+                  "group relative overflow-hidden rounded-lg bg-neutral-900",
+                  "h-[300px] sm:h-[350px] md:h-[380px] w-full",
+                  "transition-all duration-300 hover:shadow-xl",
+                  colSpanClass
+                )}
+              >
+                {/* Background Image */}
+                <div className="relative w-full h-full">
+                  <Image
+                    src={SERIES_IMAGES[s.id] || s.image}
+                    alt={s.name}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105 brightness-75"
+                    priority={s.id === "c4-revival" || s.id === "61a-racing"}
+                  />
+
+                  {/* Dark Overlay */}
+                  <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/40" />
+                </div>
+
+                {/* Text Overlay */}
+                <div className={cn("absolute p-6 z-10", textPositionClass)}>
+                  <h3 className="text-lg sm:text-xl font-bold text-white tracking-wide uppercase">
+                    {SERIES_TITLES[s.id] || s.name}
                   </h3>
-                  <p className="text-xs text-neutral-400 line-clamp-2 leading-relaxed">
-                    {s.description}
-                  </p>
+                  <div className="w-10 h-0.5 bg-primary mt-2 transition-all duration-300 group-hover:w-16" />
                 </div>
-                <div className="mt-3 flex items-center gap-1 text-xs font-semibold text-[#CC0000]">
-                  <span>View Line</span>
-                  <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-                </div>
-              </div>
-            </a>
-          ))}
+              </a>
+            );
+          })}
         </div>
       </div>
-
-      {/* Hide scrollbar */}
-      <style jsx>{`
-        div::-webkit-scrollbar {
-          display: none;
-        }
-      `}</style>
     </section>
   );
 }

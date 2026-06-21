@@ -7,10 +7,8 @@ import { useReducedMotion } from "@/hooks/useReducedMotion";
 import { useBeforeAfter } from "./useBeforeAfter";
 import { cn } from "@/lib/utils";
 
-const BEFORE_IMAGE =
-  "https://www.yanrefitness.com/wp-content/uploads/2021/03/yr-fitness-design-before.jpg";
-const AFTER_IMAGE =
-  "https://www.yanrefitness.com/wp-content/uploads/2023/03/yanre-yr-design-before-after-new-1.png";
+const BEFORE_IMAGE = "/assets/images/before.avif";
+const AFTER_IMAGE = "/assets/images/after.avif";
 
 export default function BeforeAfterSlider() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -21,17 +19,8 @@ export default function BeforeAfterSlider() {
     dragPosition,
     isDragging,
     handlePointerDown,
-    handlePointerMove,
-    handlePointerUp,
     containerRef,
   } = useBeforeAfter();
-
-  // Update clip-path with gsap.set for performance
-  useEffect(() => {
-    if (!afterImageRef.current) return;
-    const clipValue = `inset(0 ${100 - dragPosition}% 0 0)`;
-    gsap.set(afterImageRef.current, { clipPath: clipValue });
-  }, [dragPosition]);
 
   // GSAP scroll reveal for the whole section
   useEffect(() => {
@@ -70,83 +59,75 @@ export default function BeforeAfterSlider() {
   }, [prefersReducedMotion]);
 
   return (
-    <section ref={sectionRef} className="bg-white py-12 md:py-16">
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 md:grid-cols-5 md:items-center md:gap-16">
-        {/* Left side — Text (40%) */}
-        <div data-ba-content className="md:col-span-2">
+    <section ref={sectionRef} className="bg-white py-20 md:py-28">
+      <div className="mx-auto grid max-w-7xl gap-12 px-6 md:grid-cols-2 md:items-center md:gap-16">
+        {/* Left side — Text */}
+        <div data-ba-content className="flex flex-col justify-center">
           {/* Red accent line */}
-          <div className="mb-4 h-1 w-16 rounded-full bg-[#CC0000]" />
+          <div className="mb-6 h-1 w-16 rounded-full bg-[#CC0000]" />
 
-          <h2 className="mb-6 text-3xl font-bold text-[#1A1A2E] sm:text-4xl">
-            Designed by Athletes,
+          <h2 className="mb-8 text-4xl font-extrabold text-[#1A1A2E] sm:text-5xl tracking-tight leading-tight uppercase font-sans">
+            DESIGNED <span className="text-[#CC0000]">BY</span> ATHLETES,
             <br />
-            For Athletes
+            <span className="text-[#CC0000]">FOR</span> ATHLETES
           </h2>
 
-          <p className="max-w-lg leading-relaxed text-[#6B7280]">
-            Every Hammer Gold machine starts with athlete insight. Our in-house
-            team of competitive lifters and sport-science engineers co-design
-            every pivot point, pad angle, and weight stack ratio — ensuring
-            biomechanically accurate movement that builds real strength, reduces
-            injury risk, and feels right from the very first rep.
-          </p>
-
-          <p className="mt-4 max-w-lg leading-relaxed text-[#6B7280]">
-            The result: equipment that top-tier gyms trust to survive 18-hour
-            operating days, year after year, with minimal maintenance.
-          </p>
+          <div className="space-y-4 font-medium text-lg text-[#4B5563] sm:text-xl leading-relaxed">
+            <p>At YR Fitness, Design Transcends Aesthetics.</p>
+            <p>{"It's About Functionality."}</p>
+            <p>Simple, But Significant.</p>
+          </div>
         </div>
 
-        {/* Right side — Slider (60%) */}
-        <div data-ba-slider className="md:col-span-3">
+        {/* Right side — Slider */}
+        <div data-ba-slider>
           <div
             ref={containerRef}
             onPointerDown={prefersReducedMotion ? undefined : handlePointerDown}
-            onPointerMove={prefersReducedMotion ? undefined : handlePointerMove}
-            onPointerUp={prefersReducedMotion ? undefined : handlePointerUp}
-            onPointerLeave={prefersReducedMotion ? undefined : handlePointerUp}
             className={cn(
-              "relative aspect-[4/3] w-full select-none overflow-hidden rounded-2xl",
-              !prefersReducedMotion && "cursor-ew-resize",
-              isDragging && "cursor-ew-resize"
+              "relative aspect-[4/3] w-full select-none overflow-hidden rounded-2xl touch-none shadow-xl border border-gray-100",
+              !prefersReducedMotion && "cursor-ns-resize",
+              isDragging && "cursor-ns-resize"
             )}
             role="img"
             aria-label="Before and after comparison of equipment design"
           >
-            {/* Before image (base layer) */}
+            {/* Before image (base layer, shown at the bottom) */}
             <Image
               src={BEFORE_IMAGE}
               alt="Before — original equipment design"
               fill
+              unoptimized
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
               priority
             />
 
-            {/* "Before" label */}
-            <span className="absolute bottom-4 left-4 z-20 rounded-full bg-black/60 px-3 py-1 text-xs font-medium text-white">
+            {/* "Before" label (bottom center) */}
+            <span className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 rounded bg-[#4a4a4a]/85 backdrop-blur-xs border border-white/20 px-8 py-2 text-xs font-semibold tracking-wider text-white shadow-md min-w-[100px] text-center">
               Before
             </span>
 
-            {/* After image (clipped overlay) */}
+            {/* After image (clipped overlay, shown at the top) */}
             <div
               ref={afterImageRef}
               className="absolute inset-0"
               style={{
-                clipPath: `inset(0 ${100 - dragPosition}% 0 0)`,
+                clipPath: `inset(0 0 ${100 - dragPosition}% 0)`,
               }}
             >
               <Image
                 src={AFTER_IMAGE}
                 alt="After — redesigned equipment"
                 fill
+                unoptimized
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
                 priority
               />
 
-              {/* "After" label */}
-              <span className="absolute bottom-4 right-4 z-20 rounded-full bg-black/60 px-3 py-1 text-xs font-medium text-white">
+              {/* "After" label (top center) */}
+              <span className="absolute top-6 left-1/2 -translate-x-1/2 z-20 rounded bg-[#4a4a4a]/85 backdrop-blur-xs border border-white/20 px-8 py-2 text-xs font-semibold tracking-wider text-white shadow-md min-w-[100px] text-center">
                 After
               </span>
             </div>
@@ -154,25 +135,25 @@ export default function BeforeAfterSlider() {
             {/* Handle — only when not reduced motion */}
             {!prefersReducedMotion && (
               <div
-                className="pointer-events-none absolute top-0 z-30 flex h-full items-center"
-                style={{ left: `${dragPosition}%`, transform: "translateX(-50%)" }}
+                className="pointer-events-none absolute left-0 z-30 flex w-full items-center justify-center"
+                style={{ top: `${dragPosition}%`, transform: "translateY(-50%)" }}
               >
-                {/* Vertical line */}
-                <div className="h-full w-0.5 bg-white shadow-lg" />
+                {/* Horizontal dividing line */}
+                <div className="w-full h-[3px] bg-white shadow-lg absolute left-0" />
 
                 {/* Circle handle */}
-                <div className="absolute left-1/2 top-1/2 flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg">
+                <div className="relative flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-xl border border-gray-200 pointer-events-auto">
                   <svg
-                    className="h-5 w-5 text-[#1A1A2E]"
+                    className="h-6 w-6 text-[#1A1A2E]"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
-                    strokeWidth={2}
+                    strokeWidth={2.5}
                   >
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      d="M8 9l4-4 4 4M8 15l4 4 4-4"
+                      d="M8 9l4-4 4 4M16 15l-4 4-4-4"
                     />
                   </svg>
                 </div>
