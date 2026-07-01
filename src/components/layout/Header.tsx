@@ -22,8 +22,8 @@ export default function Header() {
               className="flex items-center gap-1.5 group"
               id="header-logo"
             >
-              <div className="bg-primary px-3.5 py-1 text-white font-black italic text-xl tracking-tighter skew-x-[-12deg] flex items-center justify-center">
-                <span className="skew-x-[12deg] font-extrabold">HAMMER</span>
+              <div className="bg-primary px-3.5 py-1 text-white font-black italic text-xl tracking-tighter -skew-x-12 flex items-center justify-center">
+                <span className="skew-x-12 font-extrabold">HAMMER</span>
               </div>
               <span className="text-white text-2xl font-black italic tracking-wide uppercase">
                 GOLD
@@ -43,9 +43,6 @@ export default function Header() {
                     >
                       <span className="text-red-600/50 font-normal mr-2">|</span>
                       {link.label}
-                      {link.hasArrow && (
-                        <span className="text-[8px] ml-1.5 align-middle select-none">▼</span>
-                      )}
                       <span className="text-red-600/50 font-normal ml-2">|</span>
                     </Link>
                   );
@@ -59,9 +56,6 @@ export default function Header() {
                     className="flex items-center text-sm font-medium text-white/90 hover:text-primary transition-colors"
                   >
                     {link.label}
-                    {link.hasArrow && (
-                      <span className="text-[8px] ml-1.5 align-middle text-white/50 select-none">▼</span>
-                    )}
                   </Link>
                 );
               })}

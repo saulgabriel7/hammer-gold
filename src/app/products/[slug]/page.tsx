@@ -4,6 +4,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { products } from "@/data/products";
 import { getRelatedProducts } from "@/lib/product-utils";
+import { TRANSLATED_MUSCLE_GROUPS, TRANSLATED_SPECS } from "@/lib/constants";
 
 // ── Types ────────────────────────────────────────────────────────
 interface Props {
@@ -36,14 +37,14 @@ export default function ProductDetailPage({ params }: Props) {
       {/* ── Breadcrumb ────────────────────────────────────────── */}
       <div className="border-b border-border bg-[#FAFAFA]">
         <div className="mx-auto max-w-7xl px-6 py-3">
-          <nav aria-label="Breadcrumb" className="text-xs text-muted">
+          <nav aria-label="Caminho de navegação" className="text-xs text-muted">
             <ol className="flex flex-wrap items-center gap-1">
               <li>
                 <Link
                   href="/strength-equipment"
                   className="transition-colors hover:text-primary"
                 >
-                  Home
+                  Início
                 </Link>
               </li>
               <li aria-hidden="true" className="text-[#D1D5DB]">/</li>
@@ -52,7 +53,7 @@ export default function ProductDetailPage({ params }: Props) {
                   href="/strength-equipment#products"
                   className="transition-colors hover:text-primary"
                 >
-                  Strength Equipment
+                  Equipamentos de Força
                 </Link>
               </li>
               <li aria-hidden="true" className="text-[#D1D5DB]">/</li>
@@ -147,13 +148,13 @@ export default function ProductDetailPage({ params }: Props) {
                 type="button"
                 className="rounded bg-primary px-8 py-3 text-sm font-bold uppercase tracking-wider text-white transition-colors hover:bg-[#A30000] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
               >
-                Add to Cart
+                Adicionar ao Carrinho
               </button>
               <Link
                 href="/contact"
                 className="rounded bg-text px-8 py-3 text-sm font-bold uppercase tracking-wider text-white transition-colors hover:bg-[#111122] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-text"
               >
-                Enquiry
+                Solicitar Orçamento
               </Link>
             </div>
 
@@ -164,7 +165,7 @@ export default function ProductDetailPage({ params }: Props) {
 
             {/* Series badge */}
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-[#F9FAFB] px-4 py-2 text-sm">
-              <span className="text-muted">Series:</span>
+              <span className="text-muted">Série:</span>
               <span className="font-semibold text-text">
                 {product.series}
               </span>
@@ -177,7 +178,7 @@ export default function ProductDetailPage({ params }: Props) {
                   key={mg}
                   className="rounded-full bg-[#FEE2E2] px-3 py-1 text-xs font-medium text-primary"
                 >
-                  {mg}
+                  {TRANSLATED_MUSCLE_GROUPS[mg] || mg}
                 </span>
               ))}
             </div>
@@ -190,7 +191,7 @@ export default function ProductDetailPage({ params }: Props) {
         <section className="border-t border-border">
           <div className="mx-auto max-w-7xl px-6 py-12">
             <h2 className="mb-8 text-2xl font-bold text-text">
-              Description
+              Descrição
             </h2>
 
             <div className="space-y-8">
@@ -221,7 +222,7 @@ export default function ProductDetailPage({ params }: Props) {
       {product.specifications && product.specifications.length > 0 && (
         <section className="border-t border-border bg-[#FAFAFA]">
           <div className="mx-auto max-w-7xl px-6 py-12">
-            <h2 className="mb-6 text-2xl font-bold text-text">Specs</h2>
+            <h2 className="mb-6 text-2xl font-bold text-text">Especificações Técnicas</h2>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {product.specifications.map((spec, idx) => (
                 <div
@@ -229,7 +230,7 @@ export default function ProductDetailPage({ params }: Props) {
                   className="rounded-lg border border-border bg-white p-4"
                 >
                   <p className="mb-1 text-xs font-medium uppercase tracking-wider text-muted">
-                    {spec.label}
+                    {TRANSLATED_SPECS[spec.label] || spec.label}
                   </p>
                   <p className="text-lg font-bold text-text">
                     {spec.value}
@@ -246,7 +247,7 @@ export default function ProductDetailPage({ params }: Props) {
         <section className="border-t border-border">
           <div className="mx-auto max-w-7xl px-6 py-14">
             <h2 className="mb-10 text-center text-3xl font-bold text-text">
-              Related Products
+              Produtos Relacionados
             </h2>
 
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -280,11 +281,11 @@ export default function ProductDetailPage({ params }: Props) {
                         href={`/products/${rp.slug}`}
                         className="flex-1 rounded-sm bg-primary px-3 py-2 text-[10px] font-bold uppercase tracking-wider text-white transition-colors hover:bg-[#A30000]"
                       >
-                        View Product
+                        Visualizar Produto
                       </Link>
                       <button
                         type="button"
-                        aria-label={`Add ${rp.name} to cart`}
+                        aria-label={`Adicionar ${rp.name} ao carrinho`}
                         className="flex h-8 w-8 shrink-0 items-center justify-center rounded-sm bg-primary text-white transition-colors hover:bg-[#A30000]"
                       >
                         <svg
@@ -318,7 +319,7 @@ export default function ProductDetailPage({ params }: Props) {
             href="/strength-equipment#products"
             className="inline-flex items-center gap-2 text-sm font-medium text-muted transition-colors hover:text-primary"
           >
-            <span>←</span> Back to all equipment
+            <span>←</span> Voltar para todos os equipamentos
           </Link>
         </div>
       </div>

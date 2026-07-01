@@ -5,6 +5,7 @@ import { useMuscleFilter } from "./useMuscleFilter";
 import { cn } from "@/lib/utils";
 import type { MuscleGroup } from "@/types/product";
 import Image from "next/image";
+import { TRANSLATED_MUSCLE_GROUPS } from "@/lib/constants";
 
 /**
  * Maps each muscle-group filter to the corresponding overlay image.
@@ -115,8 +116,8 @@ export default function MuscleFilter() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="text-center mb-10">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1A1A2E] tracking-tight">
-            Choose By Muscle Groups
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-text tracking-tight">
+            Escolha por Grupos Musculares
           </h2>
         </div>
 
@@ -134,11 +135,11 @@ export default function MuscleFilter() {
               className={cn(
                 "rounded px-4 py-2 text-sm font-medium transition-all duration-200",
                 activeFilter === group
-                  ? "bg-[#E0E0E0] text-[#1A1A2E]"
-                  : "bg-[#F0F0F0] text-[#555] hover:bg-[#E0E0E0] hover:text-[#1A1A2E]"
+                  ? "bg-[#E0E0E0] text-text"
+                  : "bg-[#F0F0F0] text-[#555] hover:bg-[#E0E0E0] hover:text-text"
               )}
             >
-              {group}
+              {TRANSLATED_MUSCLE_GROUPS[group] || group}
             </button>
           ))}
         </div>

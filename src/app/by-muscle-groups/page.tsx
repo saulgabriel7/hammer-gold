@@ -12,9 +12,9 @@ const ProductGrid = dynamic(
 );
 
 export const metadata: Metadata = {
-  title: "Shop by Muscle Group",
+  title: "Comprar por Grupo Muscular",
   description:
-    "Find the right strength equipment for every muscle group. Filter by Leg, Shoulder, Arm, Chest, Abdominal, Back, Hip, or Full Body.",
+    "Encontre o equipamento de força certo para cada grupo muscular. Filtre por Perna, Ombro, Braço, Peitoral, Abdômen, Costas, Glúteos ou Corpo Inteiro.",
 };
 
 export default function ByMuscleGroupsPage() {

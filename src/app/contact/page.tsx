@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import ContactCTA from "@/components/sections/ContactCTA";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
+  title: "Fale Conosco",
   description:
-    "Get a custom quote for your gym. Our team responds within 24 hours with pricing, lead times, and customization options.",
+    "Obtenha um orçamento personalizado para sua academia. Nossa equipe responde em até 24 horas com preços, prazos de entrega e opções de personalização.",
 };
 
 export default function ContactPage() {

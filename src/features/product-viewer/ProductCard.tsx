@@ -49,11 +49,11 @@ export default function ProductCard({ product }: ProductCardProps) {
             href={`/products/${product.slug}`}
             className="flex-1 rounded-sm bg-primary px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-white transition-colors duration-200 hover:bg-[#A30000] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
-            View Product
+            Visualizar Produto
           </Link>
           <button
             type="button"
-            aria-label={`Add ${product.name} to cart`}
+            aria-label={`Adicionar ${product.name} ao carrinho`}
             className="flex h-[38px] w-[38px] shrink-0 items-center justify-center rounded-sm bg-primary text-white transition-colors duration-200 hover:bg-[#A30000] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <svg

@@ -31,21 +31,21 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    quote: "The machines are arrived. We are really satisfied with them, they're look cool and such a good quality. We're 100% sure will order again. I'll send the new list soon.",
+    quote: "As máquinas chegaram. Estamos muito satisfeitos com elas, têm um visual incrível e uma ótima qualidade. Temos 100% de certeza que compraremos novamente. Enviarei a nova lista em breve.",
     name: "Blake Fisher",
-    title: "Gym Owner from Malaysia",
+    title: "Dono de Academia da Malásia",
     avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=256&h=256&fit=crop",
   },
   {
-    quote: "Outstanding customer service and the biomechanics are spot on. Our members love the C4 Series adjustment options. Highly recommend Hammer Gold!",
+    quote: "Atendimento ao cliente excepcional e a biomecânica é perfeita. Nossos membros adoram as opções de ajuste da Série C4. Recomendo muito a Hammer Gold!",
     name: "Sarah Jenkins",
-    title: "Club Director from Australia",
+    title: "Diretora de Clube da Austrália",
     avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=256&h=256&fit=crop",
   },
   {
-    quote: "The durability of the 73 Series is legendary. We have had these machines in our commercial facility for months under heavy load and they look brand new.",
+    quote: "A durabilidade da Série 73 é lendária. Temos essas máquinas em nossa instalação comercial há meses sob carga pesada e elas parecem novas.",
     name: "Ahmed Al-Mansoori",
-    title: "Gym Chain Owner from UAE",
+    title: "Dono de Rede de Academias dos Emirados Árabes Unidos",
     avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=256&h=256&fit=crop",
   },
 ];
@@ -155,7 +155,7 @@ export default function ContactCTA() {
         {/* Centered Heading */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-black tracking-tight text-dark uppercase">
-            Let&apos;s Talk
+            Vamos Conversar
           </h2>
         </div>
 
@@ -180,17 +180,17 @@ export default function ContactCTA() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-dark mb-2">
-                  Quote Request Sent!
+                  Solicitação de Orçamento Enviada!
                 </h3>
                 <p className="text-muted">
-                  We&apos;ll get back to you within 24 hours.
+                  Retornaremos o contato em até 24 horas.
                 </p>
                 <button
                   type="button"
                   onClick={() => setSubmitStatus("idle")}
                   className="mt-6 text-primary font-semibold hover:underline"
                 >
-                  Send another request
+                  Enviar outra solicitação
                 </button>
               </div>
             ) : (
@@ -210,7 +210,7 @@ export default function ContactCTA() {
                       htmlFor="contact-name"
                       className="block text-sm font-bold text-dark mb-1.5"
                     >
-                      Name <span className="text-red-500">*</span>
+                      Nome <span className="text-red-500">*</span>
                     </label>
                     <input
                       id="contact-name"
@@ -259,7 +259,7 @@ export default function ContactCTA() {
                     htmlFor="contact-phone"
                     className="block text-sm font-bold text-dark mb-1.5"
                   >
-                    Phone number
+                    Telefone
                   </label>
                   <div className="flex items-center rounded-lg border border-border bg-white focus-within:border-primary focus-within:ring-1 focus-within:ring-primary transition-all overflow-visible">
                     {/* Country Selector Button */}
@@ -312,7 +312,7 @@ export default function ContactCTA() {
                     htmlFor="contact-message"
                     className="block text-sm font-bold text-dark mb-1.5"
                   >
-                    Enquiry <span className="text-red-500">*</span>
+                    Mensagem <span className="text-red-500">*</span>
                   </label>
                   <textarea
                     id="contact-message"
@@ -332,8 +332,8 @@ export default function ContactCTA() {
 
                 {/* Security Footnote */}
                 <div className="text-xs text-gray-500 leading-normal font-light">
-                  <p>* Your information is very secure.</p>
-                  <p>We will not share your information with any third parties.</p>
+                  <p>* Suas informações estão muito seguras.</p>
+                  <p>Não compartilharemos suas informações com terceiros.</p>
                 </div>
 
                 {/* Cloudflare Turnstile Captcha Widget Mockup */}
@@ -395,7 +395,7 @@ export default function ContactCTA() {
                       "w-full sm:w-2/3 max-w-[280px] bg-[#a60000] hover:bg-[#bd0000] active:bg-[#8f0000] text-white py-3.5 px-6 font-bold text-sm rounded-md tracking-wider transition-all select-none uppercase hover:shadow-lg disabled:opacity-60 disabled:cursor-not-allowed"
                     )}
                   >
-                    {submitStatus === "loading" ? "Sending..." : "Submit"}
+                    {submitStatus === "loading" ? "Enviando..." : "Enviar"}
                   </button>
                 </div>
               </form>

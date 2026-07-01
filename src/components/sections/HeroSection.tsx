@@ -58,15 +58,15 @@ export default function HeroSection() {
               data-hero-headline
               className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight leading-[1.05] uppercase"
             >
-              <span className="block text-primary">STRENGTH EQUIPMENT</span>
-              <span className="block text-text">MANUFACTURER IN</span>
+              <span className="block text-primary">EQUIPAMENTO DE FORÇA</span>
+              <span className="block text-text">FABRICADO NA</span>
               <span className="block text-dark">CHINA</span>
             </h1>
 
             <div className="mt-8 space-y-4 max-w-xl text-neutral-800 font-medium text-base sm:text-lg">
-              <p data-hero-subtext>Built by athletes, for athletes.</p>
-              <p data-hero-subtext>Built tough to handle every strength training.</p>
-              <p data-hero-subtext>Built with precise movement angles since 1997.</p>
+              <p data-hero-subtext>Construído por atletas, para atletas.</p>
+              <p data-hero-subtext>Construído para suportar todos os tipos de treinamento de força.</p>
+              <p data-hero-subtext>Construído com ângulos de movimento precisos desde 1997.</p>
             </div>
           </div>
 

@@ -78,40 +78,40 @@ export default function ManufacturingQuality() {
     >
       <div className="mx-auto max-w-7xl px-6">
         {/* Header */}
-        <div data-quality-header className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#1A1A2E] tracking-tight mb-4 uppercase font-sans">
-            <span className="text-[#CC0000]">Quality Standard</span> of YR Fitness
+        <div className="text-center mb-16" data-quality-header>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-text tracking-tight mb-4 uppercase font-sans">
+            <span className="text-primary">Padrão de Qualidade</span> Hammer Gold
           </h2>
-          <div className="w-20 h-0.5 bg-[#CC0000] mx-auto mb-6" />
+          <div className="w-20 h-0.5 bg-primary mx-auto mb-6" />
           <p className="text-[#4B5563] text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-            {"That's why we are confident to compete with big brand quality, but at 1/5 price."}
+            {"É por isso que temos a confiança de competir com a qualidade de grandes marcas, mas por 1/5 do preço."}
           </p>
         </div>
 
         {/* Grid Content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Content */}
-          <div data-quality-left className="flex flex-col justify-center">
-            <h3 className="text-3xl md:text-4xl font-extrabold text-[#1A1A2E] leading-tight mb-6">
-              Built with Strength: 3.0mm
+          <div className="flex flex-col justify-center" data-quality-left>
+            <h3 className="text-3xl md:text-4xl font-extrabold text-text leading-tight mb-6">
+              Construído com Força: Tubos de
               <br />
-              Solid Steel Pipes
+              Aço Sólido de 3,0 mm
             </h3>
             <p className="text-[#4B5563] text-base sm:text-lg leading-relaxed">
-              {"We use thick "}
-              <span className="font-semibold text-[#1A1A2E]">
-                {"3.0mm+ Q235 steel pipes for every part of the machine"}
+              {"Usamos tubos de aço "}
+              <span className="font-semibold text-text">
+                {"Q235 espessos de 3,0 mm+ para cada parte da máquina"}
               </span>
-              {" — whether it's the frame or the training area, no matter the size. With added reinforcement bends, our machines stay strong and steady. No shaking, just solid power."}
+              {" — seja a estrutura ou a área de treino, não importa o tamanho. Com dobras de reforço adicionadas, nossas máquinas permanecem fortes e estáveis. Sem tremores, apenas potência sólida."}
             </p>
           </div>
 
           {/* Right Image */}
-          <div data-quality-right className="w-full">
-            <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl shadow-md border border-gray-100">
+          <div className="w-full" data-quality-right>
+            <div className="relative aspect-16/10 w-full overflow-hidden rounded-2xl shadow-md border border-gray-100">
               <Image
                 src="/assets/images/quality_steel.png"
-                alt="Quality steel pipes measurement at YR Fitness"
+                alt="Medição de tubos de aço de qualidade na YR Fitness"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
@@ -122,12 +122,12 @@ export default function ManufacturingQuality() {
         </div>
 
         {/* CTA Button */}
-        <div data-quality-cta className="text-center mt-16">
+        <div className="text-center mt-16" data-quality-cta>
           <a
             href="#quality"
-            className="inline-block border-2 border-[#CC0000] text-[#CC0000] hover:bg-[#CC0000] hover:text-white transition-all duration-300 font-semibold px-8 py-3 rounded-md text-sm tracking-wider"
+            className="inline-block border-2 border-primary text-primary] hover:bg-primary hover:text-white transition-all duration-300 font-semibold px-8 py-3 rounded-md text-sm tracking-wider"
           >
-            More About Quality
+            Saiba Mais Sobre a Qualidade
           </a>
         </div>
       </div>

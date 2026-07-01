@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 import { products } from "@/data/products";
 import { useAppStore } from "@/store/useAppStore";
 import ProductCard from "@/features/product-viewer/ProductCard";
-import { PRODUCTS_PER_PAGE } from "@/lib/constants";
+import { PRODUCTS_PER_PAGE, TRANSLATED_MUSCLE_GROUPS } from "@/lib/constants";
 
 /**
  * Build the array of page numbers to display in pagination.
@@ -136,13 +136,13 @@ export default function ProductGrid() {
         <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <h2 className="mb-2 text-3xl font-bold text-text sm:text-4xl">
-              Products We Have for You
+              Produtos que Temos para Você
             </h2>
             {muscleFilter && (
               <p className="text-muted">
-                Showing products for{" "}
+                Mostrando produtos para{" "}
                 <span className="font-semibold text-primary">
-                  {muscleFilter}
+                  {TRANSLATED_MUSCLE_GROUPS[muscleFilter] || muscleFilter}
                 </span>
               </p>
             )}
@@ -150,7 +150,7 @@ export default function ProductGrid() {
 
           {filteredProducts.length > 0 && (
             <p className="whitespace-nowrap text-sm italic text-muted">
-              Showing {startIdx}–{endIdx} of {filteredProducts.length} results
+              Mostrando {startIdx}–{endIdx} de {filteredProducts.length} resultados
             </p>
           )}
         </div>
@@ -170,7 +170,7 @@ export default function ProductGrid() {
         {/* Empty state */}
         {paginatedProducts.length === 0 && (
           <p className="mt-12 text-center text-muted">
-            No products found for the selected filter.
+            Nenhum produto encontrado para o filtro selecionado.
           </p>
         )}
 
@@ -178,14 +178,14 @@ export default function ProductGrid() {
         {totalPages > 1 && (
           <nav
             className="mt-14 flex items-center justify-center gap-1"
-            aria-label="Product pagination"
+            aria-label="Paginação de produtos"
           >
             {/* Previous arrow */}
             <button
               type="button"
               onClick={() => goToPage(Math.max(1, page - 1))}
               disabled={page === 1}
-              aria-label="Previous page"
+              aria-label="Página anterior"
               className={cn(
                 "flex h-9 w-9 items-center justify-center rounded text-sm transition-colors",
                 page === 1
@@ -232,7 +232,7 @@ export default function ProductGrid() {
               type="button"
               onClick={() => goToPage(Math.min(totalPages, page + 1))}
               disabled={page === totalPages}
-              aria-label="Next page"
+              aria-label="Próxima página"
               className={cn(
                 "flex h-9 w-9 items-center justify-center rounded text-sm transition-colors",
                 page === totalPages

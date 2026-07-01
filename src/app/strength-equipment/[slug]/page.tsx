@@ -51,7 +51,7 @@ export default function SeriesPage({ params }: Props) {
         <div className="absolute inset-0 bg-black/50" />
         <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-16 max-w-4xl">
           <p className="text-primary uppercase tracking-widest text-sm font-semibold mb-3">
-            Product Series
+            Série de Produtos
           </p>
           <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tight leading-tight">
             {s.name}
@@ -69,7 +69,7 @@ export default function SeriesPage({ params }: Props) {
           href="/strength-equipment"
           className="inline-flex items-center gap-2 text-neutral-400 hover:text-white transition-colors text-sm font-medium"
         >
-          <span>←</span> Back to all equipment
+          <span>←</span> Voltar para todos os equipamentos
         </Link>
       </div>
     </main>

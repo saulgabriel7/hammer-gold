@@ -8,7 +8,7 @@ import { useBeforeAfter } from "./useBeforeAfter";
 import { cn } from "@/lib/utils";
 
 const BEFORE_IMAGE = "/assets/images/before.avif";
-const AFTER_IMAGE = "/assets/images/after.avif";
+const AFTER_IMAGE = "/assets/images/after.jpeg";
 
 export default function BeforeAfterSlider() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -64,18 +64,18 @@ export default function BeforeAfterSlider() {
         {/* Left side — Text */}
         <div data-ba-content className="flex flex-col justify-center">
           {/* Red accent line */}
-          <div className="mb-6 h-1 w-16 rounded-full bg-[#CC0000]" />
+          <div className="mb-6 h-1 w-16 rounded-full bg-primary" />
 
-          <h2 className="mb-8 text-4xl font-extrabold text-[#1A1A2E] sm:text-5xl tracking-tight leading-tight uppercase font-sans">
-            DESIGNED <span className="text-[#CC0000]">BY</span> ATHLETES,
+          <h2 className="mb-8 text-4xl font-extrabold text-text sm:text-5xl tracking-tight leading-tight uppercase font-sans">
+            PROJETADO <span className="text-primary">POR</span> ATLETAS,
             <br />
-            <span className="text-[#CC0000]">FOR</span> ATHLETES
+            <span className="text-primary">PARA</span> ATLETAS
           </h2>
 
           <div className="space-y-4 font-medium text-lg text-[#4B5563] sm:text-xl leading-relaxed">
-            <p>At YR Fitness, Design Transcends Aesthetics.</p>
-            <p>{"It's About Functionality."}</p>
-            <p>Simple, But Significant.</p>
+            <p>Na YR Fitness, o design transcende a estética.</p>
+            <p>{"É sobre funcionalidade."}</p>
+            <p>Simples, mas significativo.</p>
           </div>
         </div>
 
@@ -85,17 +85,17 @@ export default function BeforeAfterSlider() {
             ref={containerRef}
             onPointerDown={prefersReducedMotion ? undefined : handlePointerDown}
             className={cn(
-              "relative aspect-[4/3] w-full select-none overflow-hidden rounded-2xl touch-none shadow-xl border border-gray-100",
+              "relative aspect-4/3 w-full select-none overflow-hidden rounded-2xl touch-none",
               !prefersReducedMotion && "cursor-ns-resize",
               isDragging && "cursor-ns-resize"
             )}
             role="img"
-            aria-label="Before and after comparison of equipment design"
+            aria-label="Comparação antes e depois do design do equipamento"
           >
             {/* Before image (base layer, shown at the bottom) */}
             <Image
               src={BEFORE_IMAGE}
-              alt="Before — original equipment design"
+              alt="Antes — design original do equipamento"
               fill
               unoptimized
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -105,7 +105,7 @@ export default function BeforeAfterSlider() {
 
             {/* "Before" label (bottom center) */}
             <span className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 rounded bg-[#4a4a4a]/85 backdrop-blur-xs border border-white/20 px-8 py-2 text-xs font-semibold tracking-wider text-white shadow-md min-w-[100px] text-center">
-              Before
+              Antes
             </span>
 
             {/* After image (clipped overlay, shown at the top) */}
@@ -118,7 +118,7 @@ export default function BeforeAfterSlider() {
             >
               <Image
                 src={AFTER_IMAGE}
-                alt="After — redesigned equipment"
+                alt="Depois — equipamento redesenhado"
                 fill
                 unoptimized
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -128,7 +128,7 @@ export default function BeforeAfterSlider() {
 
               {/* "After" label (top center) */}
               <span className="absolute top-6 left-1/2 -translate-x-1/2 z-20 rounded bg-[#4a4a4a]/85 backdrop-blur-xs border border-white/20 px-8 py-2 text-xs font-semibold tracking-wider text-white shadow-md min-w-[100px] text-center">
-                After
+                Depois
               </span>
             </div>
 
@@ -144,7 +144,7 @@ export default function BeforeAfterSlider() {
                 {/* Circle handle */}
                 <div className="relative flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-xl border border-gray-200 pointer-events-auto">
                   <svg
-                    className="h-6 w-6 text-[#1A1A2E]"
+                    className="h-6 w-6 text-text"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"

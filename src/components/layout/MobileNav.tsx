@@ -81,7 +81,7 @@ export default function MobileNav({ open, onClose }: MobileNavProps) {
               onClick={onClose}
               className="block w-full rounded-lg bg-primary px-4 py-3 text-center text-base font-semibold text-white hover:bg-red-700 transition-colors"
             >
-              Quick Quote
+              Orçamento Rápido
             </Link>
           </div>
         </nav>

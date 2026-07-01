@@ -3,21 +3,21 @@ import { cn } from "@/lib/utils";
 import { series } from "@/data/series";
 
 const SERIES_IMAGES: Record<string, string> = {
-  "c4-revival": "/assets/images/1.avif",
-  "61a-racing": "/assets/images/2.avif",
-  "73-tough": "/assets/images/3.avif",
-  "c4d-dual": "/assets/images/5.avif",
+  "c4-revival": "/assets/images/1.jpeg",
+  "61a-racing": "/assets/images/2.jpeg",
+  "73-tough": "/assets/images/3.jpeg",
+  "c4d-dual": "/assets/images/5.jpeg",
   "multi-station": "/assets/images/6.avif",
   "82-plate-loaded": "/assets/images/7.avif",
 };
 
 const SERIES_TITLES: Record<string, string> = {
-  "c4-revival": "C4 REVIVAL SERIES",
-  "61a-racing": "61A RACING SERIES",
-  "73-tough": "73 TOUGH SERIES",
-  "c4d-dual": "C4D DUAL FUNCTION SERIES",
-  "multi-station": "MULTI STATION SERIES",
-  "82-plate-loaded": "82 PLATE LOADED SERIES",
+  "c4-revival": "SÉRIE C4 REVIVAL",
+  "61a-racing": "SÉRIE 61A RACING",
+  "73-tough": "SÉRIE 73 TOUGH",
+  "c4d-dual": "SÉRIE C4D DUAL FUNCTION",
+  "multi-station": "SÉRIE MULTI STATION",
+  "82-plate-loaded": "SÉRIE 82 PLATE LOADED",
 };
 
 const orderedSeries = [
@@ -36,7 +36,7 @@ export default function FeaturedSeries() {
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-black text-text uppercase tracking-tight">
-            Featured Product Series
+            Séries de Produtos em Destaque
           </h2>
         </div>
 

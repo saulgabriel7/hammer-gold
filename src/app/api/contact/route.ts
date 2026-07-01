@@ -10,7 +10,7 @@ export async function POST(request: Request) {
 
   if (entry && now < entry.reset && entry.count >= 5) {
     return Response.json(
-      { success: false, error: "Too many requests. Please try again later." },
+      { success: false, error: "Muitas solicitações. Por favor, tente novamente mais tarde." },
       { status: 429 }
     );
   }
@@ -29,7 +29,7 @@ export async function POST(request: Request) {
       return Response.json(
         {
           success: false,
-          error: result.error.issues[0]?.message ?? "Invalid input",
+          error: result.error.issues[0]?.message ?? "Entrada inválida",
         },
         { status: 400 }
       );
@@ -43,7 +43,7 @@ export async function POST(request: Request) {
     return Response.json({ success: true });
   } catch {
     return Response.json(
-      { success: false, error: "Invalid request body" },
+      { success: false, error: "Corpo da solicitação inválido" },
       { status: 400 }
     );
   }

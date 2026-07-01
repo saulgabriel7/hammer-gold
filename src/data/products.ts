@@ -18,42 +18,42 @@ const rawProducts: RawProduct[] = [
   {
     "id": "1",
     "modelCode": "61A13A-1",
-    "name": "Low Row",
+    "name": "Linha Baixa",
     "slug": "61a13a-1-low-row",
-    "description": "YR Fitness 61A13A Low Row is designed for effective back muscle training with a straight handle grip for natural pulling.",
+    "description": "YR Fitness 61A13A Low Row foi projetado para treinamento eficaz dos músculos das costas com uma alça reta para tração natural.",
     "detailSections": [
       {
-        "title": "Strength Training with Control and Comfort",
+        "title": "Treinamento de Força com Controle e Conforto",
         "bullets": [
-          "Straight Handle Configuration: Encourages proper pulling mechanics and a centered grip",
-          "Track-Style Cushioned Seat: Ensures the best positioning of the user for maximum muscle activation",
-          "Load-Bearing Design: Suitable for both beginners and experienced lifters",
-          "Foam Pad Ergonomics: Targeted contact leads to greater performance-oriented training"
+          "Configuração da alça reta: incentiva a mecânica de tração adequada e uma pegada centralizada",
+          "Assento Almofadado Estilo Track: Garante o melhor posicionamento do usuário para máxima ativação muscular",
+          "Design de suporte de carga: Adequado para levantadores iniciantes e experientes",
+          "Ergonomia da almofada de espuma: O contato direcionado leva a um treinamento mais orientado para o desempenho"
         ]
       },
       {
-        "title": "Heavy-Duty Frame and Structural Integrity",
+        "title": "Estrutura Reforçada e Integridade Estrutural",
         "bullets": [
-          "Main Frame: 50 × 100 × 3mm oval tube, 50 × 120 × 3mm flat oval tube",
-          "Foot Tube: Anti-Friction Bearing 6203 2RS 4 pieces, Bearing 6003 ZZ 4 pieces",
-          "Anti-Fatigue Mat: Thick Rubber construction, custom colored",
-          "Materials: Q235 mild steel with chrome-plated connectors for durability"
+          "Estrutura principal: tubo oval de 50 × 100 × 3 mm, tubo oval plano de 50 × 120 × 3 mm",
+          "Tubo de pé: Rolamento antifricção 6203 2RS ​​4 peças, Rolamento 6003 ZZ 4 peças",
+          "Tapete Antifadiga: Construção de borracha espessa, cor personalizada",
+          "Materiais: Aço macio Q235 com conectores cromados para maior durabilidade"
         ]
       },
       {
-        "title": "Comfort and Safety Features",
+        "title": "Recursos de conforto e segurança",
         "bullets": [
-          "Upholstery: High-density foam with machine-press PU surface",
-          "Guided Sleeve: Weight Sleeve (50.8mm) with pin loader mechanism, stainless and machine integrity",
-          "Cable Coating: Nylon inner casing keeps the cable so natural feel and maintenance"
+          "Estofamento: Espuma de alta densidade com superfície PU prensada à máquina",
+          "Manga Guiada: Manga de peso (50,8mm) com mecanismo carregador de pinos, inoxidável e integridade da máquina",
+          "Revestimento do cabo: O revestimento interno de nylon mantém o cabo com sensação e manutenção naturais"
         ]
       },
       {
-        "title": "Reliable Operation and Long-Lasting Performance",
+        "title": "Operação confiável e desempenho duradouro",
         "bullets": [
-          "Pulley System: CNC-machined 90mm with high-quality bearings",
-          "Cable Specifications: 6.35 wire diameter, polyethylene-coated, rated 900kg breaking load capacity (1,950 lbs)",
-          "Aircraft Full-Form ABS-reinforced plastic shells over Shield Corners and more parts"
+          "Sistema de polias: 90mm usinadas em CNC com rolamentos de alta qualidade",
+          "Especificações do cabo: diâmetro do fio 6,35, revestido com polietileno, capacidade de carga de ruptura nominal de 900 kg (1.950 lbs)",
+          "Invólucros de plástico reforçado com ABS de formato completo para aeronaves sobre cantos de escudo e mais peças"
         ]
       }
     ],
@@ -64,46 +64,46 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "146 kg"
+        "label": "NO.",
+        "value": "146kg"
       },
       {
-        "label": "G.W.",
-        "value": "171 kg"
+        "label": "GW",
+        "value": "171kg"
       },
       {
-        "label": "Packing Size",
+        "label": "Tamanho da embalagem",
         "value": "1180 × 610 × 1450 mm"
       },
       {
-        "label": "Weight Stack",
-        "value": "80 kg / 176 lbs"
+        "label": "Pilha de peso",
+        "value": "80 kg / 176 libras"
       }
     ]
   },
   {
     "id": "2",
     "modelCode": "G2K28",
-    "name": "45-Degree Leg Press Machine with Linear Bearings",
+    "name": "Máquina de leg press de 45 graus com rolamentos lineares",
     "slug": "g2k28-45-degree-leg-press-machine-with-linear-bearings",
-    "description": "The YR Fitness G2K28 45-Degree Leg Press Machine is designed to strengthen your legs with unmatched smoothness and stability.",
+    "description": "A máquina de leg press de 45 graus YR Fitness G2K28 foi projetada para fortalecer suas pernas com suavidade e estabilidade incomparáveis.",
     "detailSections": [
       {
-        "title": "Precision Linear Bearing System",
+        "title": "Sistema de rolamento linear de precisão",
         "bullets": [
-          "Industrial-grade linear bearings for ultra-smooth carriage travel",
-          "45-degree angled platform reduces spinal compression",
-          "Heavy-duty sled rated for 500kg+ working loads",
-          "Dual safety catches with quick-release mechanism"
+          "Rolamentos lineares de nível industrial para deslocamento ultra-suave do carro",
+          "Plataforma angular de 45 graus reduz a compressão da coluna vertebral",
+          "Trenó resistente classificado para cargas de trabalho de mais de 500 kg",
+          "Fechos de segurança duplos com mecanismo de liberação rápida"
         ]
       },
       {
-        "title": "Ergonomic Platform Design",
+        "title": "Design ergonômico da plataforma",
         "bullets": [
-          "Extra-wide foot platform with anti-slip diamond tread surface",
-          "Multiple foot position zones for quad, glute, and hamstring targeting",
-          "12mm thick steel platform for maximum rigidity under load",
-          "Adjustable back rest with lumbar support padding"
+          "Plataforma de pés extra larga com superfície antiderrapante em diamante",
+          "Múltiplas zonas de posição do pé para direcionamento de quadríceps, glúteos e isquiotibiais",
+          "Plataforma de aço com 12 mm de espessura para máxima rigidez sob carga",
+          "Encosto ajustável com acolchoamento de apoio lombar"
         ]
       }
     ],
@@ -114,46 +114,46 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "285 kg"
+        "label": "NO.",
+        "value": "285kg"
       },
       {
-        "label": "G.W.",
-        "value": "320 kg"
+        "label": "GW",
+        "value": "320kg"
       },
       {
-        "label": "Packing Size",
+        "label": "Tamanho da embalagem",
         "value": "2200 × 1100 × 1750 mm"
       },
       {
-        "label": "Max Load",
-        "value": "500 kg"
+        "label": "Carga Máxima",
+        "value": "500kg"
       }
     ]
   },
   {
     "id": "3",
     "modelCode": "G2J28",
-    "name": "45° Linear Motion Hack Squat",
+    "name": "Agachamento com movimento linear de 45°",
     "slug": "g2j28-45-linear-motion-hack-squat",
-    "description": "The YR Fitness G2J28 45° Linear Motion Hack Squat is designed to strengthen your lower body with maximum efficiency.",
+    "description": "O agachamento com movimento linear de 45 ° YR Fitness G2J28 foi projetado para fortalecer a parte inferior do corpo com a máxima eficiência.",
     "detailSections": [
       {
-        "title": "Linear Motion Hack Squat Mechanics",
+        "title": "Mecânica de agachamento com movimento linear",
         "bullets": [
-          "45-degree fixed path ensures consistent squat mechanics",
-          "Linear bearings eliminate friction for smooth repetitions",
-          "Shoulder pads with thick foam cushioning for comfort under load",
-          "Rotating foot platform for calf raise functionality"
+          "O caminho fixo de 45 graus garante uma mecânica de agachamento consistente",
+          "Os rolamentos lineares eliminam o atrito para repetições suaves",
+          "Ombreiras com amortecimento de espuma espessa para maior conforto sob carga",
+          "Plataforma giratória para pés para funcionalidade de elevação de panturrilhas"
         ]
       },
       {
-        "title": "Safety and Build Quality",
+        "title": "Segurança e Qualidade de Construção",
         "bullets": [
-          "Dual safety lockout bars at multiple height settings",
-          "50 × 100 × 3mm heavy-gauge steel construction",
-          "Weight storage horns for convenient plate organization",
-          "Anti-slip foot surface with raised edge guards"
+          "Barras de bloqueio de segurança duplas em vários ajustes de altura",
+          "Construção em aço de alto calibre 50 × 100 × 3 mm",
+          "Buzinas de armazenamento de peso para organização conveniente de placas",
+          "Superfície antiderrapante dos pés com proteções nas bordas elevadas"
         ]
       }
     ],
@@ -165,37 +165,37 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "260 kg"
+        "label": "NO.",
+        "value": "260kg"
       },
       {
-        "label": "G.W.",
-        "value": "290 kg"
+        "label": "GW",
+        "value": "290kg"
       },
       {
-        "label": "Packing Size",
+        "label": "Tamanho da embalagem",
         "value": "2100 × 1050 × 1650 mm"
       },
       {
-        "label": "Max Load",
-        "value": "450 kg"
+        "label": "Carga Máxima",
+        "value": "450kg"
       }
     ]
   },
   {
     "id": "4",
     "modelCode": "G2060",
-    "name": "Power Smith System Seated Pull Back",
+    "name": "Sistema Power Smith sentado puxado para trás",
     "slug": "g2060-power-smith-system-seated-pull-back",
-    "description": "The YR Fitness G2060 Power Smith System Seated Pull Back is designed to strengthen your mid-back with exceptional stability and controlled movement.",
+    "description": "O YR Fitness G2060 Power Smith System Seated Pull Back foi projetado para fortalecer o meio das costas com estabilidade excepcional e movimento controlado.",
     "detailSections": [
       {
-        "title": "Smith System Guided Pull Back",
+        "title": "Recuo guiado pelo sistema Smith",
         "bullets": [
-          "Guided bar path ensures precise vertical movement",
-          "Counter-balanced starting weight for beginners",
-          "Multi-grip handle options for varied back targeting",
-          "Integrated plate storage for convenience"
+          "O caminho guiado da barra garante movimento vertical preciso",
+          "Peso inicial contrabalançado para iniciantes",
+          "Opções de alça multi-grip para direcionamento variado para as costas",
+          "Armazenamento integrado de placas para maior comodidade"
         ]
       }
     ],
@@ -206,37 +206,37 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "310 kg"
+        "label": "NO.",
+        "value": "310kg"
       },
       {
-        "label": "G.W.",
-        "value": "350 kg"
+        "label": "GW",
+        "value": "350kg"
       },
       {
-        "label": "Packing Size",
+        "label": "Tamanho da embalagem",
         "value": "2200 × 1500 × 2250 mm"
       },
       {
-        "label": "Max Load",
-        "value": "300 kg"
+        "label": "Carga Máxima",
+        "value": "300kg"
       }
     ]
   },
   {
     "id": "5",
     "modelCode": "G2061",
-    "name": "Power Smith System Bent-Over Row",
+    "name": "Linha curvada do sistema Power Smith",
     "slug": "g2061-power-smith-system-bent-over-row",
-    "description": "The YR Fitness G2061 Power Smith System Bent-Over Row is designed to strengthen your back with precision and control.",
+    "description": "O YR Fitness G2061 Power Smith System Bent-Over Row foi projetado para fortalecer suas costas com precisão e controle.",
     "detailSections": [
       {
-        "title": "Bent-Over Row on Smith Rails",
+        "title": "Linha curvada em trilhos Smith",
         "bullets": [
-          "Fixed bar path reduces stabilizer demand for heavier loading",
-          "Angled foot plate for optimal bent-over position",
-          "Safety hooks at multiple heights",
-          "Compatible with Olympic plates"
+          "O caminho fixo da barra reduz a demanda do estabilizador para cargas mais pesadas",
+          "Placa de pé inclinada para uma posição curvada ideal",
+          "Ganchos de segurança em várias alturas",
+          "Compatível com placas olímpicas"
         ]
       }
     ],
@@ -247,37 +247,37 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "305 kg"
+        "label": "NO.",
+        "value": "305kg"
       },
       {
-        "label": "G.W.",
-        "value": "345 kg"
+        "label": "GW",
+        "value": "345kg"
       },
       {
-        "label": "Packing Size",
+        "label": "Tamanho da embalagem",
         "value": "2200 × 1500 × 2250 mm"
       },
       {
-        "label": "Max Load",
-        "value": "300 kg"
+        "label": "Carga Máxima",
+        "value": "300kg"
       }
     ]
   },
   {
     "id": "6",
     "modelCode": "G2A13",
-    "name": "Power Smith Flat/Decline Bench Press",
+    "name": "Power Smith supino plano/declínio",
     "slug": "g2a13-power-smith-flat-decline-bench-press",
-    "description": "The YR Fitness G2A13 Power Smith Flat/Decline Bench Press is designed to strengthen your chest with precision and stability.",
+    "description": "O supino reto/declinado YR Fitness G2A13 Power Smith foi projetado para fortalecer o peito com precisão e estabilidade.",
     "detailSections": [
       {
-        "title": "Multi-Angle Press Station",
+        "title": "Estação de prensa multiângulo",
         "bullets": [
-          "Quick adjustment between flat and decline positions",
-          "Smith rail guides for consistent bar path",
-          "Wide bench pad for shoulder blade retraction",
-          "Adjustable safety stops at multiple heights"
+          "Ajuste rápido entre posições planas e de declínio",
+          "Guias de trilho Smith para caminho de barra consistente",
+          "Almofada de banco larga para retração da omoplata",
+          "Batentes de segurança ajustáveis ​​em várias alturas"
         ]
       }
     ],
@@ -288,37 +288,37 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "280 kg"
+        "label": "NO.",
+        "value": "280kg"
       },
       {
-        "label": "G.W.",
-        "value": "315 kg"
+        "label": "GW",
+        "value": "315kg"
       },
       {
-        "label": "Packing Size",
+        "label": "Tamanho da embalagem",
         "value": "2100 × 1400 × 2100 mm"
       },
       {
-        "label": "Max Load",
-        "value": "250 kg"
+        "label": "Carga Máxima",
+        "value": "250kg"
       }
     ]
   },
   {
     "id": "7",
     "modelCode": "C1A33",
-    "name": "Smith Machine",
+    "name": "Máquina Smith",
     "slug": "c1a33-smith-machine",
-    "description": "The YR Fitness C1A33 Smith Machine is designed to deliver a safe and controlled weightlifting experience. Featuring a guided barbell track.",
+    "description": "A máquina Smith YR Fitness C1A33 foi projetada para oferecer uma experiência de levantamento de peso segura e controlada. Apresentando uma pista de barra guiada.",
     "detailSections": [
       {
-        "title": "Guided Barbell System",
+        "title": "Sistema de barra guiada",
         "bullets": [
-          "Precision linear bearings on steel guide rods",
-          "Counter-balanced barbell for reduced starting weight",
-          "Rotating safety hooks with quick-lock mechanism",
-          "Band pegs for accommodating resistance"
+          "Rolamentos lineares de precisão em hastes guia de aço",
+          "Barra contrabalançada para peso inicial reduzido",
+          "Ganchos de segurança giratórios com mecanismo de travamento rápido",
+          "Pinos de banda para acomodar resistência"
         ]
       }
     ],
@@ -329,37 +329,37 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "320 kg"
+        "label": "NO.",
+        "value": "320kg"
       },
       {
-        "label": "G.W.",
-        "value": "360 kg"
+        "label": "GW",
+        "value": "360kg"
       },
       {
-        "label": "Packing Size",
+        "label": "Tamanho da embalagem",
         "value": "2200 × 1600 × 2350 mm"
       },
       {
-        "label": "Max Load",
-        "value": "400 kg"
+        "label": "Carga Máxima",
+        "value": "400kg"
       }
     ]
   },
   {
     "id": "8",
     "modelCode": "G2048",
-    "name": "Squat Rack",
+    "name": "Rack de agachamento",
     "slug": "g2048-squat-rack",
-    "description": "The YR Fitness G2048 Squat Rack is designed to support heavy lifting with maximum stability and safety. Its 8mm thick steel frame and robust base ensure premium performance.",
+    "description": "O rack de agachamento YR Fitness G2048 foi projetado para suportar levantamentos pesados ​​com máxima estabilidade e segurança. Sua estrutura de aço com 8 mm de espessura e base robusta garantem desempenho premium.",
     "detailSections": [
       {
-        "title": "Heavy-Duty Squat Station",
+        "title": "Estação de agachamento para serviço pesado",
         "bullets": [
-          "8mm thick steel uprights for maximum rigidity",
-          "J-hooks with UHMW plastic lining to protect barbell knurling",
-          "Adjustable safety spotter arms with positive lock pins",
-          "Pull-up bar and band pegs included"
+          "Pilares de aço com 8 mm de espessura para máxima rigidez",
+          "Ganchos J com revestimento de plástico UHMW para proteger o serrilhado da barra",
+          "Braços de observação de segurança ajustáveis ​​com pinos de travamento positivos",
+          "Barra pull-up e pinos de banda incluídos"
         ]
       }
     ],
@@ -372,37 +372,37 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "195 kg"
+        "label": "NO.",
+        "value": "195kg"
       },
       {
-        "label": "G.W.",
-        "value": "220 kg"
+        "label": "GW",
+        "value": "220kg"
       },
       {
-        "label": "Packing Size",
+        "label": "Tamanho da embalagem",
         "value": "1600 × 1400 × 2300 mm"
       },
       {
-        "label": "Max Load",
-        "value": "500 kg"
+        "label": "Carga Máxima",
+        "value": "500kg"
       }
     ]
   },
   {
     "id": "9",
     "modelCode": "G2D32",
-    "name": "3D Hip Thruster",
+    "name": "Propulsor de quadril 3D",
     "slug": "g2d32-3d-hip-thruster",
-    "description": "Highly adjustable hip thrust mechanics for tailored glute and hamstring training.",
+    "description": "Mecânica de impulso de quadril altamente ajustável para treinamento personalizado de glúteos e isquiotibiais.",
     "detailSections": [
       {
-        "title": "3D Adjustable Hip Thrust",
+        "title": "Impulso de quadril ajustável 3D",
         "bullets": [
-          "Multi-angle adjustment for targeted glute activation",
-          "Padded hip belt for comfortable heavy loading",
-          "Foot platform with anti-slip surface",
-          "Band pegs for accommodating resistance training"
+          "Ajuste multiângulo para ativação direcionada dos glúteos",
+          "Cinto de quadril acolchoado para cargas pesadas e confortáveis ​​",
+          "Plataforma para pés com superfície antiderrapante",
+          "Pinos de banda para acomodar treinamento de resistência"
         ]
       }
     ],
@@ -414,33 +414,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "118 kg"
+        "label": "NO.",
+        "value": "118kg"
       },
       {
-        "label": "G.W.",
-        "value": "140 kg"
+        "label": "GW",
+        "value": "140kg"
       },
       {
-        "label": "Packing Size",
+        "label": "Tamanho da embalagem",
         "value": "1750 × 850 × 1200 mm"
       },
       {
-        "label": "Max Load",
-        "value": "300 kg"
+        "label": "Carga Máxima",
+        "value": "300kg"
       }
     ]
   },
   {
     "id": "10",
     "modelCode": "G2039",
-    "name": "Pull Over",
-    "description": "YR Fitness G2039 delivers effective lat and upper back training through a stable, ergonomic pull-over design—ideal for improving strength, posture, and upper-body conditioning.",
+    "name": "Encostar",
+    "description": "YR Fitness G2039 oferece treinamento eficaz de costas e parte superior das costas por meio de um design pull-over estável e ergonômico - ideal para melhorar a força, a postura e o condicionamento da parte superior do corpo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness G2039 delivers effective lat and upper back training through a stable, ergonomic pull-over design—ideal for improving strength, posture, and upper-body conditioning."
+          "YR Fitness G2039 oferece treinamento eficaz de costas e parte superior das costas por meio de um design pull-over estável e ergonômico - ideal para melhorar a força, a postura e o condicionamento da parte superior do corpo."
         ]
       }
     ],
@@ -452,7 +452,7 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
+        "label": "NO",
         "value": "130kg"
       },
       {
@@ -460,7 +460,7 @@ const rawProducts: RawProduct[] = [
         "value": "169kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1220*1160*1500mm"
       }
     ]
@@ -468,13 +468,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "11",
     "modelCode": "G2A38",
-    "name": "Plated Loaded Check and Shoulder Combo",
-    "description": "YR Fitness G2A38 is a versatile chest and shoulder training solution that offers ergonomic support, dual-position flexibility, and customizable resistance for well-rounded upper body development.",
+    "name": "Combinação de xadrez e ombro banhado",
+    "description": "YR Fitness G2A38 é uma solução versátil de treinamento de tórax e ombros que oferece suporte ergonômico, flexibilidade de posição dupla e resistência personalizável para um desenvolvimento bem arredondado da parte superior do corpo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness G2A38 is a versatile chest and shoulder training solution that offers ergonomic support, dual-position flexibility, and customizable resistance for well-rounded upper body development."
+          "YR Fitness G2A38 é uma solução versátil de treinamento de tórax e ombros que oferece suporte ergonômico, flexibilidade de posição dupla e resistência personalizável para um desenvolvimento bem arredondado da parte superior do corpo."
         ]
       }
     ],
@@ -486,7 +486,7 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
+        "label": "NO",
         "value": "138kg"
       },
       {
@@ -494,7 +494,7 @@ const rawProducts: RawProduct[] = [
         "value": "185kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1920*808*1750mm"
       }
     ]
@@ -502,13 +502,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "12",
     "modelCode": "82B20",
-    "name": "Standing Belt-Style Squat Trainer",
-    "description": "YR Fitness 82B20 delivers an effective and safer squat experience through its belt-driven resistance and ergonomic standing design—perfect for building lower body strength with reduced joint stress.",
+    "name": "Treinador de agachamento estilo cinto em pé",
+    "description": "YR Fitness 82B20 oferece uma experiência de agachamento eficaz e mais segura por meio de sua resistência acionada por cinto e design ergonômico em pé - perfeito para desenvolver força na parte inferior do corpo com estresse reduzido nas articulações.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82B20 delivers an effective and safer squat experience through its belt-driven resistance and ergonomic standing design—perfect for building lower body strength with reduced joint stress."
+          "YR Fitness 82B20 oferece uma experiência de agachamento eficaz e mais segura por meio de sua resistência acionada por cinto e design ergonômico em pé - perfeito para desenvolver força na parte inferior do corpo com estresse reduzido nas articulações."
         ]
       }
     ],
@@ -520,7 +520,7 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
+        "label": "NO",
         "value": "168kg"
       },
       {
@@ -528,7 +528,7 @@ const rawProducts: RawProduct[] = [
         "value": "222kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "2150*1170*1500mm"
       }
     ]
@@ -536,13 +536,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "13",
     "modelCode": "82037G",
-    "name": "Pull Up Multifunctional Trainer",
-    "description": "YR Fitness 82037G offers a strong, adaptable platform for building upper body strength through a range of essential functional movements—ideal for all fitness levels.",
+    "name": "Treinador Multifuncional Pull Up",
+    "description": "YR Fitness 82037G oferece uma plataforma forte e adaptável para aumentar a força da parte superior do corpo por meio de uma variedade de movimentos funcionais essenciais - ideal para todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82037G offers a strong, adaptable platform for building upper body strength through a range of essential functional movements—ideal for all fitness levels."
+          "YR Fitness 82037G oferece uma plataforma forte e adaptável para aumentar a força da parte superior do corpo por meio de uma variedade de movimentos funcionais essenciais - ideal para todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -556,13 +556,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "14",
     "modelCode": "82032A",
-    "name": "Hip Thrust Machine",
-    "description": "YR Fitness 82032A delivers consistent, glute-focused hip thrusts with ergonomic design and adjustable comfort—ideal for strength, shaping, and performance training.",
+    "name": "Máquina de impulso de quadril",
+    "description": "YR Fitness 82032A oferece impulsos de quadril consistentes e focados nos glúteos com design ergonômico e conforto ajustável - ideal para treinamento de força, modelagem e desempenho.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82032A delivers consistent, glute-focused hip thrusts with ergonomic design and adjustable comfort—ideal for strength, shaping, and performance training."
+          "YR Fitness 82032A oferece impulsos de quadril consistentes e focados nos glúteos com design ergonômico e conforto ajustável - ideal para treinamento de força, modelagem e desempenho."
         ]
       }
     ],
@@ -575,13 +575,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "15",
     "modelCode": "82A20",
-    "name": "Standing Squat Trainer",
-    "description": "YR Fitness 82A20 provides a stable and effective squatting platform for developing lower-body strength, making it a reliable choice for functional and strength-focused training.",
+    "name": "Treinador de agachamento em pé",
+    "description": "YR Fitness 82A20 fornece uma plataforma de agachamento estável e eficaz para desenvolver a força da parte inferior do corpo, tornando-o uma escolha confiável para treinamento funcional e focado na força.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82A20 provides a stable and effective squatting platform for developing lower-body strength, making it a reliable choice for functional and strength-focused training."
+          "YR Fitness 82A20 fornece uma plataforma de agachamento estável e eficaz para desenvolver a força da parte inferior do corpo, tornando-o uma escolha confiável para treinamento funcional e focado na força."
         ]
       }
     ],
@@ -593,15 +593,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "194kgs"
+        "label": "NO",
+        "value": "194kg"
       },
       {
         "label": "G.W",
-        "value": "244kgs"
+        "value": "244kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": ": 1700*1100*620mm"
       }
     ]
@@ -609,13 +609,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "16",
     "modelCode": "F2001",
-    "name": "4 Station Multi Jungle",
-    "description": "YR Fitness 4 Station Multi Jungle F2001 is a powerful training system that lets up to four people work out at once. With flexible cable movements and a strong build, it supports a wide range of strength exercises for group or individual training in any gym setting.",
+    "name": "4 estações Multi Selva",
+    "description": "YR Fitness 4 Station Multi Jungle F2001 é um poderoso sistema de treinamento que permite que até quatro pessoas treinem ao mesmo tempo. Com movimentos de cabo flexíveis e uma construção forte, suporta uma ampla gama de exercícios de força para treino em grupo ou individual em qualquer ambiente de ginásio.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 4 Station Multi Jungle F2001 is a powerful training system that lets up to four people work out at once. With flexible cable movements and a strong build, it supports a wide range of strength exercises for group or individual training in any gym setting."
+          "YR Fitness 4 Station Multi Jungle F2001 é um poderoso sistema de treinamento que permite que até quatro pessoas treinem ao mesmo tempo. Com movimentos de cabo flexíveis e uma construção forte, suporta uma ampla gama de exercícios de força para treino em grupo ou individual em qualquer ambiente de ginásio."
         ]
       }
     ],
@@ -628,13 +628,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "17",
     "modelCode": "G2050",
-    "name": "Power Rack",
-    "description": "YR Fitness Power Rack G2050 is a heavy-duty training station designed for safe and effective strength workouts. Perfect for squats, presses, and other barbell exercises, it offers strong construction, adjustable features, and plenty of space to support serious lifters and professional gyms.",
+    "name": "Rack de energia",
+    "description": "YR Fitness Power Rack G2050 é uma estação de treinamento resistente projetada para exercícios de força seguros e eficazes. Perfeito para agachamentos, prensas e outros exercícios com barra, oferece construção robusta, recursos ajustáveis ​​e muito espaço para apoiar levantadores sérios e academias profissionais.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Power Rack G2050 is a heavy-duty training station designed for safe and effective strength workouts. Perfect for squats, presses, and other barbell exercises, it offers strong construction, adjustable features, and plenty of space to support serious lifters and professional gyms."
+          "YR Fitness Power Rack G2050 é uma estação de treinamento resistente projetada para exercícios de força seguros e eficazes. Perfeito para agachamentos, prensas e outros exercícios com barra, oferece construção robusta, recursos ajustáveis ​​e muito espaço para apoiar levantadores sérios e academias profissionais."
         ]
       }
     ],
@@ -647,13 +647,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "18",
     "modelCode": "F2M01",
-    "name": "4 Station Multi Jungle",
-    "description": "YR Fitness 4 Station Multi Jungle F2M01 is a space-saving machine that lets up to four people train at once. With smooth motion, strong construction, and multiple workout options, it’s perfect for full-body training in busy gyms and fitness facilities.",
+    "name": "4 estações Multi Selva",
+    "description": "YR Fitness 4 Station Multi Jungle F2M01 é uma máquina que economiza espaço e permite que até quatro pessoas treinem ao mesmo tempo. Com movimentos suaves, construção robusta e múltiplas opções de treino, é perfeito para treino de corpo inteiro em ginásios e instalações de fitness movimentados.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 4 Station Multi Jungle F2M01 is a space-saving machine that lets up to four people train at once. With smooth motion, strong construction, and multiple workout options, it’s perfect for full-body training in busy gyms and fitness facilities."
+          "YR Fitness 4 Station Multi Jungle F2M01 é uma máquina que economiza espaço e permite que até quatro pessoas treinem ao mesmo tempo. Com movimentos suaves, construção robusta e múltiplas opções de treino, é perfeito para treino de corpo inteiro em ginásios e instalações de fitness movimentados."
         ]
       }
     ],
@@ -666,13 +666,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "19",
     "modelCode": "F2004",
-    "name": "14 Station Multi Jungle",
-    "description": "YR Fitness 14 Station Multi Jungle F2004 is a powerful group training system that supports a wide range of strength exercises. With customizable stations, smooth cable motion, and strong construction, it’s ideal for busy gyms looking to offer variety and efficiency in one setup.",
+    "name": "14 Estação Multi Selva",
+    "description": "YR Fitness 14 Station Multi Jungle F2004 é um poderoso sistema de treinamento em grupo que suporta uma ampla variedade de exercícios de força. Com estações personalizáveis, movimento suave do cabo e construção robusta, é ideal para academias movimentadas que buscam oferecer variedade e eficiência em uma única configuração.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 14 Station Multi Jungle F2004 is a powerful group training system that supports a wide range of strength exercises. With customizable stations, smooth cable motion, and strong construction, it’s ideal for busy gyms looking to offer variety and efficiency in one setup."
+          "YR Fitness 14 Station Multi Jungle F2004 é um poderoso sistema de treinamento em grupo que suporta uma ampla variedade de exercícios de força. Com estações personalizáveis, movimento suave do cabo e construção robusta, é ideal para academias movimentadas que buscam oferecer variedade e eficiência em uma única configuração."
         ]
       }
     ],
@@ -685,13 +685,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "20",
     "modelCode": "F2003",
-    "name": "9 Station Multi Jungle",
-    "description": "YR Fitness 9 Station Multi Jungle F2003 is a powerful group training machine that supports up to four users at once. With customizable stations and smooth cable motion, it offers endless strength training options for building balance, power, and total-body fitness in busy gym environments.",
+    "name": "9 Estação Multi Selva",
+    "description": "YR Fitness 9 Station Multi Jungle F2003 é uma poderosa máquina de treinamento em grupo que suporta até quatro usuários ao mesmo tempo. Com estações personalizáveis ​​e movimento suave do cabo, oferece infinitas opções de treinamento de força para desenvolver equilíbrio, potência e condicionamento físico total em ambientes movimentados de academia.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 9 Station Multi Jungle F2003 is a powerful group training machine that supports up to four users at once. With customizable stations and smooth cable motion, it offers endless strength training options for building balance, power, and total-body fitness in busy gym environments."
+          "YR Fitness 9 Station Multi Jungle F2003 é uma poderosa máquina de treinamento em grupo que suporta até quatro usuários ao mesmo tempo. Com estações personalizáveis ​​e movimento suave do cabo, oferece infinitas opções de treinamento de força para desenvolver equilíbrio, potência e condicionamento físico total em ambientes movimentados de academia."
         ]
       }
     ],
@@ -704,13 +704,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "21",
     "modelCode": "G2049",
-    "name": "Power Rack",
-    "description": "YR Fitness Power Rack G2049 is a strong, stable training station built for heavy lifting. Made with high-quality steel and secure bolt connections, it’s perfect for squats, bench presses, and more—ideal for serious strength training in professional gyms.",
+    "name": "Rack de energia",
+    "description": "YR Fitness Power Rack G2049 é uma estação de treinamento forte e estável construída para levantamento de peso. Feito com aço de alta qualidade e conexões de parafusos seguras, é perfeito para agachamentos, supinos e muito mais – ideal para treinamento de força sério em academias profissionais.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Power Rack G2049 is a strong, stable training station built for heavy lifting. Made with high-quality steel and secure bolt connections, it’s perfect for squats, bench presses, and more—ideal for serious strength training in professional gyms."
+          "YR Fitness Power Rack G2049 é uma estação de treinamento forte e estável construída para levantamento de peso. Feito com aço de alta qualidade e conexões de parafusos seguras, é perfeito para agachamentos, supinos e muito mais – ideal para treinamento de força sério em academias profissionais."
         ]
       }
     ],
@@ -723,13 +723,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "22",
     "modelCode": "F2002",
-    "name": "6 Station Multi Jungle",
-    "description": "YR Fitness 6 Station Multi Jungle F2002 is a versatile training system designed for group workouts. It supports up to four users at once and offers endless exercise options with smooth cable motion, helping build strength, balance, and coordination through customizable movement paths.",
+    "name": "6 estações Multi Jungle",
+    "description": "YR Fitness 6 Station Multi Jungle F2002 é um sistema de treinamento versátil projetado para treinos em grupo. Ele suporta até quatro usuários ao mesmo tempo e oferece infinitas opções de exercícios com movimento suave do cabo, ajudando a desenvolver força, equilíbrio e coordenação por meio de caminhos de movimento personalizáveis.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 6 Station Multi Jungle F2002 is a versatile training system designed for group workouts. It supports up to four users at once and offers endless exercise options with smooth cable motion, helping build strength, balance, and coordination through customizable movement paths."
+          "YR Fitness 6 Station Multi Jungle F2002 é um sistema de treinamento versátil projetado para treinos em grupo. Ele suporta até quatro usuários ao mesmo tempo e oferece infinitas opções de exercícios com movimento suave do cabo, ajudando a desenvolver força, equilíbrio e coordenação por meio de caminhos de movimento personalizáveis."
         ]
       }
     ],
@@ -742,13 +742,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "23",
     "modelCode": "61A13A",
-    "name": "Low Row",
-    "description": "YR Fitness 61A13A Low Row is designed for effective back muscle training with a straight handle grip for natural pulling motion. Its smooth operation and stable build make it a must-have for strength development and safe, controlled workouts.",
+    "name": "Linha Baixa",
+    "description": "YR Fitness 61A13A Low Row foi projetado para treinamento eficaz dos músculos das costas com uma alça reta para movimento de tração natural. Sua operação suave e construção estável tornam-no essencial para o desenvolvimento de força e treinos seguros e controlados.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A13A Low Row is designed for effective back muscle training with a straight handle grip for natural pulling motion. Its smooth operation and stable build make it a must-have for strength development and safe, controlled workouts."
+          "YR Fitness 61A13A Low Row foi projetado para treinamento eficaz dos músculos das costas com uma alça reta para movimento de tração natural. Sua operação suave e construção estável tornam-no essencial para o desenvolvimento de força e treinos seguros e controlados."
         ]
       }
     ],
@@ -759,7 +759,7 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
+        "label": "NO",
         "value": "209kg"
       },
       {
@@ -767,25 +767,25 @@ const rawProducts: RawProduct[] = [
         "value": "218kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1180*1380*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "24",
     "modelCode": "C4063",
-    "name": "Wrist Trainer",
-    "description": "YR Fitness C4063 Wrist Trainer is a uniquely designed machine for wrist rotation, flexion, and grip training. It targets wrist flexors and forearm muscles, helping users build strength, control, and stability with safe, adjustable, and efficient movement.",
+    "name": "Treinador de pulso",
+    "description": "YR Fitness C4063 Wrist Trainer é uma máquina com design exclusivo para rotação, flexão e treinamento de aderência do pulso. Ele tem como alvo os flexores do punho e os músculos do antebraço, ajudando os usuários a desenvolver força, controle e estabilidade com movimentos seguros, ajustáveis ​​e eficientes.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C4063 Wrist Trainer is a uniquely designed machine for wrist rotation, flexion, and grip training. It targets wrist flexors and forearm muscles, helping users build strength, control, and stability with safe, adjustable, and efficient movement."
+          "YR Fitness C4063 Wrist Trainer é uma máquina com design exclusivo para rotação, flexão e treinamento de aderência do pulso. Ele tem como alvo os flexores do punho e os músculos do antebraço, ajudando os usuários a desenvolver força, controle e estabilidade com movimentos seguros, ajustáveis ​​e eficientes."
         ]
       }
     ],
@@ -796,33 +796,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": ": 144.5kgs"
+        "label": "NO",
+        "value": ": 144,5kgs"
       },
       {
         "label": "G.W",
-        "value": ": 220kgs"
+        "value": ": 220kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": ": 1550*850*1722mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": ": 60kg-12pcs"
+        "label": "Pilhas de peso",
+        "value": ": 60kg-12 unidades"
       }
     ]
   },
   {
     "id": "25",
     "modelCode": "C4A10",
-    "name": "Converging Independent Biceps",
-    "description": "YR Fitness C4A10 Converging Independent Biceps delivers smooth, controlled curls with independent arms, dual-grip handles, and adaptive elbow and arm support. Its ergonomic design ensures balanced, comfortable biceps training for users of all fitness levels.",
+    "name": "Bíceps Independentes Convergentes",
+    "description": "YR Fitness C4A10 Converging Independent Biceps oferece cachos suaves e controlados com braços independentes, alças duplas e suporte adaptável para cotovelo e braço. Seu design ergonômico garante treinamento de bíceps equilibrado e confortável para usuários de todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C4A10 Converging Independent Biceps delivers smooth, controlled curls with independent arms, dual-grip handles, and adaptive elbow and arm support. Its ergonomic design ensures balanced, comfortable biceps training for users of all fitness levels."
+          "YR Fitness C4A10 Converging Independent Biceps oferece cachos suaves e controlados com braços independentes, alças duplas e suporte adaptável para cotovelo e braço. Seu design ergonômico garante treinamento de bíceps equilibrado e confortável para usuários de todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -833,33 +833,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": ": 150.5kgs"
+        "label": "NO",
+        "value": ": 150,5kg"
       },
       {
         "label": "G.W",
-        "value": ": 235kgs"
+        "value": ": 235kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": ": 1200*1590*1640mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": ": 70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": ": 70kg-14 unidades"
       }
     ]
   },
   {
     "id": "26",
     "modelCode": "C4A15",
-    "name": "Converging Independent Lat Pull Down",
-    "description": "YR Fitness C4A15 Converging Independent Lat Pull Down features single-arm movement, a natural pull path, and rotating handles for multi-angle training. It enhances muscle balance, lat activation, and joint-friendly motion in a fully adjustable, high-performance design.",
+    "name": "Pull Down Lat Independente Convergente",
+    "description": "YR Fitness C4A15 Converging Independent Lat Pull Down apresenta movimento de braço único, um caminho de tração natural e alças giratórias para treinamento em vários ângulos. Ele melhora o equilíbrio muscular, a ativação dos dorsais e o movimento favorável às articulações em um design totalmente ajustável e de alto desempenho.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C4A15 Converging Independent Lat Pull Down features single-arm movement, a natural pull path, and rotating handles for multi-angle training. It enhances muscle balance, lat activation, and joint-friendly motion in a fully adjustable, high-performance design."
+          "YR Fitness C4A15 Converging Independent Lat Pull Down apresenta movimento de braço único, um caminho de tração natural e alças giratórias para treinamento em vários ângulos. Ele melhora o equilíbrio muscular, a ativação dos dorsais e o movimento favorável às articulações em um design totalmente ajustável e de alto desempenho."
         ]
       }
     ],
@@ -873,13 +873,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "27",
     "modelCode": "C4A01",
-    "name": "Converging Independent Shoulder Press",
-    "description": "YR Fitness C4A01 Converging Independent Shoulder Press features a natural arm path and independent motion for balanced training. With an adjustable seat and backrest, it supports both single-arm and dual-arm workouts in total comfort and control.",
+    "name": "Desenvolvimento Convergente de Ombros Independente",
+    "description": "YR Fitness C4A01 Converging Independent Shoulder Press apresenta um caminho natural do braço e movimento independente para um treinamento equilibrado. Com assento e encosto ajustáveis, suporta exercícios com um ou dois braços com total conforto e controle.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C4A01 Converging Independent Shoulder Press features a natural arm path and independent motion for balanced training. With an adjustable seat and backrest, it supports both single-arm and dual-arm workouts in total comfort and control."
+          "YR Fitness C4A01 Converging Independent Shoulder Press apresenta um caminho natural do braço e movimento independente para um treinamento equilibrado. Com assento e encosto ajustáveis, suporta exercícios com um ou dois braços com total conforto e controle."
         ]
       }
     ],
@@ -892,13 +892,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "28",
     "modelCode": "C4A05",
-    "name": "Converging Independent Chest Press",
-    "description": "YR Fitness C4A05 Converging Independent Chest Press supports balanced chest development with independently moving arms and a converging motion path. Its adjustable backrest ensures proper fit and posture, delivering a safe, joint-friendly workout for all users.",
+    "name": "Pressão torácica independente convergente",
+    "description": "YR Fitness C4A05 Converging Independent Chest Press apoia o desenvolvimento equilibrado do tórax com braços em movimento independente e um caminho de movimento convergente. Seu encosto ajustável garante ajuste e postura adequados, proporcionando um treino seguro e amigável para todas as articulações.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C4A05 Converging Independent Chest Press supports balanced chest development with independently moving arms and a converging motion path. Its adjustable backrest ensures proper fit and posture, delivering a safe, joint-friendly workout for all users."
+          "YR Fitness C4A05 Converging Independent Chest Press apoia o desenvolvimento equilibrado do tórax com braços em movimento independente e um caminho de movimento convergente. Seu encosto ajustável garante ajuste e postura adequados, proporcionando um treino seguro e amigável para todas as articulações."
         ]
       }
     ],
@@ -911,13 +911,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "29",
     "modelCode": "C4A14",
-    "name": "Diverging Mid Row",
-    "description": "YR Fitness C4A14 Diverging Mid Row features dual independent arms for natural movement and balanced back training. It targets the lats, mid-back, and rear shoulders with smooth resistance, offering ergonomic comfort and stability for all fitness levels.",
+    "name": "Linha intermediária divergente",
+    "description": "YR Fitness C4A14 Diverging Mid Row apresenta braços duplos independentes para movimento natural e treinamento de costas equilibrado. Ele atinge os dorsais, o meio das costas e os ombros traseiros com resistência suave, oferecendo conforto ergonômico e estabilidade para todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C4A14 Diverging Mid Row features dual independent arms for natural movement and balanced back training. It targets the lats, mid-back, and rear shoulders with smooth resistance, offering ergonomic comfort and stability for all fitness levels."
+          "YR Fitness C4A14 Diverging Mid Row apresenta braços duplos independentes para movimento natural e treinamento de costas equilibrado. Ele atinge os dorsais, o meio das costas e os ombros traseiros com resistência suave, oferecendo conforto ergonômico e estabilidade para todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -929,33 +929,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": ": 210kgs"
+        "label": "NO",
+        "value": ": 210kg"
       },
       {
         "label": "G.W",
-        "value": ": 221kgs"
+        "value": ": 221kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": ": 720*1900*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": ": 80kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": ": 80kg-14 unidades"
       }
     ]
   },
   {
     "id": "30",
     "modelCode": "C4A11",
-    "name": "Diverging Tricep Extension",
-    "description": "YR Fitness C4A11 Diverging Tricep Extension features independent arms and a rotating elbow pad for smooth, joint-friendly movement. With adjustable support and durable design, it delivers precise and balanced tricep training for users of all levels.",
+    "name": "Extensão divergente de tríceps",
+    "description": "A extensão divergente de tríceps YR Fitness C4A11 apresenta braços independentes e uma almofada de cotovelo giratória para movimentos suaves e amigáveis ​​às articulações. Com suporte ajustável e design durável, oferece treinamento de tríceps preciso e equilibrado para usuários de todos os níveis.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C4A11 Diverging Tricep Extension features independent arms and a rotating elbow pad for smooth, joint-friendly movement. With adjustable support and durable design, it delivers precise and balanced tricep training for users of all levels."
+          "A extensão divergente de tríceps YR Fitness C4A11 apresenta braços independentes e uma almofada de cotovelo giratória para movimentos suaves e amigáveis ​​às articulações. Com suporte ajustável e design durável, oferece treinamento de tríceps preciso e equilibrado para usuários de todos os níveis."
         ]
       }
     ],
@@ -966,33 +966,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": ": 173kgs"
+        "label": "NO",
+        "value": ": 173kg"
       },
       {
         "label": "G.W",
-        "value": ": 253kgs"
+        "value": ": 253kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": ": 1560*1480*1640mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": ": 70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": ": 70kg-14 unidades"
       }
     ]
   },
   {
     "id": "31",
     "modelCode": "C4F32D",
-    "name": "Single Functional Trainer",
-    "description": "YR Fitness C4F32D Single Functional Trainer offers a compact design with extended height for greater movement range. It&#8217;s ideal for small spaces, providing smooth adjustments and versatile workouts for strength, rehab, and total body training.",
+    "name": "Treinador Funcional Único",
+    "description": "O instrutor funcional único YR Fitness C4F32D oferece um design compacto com altura estendida para maior amplitude de movimento. É ideal para espaços pequenos, proporcionando ajustes suaves e treinos versáteis para força, reabilitação e treinamento corporal total.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C4F32D Single Functional Trainer offers a compact design with extended height for greater movement range. It&#8217;s ideal for small spaces, providing smooth adjustments and versatile workouts for strength, rehab, and total body training."
+          "O instrutor funcional único YR Fitness C4F32D oferece um design compacto com altura estendida para maior amplitude de movimento. É ideal para espaços pequenos, proporcionando ajustes suaves e treinos versáteis para força, reabilitação e treinamento corporal total."
         ]
       }
     ],
@@ -1003,33 +1003,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": ": 190kgs"
+        "label": "NO",
+        "value": ": 190kg"
       },
       {
         "label": "G.W",
-        "value": ": 240kgs"
+        "value": ": 240kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": ": 360*729*2415mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "70kgs-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kgs-14 unidades"
       }
     ]
   },
   {
     "id": "32",
     "modelCode": "C432B",
-    "name": "Functional Trainer",
-    "description": "YR Fitness C432B Functional Trainer offers 60+ exercises in one machine with smooth adjustments and a wide range of motion. Its dual pulley design and 2:1 ratio provide versatile, performance-driven training for total body strength and conditioning.",
+    "name": "Treinador Funcional",
+    "description": "O instrutor funcional YR Fitness C432B oferece mais de 60 exercícios em uma máquina com ajustes suaves e uma ampla gama de movimentos. Seu design de polia dupla e proporção de 2:1 proporcionam treinamento versátil e voltado para o desempenho para força e condicionamento total do corpo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C432B Functional Trainer offers 60+ exercises in one machine with smooth adjustments and a wide range of motion. Its dual pulley design and 2:1 ratio provide versatile, performance-driven training for total body strength and conditioning."
+          "O instrutor funcional YR Fitness C432B oferece mais de 60 exercícios em uma máquina com ajustes suaves e uma ampla gama de movimentos. Seu design de polia dupla e proporção de 2:1 proporcionam treinamento versátil e voltado para o desempenho para força e condicionamento total do corpo."
         ]
       }
     ],
@@ -1041,33 +1041,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": ": 333kgs"
+        "label": "NO",
+        "value": ": 333kg"
       },
       {
         "label": "G.W",
-        "value": ": 384kgs"
+        "value": ": 384kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": ": 1680*940*2280mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": ": 70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": ": 70kg-14 unidades"
       }
     ]
   },
   {
     "id": "33",
     "modelCode": "C432",
-    "name": "Adjustable Crossover",
-    "description": "YR Fitness C432 Adjustable Crossover features a smooth aluminum slide bar and elevated frame for greater range and flexibility. Its extended cable length and easy adjustments make it ideal for a wide variety of upper and lower body exercises.",
+    "name": "Crossover Ajustável",
+    "description": "O crossover ajustável YR Fitness C432 apresenta uma barra deslizante de alumínio lisa e estrutura elevada para maior alcance e flexibilidade. O comprimento estendido do cabo e os ajustes fáceis o tornam ideal para uma ampla variedade de exercícios para a parte superior e inferior do corpo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C432 Adjustable Crossover features a smooth aluminum slide bar and elevated frame for greater range and flexibility. Its extended cable length and easy adjustments make it ideal for a wide variety of upper and lower body exercises."
+          "O crossover ajustável YR Fitness C432 apresenta uma barra deslizante de alumínio lisa e estrutura elevada para maior alcance e flexibilidade. O comprimento estendido do cabo e os ajustes fáceis o tornam ideal para uma ampla variedade de exercícios para a parte superior e inferior do corpo."
         ]
       }
     ],
@@ -1078,33 +1078,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": ": 385kgs"
+        "label": "NO",
+        "value": ": 385kg"
       },
       {
         "label": "G.W",
         "value": ": 433kgs"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": ": 3940*720*2415mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": ": 70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": ": 70kg-14 unidades"
       }
     ]
   },
   {
     "id": "34",
     "modelCode": "C425",
-    "name": "Seated Leg Curl",
-    "description": "YR Fitness C425 Seated Leg Curl is designed to strengthen hamstrings with comfort and control. It features adjustable settings, a supportive thigh pad, and smooth movement, making it ideal for users of all levels to train safely and effectively.",
+    "name": "Flexão de perna sentada",
+    "description": "YR Fitness C425 Seated Leg Curl foi projetado para fortalecer os isquiotibiais com conforto e controle. Possui configurações ajustáveis, uma almofada de apoio para as coxas e movimentos suaves, tornando-o ideal para usuários de todos os níveis treinarem com segurança e eficácia.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C425 Seated Leg Curl is designed to strengthen hamstrings with comfort and control. It features adjustable settings, a supportive thigh pad, and smooth movement, making it ideal for users of all levels to train safely and effectively."
+          "YR Fitness C425 Seated Leg Curl foi projetado para fortalecer os isquiotibiais com conforto e controle. Possui configurações ajustáveis, uma almofada de apoio para as coxas e movimentos suaves, tornando-o ideal para usuários de todos os níveis treinarem com segurança e eficácia."
         ]
       }
     ],
@@ -1115,19 +1115,19 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": ": 232kgs"
+        "label": "NO",
+        "value": ": 232kg"
       },
       {
         "label": "G.W",
-        "value": ": 252kgs"
+        "value": ": 252kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": ": 1350*1200*1620mm"
       },
       {
-        "label": "Weight Stacks",
+        "label": "Pilhas de peso",
         "value": ": 80kg-16pcs"
       }
     ]
@@ -1135,13 +1135,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "35",
     "modelCode": "61A53AH",
-    "name": "15 Pairs Dumbbell Rack",
-    "description": "YR Fitness 15 Pairs Dumbbell Rack 61A53AH is a strong three-tier rack designed to hold up to 15 pairs of hex dumbbells. Built with durable steel, it keeps your gym organized and makes it easy to access weights during workouts.",
+    "name": "Suporte para halteres de 15 pares",
+    "description": "YR Fitness 15 pares de halteres 61A53AH é um rack forte de três camadas projetado para acomodar até 15 pares de halteres hexagonais. Construído em aço durável, mantém sua academia organizada e facilita o acesso aos pesos durante os treinos.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 15 Pairs Dumbbell Rack 61A53AH is a strong three-tier rack designed to hold up to 15 pairs of hex dumbbells. Built with durable steel, it keeps your gym organized and makes it easy to access weights during workouts."
+          "YR Fitness 15 pares de halteres 61A53AH é um rack forte de três camadas projetado para acomodar até 15 pares de halteres hexagonais. Construído em aço durável, mantém sua academia organizada e facilita o acesso aos pesos durante os treinos."
         ]
       }
     ],
@@ -1154,13 +1154,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "36",
     "modelCode": "61A53H",
-    "name": "10 Pairs Dumbbell Rack",
-    "description": "YR Fitness 10 Pairs Dumbbell Rack 61A53H is a strong, two-tier rack designed to hold up to 10 pairs of hex dumbbells. Built with durable steel, it keeps your weights organized and accessible—perfect for any gym looking to save space and stay tidy.",
+    "name": "Suporte para halteres de 10 pares",
+    "description": "YR Fitness 10 pares de halteres 61A53H é um rack forte de duas camadas projetado para acomodar até 10 pares de halteres hexagonais. Construído em aço durável, mantém seus pesos organizados e acessíveis – perfeito para qualquer academia que queira economizar espaço e manter-se arrumado.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 10 Pairs Dumbbell Rack 61A53H is a strong, two-tier rack designed to hold up to 10 pairs of hex dumbbells. Built with durable steel, it keeps your weights organized and accessible—perfect for any gym looking to save space and stay tidy."
+          "YR Fitness 10 pares de halteres 61A53H é um rack forte de duas camadas projetado para acomodar até 10 pares de halteres hexagonais. Construído em aço durável, mantém seus pesos organizados e acessíveis – perfeito para qualquer academia que queira economizar espaço e manter-se arrumado."
         ]
       }
     ],
@@ -1173,13 +1173,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "37",
     "modelCode": "61A63",
-    "name": "Wrist Grip Trainer",
-    "description": "YR Fitness 61A63 Wrist Grip Trainer delivers focused wrist and forearm strengthening through wrist rotation, flexion, and grip exercises. Its pin-loaded design and ergonomic structure make it ideal for athletes and users seeking improved wrist stability and control.",
+    "name": "Treinador de punho",
+    "description": "O YR Fitness 61A63 Wrist Grip Trainer oferece fortalecimento focado do pulso e antebraço por meio de exercícios de rotação, flexão e aderência do pulso. Seu design com pinos e estrutura ergonômica o tornam ideal para atletas e usuários que buscam maior estabilidade e controle do pulso.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A63 Wrist Grip Trainer delivers focused wrist and forearm strengthening through wrist rotation, flexion, and grip exercises. Its pin-loaded design and ergonomic structure make it ideal for athletes and users seeking improved wrist stability and control."
+          "O YR Fitness 61A63 Wrist Grip Trainer oferece fortalecimento focado do pulso e antebraço por meio de exercícios de rotação, flexão e aderência do pulso. Seu design com pinos e estrutura ergonômica o tornam ideal para atletas e usuários que buscam maior estabilidade e controle do pulso."
         ]
       }
     ],
@@ -1190,33 +1190,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "162kgs"
+        "label": "NO",
+        "value": "162kg"
       },
       {
         "label": "G.W",
-        "value": "175kgs"
+        "value": "175kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1550*850*1722mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "60kg-20pcs"
+        "label": "Pilhas de peso",
+        "value": "60kg-20 unidades"
       }
     ]
   },
   {
     "id": "38",
     "modelCode": "61A58",
-    "name": "Hip Thruster",
-    "description": "YR Fitness 61A58 Hip Thruster delivers effective glute workouts with a dynamic backrest, adjustable roller, and foot pedals. Its ergonomic design ensures user comfort, stability, and adaptability for all fitness levels.",
+    "name": "Propulsor de quadril",
+    "description": "YR Fitness 61A58 Hip Thruster oferece exercícios eficazes para glúteos com encosto dinâmico, rolo ajustável e pedais. Seu design ergonômico garante conforto, estabilidade e adaptabilidade ao usuário para todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A58 Hip Thruster delivers effective glute workouts with a dynamic backrest, adjustable roller, and foot pedals. Its ergonomic design ensures user comfort, stability, and adaptability for all fitness levels."
+          "YR Fitness 61A58 Hip Thruster oferece exercícios eficazes para glúteos com encosto dinâmico, rolo ajustável e pedais. Seu design ergonômico garante conforto, estabilidade e adaptabilidade ao usuário para todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -1227,33 +1227,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "205kgs"
+        "label": "NO",
+        "value": "205kg"
       },
       {
         "label": "G.W",
-        "value": "215kgs"
+        "value": "215kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1670*1129*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "60kg-12pcs"
+        "label": "Pilhas de peso",
+        "value": "60kg-12 unidades"
       }
     ]
   },
   {
     "id": "39",
     "modelCode": "61A28A",
-    "name": "Seated Leg Press",
-    "description": "YR Fitness 61A28A Seated Leg Press features an inclined adjustable seat, fixed footplate, and sliding motion to promote safe and effective lower-body workouts. Its ergonomic design ensures user comfort and supports all levels of leg training.",
+    "name": "Leg press sentado",
+    "description": "O Leg Press Sentado YR Fitness 61A28A apresenta um assento inclinado ajustável, plataforma fixa e movimento deslizante para promover exercícios seguros e eficazes para a parte inferior do corpo. Seu design ergonômico garante conforto ao usuário e suporta todos os níveis de treinamento de pernas.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A28A Seated Leg Press features an inclined adjustable seat, fixed footplate, and sliding motion to promote safe and effective lower-body workouts. Its ergonomic design ensures user comfort and supports all levels of leg training."
+          "O Leg Press Sentado YR Fitness 61A28A apresenta um assento inclinado ajustável, plataforma fixa e movimento deslizante para promover exercícios seguros e eficazes para a parte inferior do corpo. Seu design ergonômico garante conforto ao usuário e suporta todos os níveis de treinamento de pernas."
         ]
       }
     ],
@@ -1264,33 +1264,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "278kgs"
+        "label": "NO",
+        "value": "278kg"
       },
       {
         "label": "G.W",
-        "value": "290kgs"
+        "value": "290kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1625*1040*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "100kg-20pcs"
+        "label": "Pilhas de peso",
+        "value": "100kg-20 unidades"
       }
     ]
   },
   {
     "id": "40",
     "modelCode": "82047",
-    "name": "Pro Biceps Curl",
-    "description": "YR Fitness 82047 delivers customizable biceps training with a dual-pad, adjustable design—perfect for isolating the arms through multiple movement variations.",
+    "name": "Rosca de bíceps profissional",
+    "description": "YR Fitness 82047 oferece treinamento de bíceps personalizável com um design ajustável de almofada dupla - perfeito para isolar os braços por meio de múltiplas variações de movimento.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82047 delivers customizable biceps training with a dual-pad, adjustable design—perfect for isolating the arms through multiple movement variations."
+          "YR Fitness 82047 oferece treinamento de bíceps personalizável com um design ajustável de almofada dupla - perfeito para isolar os braços por meio de múltiplas variações de movimento."
         ]
       }
     ],
@@ -1301,11 +1301,11 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "Net Weight",
+        "label": "Peso líquido",
         "value": ": 60kg"
       },
       {
-        "label": "Gross Weight",
+        "label": "Peso Bruto",
         "value": ": 90kg"
       }
     ]
@@ -1313,13 +1313,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "41",
     "modelCode": "82043",
-    "name": "Pendulum Squat",
-    "description": "YR Fitness 82043 provides a smooth and effective squat alternative with enhanced safety and ergonomic control—ideal for building lower-body strength with reduced joint impact.",
+    "name": "Agachamento Pêndulo",
+    "description": "YR Fitness 82043 oferece uma alternativa de agachamento suave e eficaz com maior segurança e controle ergonômico - ideal para desenvolver força na parte inferior do corpo com impacto reduzido nas articulações.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82043 provides a smooth and effective squat alternative with enhanced safety and ergonomic control—ideal for building lower-body strength with reduced joint impact."
+          "YR Fitness 82043 oferece uma alternativa de agachamento suave e eficaz com maior segurança e controle ergonômico - ideal para desenvolver força na parte inferior do corpo com impacto reduzido nas articulações."
         ]
       }
     ],
@@ -1331,7 +1331,7 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
+        "label": "NO",
         "value": "239kg"
       },
       {
@@ -1339,7 +1339,7 @@ const rawProducts: RawProduct[] = [
         "value": "301kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "2760*1400*1620mm"
       }
     ]
@@ -1347,13 +1347,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "42",
     "modelCode": "82042",
-    "name": "90 Degree Leg Press",
-    "description": "YR Fitness 82042 provides safe, high-impact leg training with vertical mechanics that promote lower-body growth while reducing back stress—perfect for both beginners and advanced athletes.",
+    "name": "Leg press de 90 graus",
+    "description": "YR Fitness 82042 oferece treinamento de pernas seguro e de alto impacto com mecânica vertical que promove o crescimento da parte inferior do corpo enquanto reduz o estresse nas costas - perfeito para atletas iniciantes e avançados.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82042 provides safe, high-impact leg training with vertical mechanics that promote lower-body growth while reducing back stress—perfect for both beginners and advanced athletes."
+          "YR Fitness 82042 oferece treinamento de pernas seguro e de alto impacto com mecânica vertical que promove o crescimento da parte inferior do corpo enquanto reduz o estresse nas costas - perfeito para atletas iniciantes e avançados."
         ]
       }
     ],
@@ -1364,7 +1364,7 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
+        "label": "NO",
         "value": "238kg"
       },
       {
@@ -1372,7 +1372,7 @@ const rawProducts: RawProduct[] = [
         "value": "295kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1817*1838*1910mm"
       }
     ]
@@ -1380,13 +1380,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "43",
     "modelCode": "82041",
-    "name": "Pull Back Machine",
-    "description": "YR Fitness 82041 offers multi-angle back training in a stable, plate-loaded format—perfect for users aiming to build upper body strength and enhance postural control.",
+    "name": "Máquina de puxar para trás",
+    "description": "YR Fitness 82041 oferece treinamento de costas em vários ângulos em um formato estável e carregado com placa - perfeito para usuários que desejam aumentar a força da parte superior do corpo e melhorar o controle postural.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82041 offers multi-angle back training in a stable, plate-loaded format—perfect for users aiming to build upper body strength and enhance postural control."
+          "YR Fitness 82041 oferece treinamento de costas em vários ângulos em um formato estável e carregado com placa - perfeito para usuários que desejam aumentar a força da parte superior do corpo e melhorar o controle postural."
         ]
       }
     ],
@@ -1397,7 +1397,7 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
+        "label": "NO",
         "value": "116kg"
       },
       {
@@ -1405,7 +1405,7 @@ const rawProducts: RawProduct[] = [
         "value": "164kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1823*1394*1330mm"
       }
     ]
@@ -1413,13 +1413,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "44",
     "modelCode": "82039",
-    "name": "Triceps Machine",
-    "description": "YR Fitness 82039 delivers focused triceps training with ergonomic support and adjustable resistance—perfect for building arm strength with safe, effective form.",
+    "name": "Máquina de tríceps",
+    "description": "YR Fitness 82039 oferece treinamento focado de tríceps com suporte ergonômico e resistência ajustável - perfeito para aumentar a força do braço com uma forma segura e eficaz.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82039 delivers focused triceps training with ergonomic support and adjustable resistance—perfect for building arm strength with safe, effective form."
+          "YR Fitness 82039 oferece treinamento focado de tríceps com suporte ergonômico e resistência ajustável - perfeito para aumentar a força do braço com uma forma segura e eficaz."
         ]
       }
     ],
@@ -1430,7 +1430,7 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
+        "label": "NO",
         "value": "113kg"
       },
       {
@@ -1438,7 +1438,7 @@ const rawProducts: RawProduct[] = [
         "value": "153kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1750*1165*1122mm"
       }
     ]
@@ -1446,13 +1446,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "45",
     "modelCode": "82038",
-    "name": "Middle Chest Flight Machine",
-    "description": "YR Fitness 82038 provides effective mid-chest isolation with smooth flye mechanics and adjustable resistance—ideal for sculpting a balanced and defined upper body.",
+    "name": "Máquina de voo de peito médio",
+    "description": "YR Fitness 82038 fornece isolamento eficaz no meio do peito com mecânica suave e resistência ajustável - ideal para esculpir uma parte superior do corpo equilibrada e definida.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82038 provides effective mid-chest isolation with smooth flye mechanics and adjustable resistance—ideal for sculpting a balanced and defined upper body."
+          "YR Fitness 82038 fornece isolamento eficaz no meio do peito com mecânica suave e resistência ajustável - ideal para esculpir uma parte superior do corpo equilibrada e definida."
         ]
       }
     ],
@@ -1463,7 +1463,7 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
+        "label": "NO",
         "value": "75kg"
       },
       {
@@ -1471,7 +1471,7 @@ const rawProducts: RawProduct[] = [
         "value": "119kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1350*1617*1086mm"
       }
     ]
@@ -1479,13 +1479,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "46",
     "modelCode": "82037",
-    "name": "Lat Pull-Down Circular",
-    "description": "YR Fitness 82037 offers a joint-friendly, circular lat pull-down movement with customizable resistance—ideal for building a strong, well-defined back with reduced strain.",
+    "name": "Circular Pull-Down Lat",
+    "description": "YR Fitness 82037 oferece um movimento circular de pull-down favorável às articulações com resistência personalizável - ideal para construir costas fortes e bem definidas com tensão reduzida.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82037 offers a joint-friendly, circular lat pull-down movement with customizable resistance—ideal for building a strong, well-defined back with reduced strain."
+          "YR Fitness 82037 oferece um movimento circular de pull-down favorável às articulações com resistência personalizável - ideal para construir costas fortes e bem definidas com tensão reduzida."
         ]
       }
     ],
@@ -1496,7 +1496,7 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
+        "label": "NO",
         "value": "123kg"
       },
       {
@@ -1504,7 +1504,7 @@ const rawProducts: RawProduct[] = [
         "value": "174kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1234*1608*1960mm"
       }
     ]
@@ -1512,13 +1512,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "47",
     "modelCode": "82036",
-    "name": "Ab Trainer",
-    "description": "YR Fitness 82036 delivers safe, efficient, and effective core training with adjustable resistance and ergonomic support—ideal for users focused on strengthening and sculpting their abs.",
+    "name": "Treinador de Abdominais",
+    "description": "YR Fitness 82036 oferece treinamento central seguro, eficiente e eficaz com resistência ajustável e suporte ergonômico - ideal para usuários focados em fortalecer e esculpir seus abdominais.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82036 delivers safe, efficient, and effective core training with adjustable resistance and ergonomic support—ideal for users focused on strengthening and sculpting their abs."
+          "YR Fitness 82036 oferece treinamento central seguro, eficiente e eficaz com resistência ajustável e suporte ergonômico - ideal para usuários focados em fortalecer e esculpir seus abdominais."
         ]
       }
     ],
@@ -1529,7 +1529,7 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
+        "label": "NO",
         "value": "108kg"
       },
       {
@@ -1537,7 +1537,7 @@ const rawProducts: RawProduct[] = [
         "value": "158kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1650*1410*900mm"
       }
     ]
@@ -1545,13 +1545,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "48",
     "modelCode": "82035A",
-    "name": "35 Degree Hack Squat",
-    "description": "YR Fitness 82035A offers a refined angle and added resistance options for advanced leg development—ideal for strength athletes and functional fitness routines alike.",
+    "name": "Agachamento hackeado de 35 graus",
+    "description": "YR Fitness 82035A oferece um ângulo refinado e opções adicionais de resistência para desenvolvimento avançado das pernas - ideal para atletas de força e rotinas de condicionamento físico funcional.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82035A offers a refined angle and added resistance options for advanced leg development—ideal for strength athletes and functional fitness routines alike."
+          "YR Fitness 82035A oferece um ângulo refinado e opções adicionais de resistência para desenvolvimento avançado das pernas - ideal para atletas de força e rotinas de condicionamento físico funcional."
         ]
       }
     ],
@@ -1563,7 +1563,7 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
+        "label": "NO",
         "value": "220kg"
       },
       {
@@ -1571,7 +1571,7 @@ const rawProducts: RawProduct[] = [
         "value": "282kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "2580*1705*1346mm"
       }
     ]
@@ -1579,13 +1579,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "49",
     "modelCode": "82035",
-    "name": "45 Degree Hack Squat",
-    "description": "YR Fitness 82035 combines a traditional 45-degree squat path with modern resistance options to deliver advanced lower-body training with customizable challenge and ergonomic control.",
+    "name": "Agachamento hackeado de 45 graus",
+    "description": "YR Fitness 82035 combina um caminho tradicional de agachamento de 45 graus com opções modernas de resistência para oferecer treinamento avançado da parte inferior do corpo com desafio personalizável e controle ergonômico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82035 combines a traditional 45-degree squat path with modern resistance options to deliver advanced lower-body training with customizable challenge and ergonomic control."
+          "YR Fitness 82035 combina um caminho tradicional de agachamento de 45 graus com opções modernas de resistência para oferecer treinamento avançado da parte inferior do corpo com desafio personalizável e controle ergonômico."
         ]
       }
     ],
@@ -1597,7 +1597,7 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
+        "label": "NO",
         "value": "228kg"
       },
       {
@@ -1605,7 +1605,7 @@ const rawProducts: RawProduct[] = [
         "value": "276kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "2450*1200*1450mm"
       }
     ]
@@ -1613,13 +1613,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "50",
     "modelCode": "82034",
-    "name": "Hack Squat & Leg Press",
-    "description": "YR Fitness 82034 offers versatility, space efficiency, and total lower-body training with its combined hack squat and leg press functionality—making it a must-have for strength-focused leg workouts.",
+    "name": "Hackear agachamento e leg press",
+    "description": "YR Fitness 82034 oferece versatilidade, eficiência de espaço e treinamento total da parte inferior do corpo com sua funcionalidade combinada de agachamento e leg press - tornando-o um item obrigatório para exercícios de pernas com foco na força.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82034 offers versatility, space efficiency, and total lower-body training with its combined hack squat and leg press functionality—making it a must-have for strength-focused leg workouts."
+          "YR Fitness 82034 oferece versatilidade, eficiência de espaço e treinamento total da parte inferior do corpo com sua funcionalidade combinada de agachamento e leg press - tornando-o um item obrigatório para exercícios de pernas com foco na força."
         ]
       }
     ],
@@ -1630,7 +1630,7 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
+        "label": "NO",
         "value": "85kg"
       },
       {
@@ -1638,7 +1638,7 @@ const rawProducts: RawProduct[] = [
         "value": "122kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "2450*1700*1450mm"
       }
     ]
@@ -1646,13 +1646,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "51",
     "modelCode": "C4D06",
-    "name": "Lat pull down/Low row",
-    "description": "YR Fitness Lat Pull Down/Low Row C4D06 is a two-in-one machine that targets upper back and arm muscles through lat pull down and low row exercises. Built with strong materials and smooth motion, it offers comfort, safety, and versatility for effective strength training.",
+    "name": "Lat pull down/Lada inferior",
+    "description": "YR Fitness Lat Pull Down/Low Row C4D06 é uma máquina dois em um que visa os músculos da parte superior das costas e dos braços por meio de exercícios de puxada lateral e remada baixa. Construído com materiais resistentes e movimentos suaves, oferece conforto, segurança e versatilidade para um treinamento de força eficaz.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Lat Pull Down/Low Row C4D06 is a two-in-one machine that targets upper back and arm muscles through lat pull down and low row exercises. Built with strong materials and smooth motion, it offers comfort, safety, and versatility for effective strength training."
+          "YR Fitness Lat Pull Down/Low Row C4D06 é uma máquina dois em um que visa os músculos da parte superior das costas e dos braços por meio de exercícios de puxada lateral e remada baixa. Construído com materiais resistentes e movimentos suaves, oferece conforto, segurança e versatilidade para um treinamento de força eficaz."
         ]
       }
     ],
@@ -1666,13 +1666,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "52",
     "modelCode": "C4D05",
-    "name": "Biceps/Triceps",
-    "description": "YR Fitness Standing Biceps and Triceps Trainer C4D05 is built to strengthen and shape your arms through smooth, standing cable exercises. With adjustable pulleys and a strong frame, it offers safe, comfortable workouts for users of all fitness levels.",
+    "name": "Bíceps/Tríceps",
+    "description": "O YR Fitness Standing Biceps and Triceps Trainer C4D05 foi desenvolvido para fortalecer e moldar seus braços por meio de exercícios suaves com cabos em pé. Com polias ajustáveis ​​e uma estrutura forte, oferece treinos seguros e confortáveis ​​para usuários de todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Standing Biceps and Triceps Trainer C4D05 is built to strengthen and shape your arms through smooth, standing cable exercises. With adjustable pulleys and a strong frame, it offers safe, comfortable workouts for users of all fitness levels."
+          "O YR Fitness Standing Biceps and Triceps Trainer C4D05 foi desenvolvido para fortalecer e moldar seus braços por meio de exercícios suaves com cabos em pé. Com polias ajustáveis ​​e uma estrutura forte, oferece treinos seguros e confortáveis ​​para usuários de todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -1685,13 +1685,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "53",
     "modelCode": "C4D04",
-    "name": "Biceps/Triceps",
-    "description": "YR Fitness Biceps/Triceps Machine C4D04 is a dual-function trainer designed to build upper arm strength by targeting both biceps and triceps. With durable steel construction, smooth motion, and comfortable padding, it’s perfect for safe and effective arm workouts in any professional gym.",
+    "name": "Bíceps/Tríceps",
+    "description": "A máquina de bíceps/tríceps YR Fitness C4D04 é um treinador de função dupla projetado para aumentar a força do braço, visando tanto o bíceps quanto o tríceps. Com construção em aço durável, movimento suave e acolchoamento confortável, é perfeito para exercícios de braço seguros e eficazes em qualquer academia profissional.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Biceps/Triceps Machine C4D04 is a dual-function trainer designed to build upper arm strength by targeting both biceps and triceps. With durable steel construction, smooth motion, and comfortable padding, it’s perfect for safe and effective arm workouts in any professional gym."
+          "A máquina de bíceps/tríceps YR Fitness C4D04 é um treinador de função dupla projetado para aumentar a força do braço, visando tanto o bíceps quanto o tríceps. Com construção em aço durável, movimento suave e acolchoamento confortável, é perfeito para exercícios de braço seguros e eficazes em qualquer academia profissional."
         ]
       }
     ],
@@ -1704,13 +1704,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "54",
     "modelCode": "C4D03",
-    "name": "Pectoral Fly / Rear Delt",
-    "description": "YR Fitness Pectoral Fly/Rear Deltoid C4D03 is a dual-function machine that strengthens the chest and rear shoulder muscles. With rotating grips, smooth motion, and durable design, it offers a safe and comfortable workout for users of all fitness levels.",
+    "name": "Mosca Peitoral/Deltóide Posterior",
+    "description": "YR Fitness Pectoral Fly/Rear Deltoid C4D03 é uma máquina de dupla função que fortalece os músculos do peito e dos ombros traseiros. Com alças giratórias, movimento suave e design durável, oferece um treino seguro e confortável para usuários de todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Pectoral Fly/Rear Deltoid C4D03 is a dual-function machine that strengthens the chest and rear shoulder muscles. With rotating grips, smooth motion, and durable design, it offers a safe and comfortable workout for users of all fitness levels."
+          "YR Fitness Pectoral Fly/Rear Deltoid C4D03 é uma máquina de dupla função que fortalece os músculos do peito e dos ombros traseiros. Com alças giratórias, movimento suave e design durável, oferece um treino seguro e confortável para usuários de todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -1725,13 +1725,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "55",
     "modelCode": "C4D12",
-    "name": "Leg Extension/Leg Curl",
-    "description": "YR Fitness Leg Extension/Leg Curl C4D12 is a two-in-one machine that targets the front and back of the thighs. Built for comfort and strength, it offers smooth, safe movement for effective lower body workouts, ideal for professional gyms focused on complete leg training.",
+    "name": "Extensão de pernas/curvatura de pernas",
+    "description": "YR Fitness Leg Extension/Leg Curl C4D12 é uma máquina dois em um que visa a frente e a parte de trás das coxas. Construído para oferecer conforto e força, oferece movimentos suaves e seguros para exercícios eficazes da parte inferior do corpo, ideal para academias profissionais focadas no treinamento completo das pernas.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Leg Extension/Leg Curl C4D12 is a two-in-one machine that targets the front and back of the thighs. Built for comfort and strength, it offers smooth, safe movement for effective lower body workouts, ideal for professional gyms focused on complete leg training."
+          "YR Fitness Leg Extension/Leg Curl C4D12 é uma máquina dois em um que visa a frente e a parte de trás das coxas. Construído para oferecer conforto e força, oferece movimentos suaves e seguros para exercícios eficazes da parte inferior do corpo, ideal para academias profissionais focadas no treinamento completo das pernas."
         ]
       }
     ],
@@ -1744,13 +1744,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "56",
     "modelCode": "C4D11",
-    "name": "Leg Press/Seated Calf",
-    "description": "YR Fitness Leg Press/Seated Calf Machine C4D11 combines two key lower body exercises in one compact design. It targets your legs and calves to build strength and definition, using smooth motion and durable materials for a safe, effective workout experience.",
+    "name": "Leg press/panturrilha sentada",
+    "description": "YR Fitness Leg Press/Seated Calf Machine C4D11 combina dois exercícios principais para a parte inferior do corpo em um design compacto. Ele tem como alvo as pernas e panturrilhas para aumentar a força e a definição, usando movimentos suaves e materiais duráveis ​​para uma experiência de treino segura e eficaz.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Leg Press/Seated Calf Machine C4D11 combines two key lower body exercises in one compact design. It targets your legs and calves to build strength and definition, using smooth motion and durable materials for a safe, effective workout experience."
+          "YR Fitness Leg Press/Seated Calf Machine C4D11 combina dois exercícios principais para a parte inferior do corpo em um design compacto. Ele tem como alvo as pernas e panturrilhas para aumentar a força e a definição, usando movimentos suaves e materiais duráveis ​​para uma experiência de treino segura e eficaz."
         ]
       }
     ],
@@ -1763,13 +1763,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "57",
     "modelCode": "C4D01",
-    "name": "Shoulder / Chest Press",
-    "description": "YR Fitness Shoulder/Chest Press Combo is a two-in-one machine designed to build upper body strength safely and effectively. With its user-friendly design and durable construction, it&#8217;s perfect for beginners and pros looking to train chest and shoulders in one smooth workout.",
+    "name": "Pressão de Ombro/Peito",
+    "description": "YR Fitness Shoulder/Chest Press Combo é uma máquina dois em um projetada para aumentar a força da parte superior do corpo com segurança e eficácia. Com seu design fácil de usar e construção durável, é perfeito para iniciantes e profissionais que desejam treinar peito e ombros em um treino suave.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Shoulder/Chest Press Combo is a two-in-one machine designed to build upper body strength safely and effectively. With its user-friendly design and durable construction, it&#8217;s perfect for beginners and pros looking to train chest and shoulders in one smooth workout."
+          "YR Fitness Shoulder/Chest Press Combo é uma máquina dois em um projetada para aumentar a força da parte superior do corpo com segurança e eficácia. Com seu design fácil de usar e construção durável, é perfeito para iniciantes e profissionais que desejam treinar peito e ombros em um treino suave."
         ]
       }
     ],
@@ -1783,13 +1783,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "58",
     "modelCode": "C4D10",
-    "name": "Adductor/Abductor",
-    "description": "YR Fitness Adductor/Abductor C4D10 is a two-in-one machine that targets inner and outer thigh muscles. With smooth motion, easy adjustments, and durable construction, it offers a comfortable and efficient way to strengthen the lower body in any professional fitness setting.",
+    "name": "Adutor/Abdutor",
+    "description": "YR Fitness Adductor/Abductor C4D10 é uma máquina dois em um que visa os músculos internos e externos da coxa. Com movimento suave, ajustes fáceis e construção durável, oferece uma maneira confortável e eficiente de fortalecer a parte inferior do corpo em qualquer ambiente de condicionamento físico profissional.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Adductor/Abductor C4D10 is a two-in-one machine that targets inner and outer thigh muscles. With smooth motion, easy adjustments, and durable construction, it offers a comfortable and efficient way to strengthen the lower body in any professional fitness setting."
+          "YR Fitness Adductor/Abductor C4D10 é uma máquina dois em um que visa os músculos internos e externos da coxa. Com movimento suave, ajustes fáceis e construção durável, oferece uma maneira confortável e eficiente de fortalecer a parte inferior do corpo em qualquer ambiente de condicionamento físico profissional."
         ]
       }
     ],
@@ -1803,13 +1803,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "59",
     "modelCode": "C4D09",
-    "name": "Leg Extension/Lying Leg Curl",
-    "description": "YR Fitness Leg Extension and Lying Leg Curl Machine C4D09 helps strengthen and shape your lower body with two key exercises in one machine. It isolates muscles for better results, supports recovery, and offers smooth, comfortable movement for users of all fitness levels.",
+    "name": "Extensão de perna/flexão de perna deitada",
+    "description": "Máquina de extensão de pernas e flexão de pernas deitada YR Fitness C4D09 ajuda a fortalecer e moldar a parte inferior do corpo com dois exercícios principais em uma máquina. Ele isola os músculos para melhores resultados, apoia a recuperação e oferece movimentos suaves e confortáveis ​​para usuários de todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Leg Extension and Lying Leg Curl Machine C4D09 helps strengthen and shape your lower body with two key exercises in one machine. It isolates muscles for better results, supports recovery, and offers smooth, comfortable movement for users of all fitness levels."
+          "Máquina de extensão de pernas e flexão de pernas deitada YR Fitness C4D09 ajuda a fortalecer e moldar a parte inferior do corpo com dois exercícios principais em uma máquina. Ele isola os músculos para melhores resultados, apoia a recuperação e oferece movimentos suaves e confortáveis ​​para usuários de todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -1822,13 +1822,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "60",
     "modelCode": "C4D08",
-    "name": "Ab Crunch/Back Extension",
-    "description": "YR Fitness Ab Crunch/Back Extension C4D08 is a compact two-in-one machine that targets both abdominal and lower back muscles. Built with strong materials and smooth movement, it’s ideal for effective core training and balanced strength development in any gym or fitness space.",
+    "name": "Extensão abdominal/traseira",
+    "description": "YR Fitness Ab Crunch/Back Extension C4D08 é uma máquina compacta dois em um que visa os músculos abdominais e lombares. Construído com materiais fortes e movimentos suaves, é ideal para um treinamento central eficaz e desenvolvimento de força equilibrado em qualquer academia ou espaço de fitness.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Ab Crunch/Back Extension C4D08 is a compact two-in-one machine that targets both abdominal and lower back muscles. Built with strong materials and smooth movement, it’s ideal for effective core training and balanced strength development in any gym or fitness space."
+          "YR Fitness Ab Crunch/Back Extension C4D08 é uma máquina compacta dois em um que visa os músculos abdominais e lombares. Construído com materiais fortes e movimentos suaves, é ideal para um treinamento central eficaz e desenvolvimento de força equilibrado em qualquer academia ou espaço de fitness."
         ]
       }
     ],
@@ -1842,13 +1842,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "61",
     "modelCode": "C4D02",
-    "name": "Shoulder / Chest Press",
-    "description": "YR Fitness Shoulder/Chest Press C4D02 is a dual-function strength machine designed to build chest, shoulder, and triceps muscles. It features adjustable settings, durable steel construction, and smooth motion ideal for safe, comfortable workouts in any professional gym.",
+    "name": "Pressão de Ombro/Peito",
+    "description": "YR Fitness Shoulder/Chest Press C4D02 é uma máquina de força de dupla função projetada para construir músculos de peito, ombro e tríceps. Possui configurações ajustáveis, construção em aço durável e movimento suave, ideal para treinos seguros e confortáveis ​​em qualquer academia profissional.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Shoulder/Chest Press C4D02 is a dual-function strength machine designed to build chest, shoulder, and triceps muscles. It features adjustable settings, durable steel construction, and smooth motion ideal for safe, comfortable workouts in any professional gym."
+          "YR Fitness Shoulder/Chest Press C4D02 é uma máquina de força de dupla função projetada para construir músculos de peito, ombro e tríceps. Possui configurações ajustáveis, construção em aço durável e movimento suave, ideal para treinos seguros e confortáveis ​​em qualquer academia profissional."
         ]
       }
     ],
@@ -1862,13 +1862,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "62",
     "modelCode": "C4D07",
-    "name": "Standing Assisted Chin/Dip",
-    "description": "YR Fitness Standing Assisted Dip/Chin-Up Machine C4D07 helps you build upper body strength by supporting your weight during dips and chin-ups. Ideal for beginners, it offers smooth movement, strong construction, and comfortable design to make training safer and easier as you build confidence and strength.",
+    "name": "Queixo / mergulho assistido em pé",
+    "description": "A máquina de imersão / barra fixa assistida YR Fitness C4D07 ajuda a aumentar a força da parte superior do corpo, apoiando seu peso durante quedas e flexões. Ideal para iniciantes, oferece movimentos suaves, construção forte e design confortável para tornar o treinamento mais seguro e fácil à medida que você ganha confiança e força.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Standing Assisted Dip/Chin-Up Machine C4D07 helps you build upper body strength by supporting your weight during dips and chin-ups. Ideal for beginners, it offers smooth movement, strong construction, and comfortable design to make training safer and easier as you build confidence and strength."
+          "A máquina de imersão / barra fixa assistida YR Fitness C4D07 ajuda a aumentar a força da parte superior do corpo, apoiando seu peso durante quedas e flexões. Ideal para iniciantes, oferece movimentos suaves, construção forte e design confortável para tornar o treinamento mais seguro e fácil à medida que você ganha confiança e força."
         ]
       }
     ],
@@ -1883,13 +1883,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "63",
     "modelCode": "61A11",
-    "name": "Triceps Dip",
-    "description": "YR Fitness 61A11 Triceps Dip features rotating EZ handles for versatile triceps training. Built for comfort, durability, and performance, it allows multiple grip options and smooth pressing motion for users of all fitness levels.",
+    "name": "Mergulho de tríceps",
+    "description": "YR Fitness 61A11 Triceps Dip possui alças EZ rotativas para treinamento versátil de tríceps. Construído para oferecer conforto, durabilidade e desempenho, permite múltiplas opções de aderência e movimentos de pressão suaves para usuários de todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A11 Triceps Dip features rotating EZ handles for versatile triceps training. Built for comfort, durability, and performance, it allows multiple grip options and smooth pressing motion for users of all fitness levels."
+          "YR Fitness 61A11 Triceps Dip possui alças EZ rotativas para treinamento versátil de tríceps. Construído para oferecer conforto, durabilidade e desempenho, permite múltiplas opções de aderência e movimentos de pressão suaves para usuários de todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -1900,33 +1900,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "211kgs"
+        "label": "NO",
+        "value": "211kg"
       },
       {
         "label": "G.W",
-        "value": "222kgs"
+        "value": "222kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1020*1260*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "64",
     "modelCode": "61A14",
-    "name": "Mid Row",
-    "description": "YR Fitness 61A14 Mid Row provides smooth, ergonomic back training with rotating handles for natural movement. Ideal for all fitness levels, it supports varied pulling exercises while enhancing muscle engagement and maintaining joint-friendly motion.",
+    "name": "Linha intermediária",
+    "description": "YR Fitness 61A14 Mid Row oferece treinamento suave e ergonômico para as costas com alças giratórias para movimentos naturais. Ideal para todos os níveis de condicionamento físico, ele suporta exercícios variados de tração, ao mesmo tempo que melhora o envolvimento muscular e mantém movimentos amigáveis ​​às articulações.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A14 Mid Row provides smooth, ergonomic back training with rotating handles for natural movement. Ideal for all fitness levels, it supports varied pulling exercises while enhancing muscle engagement and maintaining joint-friendly motion."
+          "YR Fitness 61A14 Mid Row oferece treinamento suave e ergonômico para as costas com alças giratórias para movimentos naturais. Ideal para todos os níveis de condicionamento físico, ele suporta exercícios variados de tração, ao mesmo tempo que melhora o envolvimento muscular e mantém movimentos amigáveis ​​às articulações."
         ]
       }
     ],
@@ -1937,20 +1937,20 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "191kgs"
+        "label": "NO",
+        "value": "191kg"
       },
       {
         "label": "G.W",
-        "value": "202kgs"
+        "value": "202kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "720*1900*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "80kg-16pc"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
@@ -1958,12 +1958,12 @@ const rawProducts: RawProduct[] = [
     "id": "65",
     "modelCode": "61A15",
     "name": "Lat Pull Down",
-    "description": "YR Fitness 61A15 Lat Pull Down is essential for building upper back strength. With adjustable thigh pads and an angled straight bar, it offers a stable and ergonomic pulling experience for safe and effective lat development.",
+    "description": "YR Fitness 61A15 Lat Pull Down é essencial para aumentar a força da parte superior das costas. Com almofadas ajustáveis ​​para as coxas e uma barra reta em ângulo, oferece uma experiência de tração estável e ergonômica para um desenvolvimento seguro e eficaz do dorso.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A15 Lat Pull Down is essential for building upper back strength. With adjustable thigh pads and an angled straight bar, it offers a stable and ergonomic pulling experience for safe and effective lat development."
+          "YR Fitness 61A15 Lat Pull Down é essencial para aumentar a força da parte superior das costas. Com almofadas ajustáveis ​​para as coxas e uma barra reta em ângulo, oferece uma experiência de tração estável e ergonômica para um desenvolvimento seguro e eficaz do dorso."
         ]
       }
     ],
@@ -1974,33 +1974,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "183kgs"
+        "label": "NO",
+        "value": "183kg"
       },
       {
         "label": "G.W",
-        "value": "192kgs"
+        "value": "192kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1220*1100*2180mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "90kg-18pcs"
+        "label": "Pilhas de peso",
+        "value": "90kg-18 unidades"
       }
     ]
   },
   {
     "id": "66",
     "modelCode": "61A24",
-    "name": "Leg Extension",
-    "description": "YR Fitness 61A24 Leg Extension strengthens the quadriceps with adjustable start points, a customizable foam roller, and a dual-axis backrest. Its ergonomic, space-optimized design ensures smooth, effective, and user-friendly leg training.",
+    "name": "Extensão de perna",
+    "description": "A extensão de perna YR Fitness 61A24 fortalece o quadríceps com pontos iniciais ajustáveis, um rolo de espuma personalizável e um encosto de eixo duplo. Seu design ergonômico e com otimização de espaço garante um treinamento de pernas suave, eficaz e fácil de usar.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A24 Leg Extension strengthens the quadriceps with adjustable start points, a customizable foam roller, and a dual-axis backrest. Its ergonomic, space-optimized design ensures smooth, effective, and user-friendly leg training."
+          "A extensão de perna YR Fitness 61A24 fortalece o quadríceps com pontos iniciais ajustáveis, um rolo de espuma personalizável e um encosto de eixo duplo. Seu design ergonômico e com otimização de espaço garante um treinamento de pernas suave, eficaz e fácil de usar."
         ]
       }
     ],
@@ -2011,33 +2011,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "216kgs"
+        "label": "NO",
+        "value": "216kg"
       },
       {
         "label": "G.W",
-        "value": "226kgs"
+        "value": "226kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1350*1200*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "67",
     "modelCode": "82017",
-    "name": "ISO Lateral Leg Press",
-    "description": "YR Fitness 82017 provides independent leg pressing motion for balanced muscle activation, comfort, and joint safety—ideal for improving lower-body performance and correcting asymmetries.",
+    "name": "Leg press lateral ISO",
+    "description": "YR Fitness 82017 fornece movimento independente de pressão das pernas para ativação muscular equilibrada, conforto e segurança articular - ideal para melhorar o desempenho da parte inferior do corpo e corrigir assimetrias.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82017 provides independent leg pressing motion for balanced muscle activation, comfort, and joint safety—ideal for improving lower-body performance and correcting asymmetries."
+          "YR Fitness 82017 fornece movimento independente de pressão das pernas para ativação muscular equilibrada, conforto e segurança articular - ideal para melhorar o desempenho da parte inferior do corpo e corrigir assimetrias."
         ]
       }
     ],
@@ -2048,15 +2048,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "215kgs"
+        "label": "NO",
+        "value": "215kg"
       },
       {
         "label": "G.W",
-        "value": "264kgs"
+        "value": "264kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1835*1660*1530mm"
       }
     ]
@@ -2064,13 +2064,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "68",
     "modelCode": "82020",
-    "name": "Plate Loaded V Squat",
-    "description": "YR Fitness 82020 offers a safer and more ergonomic approach to heavy squats with plate-loaded flexibility and lower-body focus, making it a staple for effective leg training.",
+    "name": "Agachamento V carregado com placa",
+    "description": "YR Fitness 82020 oferece uma abordagem mais segura e ergonômica para agachamentos pesados ​​com flexibilidade carregada de placa e foco na parte inferior do corpo, tornando-o um produto básico para um treinamento eficaz de pernas.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82020 offers a safer and more ergonomic approach to heavy squats with plate-loaded flexibility and lower-body focus, making it a staple for effective leg training."
+          "YR Fitness 82020 oferece uma abordagem mais segura e ergonômica para agachamentos pesados ​​com flexibilidade carregada de placa e foco na parte inferior do corpo, tornando-o um produto básico para um treinamento eficaz de pernas."
         ]
       }
     ],
@@ -2082,15 +2082,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "193kgs"
+        "label": "NO",
+        "value": "193kg"
       },
       {
         "label": "G.W",
-        "value": "258kgs"
+        "value": "258kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "2470*1130*1650mm"
       }
     ]
@@ -2099,12 +2099,12 @@ const rawProducts: RawProduct[] = [
     "id": "69",
     "modelCode": "82022",
     "name": "Leg Press",
-    "description": "YR Fitness 82022 combines a biomechanically sound pressing path with heavy-duty construction, making it an essential piece for safe and effective leg training.",
+    "description": "YR Fitness 82022 combina um caminho de pressão biomecanicamente sólido com uma construção robusta, tornando-o uma peça essencial para um treinamento de pernas seguro e eficaz.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82022 combines a biomechanically sound pressing path with heavy-duty construction, making it an essential piece for safe and effective leg training."
+          "YR Fitness 82022 combina um caminho de pressão biomecanicamente sólido com uma construção robusta, tornando-o uma peça essencial para um treinamento de pernas seguro e eficaz."
         ]
       }
     ],
@@ -2115,15 +2115,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "163kgs"
+        "label": "NO",
+        "value": "163kg"
       },
       {
         "label": "G.W",
-        "value": "221kgs"
+        "value": "221kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "2194*1166*1293mm"
       }
     ]
@@ -2131,13 +2131,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "70",
     "modelCode": "6280",
-    "name": "4 Station Multi Jungle",
-    "description": "YR Fitness 4 Station Multi Jungle F2M01 is a space-saving machine that lets up to 4 people train at once. With smooth motion, strong construction, and multiple workout options, it’s perfect for full-body training in busy gym facilities.",
+    "name": "4 estações Multi Selva",
+    "description": "YR Fitness 4 Station Multi Jungle F2M01 é uma máquina que economiza espaço e permite que até 4 pessoas treinem ao mesmo tempo. Com movimento suave, construção robusta e múltiplas opções de treino, é perfeito para treinamento de corpo inteiro em academias movimentadas.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 4 Station Multi Jungle F2M01 is a space-saving machine that lets up to 4 people train at once. With smooth motion, strong construction, and multiple workout options, it’s perfect for full-body training in busy gym facilities."
+          "YR Fitness 4 Station Multi Jungle F2M01 é uma máquina que economiza espaço e permite que até 4 pessoas treinem ao mesmo tempo. Com movimento suave, construção robusta e múltiplas opções de treino, é perfeito para treinamento de corpo inteiro em academias movimentadas."
         ]
       }
     ],
@@ -2150,13 +2150,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "71",
     "modelCode": "6280A",
-    "name": "6 Station Multi Jungle",
-    "description": "YR Fitness 6 Station Multi Jungle 6280A is a versatile machine designed for group training and full-body workouts. It supports up to four users at once and offers countless strength training options with smooth cable motion, durable construction, and comfortable, long-lasting materials.",
+    "name": "6 estações Multi Jungle",
+    "description": "YR Fitness 6 Station Multi Jungle 6280A é uma máquina versátil projetada para treinamento em grupo e exercícios de corpo inteiro. Ele suporta até quatro usuários ao mesmo tempo e oferece inúmeras opções de treinamento de força com movimento suave do cabo, construção durável e materiais confortáveis ​​e duradouros.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 6 Station Multi Jungle 6280A is a versatile machine designed for group training and full-body workouts. It supports up to four users at once and offers countless strength training options with smooth cable motion, durable construction, and comfortable, long-lasting materials."
+          "YR Fitness 6 Station Multi Jungle 6280A é uma máquina versátil projetada para treinamento em grupo e exercícios de corpo inteiro. Ele suporta até quatro usuários ao mesmo tempo e oferece inúmeras opções de treinamento de força com movimento suave do cabo, construção durável e materiais confortáveis ​​e duradouros."
         ]
       }
     ],
@@ -2169,13 +2169,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "72",
     "modelCode": "5348",
-    "name": "4 Station 8 Function Trainer",
-    "description": "YR Fitness 4 Station 8 Function Trainer 5348 is a space-saving, full-body training machine designed for up to four users at once. It includes eight key workout functions, ergonomic design, smooth movement, and durable construction, perfect for commercial gyms focused on efficient, all-in-one strength training.",
+    "name": "4 Estação 8 Treinador de Função",
+    "description": "YR Fitness 4 Station 8 Function Trainer 5348 é uma máquina de treinamento de corpo inteiro que economiza espaço, projetada para até quatro usuários ao mesmo tempo. Inclui oito funções principais de treino, design ergonômico, movimento suave e construção durável, perfeito para academias comerciais focadas em treinamento de força eficiente e completo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 4 Station 8 Function Trainer 5348 is a space-saving, full-body training machine designed for up to four users at once. It includes eight key workout functions, ergonomic design, smooth movement, and durable construction, perfect for commercial gyms focused on efficient, all-in-one strength training."
+          "YR Fitness 4 Station 8 Function Trainer 5348 é uma máquina de treinamento de corpo inteiro que economiza espaço, projetada para até quatro usuários ao mesmo tempo. Inclui oito funções principais de treino, design ergonômico, movimento suave e construção durável, perfeito para academias comerciais focadas em treinamento de força eficiente e completo."
         ]
       }
     ],
@@ -2188,13 +2188,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "73",
     "modelCode": "82032",
-    "name": "Hip Trainer",
-    "description": "YR Fitness 82032 delivers powerful and targeted lower-body training with ergonomic adjustability and resistance flexibility—perfect for users focused on glute and hamstring development.",
+    "name": "Treinador de quadril",
+    "description": "YR Fitness 82032 oferece treinamento poderoso e direcionado para a parte inferior do corpo com ajuste ergonômico e flexibilidade de resistência - perfeito para usuários focados no desenvolvimento de glúteos e isquiotibiais.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82032 delivers powerful and targeted lower-body training with ergonomic adjustability and resistance flexibility—perfect for users focused on glute and hamstring development."
+          "YR Fitness 82032 oferece treinamento poderoso e direcionado para a parte inferior do corpo com ajuste ergonômico e flexibilidade de resistência - perfeito para usuários focados no desenvolvimento de glúteos e isquiotibiais."
         ]
       }
     ],
@@ -2207,13 +2207,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "74",
     "modelCode": "7329",
-    "name": "45° Leg Press",
-    "description": "YR Fitness 7329 45° Leg Press delivers intense lower body training with a durable alloy steel slide bar for smooth, controlled motion. Built for performance, it supports safe and effective strength progression for all fitness levels.",
+    "name": "Leg Press 45°",
+    "description": "YR Fitness 7329 45° Leg Press oferece treinamento intenso para a parte inferior do corpo com uma barra deslizante de liga de aço durável para movimentos suaves e controlados. Construído para desempenho, ele suporta progressão de força segura e eficaz para todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7329 45° Leg Press delivers intense lower body training with a durable alloy steel slide bar for smooth, controlled motion. Built for performance, it supports safe and effective strength progression for all fitness levels."
+          "YR Fitness 7329 45° Leg Press oferece treinamento intenso para a parte inferior do corpo com uma barra deslizante de liga de aço durável para movimentos suaves e controlados. Construído para desempenho, ele suporta progressão de força segura e eficaz para todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -2224,15 +2224,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "260kgs"
+        "label": "NO",
+        "value": "260kg"
       },
       {
         "label": "G.W",
-        "value": "360kgs"
+        "value": "360kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "2800*1360*1580mm"
       }
     ]
@@ -2240,13 +2240,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "75",
     "modelCode": "7328",
-    "name": "Seated Leg Press",
-    "description": "YR Fitness 7328 Seated Leg Press offers a smooth, independent leg movement for natural motion and powerful lower-body training. Ideal for users aiming to build strength with safety and ergonomic design.",
+    "name": "Leg press sentado",
+    "description": "YR Fitness 7328 Seated Leg Press oferece um movimento suave e independente das pernas para movimentos naturais e treinamento poderoso da parte inferior do corpo. Ideal para usuários que desejam aumentar a resistência com segurança e design ergonômico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7328 Seated Leg Press offers a smooth, independent leg movement for natural motion and powerful lower-body training. Ideal for users aiming to build strength with safety and ergonomic design."
+          "YR Fitness 7328 Seated Leg Press oferece um movimento suave e independente das pernas para movimentos naturais e treinamento poderoso da parte inferior do corpo. Ideal para usuários que desejam aumentar a resistência com segurança e design ergonômico."
         ]
       }
     ],
@@ -2257,33 +2257,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "310kgs"
+        "label": "NO",
+        "value": "310kg"
       },
       {
         "label": "G.W",
-        "value": "410kgs"
+        "value": "410kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "2120*1100*1610mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "90kg-18pcs"
+        "label": "Pilhas de peso",
+        "value": "90kg-18 unidades"
       }
     ]
   },
   {
     "id": "76",
     "modelCode": "7310",
-    "name": "Biceps Curl",
-    "description": "YR Fitness 7310 Biceps Curl features independent arms and pivoting handles to fit all users naturally. It delivers smooth, isolated bicep training with ergonomic comfort and commercial-grade durability.",
+    "name": "Rosca de bíceps",
+    "description": "YR Fitness 7310 Biceps Curl apresenta braços independentes e alças giratórias para se ajustar naturalmente a todos os usuários. Ele oferece treinamento de bíceps suave e isolado com conforto ergonômico e durabilidade de nível comercial.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7310 Biceps Curl features independent arms and pivoting handles to fit all users naturally. It delivers smooth, isolated bicep training with ergonomic comfort and commercial-grade durability."
+          "YR Fitness 7310 Biceps Curl apresenta braços independentes e alças giratórias para se ajustar naturalmente a todos os usuários. Ele oferece treinamento de bíceps suave e isolado com conforto ergonômico e durabilidade de nível comercial."
         ]
       }
     ],
@@ -2294,33 +2294,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "228kgs"
+        "label": "NO",
+        "value": "228kg"
       },
       {
         "label": "G.W",
-        "value": "328kgs"
+        "value": "328kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1560*930*1610mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kg-14 unidades"
       }
     ]
   },
   {
     "id": "77",
     "modelCode": "55F02",
-    "name": "Shoulder / Chest Press",
-    "description": "Shoulder / Chest Press is a premium quality machine with immense support and stability. This model is safe and attractive addition to any gym. It comes from a company and a brand that has been trusted by many companies.",
+    "name": "Pressão de Ombro/Peito",
+    "description": "O Shoulder / Chest Press é uma máquina de qualidade premium com imenso suporte e estabilidade. Este modelo é um complemento seguro e atraente para qualquer academia. Vem de uma empresa e de uma marca em que muitas empresas confiam.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "Shoulder / Chest Press is a premium quality machine with immense support and stability. This model is safe and attractive addition to any gym. It comes from a company and a brand that has been trusted by many companies."
+          "O Shoulder / Chest Press é uma máquina de qualidade premium com imenso suporte e estabilidade. Este modelo é um complemento seguro e atraente para qualquer academia. Vem de uma empresa e de uma marca em que muitas empresas confiam."
         ]
       }
     ],
@@ -2333,13 +2333,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "78",
     "modelCode": "61A46",
-    "name": "Multifunction Adjustable Bench",
-    "description": "YR Fitness Multifunction Adjustable Bench 61A46 is designed for strength training with a strong steel frame, high-density foam, and premium PU leather. It includes wheels and a handle for easy movement, making it perfect for both home and commercial gym use.",
+    "name": "Banco multifuncional ajustável",
+    "description": "O banco ajustável multifuncional YR Fitness 61A46 foi projetado para treinamento de força com uma estrutura de aço forte, espuma de alta densidade e couro PU premium. Inclui rodas e uma alça para facilitar a movimentação, tornando-o perfeito para uso em academias domésticas e comerciais.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Multifunction Adjustable Bench 61A46 is designed for strength training with a strong steel frame, high-density foam, and premium PU leather. It includes wheels and a handle for easy movement, making it perfect for both home and commercial gym use."
+          "O banco ajustável multifuncional YR Fitness 61A46 foi projetado para treinamento de força com uma estrutura de aço forte, espuma de alta densidade e couro PU premium. Inclui rodas e uma alça para facilitar a movimentação, tornando-o perfeito para uso em academias domésticas e comerciais."
         ]
       }
     ],
@@ -2354,13 +2354,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "79",
     "modelCode": "61A32B",
-    "name": "Functional Trainer",
-    "description": "YR Fitness 61A32B Functional Trainer delivers smooth, customizable resistance with over 60 exercise options. Its elevated frame, 2:1 pulley ratio, and quick-adjust design support versatile, full-body strength and functional workouts.",
+    "name": "Treinador Funcional",
+    "description": "O YR Fitness 61A32B Functional Trainer oferece resistência suave e personalizável com mais de 60 opções de exercícios. Sua estrutura elevada, relação de polia de 2:1 e design de ajuste rápido suportam exercícios versáteis de força de corpo inteiro e funcionais.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A32B Functional Trainer delivers smooth, customizable resistance with over 60 exercise options. Its elevated frame, 2:1 pulley ratio, and quick-adjust design support versatile, full-body strength and functional workouts."
+          "O YR Fitness 61A32B Functional Trainer oferece resistência suave e personalizável com mais de 60 opções de exercícios. Sua estrutura elevada, relação de polia de 2:1 e design de ajuste rápido suportam exercícios versáteis de força de corpo inteiro e funcionais."
         ]
       }
     ],
@@ -2371,33 +2371,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "333kgs"
+        "label": "NO",
+        "value": "333kg"
       },
       {
         "label": "G.W",
-        "value": "384kgs"
+        "value": "384kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1680*940*2280mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kg-14 unidades"
       }
     ]
   },
   {
     "id": "80",
     "modelCode": "61A28",
-    "name": "Seated Leg Press",
-    "description": "YR Fitness 61A28 Seated Leg Press provides joint-safe, effective leg training with a pendulum-style footplate and adjustable seating. Designed for comfort and accessibility, it’s perfect for users of all fitness levels aiming for lower body strength.",
+    "name": "Leg press sentado",
+    "description": "YR Fitness 61A28 Seated Leg Press oferece treinamento de pernas eficaz e seguro para as articulações, com uma plataforma tipo pêndulo e assento ajustável. Projetado para oferecer conforto e acessibilidade, é perfeito para usuários de todos os níveis de condicionamento físico que buscam força na parte inferior do corpo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A28 Seated Leg Press provides joint-safe, effective leg training with a pendulum-style footplate and adjustable seating. Designed for comfort and accessibility, it’s perfect for users of all fitness levels aiming for lower body strength."
+          "YR Fitness 61A28 Seated Leg Press oferece treinamento de pernas eficaz e seguro para as articulações, com uma plataforma tipo pêndulo e assento ajustável. Projetado para oferecer conforto e acessibilidade, é perfeito para usuários de todos os níveis de condicionamento físico que buscam força na parte inferior do corpo."
         ]
       }
     ],
@@ -2408,33 +2408,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "255kgs"
+        "label": "NO",
+        "value": "255kg"
       },
       {
         "label": "G.W",
-        "value": "267kgs"
+        "value": "267kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1205*1117*1660mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "100kg-20pcs"
+        "label": "Pilhas de peso",
+        "value": "100kg-20 unidades"
       }
     ]
   },
   {
     "id": "81",
     "modelCode": "55A12",
-    "name": "Leg Extension / Leg Curl",
-    "description": "YR Fitness 55A12 Leg Extension / Leg Curl targets both the quadriceps and hamstrings in one seated machine. With smooth mechanics, easy adjustments, and durable build, it’s ideal for strengthening and isolating key lower body muscles.",
+    "name": "Extensão de pernas / flexão de pernas",
+    "description": "YR Fitness 55A12 Leg Extension / Leg Curl visa tanto o quadríceps quanto os isquiotibiais em uma máquina sentada. Com mecânica suave, ajustes fáceis e construção durável, é ideal para fortalecer e isolar os principais músculos da parte inferior do corpo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 55A12 Leg Extension / Leg Curl targets both the quadriceps and hamstrings in one seated machine. With smooth mechanics, easy adjustments, and durable build, it’s ideal for strengthening and isolating key lower body muscles."
+          "YR Fitness 55A12 Leg Extension / Leg Curl visa tanto o quadríceps quanto os isquiotibiais em uma máquina sentada. Com mecânica suave, ajustes fáceis e construção durável, é ideal para fortalecer e isolar os principais músculos da parte inferior do corpo."
         ]
       }
     ],
@@ -2445,33 +2445,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "240kgs"
+        "label": "NO",
+        "value": "240kg"
       },
       {
         "label": "G.W",
-        "value": "277kgs"
+        "value": "277kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": ": 1340*1160*1625mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "82",
     "modelCode": "55A11",
-    "name": "Leg Press / Calf",
-    "description": "YR Fitness 55A11 Leg Press / Calf combines two essential leg workouts in one machine. Designed to strengthen quads, hamstrings, glutes, and calves, it offers smooth movement, ergonomic support, and commercial-grade durability.",
+    "name": "Leg Press / Panturrilha",
+    "description": "YR Fitness 55A11 Leg Press / Calf combina dois exercícios essenciais para as pernas em uma máquina. Projetado para fortalecer quadríceps, isquiotibiais, glúteos e panturrilhas, oferece movimentos suaves, suporte ergonômico e durabilidade de nível comercial.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 55A11 Leg Press / Calf combines two essential leg workouts in one machine. Designed to strengthen quads, hamstrings, glutes, and calves, it offers smooth movement, ergonomic support, and commercial-grade durability."
+          "YR Fitness 55A11 Leg Press / Calf combina dois exercícios essenciais para as pernas em uma máquina. Projetado para fortalecer quadríceps, isquiotibiais, glúteos e panturrilhas, oferece movimentos suaves, suporte ergonômico e durabilidade de nível comercial."
         ]
       }
     ],
@@ -2482,33 +2482,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "278kgs"
+        "label": "NO",
+        "value": "278kg"
       },
       {
         "label": "G.W",
-        "value": "322kgs"
+        "value": "322kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1610*990*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "100kg-20pcs"
+        "label": "Pilhas de peso",
+        "value": "100kg-20 unidades"
       }
     ]
   },
   {
     "id": "83",
     "modelCode": "55A10",
-    "name": "Adductor / Abductor",
-    "description": "YR Fitness 55A10 Adductor / Abductor combines inner and outer thigh training in one machine. With adjustable positions, large leg pads, and smooth motion, it’s perfect for strengthening hip stability and improving lower body control.",
+    "name": "Adutor/Abdutor",
+    "description": "O adutor / abdutor YR Fitness 55A10 combina o treinamento interno e externo da coxa em uma máquina. Com posições ajustáveis, almofadas grandes para as pernas e movimentos suaves, é perfeito para fortalecer a estabilidade do quadril e melhorar o controle da parte inferior do corpo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 55A10 Adductor / Abductor combines inner and outer thigh training in one machine. With adjustable positions, large leg pads, and smooth motion, it’s perfect for strengthening hip stability and improving lower body control."
+          "O adutor / abdutor YR Fitness 55A10 combina o treinamento interno e externo da coxa em uma máquina. Com posições ajustáveis, almofadas grandes para as pernas e movimentos suaves, é perfeito para fortalecer a estabilidade do quadril e melhorar o controle da parte inferior do corpo."
         ]
       }
     ],
@@ -2520,33 +2520,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "205kgs"
+        "label": "NO",
+        "value": "205kg"
       },
       {
         "label": "G.W",
-        "value": "217kgs"
+        "value": "217kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1620*716*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "84",
     "modelCode": "55A09",
-    "name": "Leg Extension / Lying Leg Curl",
-    "description": "YR Fitness 55A09 Leg Extension / Lying Leg Curl offers two essential leg workouts in one machine. It isolates quads and hamstrings effectively, making it perfect for strength training, toning, and rehabilitation in any gym or clinic.",
+    "name": "Extensão de pernas / flexão de pernas deitada",
+    "description": "YR Fitness 55A09 Leg Extension / Lying Leg Curl oferece dois exercícios essenciais para as pernas em uma máquina. Ele isola quadríceps e isquiotibiais de forma eficaz, tornando-o perfeito para treinamento de força, tonificação e reabilitação em qualquer academia ou clínica.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 55A09 Leg Extension / Lying Leg Curl offers two essential leg workouts in one machine. It isolates quads and hamstrings effectively, making it perfect for strength training, toning, and rehabilitation in any gym or clinic."
+          "YR Fitness 55A09 Leg Extension / Lying Leg Curl oferece dois exercícios essenciais para as pernas em uma máquina. Ele isola quadríceps e isquiotibiais de forma eficaz, tornando-o perfeito para treinamento de força, tonificação e reabilitação em qualquer academia ou clínica."
         ]
       }
     ],
@@ -2557,33 +2557,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "221kgs"
+        "label": "NO",
+        "value": "221kg"
       },
       {
         "label": "G.W",
-        "value": "230kgs"
+        "value": "230kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1690*950*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "90kg-18pcs"
+        "label": "Pilhas de peso",
+        "value": "90kg-18 unidades"
       }
     ]
   },
   {
     "id": "85",
     "modelCode": "55A08",
-    "name": "Ab Crunch / Back extension",
-    "description": "YR Fitness 55A08 Ab Crunch / Back Extension combines two essential core exercises in one machine. Ideal for strengthening abs and lower back, it offers efficient, safe, and space-saving training for users of all fitness levels.",
+    "name": "Ab Crunch / Extensão de costas",
+    "description": "YR Fitness 55A08 Ab Crunch / Back Extension combina dois exercícios básicos essenciais em uma máquina. Ideal para fortalecer os abdominais e a região lombar, oferece treinamento eficiente, seguro e com economia de espaço para usuários de todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 55A08 Ab Crunch / Back Extension combines two essential core exercises in one machine. Ideal for strengthening abs and lower back, it offers efficient, safe, and space-saving training for users of all fitness levels."
+          "YR Fitness 55A08 Ab Crunch / Back Extension combina dois exercícios básicos essenciais em uma máquina. Ideal para fortalecer os abdominais e a região lombar, oferece treinamento eficiente, seguro e com economia de espaço para usuários de todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -2595,33 +2595,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "198kgs"
+        "label": "NO",
+        "value": "198kg"
       },
       {
         "label": "G.W",
-        "value": "208kgs"
+        "value": "208kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1130*1039*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kg-14 unidades"
       }
     ]
   },
   {
     "id": "86",
     "modelCode": "55A07",
-    "name": "Assisted Dip / Chin Up",
-    "description": "YR Fitness 55A07 Assisted Dip / Chin Up makes upper body training accessible with its weight-assisted dip and chin-up functions. Ideal for building strength progressively, it offers stability, comfort, and durability for all users.",
+    "name": "Mergulho assistido/queixo para cima",
+    "description": "YR Fitness 55A07 Assisted Dip / Chin Up torna o treinamento da parte superior do corpo acessível com suas funções de mergulho assistido e barra fixa. Ideal para aumentar progressivamente a resistência, oferece estabilidade, conforto e durabilidade para todos os usuários.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 55A07 Assisted Dip / Chin Up makes upper body training accessible with its weight-assisted dip and chin-up functions. Ideal for building strength progressively, it offers stability, comfort, and durability for all users."
+          "YR Fitness 55A07 Assisted Dip / Chin Up torna o treinamento da parte superior do corpo acessível com suas funções de mergulho assistido e barra fixa. Ideal para aumentar progressivamente a resistência, oferece estabilidade, conforto e durabilidade para todos os usuários."
         ]
       }
     ],
@@ -2634,33 +2634,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "250kgs"
+        "label": "NO",
+        "value": "250kg"
       },
       {
         "label": "G.W",
-        "value": "264kgs"
+        "value": "264kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1000*1200*2250mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "87",
     "modelCode": "55A06",
-    "name": "Lat Pull Down / Low Row",
-    "description": "YR Fitness 55A06 Lat Pull Down / Low Row offers two essential back exercises in one unit. With an adjustable leg pad and sturdy construction, it delivers effective upper body training with comfort and efficiency.",
+    "name": "Lat Pull Down / Linha Baixa",
+    "description": "YR Fitness 55A06 Lat Pull Down / Low Row oferece dois exercícios essenciais para as costas em uma unidade. Com uma almofada de perna ajustável e construção robusta, proporciona um treinamento eficaz da parte superior do corpo com conforto e eficiência.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 55A06 Lat Pull Down / Low Row offers two essential back exercises in one unit. With an adjustable leg pad and sturdy construction, it delivers effective upper body training with comfort and efficiency."
+          "YR Fitness 55A06 Lat Pull Down / Low Row oferece dois exercícios essenciais para as costas em uma unidade. Com uma almofada de perna ajustável e construção robusta, proporciona um treinamento eficaz da parte superior do corpo com conforto e eficiência."
         ]
       }
     ],
@@ -2672,33 +2672,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "222kgs"
+        "label": "NO",
+        "value": "222kg"
       },
       {
         "label": "G.W",
-        "value": "233kgs"
+        "value": "233kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1787*1213*2227mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "100kg-20pcs"
+        "label": "Pilhas de peso",
+        "value": "100kg-20 unidades"
       }
     ]
   },
   {
     "id": "88",
     "modelCode": "55A05",
-    "name": "Standing Biceps / Triceps",
-    "description": "YR Fitness 55A05 Standing Biceps / Triceps supports a range of cable-based arm exercises using adjustable pulleys and V-bar attachments. Built for safe, targeted training, it’s ideal for improving upper arm strength and definition in any gym setup.",
+    "name": "Bíceps/Tríceps em pé",
+    "description": "YR Fitness 55A05 Bíceps / Tríceps em pé suporta uma variedade de exercícios de braço baseados em cabos usando polias ajustáveis ​​​​e acessórios de barra em V. Construído para um treinamento seguro e direcionado, é ideal para melhorar a força e a definição do braço em qualquer configuração de academia.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 55A05 Standing Biceps / Triceps supports a range of cable-based arm exercises using adjustable pulleys and V-bar attachments. Built for safe, targeted training, it’s ideal for improving upper arm strength and definition in any gym setup."
+          "YR Fitness 55A05 Bíceps / Tríceps em pé suporta uma variedade de exercícios de braço baseados em cabos usando polias ajustáveis ​​​​e acessórios de barra em V. Construído para um treinamento seguro e direcionado, é ideal para melhorar a força e a definição do braço em qualquer configuração de academia."
         ]
       }
     ],
@@ -2709,33 +2709,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "233kgs"
+        "label": "NO",
+        "value": "233kg"
       },
       {
         "label": "G.W",
-        "value": "255kgs"
+        "value": "255kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1407*804*2227mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "100kg-20pcs"
+        "label": "Pilhas de peso",
+        "value": "100kg-20 unidades"
       }
     ]
   },
   {
     "id": "89",
     "modelCode": "55A04",
-    "name": "Biceps / Triceps",
-    "description": "YR Fitness 55A04 Biceps / Triceps targets both upper arm muscle groups in one machine. With ergonomic support and durable construction, it delivers balanced, effective strength training for the biceps and triceps.",
+    "name": "Bíceps/Tríceps",
+    "description": "YR Fitness 55A04 Bíceps / Tríceps visa ambos os grupos musculares do braço em uma máquina. Com suporte ergonômico e construção durável, proporciona treinamento de força equilibrado e eficaz para bíceps e tríceps.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 55A04 Biceps / Triceps targets both upper arm muscle groups in one machine. With ergonomic support and durable construction, it delivers balanced, effective strength training for the biceps and triceps."
+          "YR Fitness 55A04 Bíceps / Tríceps visa ambos os grupos musculares do braço em uma máquina. Com suporte ergonômico e construção durável, proporciona treinamento de força equilibrado e eficaz para bíceps e tríceps."
         ]
       }
     ],
@@ -2746,33 +2746,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "203kgs"
+        "label": "NO",
+        "value": "203kg"
       },
       {
         "label": "G.W",
-        "value": "213kgs"
+        "value": "213kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1120*1260*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kg-14 unidades"
       }
     ]
   },
   {
     "id": "90",
     "modelCode": "55A03",
-    "name": "Pec Deck / Rear Delt",
-    "description": "YR Fitness 55A03 Pec Deck / Rear Delt combines two essential upper body exercises in one machine. With rotating grips for wrist protection and smooth, controlled motion, it&#8217;s ideal for balanced chest and shoulder training.",
+    "name": "Pec Deck/Delt traseiro",
+    "description": "YR Fitness 55A03 Pec Deck / Rear Delt combina dois exercícios essenciais para a parte superior do corpo em uma máquina. Com alças giratórias para proteção do pulso e movimentos suaves e controlados, é ideal para treinamento equilibrado de peito e ombros.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 55A03 Pec Deck / Rear Delt combines two essential upper body exercises in one machine. With rotating grips for wrist protection and smooth, controlled motion, it&#8217;s ideal for balanced chest and shoulder training."
+          "YR Fitness 55A03 Pec Deck / Rear Delt combina dois exercícios essenciais para a parte superior do corpo em uma máquina. Com alças giratórias para proteção do pulso e movimentos suaves e controlados, é ideal para treinamento equilibrado de peito e ombros."
         ]
       }
     ],
@@ -2785,33 +2785,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "218kgs"
+        "label": "NO",
+        "value": "218kg"
       },
       {
         "label": "G.W",
-        "value": "228kgs"
+        "value": "228kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1450*1250*2000mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "91",
     "modelCode": "55A02",
-    "name": "Shoulder / Chest Press",
-    "description": "YR Fitness 55A02 Shoulder/Chest Press combines comfort and customization with dual upper body training. With adjustable footplate, multi-grip handles, and easy-access weight selector, it ensures a safe, effective, and user-friendly workout.",
+    "name": "Pressão de Ombro/Peito",
+    "description": "YR Fitness 55A02 Ombro / Peito combina conforto e personalização com treinamento duplo da parte superior do corpo. Com plataforma ajustável, alças múltiplas e seletor de peso de fácil acesso, garante um treino seguro, eficaz e fácil de usar.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 55A02 Shoulder/Chest Press combines comfort and customization with dual upper body training. With adjustable footplate, multi-grip handles, and easy-access weight selector, it ensures a safe, effective, and user-friendly workout."
+          "YR Fitness 55A02 Ombro / Peito combina conforto e personalização com treinamento duplo da parte superior do corpo. Com plataforma ajustável, alças múltiplas e seletor de peso de fácil acesso, garante um treino seguro, eficaz e fácil de usar."
         ]
       }
     ],
@@ -2823,33 +2823,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "223kgs"
+        "label": "NO",
+        "value": "223kg"
       },
       {
         "label": "G.W",
-        "value": "235kgs"
+        "value": "235kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1473*716*2340mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kg-14 unidades"
       }
     ]
   },
   {
     "id": "92",
     "modelCode": "55A01",
-    "name": "Shoulder / Chest Press",
-    "description": "YR Fitness 55A01 Shoulder/Chest Press combines two upper body exercises in one compact, adjustable machine. Built for comfort and control, it supports safe and effective training for users at any level.",
+    "name": "Pressão de Ombro/Peito",
+    "description": "YR Fitness 55A01 Ombro / Peito combina dois exercícios para a parte superior do corpo em uma máquina compacta e ajustável. Construído para proporcionar conforto e controle, ele oferece suporte ao treinamento seguro e eficaz para usuários de qualquer nível.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 55A01 Shoulder/Chest Press combines two upper body exercises in one compact, adjustable machine. Built for comfort and control, it supports safe and effective training for users at any level."
+          "YR Fitness 55A01 Ombro / Peito combina dois exercícios para a parte superior do corpo em uma máquina compacta e ajustável. Construído para proporcionar conforto e controle, ele oferece suporte ao treinamento seguro e eficaz para usuários de qualquer nível."
         ]
       }
     ],
@@ -2861,33 +2861,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "249kgs"
+        "label": "NO",
+        "value": "249kg"
       },
       {
         "label": "G.W",
-        "value": "261kgs"
+        "value": "261kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1638*1360*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "90kg-18pcs"
+        "label": "Pilhas de peso",
+        "value": "90kg-18 unidades"
       }
     ]
   },
   {
     "id": "93",
     "modelCode": "C409",
-    "name": "Pectoral Fly/Rear Deltoid",
-    "description": "YR Fitness C409 Pectoral Fly/Rear Deltoid is a versatile two-in-one machine that targets both chest and rear shoulder muscles. With rotating grips for wrist protection and smooth motion design, it ensures a safe, comfortable, and effective workout for strength and stability.",
+    "name": "Mosca Peitoral/Deltóide Posterior",
+    "description": "YR Fitness C409 Pectoral Fly/Rear Deltoid é uma máquina dois em um versátil que atinge os músculos do peito e dos ombros traseiros. Com alças giratórias para proteção do pulso e design de movimento suave, garante um treino seguro, confortável e eficaz para força e estabilidade.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C409 Pectoral Fly/Rear Deltoid is a versatile two-in-one machine that targets both chest and rear shoulder muscles. With rotating grips for wrist protection and smooth motion design, it ensures a safe, comfortable, and effective workout for strength and stability."
+          "YR Fitness C409 Pectoral Fly/Rear Deltoid é uma máquina dois em um versátil que atinge os músculos do peito e dos ombros traseiros. Com alças giratórias para proteção do pulso e design de movimento suave, garante um treino seguro, confortável e eficaz para força e estabilidade."
         ]
       }
     ],
@@ -2898,33 +2898,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "218kgs"
+        "label": "NO.",
+        "value": "218kg"
       },
       {
-        "label": "G.W.",
-        "value": "228kgs"
+        "label": "GW",
+        "value": "228kg"
       },
       {
-        "label": "Installation size",
+        "label": "Tamanho da instalação",
         "value": "1450*1250*2000mm"
       },
       {
-        "label": "Weight stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "94",
     "modelCode": "C460",
-    "name": "Adductor and Abductor",
-    "description": "YR Fitness C460 Adductor and Abductor combines two key thigh exercises in one machine. With adjustable settings, large leg pads, and smooth operation, it offers a comfortable and efficient lower body workout for users of all fitness levels.",
+    "name": "Adutor e Abdutor",
+    "description": "O adutor e abdutor YR Fitness C460 combina dois exercícios principais para as coxas em uma máquina. Com configurações ajustáveis, almofadas grandes para as pernas e operação suave, oferece um treino confortável e eficiente para a parte inferior do corpo para usuários de todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C460 Adductor and Abductor combines two key thigh exercises in one machine. With adjustable settings, large leg pads, and smooth operation, it offers a comfortable and efficient lower body workout for users of all fitness levels."
+          "O adutor e abdutor YR Fitness C460 combina dois exercícios principais para as coxas em uma máquina. Com configurações ajustáveis, almofadas grandes para as pernas e operação suave, oferece um treino confortável e eficiente para a parte inferior do corpo para usuários de todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -2936,33 +2936,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "212kgs"
+        "label": "NO.",
+        "value": "212kg"
       },
       {
-        "label": "G.W.",
-        "value": "221kgs"
+        "label": "GW",
+        "value": "221kg"
       },
       {
-        "label": "Installation size",
+        "label": "Tamanho da instalação",
         "value": "720*1630*1620mm"
       },
       {
-        "label": "Weight stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "95",
     "modelCode": "C458",
-    "name": "Hip Thruster",
-    "description": "YR Fitness C458 Hip Thruster is designed for effective and comfortable glute training. With a dynamic backrest, adjustable foam roller, and customizable foot pedals, it fits all users and supports a smooth, joint-friendly workout experience.",
+    "name": "Propulsor de quadril",
+    "description": "YR Fitness C458 Hip Thruster foi projetado para um treinamento de glúteos eficaz e confortável. Com um encosto dinâmico, rolo de espuma ajustável e pedais personalizáveis, ele se adapta a todos os usuários e oferece uma experiência de treino suave e amigável às articulações.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C458 Hip Thruster is designed for effective and comfortable glute training. With a dynamic backrest, adjustable foam roller, and customizable foot pedals, it fits all users and supports a smooth, joint-friendly workout experience."
+          "YR Fitness C458 Hip Thruster foi projetado para um treinamento de glúteos eficaz e confortável. Com um encosto dinâmico, rolo de espuma ajustável e pedais personalizáveis, ele se adapta a todos os usuários e oferece uma experiência de treino suave e amigável às articulações."
         ]
       }
     ],
@@ -2975,13 +2975,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "96",
     "modelCode": "C431",
-    "name": "Standing Calf",
-    "description": "YR Fitness C431 Standing Calf is built to strengthen calf muscles with comfort and safety. It features adjustable pad height and non-slip footplates for a full range of motion, making it ideal for users of all sizes to train effectively and confidently.",
+    "name": "Panturrilha em pé",
+    "description": "YR Fitness C431 Standing Calf foi construído para fortalecer os músculos da panturrilha com conforto e segurança. Possui altura de almofada ajustável e bases antiderrapantes para uma gama completa de movimentos, tornando-o ideal para usuários de todos os tamanhos treinarem com eficácia e confiança.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C431 Standing Calf is built to strengthen calf muscles with comfort and safety. It features adjustable pad height and non-slip footplates for a full range of motion, making it ideal for users of all sizes to train effectively and confidently."
+          "YR Fitness C431 Standing Calf foi construído para fortalecer os músculos da panturrilha com conforto e segurança. Possui altura de almofada ajustável e bases antiderrapantes para uma gama completa de movimentos, tornando-o ideal para usuários de todos os tamanhos treinarem com eficácia e confiança."
         ]
       }
     ],
@@ -2992,33 +2992,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "214kgs"
+        "label": "NO.",
+        "value": "214kg"
       },
       {
-        "label": "G.W.",
-        "value": "222kgs"
+        "label": "GW",
+        "value": "222kg"
       },
       {
-        "label": "Installation size",
+        "label": "Tamanho da instalação",
         "value": "1280*720*1640mm"
       },
       {
-        "label": "Weight stacks",
-        "value": "100kg-20pcs"
+        "label": "Pilhas de peso",
+        "value": "100kg-20 unidades"
       }
     ]
   },
   {
     "id": "97",
     "modelCode": "C430",
-    "name": "Seated Calf",
-    "description": "YR Fitness C430 Seated Calf is designed to strengthen calf muscles with comfort and control. It features an easy-to-use pin-loaded system, ergonomic seating, and a stable base, making it perfect for users of all levels to train safely and effectively.",
+    "name": "Panturrilha Sentada",
+    "description": "YR Fitness C430 Seated Calf foi projetado para fortalecer os músculos da panturrilha com conforto e controle. Ele apresenta um sistema de pinos fácil de usar, assento ergonômico e uma base estável, tornando-o perfeito para usuários de todos os níveis treinarem com segurança e eficácia.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C430 Seated Calf is designed to strengthen calf muscles with comfort and control. It features an easy-to-use pin-loaded system, ergonomic seating, and a stable base, making it perfect for users of all levels to train safely and effectively."
+          "YR Fitness C430 Seated Calf foi projetado para fortalecer os músculos da panturrilha com conforto e controle. Ele apresenta um sistema de pinos fácil de usar, assento ergonômico e uma base estável, tornando-o perfeito para usuários de todos os níveis treinarem com segurança e eficácia."
         ]
       }
     ],
@@ -3029,33 +3029,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "184kgs"
+        "label": "NO.",
+        "value": "184kg"
       },
       {
-        "label": "G.W.",
-        "value": "194kgs"
+        "label": "GW",
+        "value": "194kg"
       },
       {
-        "label": "Installation size",
+        "label": "Tamanho da instalação",
         "value": "1583*720*1620mm"
       },
       {
-        "label": "Weight stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "98",
     "modelCode": "C428A",
-    "name": "Seated Leg Press",
-    "description": "YR Fitness C428A Seated Leg Press is built for comfort, safety, and smooth performance. Its inclined seat and stable footplate support proper posture and natural movement, making it ideal for effective leg workouts with reduced joint strain for users of all fitness levels.",
+    "name": "Leg press sentado",
+    "description": "O leg press sentado YR Fitness C428A foi desenvolvido para oferecer conforto, segurança e desempenho suave. Seu assento inclinado e base estável suportam postura adequada e movimento natural, tornando-o ideal para exercícios de pernas eficazes com tensão articular reduzida para usuários de todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C428A Seated Leg Press is built for comfort, safety, and smooth performance. Its inclined seat and stable footplate support proper posture and natural movement, making it ideal for effective leg workouts with reduced joint strain for users of all fitness levels."
+          "O leg press sentado YR Fitness C428A foi desenvolvido para oferecer conforto, segurança e desempenho suave. Seu assento inclinado e base estável suportam postura adequada e movimento natural, tornando-o ideal para exercícios de pernas eficazes com tensão articular reduzida para usuários de todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -3066,33 +3066,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "278kgs"
+        "label": "NO.",
+        "value": "278kg"
       },
       {
-        "label": "G.W.",
-        "value": "290kgs"
+        "label": "GW",
+        "value": "290kg"
       },
       {
-        "label": "Installation size",
+        "label": "Tamanho da instalação",
         "value": "1625*1040*1620mm"
       },
       {
-        "label": "Weight stacks",
-        "value": "100kg-20pcs"
+        "label": "Pilhas de peso",
+        "value": "100kg-20 unidades"
       }
     ]
   },
   {
     "id": "99",
     "modelCode": "C428",
-    "name": "Seated Leg Press",
-    "description": "YR Fitness C428 Seated Leg Press offers a smooth, joint-friendly leg workout with its natural movement design and adjustable seat. It’s built for comfort, stability, and ease of use, making it suitable for users of all sizes and fitness levels.",
+    "name": "Leg press sentado",
+    "description": "YR Fitness C428 Seated Leg Press oferece um treino de pernas suave e amigável às articulações com seu design de movimento natural e assento ajustável. Ele foi construído para oferecer conforto, estabilidade e facilidade de uso, tornando-o adequado para usuários de todos os tamanhos e níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C428 Seated Leg Press offers a smooth, joint-friendly leg workout with its natural movement design and adjustable seat. It’s built for comfort, stability, and ease of use, making it suitable for users of all sizes and fitness levels."
+          "YR Fitness C428 Seated Leg Press oferece um treino de pernas suave e amigável às articulações com seu design de movimento natural e assento ajustável. Ele foi construído para oferecer conforto, estabilidade e facilidade de uso, tornando-o adequado para usuários de todos os tamanhos e níveis de condicionamento físico."
         ]
       }
     ],
@@ -3103,33 +3103,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "255kgs"
+        "label": "NO.",
+        "value": "255kg"
       },
       {
-        "label": "G.W.",
-        "value": "267kgs"
+        "label": "GW",
+        "value": "267kg"
       },
       {
-        "label": "Installation size",
+        "label": "Tamanho da instalação",
         "value": "1410*1080*1620mm"
       },
       {
-        "label": "Weight stacks",
-        "value": "100kg-20pcs"
+        "label": "Pilhas de peso",
+        "value": "100kg-20 unidades"
       }
     ]
   },
   {
     "id": "100",
     "modelCode": "C426",
-    "name": "Prone Leg Curl",
-    "description": "YR Fitness C426 Prone Leg Curl is designed to isolate and strengthen hamstrings safely and effectively. With five start positions and angled support pads, it reduces lower-back stress while offering a smooth, comfortable workout for users of all fitness levels.",
+    "name": "Flexão de perna prona",
+    "description": "YR Fitness C426 Prone Leg Curl foi projetado para isolar e fortalecer os isquiotibiais com segurança e eficácia. Com cinco posições iniciais e almofadas de suporte angulares, reduz o estresse na região lombar, ao mesmo tempo que oferece um treino suave e confortável para usuários de todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C426 Prone Leg Curl is designed to isolate and strengthen hamstrings safely and effectively. With five start positions and angled support pads, it reduces lower-back stress while offering a smooth, comfortable workout for users of all fitness levels."
+          "YR Fitness C426 Prone Leg Curl foi projetado para isolar e fortalecer os isquiotibiais com segurança e eficácia. Com cinco posições iniciais e almofadas de suporte angulares, reduz o estresse na região lombar, ao mesmo tempo que oferece um treino suave e confortável para usuários de todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -3140,33 +3140,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "194kgs"
+        "label": "NO.",
+        "value": "194kg"
       },
       {
-        "label": "G.W.",
-        "value": "205kgs"
+        "label": "GW",
+        "value": "205kg"
       },
       {
-        "label": "Installation size",
+        "label": "Tamanho da instalação",
         "value": "1580*1120*1620mm"
       },
       {
-        "label": "Weight stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "101",
     "modelCode": "C425A",
-    "name": "Seated Leg Curl",
-    "description": "YR Fitness C425A Seated Leg Curl offers a customizable and comfortable way to train hamstrings. With adjustable foam rollers, oversized pads, and multiple grip options, it ensures a secure and effective workout experience for users of all sizes and fitness levels.",
+    "name": "Flexão de perna sentada",
+    "description": "YR Fitness C425A Seated Leg Curl oferece uma maneira personalizável e confortável de treinar isquiotibiais. Com rolos de espuma ajustáveis, almofadas grandes e múltiplas opções de aderência, garante uma experiência de treino segura e eficaz para usuários de todos os tamanhos e níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C425A Seated Leg Curl offers a customizable and comfortable way to train hamstrings. With adjustable foam rollers, oversized pads, and multiple grip options, it ensures a secure and effective workout experience for users of all sizes and fitness levels."
+          "YR Fitness C425A Seated Leg Curl oferece uma maneira personalizável e confortável de treinar isquiotibiais. Com rolos de espuma ajustáveis, almofadas grandes e múltiplas opções de aderência, garante uma experiência de treino segura e eficaz para usuários de todos os tamanhos e níveis de condicionamento físico."
         ]
       }
     ],
@@ -3177,33 +3177,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "235kgs"
+        "label": "NO.",
+        "value": "235kg"
       },
       {
-        "label": "G.W.",
-        "value": "248kgs"
+        "label": "GW",
+        "value": "248kg"
       },
       {
-        "label": "Installation size",
+        "label": "Tamanho da instalação",
         "value": "1310*1135*1620mm"
       },
       {
-        "label": "Weight stacks",
-        "value": "70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kg-14 unidades"
       }
     ]
   },
   {
     "id": "102",
     "modelCode": "C424",
-    "name": "Leg Extension",
-    "description": "YR Fitness C424 Leg Extension is designed to build strong quadriceps with comfort and precision. It features multiple starting positions, an adjustable foam roller, and a spacious design for smooth movement, making it ideal for safe and effective lower body training.",
+    "name": "Extensão de perna",
+    "description": "A extensão de perna YR Fitness C424 foi projetada para construir quadríceps fortes com conforto e precisão. Possui múltiplas posições iniciais, um rolo de espuma ajustável e um design espaçoso para movimentos suaves, tornando-o ideal para um treinamento seguro e eficaz da parte inferior do corpo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C424 Leg Extension is designed to build strong quadriceps with comfort and precision. It features multiple starting positions, an adjustable foam roller, and a spacious design for smooth movement, making it ideal for safe and effective lower body training."
+          "A extensão de perna YR Fitness C424 foi projetada para construir quadríceps fortes com conforto e precisão. Possui múltiplas posições iniciais, um rolo de espuma ajustável e um design espaçoso para movimentos suaves, tornando-o ideal para um treinamento seguro e eficaz da parte inferior do corpo."
         ]
       }
     ],
@@ -3214,33 +3214,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "216kgs"
+        "label": "NO.",
+        "value": "216kg"
       },
       {
-        "label": "G.W.",
-        "value": "226kgs"
+        "label": "GW",
+        "value": "226kg"
       },
       {
-        "label": "Installation size",
+        "label": "Tamanho da instalação",
         "value": "1350*1200*1620mm"
       },
       {
-        "label": "Weight stack",
-        "value": "80kg-16pcs"
+        "label": "Pilha de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "103",
     "modelCode": "C423",
-    "name": "Outer Thigh Abductor",
-    "description": "YR Fitness C423 Outer Thigh Adductor is built for effective outer thigh and hip workouts. With adjustable settings, larger leg pads, and a privacy-friendly design, it offers a smooth, comfortable, and user-friendly training experience suitable for all fitness levels.",
+    "name": "Abdutor externo da coxa",
+    "description": "O adutor externo da coxa YR Fitness C423 foi desenvolvido para exercícios eficazes na parte externa da coxa e quadril. Com configurações ajustáveis, almofadas para as pernas maiores e um design que favorece a privacidade, oferece uma experiência de treinamento suave, confortável e fácil de usar, adequada para todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C423 Outer Thigh Adductor is built for effective outer thigh and hip workouts. With adjustable settings, larger leg pads, and a privacy-friendly design, it offers a smooth, comfortable, and user-friendly training experience suitable for all fitness levels."
+          "O adutor externo da coxa YR Fitness C423 foi desenvolvido para exercícios eficazes na parte externa da coxa e quadril. Com configurações ajustáveis, almofadas para as pernas maiores e um design que favorece a privacidade, oferece uma experiência de treinamento suave, confortável e fácil de usar, adequada para todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -3252,33 +3252,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "200kgs"
+        "label": "NO.",
+        "value": "200kg"
       },
       {
-        "label": "G.W.",
-        "value": "208kgs"
+        "label": "GW",
+        "value": "208kg"
       },
       {
-        "label": "Installation size",
+        "label": "Tamanho da instalação",
         "value": "720*1600*1620mm"
       },
       {
-        "label": "Weight stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "104",
     "modelCode": "C422",
-    "name": "Inner Thigh Adductor",
-    "description": "YR Fitness C422 Inner Thigh Adductor is designed for effective inner thigh workouts with comfort and control. It features adjustable settings, large padded supports, and a front-mounted stack, making it ideal for smooth, safe, and customizable training for users of all fitness levels.",
+    "name": "Adutor interno da coxa",
+    "description": "O adutor interno da coxa YR Fitness C422 foi projetado para exercícios eficazes na parte interna da coxa com conforto e controle. Possui configurações ajustáveis, grandes suportes acolchoados e uma pilha montada na frente, tornando-o ideal para treinamento suave, seguro e personalizável para usuários de todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C422 Inner Thigh Adductor is designed for effective inner thigh workouts with comfort and control. It features adjustable settings, large padded supports, and a front-mounted stack, making it ideal for smooth, safe, and customizable training for users of all fitness levels."
+          "O adutor interno da coxa YR Fitness C422 foi projetado para exercícios eficazes na parte interna da coxa com conforto e controle. Possui configurações ajustáveis, grandes suportes acolchoados e uma pilha montada na frente, tornando-o ideal para treinamento suave, seguro e personalizável para usuários de todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -3290,33 +3290,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "200kgs"
+        "label": "NO.",
+        "value": "200kg"
       },
       {
-        "label": "G.W.",
+        "label": "GW",
         "value": "2o8kgs"
       },
       {
-        "label": "Installation size",
+        "label": "Tamanho da instalação",
         "value": "720*1600*1620mm"
       },
       {
-        "label": "Weight stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "105",
     "modelCode": "C421A",
-    "name": "Gluteus Maximus Trainer",
-    "description": "YR Fitness C421A Gluteus Maximus Trainer offers a safer, more natural motion for targeted glute training. With adjustable resistance and ergonomic support, it provides better stability and comfort, making it ideal for users of all fitness levels focused on lower body strength.",
+    "name": "Treinador de Glúteo Máximo",
+    "description": "YR Fitness C421A Gluteus Maximus Trainer oferece um movimento mais seguro e natural para treinamento direcionado de glúteos. Com resistência ajustável e suporte ergonômico, proporciona melhor estabilidade e conforto, tornando-o ideal para usuários de todos os níveis de condicionamento físico com foco na força da parte inferior do corpo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C421A Gluteus Maximus Trainer offers a safer, more natural motion for targeted glute training. With adjustable resistance and ergonomic support, it provides better stability and comfort, making it ideal for users of all fitness levels focused on lower body strength."
+          "YR Fitness C421A Gluteus Maximus Trainer oferece um movimento mais seguro e natural para treinamento direcionado de glúteos. Com resistência ajustável e suporte ergonômico, proporciona melhor estabilidade e conforto, tornando-o ideal para usuários de todos os níveis de condicionamento físico com foco na força da parte inferior do corpo."
         ]
       }
     ],
@@ -3327,33 +3327,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "198kgs"
+        "label": "NO.",
+        "value": "198kg"
       },
       {
-        "label": "G.W.",
-        "value": "210kgs"
+        "label": "GW",
+        "value": "210kg"
       },
       {
-        "label": "Installation size",
+        "label": "Tamanho da instalação",
         "value": "1216*820*1620mm"
       },
       {
-        "label": "Weight stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "106",
     "modelCode": "C421",
-    "name": "Gluteus Maximus Trainer",
-    "description": "YR Fitness C421 Gluteus Maximus Trainer is designed to effectively target and strengthen the glute muscles. Its back leg extension movement and rotating foot plate offer exercise variety, making it a great choice for users aiming to build and shape their lower body.",
+    "name": "Treinador de Glúteo Máximo",
+    "description": "O YR Fitness C421 Gluteus Maximus Trainer foi projetado para atingir e fortalecer efetivamente os músculos dos glúteos. Seu movimento de extensão da perna traseira e placa giratória para os pés oferecem variedade de exercícios, tornando-o uma ótima opção para usuários que desejam construir e moldar a parte inferior do corpo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C421 Gluteus Maximus Trainer is designed to effectively target and strengthen the glute muscles. Its back leg extension movement and rotating foot plate offer exercise variety, making it a great choice for users aiming to build and shape their lower body."
+          "O YR Fitness C421 Gluteus Maximus Trainer foi projetado para atingir e fortalecer efetivamente os músculos dos glúteos. Seu movimento de extensão da perna traseira e placa giratória para os pés oferecem variedade de exercícios, tornando-o uma ótima opção para usuários que desejam construir e moldar a parte inferior do corpo."
         ]
       }
     ],
@@ -3364,33 +3364,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "196kgs"
+        "label": "NO.",
+        "value": "196kg"
       },
       {
-        "label": "G.W.",
-        "value": "206kgs"
+        "label": "GW",
+        "value": "206kg"
       },
       {
-        "label": "Installation size",
+        "label": "Tamanho da instalação",
         "value": "1216*820*1620mm"
       },
       {
-        "label": "Weight stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "107",
     "modelCode": "C420",
-    "name": "Multi Hip",
-    "description": "YR Fitness C420 Multi Hip is a versatile machine designed to train various hip and leg muscles. With adjustable settings and a smooth bidirectional motion, it supports users of all sizes and fitness levels, making it ideal for lower body strength and mobility training.",
+    "name": "Multi Quadril",
+    "description": "YR Fitness C420 Multi Hip é uma máquina versátil projetada para treinar vários músculos do quadril e das pernas. Com configurações ajustáveis ​​e um movimento bidirecional suave, ele suporta usuários de todos os tamanhos e níveis de condicionamento físico, tornando-o ideal para treinamento de força e mobilidade da parte inferior do corpo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C420 Multi Hip is a versatile machine designed to train various hip and leg muscles. With adjustable settings and a smooth bidirectional motion, it supports users of all sizes and fitness levels, making it ideal for lower body strength and mobility training."
+          "YR Fitness C420 Multi Hip é uma máquina versátil projetada para treinar vários músculos do quadril e das pernas. Com configurações ajustáveis ​​e um movimento bidirecional suave, ele suporta usuários de todos os tamanhos e níveis de condicionamento físico, tornando-o ideal para treinamento de força e mobilidade da parte inferior do corpo."
         ]
       }
     ],
@@ -3401,33 +3401,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "223kgs"
+        "label": "NO.",
+        "value": "223kg"
       },
       {
-        "label": "G.W.",
-        "value": "233kgs"
+        "label": "GW",
+        "value": "233kg"
       },
       {
-        "label": "Installation size",
+        "label": "Tamanho da instalação",
         "value": "1065*1508*1620mm"
       },
       {
-        "label": "Weight stacks",
-        "value": "70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kg-14 unidades"
       }
     ]
   },
   {
     "id": "108",
     "modelCode": "C419",
-    "name": "Rotary Torso",
-    "description": "YR Fitness C419 Rotary Torso is designed to improve core strength and mobility with smooth 360-degree rotation. It features three grip positions and a reverse grip option, allowing users to customize their workout and effectively target obliques and other core muscles.",
+    "name": "Torso Rotativo",
+    "description": "O Torso Rotativo YR Fitness C419 foi projetado para melhorar a força e a mobilidade do núcleo com uma rotação suave de 360 ​​graus. Possui três posições de aderência e uma opção de aderência reversa, permitindo aos usuários personalizar seu treino e direcionar efetivamente os oblíquos e outros músculos centrais.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C419 Rotary Torso is designed to improve core strength and mobility with smooth 360-degree rotation. It features three grip positions and a reverse grip option, allowing users to customize their workout and effectively target obliques and other core muscles."
+          "O Torso Rotativo YR Fitness C419 foi projetado para melhorar a força e a mobilidade do núcleo com uma rotação suave de 360 ​​graus. Possui três posições de aderência e uma opção de aderência reversa, permitindo aos usuários personalizar seu treino e direcionar efetivamente os oblíquos e outros músculos centrais."
         ]
       }
     ],
@@ -3439,33 +3439,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "179kgs"
+        "label": "NO.",
+        "value": "179kg"
       },
       {
-        "label": "G.W.",
-        "value": "187kgs"
+        "label": "GW",
+        "value": "187kg"
       },
       {
-        "label": "Installation size",
+        "label": "Tamanho da instalação",
         "value": "720*1458*1620mm"
       },
       {
-        "label": "Weight stacks",
-        "value": "70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kg-14 unidades"
       }
     ]
   },
   {
     "id": "109",
     "modelCode": "C418A",
-    "name": "Lower Abdominal Trainer",
-    "description": "YR Fitness C418A Lower Abdominal Trainer is designed with a comfortable lying position to target lower abs safely and effectively. Its easy-to-use weight system allows smooth resistance adjustments, making it ideal for users of all fitness levels focused on core strength.",
+    "name": "Treinador Abdominal Inferior",
+    "description": "O treinador abdominal inferior YR Fitness C418A foi projetado com uma posição deitada confortável para atingir os abdominais inferiores com segurança e eficácia. Seu sistema de peso fácil de usar permite ajustes suaves de resistência, tornando-o ideal para usuários de todos os níveis de condicionamento físico com foco na força central.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C418A Lower Abdominal Trainer is designed with a comfortable lying position to target lower abs safely and effectively. Its easy-to-use weight system allows smooth resistance adjustments, making it ideal for users of all fitness levels focused on core strength."
+          "O treinador abdominal inferior YR Fitness C418A foi projetado com uma posição deitada confortável para atingir os abdominais inferiores com segurança e eficácia. Seu sistema de peso fácil de usar permite ajustes suaves de resistência, tornando-o ideal para usuários de todos os níveis de condicionamento físico com foco na força central."
         ]
       }
     ],
@@ -3476,33 +3476,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": ": 193kgs"
+        "label": "NO",
+        "value": ": 193kg"
       },
       {
         "label": "G.W",
         "value": ": 202kgs"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": ": 1435*1146*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": ": 70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": ": 70kg-14 unidades"
       }
     ]
   },
   {
     "id": "110",
     "modelCode": "C418",
-    "name": "Upper/Mid Abdominal Trainer",
-    "description": "YR Fitness C418 Upper/Mid Abdominal Trainer is designed to strengthen your core with safe and controlled crunch movements. It features adjustable ankle pads for added comfort and stability, helping users maintain proper form while effectively targeting upper and mid abdominal muscles.",
+    "name": "Treinador Abdominal Superior/Médio",
+    "description": "O instrutor abdominal superior/médio YR Fitness C418 foi projetado para fortalecer seu núcleo com movimentos de flexão seguros e controlados. Possui tornozeleiras ajustáveis ​​para maior conforto e estabilidade, ajudando os usuários a manter a forma adequada e, ao mesmo tempo, direcionando com eficácia os músculos abdominais superiores e médios.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C418 Upper/Mid Abdominal Trainer is designed to strengthen your core with safe and controlled crunch movements. It features adjustable ankle pads for added comfort and stability, helping users maintain proper form while effectively targeting upper and mid abdominal muscles."
+          "O instrutor abdominal superior/médio YR Fitness C418 foi projetado para fortalecer seu núcleo com movimentos de flexão seguros e controlados. Possui tornozeleiras ajustáveis ​​para maior conforto e estabilidade, ajudando os usuários a manter a forma adequada e, ao mesmo tempo, direcionando com eficácia os músculos abdominais superiores e médios."
         ]
       }
     ],
@@ -3513,33 +3513,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "181kgs"
+        "label": "NO.",
+        "value": "181kg"
       },
       {
-        "label": "G.W.",
-        "value": "190kgs"
+        "label": "GW",
+        "value": "190kg"
       },
       {
-        "label": "Installation size",
+        "label": "Tamanho da instalação",
         "value": "1130*1030*1620mm"
       },
       {
-        "label": "Weight stacks",
-        "value": "70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kg-14 unidades"
       }
     ]
   },
   {
     "id": "111",
     "modelCode": "C417",
-    "name": "Back Extension",
-    "description": "YR Fitness C417 Back Extension is designed to strengthen the lower back with safe and controlled movement. It features adjustable start positions, a supportive lumbar pad, and secure foot placement, making it ideal for users looking to train with proper form and comfort.",
+    "name": "Extensão traseira",
+    "description": "A extensão traseira YR Fitness C417 foi projetada para fortalecer a região lombar com movimentos seguros e controlados. Possui posições iniciais ajustáveis, uma almofada lombar de suporte e posicionamento seguro dos pés, tornando-o ideal para usuários que desejam treinar com forma e conforto adequados.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C417 Back Extension is designed to strengthen the lower back with safe and controlled movement. It features adjustable start positions, a supportive lumbar pad, and secure foot placement, making it ideal for users looking to train with proper form and comfort."
+          "A extensão traseira YR Fitness C417 foi projetada para fortalecer a região lombar com movimentos seguros e controlados. Possui posições iniciais ajustáveis, uma almofada lombar de suporte e posicionamento seguro dos pés, tornando-o ideal para usuários que desejam treinar com forma e conforto adequados."
         ]
       }
     ],
@@ -3550,33 +3550,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "184kgs"
+        "label": "NO.",
+        "value": "184kg"
       },
       {
-        "label": "G.W.",
-        "value": "194kgs"
+        "label": "GW",
+        "value": "194kg"
       },
       {
-        "label": "Installation size",
+        "label": "Tamanho da instalação",
         "value": "1160*1130*1620mm"
       },
       {
-        "label": "Weight stacks",
-        "value": "70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kg-14 unidades"
       }
     ]
   },
   {
     "id": "112",
     "modelCode": "C416A",
-    "name": "Knee-on Assisted Chin/Dip",
-    "description": "YR Fitness C416a Knee-on Assisted Chin/Dip is designed to support users in building upper body strength through assisted chin-ups and dips. With an optional knee pad for added support, it offers a safe, adjustable workout for users of all fitness levels.",
+    "name": "Queixo/imersão assistida com joelho",
+    "description": "YR Fitness C416a queixo/mergulho assistido com joelho foi projetado para apoiar os usuários na construção de força da parte superior do corpo por meio de flexões e quedas assistidas. Com uma joelheira opcional para suporte adicional, oferece um treino seguro e ajustável para usuários de todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C416a Knee-on Assisted Chin/Dip is designed to support users in building upper body strength through assisted chin-ups and dips. With an optional knee pad for added support, it offers a safe, adjustable workout for users of all fitness levels."
+          "YR Fitness C416a queixo/mergulho assistido com joelho foi projetado para apoiar os usuários na construção de força da parte superior do corpo por meio de flexões e quedas assistidas. Com uma joelheira opcional para suporte adicional, oferece um treino seguro e ajustável para usuários de todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -3589,33 +3589,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "223kgs"
+        "label": "NO.",
+        "value": "223kg"
       },
       {
-        "label": "G.W.",
-        "value": "235kgs"
+        "label": "GW",
+        "value": "235kg"
       },
       {
-        "label": "Installation size",
+        "label": "Tamanho da instalação",
         "value": "1000*1200*2250mm"
       },
       {
-        "label": "Weight stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "113",
     "modelCode": "C415A",
-    "name": "Lat Pull Down Diverging",
-    "description": "YR Fitness C415A Lat Pull Down Diverging offers a smooth and natural pulling motion with rotating handles and diverging arms. Its adjustable thigh pads ensure comfort and support, making it ideal for users looking to strengthen their upper back with proper form and flexibility.",
+    "name": "Lat Pull Down Divergente",
+    "description": "YR Fitness C415A Lat Pull Down Diverging oferece um movimento de puxar suave e natural com alças giratórias e braços divergentes. Suas almofadas ajustáveis ​​para coxas garantem conforto e suporte, tornando-o ideal para usuários que buscam fortalecer a parte superior das costas com forma e flexibilidade adequadas.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C415A Lat Pull Down Diverging offers a smooth and natural pulling motion with rotating handles and diverging arms. Its adjustable thigh pads ensure comfort and support, making it ideal for users looking to strengthen their upper back with proper form and flexibility."
+          "YR Fitness C415A Lat Pull Down Diverging oferece um movimento de puxar suave e natural com alças giratórias e braços divergentes. Suas almofadas ajustáveis ​​para coxas garantem conforto e suporte, tornando-o ideal para usuários que buscam fortalecer a parte superior das costas com forma e flexibilidade adequadas."
         ]
       }
     ],
@@ -3630,12 +3630,12 @@ const rawProducts: RawProduct[] = [
     "id": "114",
     "modelCode": "C415",
     "name": "Lat Pull Down",
-    "description": "YR Fitness C415 Lat Pull Down is designed to build upper back strength with proper form and comfort. It features adjustable thigh pads and an angled bar to support safe, effective movement, making it ideal for users of all fitness levels.",
+    "description": "YR Fitness C415 Lat Pull Down foi projetado para aumentar a força da parte superior das costas com forma e conforto adequados. Possui almofadas ajustáveis ​​para as coxas e uma barra angular para apoiar movimentos seguros e eficazes, tornando-o ideal para usuários de todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C415 Lat Pull Down is designed to build upper back strength with proper form and comfort. It features adjustable thigh pads and an angled bar to support safe, effective movement, making it ideal for users of all fitness levels."
+          "YR Fitness C415 Lat Pull Down foi projetado para aumentar a força da parte superior das costas com forma e conforto adequados. Possui almofadas ajustáveis ​​para as coxas e uma barra angular para apoiar movimentos seguros e eficazes, tornando-o ideal para usuários de todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -3647,33 +3647,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "183kgs"
+        "label": "NO.",
+        "value": "183kg"
       },
       {
-        "label": "G.W.",
-        "value": "192kgs"
+        "label": "GW",
+        "value": "192kg"
       },
       {
-        "label": "Installation size",
+        "label": "Tamanho da instalação",
         "value": "1200*1100*2190mm"
       },
       {
-        "label": "Weight stacks",
-        "value": "90kg-18pcs"
+        "label": "Pilhas de peso",
+        "value": "90kg-18 unidades"
       }
     ]
   },
   {
     "id": "115",
     "modelCode": "C414",
-    "name": "Mid Row",
-    "description": "YR Fitness C414 Mid Row is built to strengthen back muscles with smooth, natural movement. Its rotating handles support multiple exercise options and proper form, making it a versatile and user-friendly choice for all fitness levels looking to improve upper body strength.",
+    "name": "Linha intermediária",
+    "description": "YR Fitness C414 Mid Row foi desenvolvido para fortalecer os músculos das costas com movimentos suaves e naturais. Suas alças rotativas suportam múltiplas opções de exercícios e forma adequada, tornando-o uma escolha versátil e fácil de usar para todos os níveis de condicionamento físico que buscam melhorar a força da parte superior do corpo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C414 Mid Row is built to strengthen back muscles with smooth, natural movement. Its rotating handles support multiple exercise options and proper form, making it a versatile and user-friendly choice for all fitness levels looking to improve upper body strength."
+          "YR Fitness C414 Mid Row foi desenvolvido para fortalecer os músculos das costas com movimentos suaves e naturais. Suas alças rotativas suportam múltiplas opções de exercícios e forma adequada, tornando-o uma escolha versátil e fácil de usar para todos os níveis de condicionamento físico que buscam melhorar a força da parte superior do corpo."
         ]
       }
     ],
@@ -3687,13 +3687,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "116",
     "modelCode": "C413",
-    "name": "Low Row",
-    "description": "YR Fitness C413 Low Row is designed to strengthen back muscles with smooth and natural movement. Its rotating handles allow for varied grip positions, enhancing muscle activation and workout comfort. Ideal for users looking to improve upper body strength with better form and control.",
+    "name": "Linha Baixa",
+    "description": "YR Fitness C413 Low Row foi projetado para fortalecer os músculos das costas com movimentos suaves e naturais. Suas alças giratórias permitem posições de pegada variadas, melhorando a ativação muscular e o conforto do treino. Ideal para usuários que buscam melhorar a força da parte superior do corpo com melhor forma e controle.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C413 Low Row is designed to strengthen back muscles with smooth and natural movement. Its rotating handles allow for varied grip positions, enhancing muscle activation and workout comfort. Ideal for users looking to improve upper body strength with better form and control."
+          "YR Fitness C413 Low Row foi projetado para fortalecer os músculos das costas com movimentos suaves e naturais. Suas alças giratórias permitem posições de pegada variadas, melhorando a ativação muscular e o conforto do treino. Ideal para usuários que buscam melhorar a força da parte superior do corpo com melhor forma e controle."
         ]
       }
     ],
@@ -3705,33 +3705,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "178kgs"
+        "label": "NO.",
+        "value": "178kg"
       },
       {
-        "label": "G.W.",
-        "value": "187kgs"
+        "label": "GW",
+        "value": "187kg"
       },
       {
-        "label": "Installation size",
+        "label": "Tamanho da instalação",
         "value": "720*2200*1620mm"
       },
       {
-        "label": "Weight stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "117",
     "modelCode": "C412",
-    "name": "Triceps Extension",
-    "description": "YR Fitness C412 Triceps Extension is built to strengthen the triceps with proper form and comfort. It features supportive pads and pivoting handles that adjust to different users, making each workout smooth, stable, and effective for all fitness levels.",
+    "name": "Extensão de tríceps",
+    "description": "A extensão de tríceps YR Fitness C412 foi construída para fortalecer o tríceps com forma e conforto adequados. Possui almofadas de suporte e alças giratórias que se ajustam a diferentes usuários, tornando cada treino suave, estável e eficaz para todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C412 Triceps Extension is built to strengthen the triceps with proper form and comfort. It features supportive pads and pivoting handles that adjust to different users, making each workout smooth, stable, and effective for all fitness levels."
+          "A extensão de tríceps YR Fitness C412 foi construída para fortalecer o tríceps com forma e conforto adequados. Possui almofadas de suporte e alças giratórias que se ajustam a diferentes usuários, tornando cada treino suave, estável e eficaz para todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -3742,33 +3742,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "189kgs"
+        "label": "NO.",
+        "value": "189kg"
       },
       {
-        "label": "G.W.",
-        "value": "198kgs"
+        "label": "GW",
+        "value": "198kg"
       },
       {
-        "label": "Installation size",
+        "label": "Tamanho da instalação",
         "value": "1150*1270*1620mm"
       },
       {
-        "label": "Weight stacks",
-        "value": "60kg-12pcs"
+        "label": "Pilhas de peso",
+        "value": "60kg-12 unidades"
       }
     ]
   },
   {
     "id": "118",
     "modelCode": "C411",
-    "name": "Tricep Dip",
-    "description": "YR Fitness C411 Tricep Dip is designed to strengthen your triceps with comfort and control. Its rotating EZ handles offer multiple grip options for varied workouts, while the ergonomic design ensures smooth movement and a safe, effective training experience for all users.",
+    "name": "Mergulho de tríceps",
+    "description": "YR Fitness C411 Tricep Dip foi projetado para fortalecer o tríceps com conforto e controle. Suas alças giratórias EZ oferecem múltiplas opções de aderência para exercícios variados, enquanto o design ergonômico garante movimentos suaves e uma experiência de treinamento segura e eficaz para todos os usuários.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C411 Tricep Dip is designed to strengthen your triceps with comfort and control. Its rotating EZ handles offer multiple grip options for varied workouts, while the ergonomic design ensures smooth movement and a safe, effective training experience for all users."
+          "YR Fitness C411 Tricep Dip foi projetado para fortalecer o tríceps com conforto e controle. Suas alças giratórias EZ oferecem múltiplas opções de aderência para exercícios variados, enquanto o design ergonômico garante movimentos suaves e uma experiência de treinamento segura e eficaz para todos os usuários."
         ]
       }
     ],
@@ -3779,33 +3779,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "211kgs"
+        "label": "NO.",
+        "value": "211kg"
       },
       {
-        "label": "G.W.",
-        "value": "222kgs"
+        "label": "GW",
+        "value": "222kg"
       },
       {
-        "label": "Installation size",
+        "label": "Tamanho da instalação",
         "value": "1020*1260*1620mm"
       },
       {
-        "label": "Weight stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "119",
     "modelCode": "C410",
-    "name": "Biceps Curl",
-    "description": "YR Fitness C410 Biceps Curl is designed to help users build arm strength with comfort and precision. Its self-aligning handles fit different arm lengths, while the smooth motion and ergonomic seat provide a safe, effective, and user-friendly workout experience.",
+    "name": "Rosca de bíceps",
+    "description": "YR Fitness C410 Biceps Curl foi projetado para ajudar os usuários a aumentar a força do braço com conforto e precisão. Suas alças autocompensadoras se adaptam a diferentes comprimentos de braço, enquanto o movimento suave e o assento ergonômico proporcionam uma experiência de treino segura, eficaz e fácil de usar.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C410 Biceps Curl is designed to help users build arm strength with comfort and precision. Its self-aligning handles fit different arm lengths, while the smooth motion and ergonomic seat provide a safe, effective, and user-friendly workout experience."
+          "YR Fitness C410 Biceps Curl foi projetado para ajudar os usuários a aumentar a força do braço com conforto e precisão. Suas alças autocompensadoras se adaptam a diferentes comprimentos de braço, enquanto o movimento suave e o assento ergonômico proporcionam uma experiência de treino segura, eficaz e fácil de usar."
         ]
       }
     ],
@@ -3816,33 +3816,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "173kgs"
+        "label": "NO.",
+        "value": "173kg"
       },
       {
-        "label": "G.W.",
-        "value": "182kgs"
+        "label": "GW",
+        "value": "182kg"
       },
       {
-        "label": "Installation size：",
+        "label": "Tamanho da instalação:",
         "value": "1200*1270*1620mm"
       },
       {
-        "label": "Weight stacks：",
-        "value": "60kg-12pcs"
+        "label": "Pilhas de peso:",
+        "value": "60kg-12 unidades"
       }
     ]
   },
   {
     "id": "120",
     "modelCode": "C407",
-    "name": "Pectoral Butterfly",
-    "description": "YR Fitness C407 Pectoral Butterfly is designed to target the inner chest muscles with precision, while reducing shoulder strain. Trusted by professionals, it offers a smooth and focused workout, making it ideal for users looking to strengthen their chest safely and effectively.",
+    "name": "Borboleta Peitoral",
+    "description": "YR Fitness C407 Pectoral Butterfly foi projetado para atingir os músculos internos do peito com precisão, ao mesmo tempo que reduz a tensão nos ombros. Com a confiança de profissionais, oferece um treino suave e focado, sendo ideal para usuários que buscam fortalecer o peito com segurança e eficácia.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C407 Pectoral Butterfly is designed to target the inner chest muscles with precision, while reducing shoulder strain. Trusted by professionals, it offers a smooth and focused workout, making it ideal for users looking to strengthen their chest safely and effectively."
+          "YR Fitness C407 Pectoral Butterfly foi projetado para atingir os músculos internos do peito com precisão, ao mesmo tempo que reduz a tensão nos ombros. Com a confiança de profissionais, oferece um treino suave e focado, sendo ideal para usuários que buscam fortalecer o peito com segurança e eficácia."
         ]
       }
     ],
@@ -3854,33 +3854,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "209kgs"
+        "label": "NO.",
+        "value": "209kg"
       },
       {
-        "label": "G.W.",
-        "value": "220kgs"
+        "label": "GW",
+        "value": "220kg"
       },
       {
-        "label": "Installation size",
+        "label": "Tamanho da instalação",
         "value": "1220*1300*1620mm"
       },
       {
-        "label": "Weight stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "121",
     "modelCode": "C404A",
-    "name": "Chest Press Converging",
-    "description": "YR Fitness C404A Chest Press Converging is designed to help users build chest strength with a natural, ergonomic motion. It offers adjustable seating and multiple grip options for a safe and comfortable workout, making it ideal for users of all fitness levels.",
+    "name": "Pressão Peito Convergente",
+    "description": "YR Fitness C404A Chest Press Converging foi projetado para ajudar os usuários a aumentar a força do peito com um movimento natural e ergonômico. Oferece assento ajustável e múltiplas opções de aderência para um treino seguro e confortável, tornando-o ideal para usuários de todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C404A Chest Press Converging is designed to help users build chest strength with a natural, ergonomic motion. It offers adjustable seating and multiple grip options for a safe and comfortable workout, making it ideal for users of all fitness levels."
+          "YR Fitness C404A Chest Press Converging foi projetado para ajudar os usuários a aumentar a força do peito com um movimento natural e ergonômico. Oferece assento ajustável e múltiplas opções de aderência para um treino seguro e confortável, tornando-o ideal para usuários de todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -3891,33 +3891,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "218kgs"
+        "label": "NO.",
+        "value": "218kg"
       },
       {
-        "label": "G.W.",
-        "value": "228kgs"
+        "label": "GW",
+        "value": "228kg"
       },
       {
-        "label": "Installation size",
+        "label": "Tamanho da instalação",
         "value": "1150*1500*1620mm"
       },
       {
-        "label": "Weight stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "122",
     "modelCode": "C404",
-    "name": "Seated Chest Press",
-    "description": "YR Fitness C404 Seated Chest Press is designed to build chest strength safely and effectively. With a smooth motion and user-friendly design, it’s ideal for all fitness levels. The machine offers a comfortable and stable workout experience, making chest training more accessible and efficient.",
+    "name": "Press de Peito Sentado",
+    "description": "YR Fitness C404 Seated Chest Press foi projetado para aumentar a força do peito com segurança e eficácia. Com um movimento suave e design fácil de usar, é ideal para todos os níveis de condicionamento físico. A máquina oferece uma experiência de treino confortável e estável, tornando o treinamento de peito mais acessível e eficiente.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C404 Seated Chest Press is designed to build chest strength safely and effectively. With a smooth motion and user-friendly design, it’s ideal for all fitness levels. The machine offers a comfortable and stable workout experience, making chest training more accessible and efficient."
+          "YR Fitness C404 Seated Chest Press foi projetado para aumentar a força do peito com segurança e eficácia. Com um movimento suave e design fácil de usar, é ideal para todos os níveis de condicionamento físico. A máquina oferece uma experiência de treino confortável e estável, tornando o treinamento de peito mais acessível e eficiente."
         ]
       }
     ],
@@ -3930,13 +3930,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "123",
     "modelCode": "C403",
-    "name": "Seated Lateral Raise",
-    "description": "YR Fitness C403 Seated Lateral Raise Machine is designed to follow the body’s natural shoulder movement, making workouts smooth and effective. With self-aligning handles and a user-friendly design, it provides a safe and comfortable way to strengthen shoulder muscles for users of all levels.",
+    "name": "Elevação lateral sentada",
+    "description": "A máquina de elevação lateral sentada YR Fitness C403 foi projetada para seguir o movimento natural dos ombros do corpo, tornando os treinos suaves e eficazes. Com alças auto-alinhantes e um design fácil de usar, oferece uma maneira segura e confortável de fortalecer os músculos dos ombros para usuários de todos os níveis.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C403 Seated Lateral Raise Machine is designed to follow the body’s natural shoulder movement, making workouts smooth and effective. With self-aligning handles and a user-friendly design, it provides a safe and comfortable way to strengthen shoulder muscles for users of all levels."
+          "A máquina de elevação lateral sentada YR Fitness C403 foi projetada para seguir o movimento natural dos ombros do corpo, tornando os treinos suaves e eficazes. Com alças auto-alinhantes e um design fácil de usar, oferece uma maneira segura e confortável de fortalecer os músculos dos ombros para usuários de todos os níveis."
         ]
       }
     ],
@@ -3949,13 +3949,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "124",
     "modelCode": "C402",
-    "name": "Pull Up Shoulder",
-    "description": "YR Fitness C402 Pull Up Shoulder Machine is designed for users with shoulder pain or limited mobility, offering a safer way to train shoulders without strain. Its compact motion and ergonomic design support effective workouts while protecting sensitive joints and ensuring user comfort.",
+    "name": "Puxe o ombro para cima",
+    "description": "A máquina de puxar ombros YR Fitness C402 foi projetada para usuários com dores nos ombros ou mobilidade limitada, oferecendo uma maneira mais segura de treinar ombros sem esforço. Seu movimento compacto e design ergonômico apoiam exercícios eficazes, protegendo as articulações sensíveis e garantindo o conforto do usuário.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C402 Pull Up Shoulder Machine is designed for users with shoulder pain or limited mobility, offering a safer way to train shoulders without strain. Its compact motion and ergonomic design support effective workouts while protecting sensitive joints and ensuring user comfort."
+          "A máquina de puxar ombros YR Fitness C402 foi projetada para usuários com dores nos ombros ou mobilidade limitada, oferecendo uma maneira mais segura de treinar ombros sem esforço. Seu movimento compacto e design ergonômico apoiam exercícios eficazes, protegendo as articulações sensíveis e garantindo o conforto do usuário."
         ]
       }
     ],
@@ -3968,13 +3968,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "125",
     "modelCode": "C401A",
-    "name": "Seated Shoulder Press Converging",
-    "description": "YR Fitness C401A Seated Shoulder Press Converging is built for effective shoulder training with a natural converging motion. It offers smooth movement, adjustable seating, and multiple grip choices, making it ideal for safe, comfortable, and efficient strength workouts.",
+    "name": "Pressão de Ombro Sentada Convergente",
+    "description": "YR Fitness C401A Seated Shoulder Press Converging foi desenvolvido para um treinamento eficaz dos ombros com um movimento convergente natural. Oferece movimentos suaves, assento ajustável e múltiplas opções de aderência, tornando-o ideal para exercícios de força seguros, confortáveis ​​e eficientes.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C401A Seated Shoulder Press Converging is built for effective shoulder training with a natural converging motion. It offers smooth movement, adjustable seating, and multiple grip choices, making it ideal for safe, comfortable, and efficient strength workouts."
+          "YR Fitness C401A Seated Shoulder Press Converging foi desenvolvido para um treinamento eficaz dos ombros com um movimento convergente natural. Oferece movimentos suaves, assento ajustável e múltiplas opções de aderência, tornando-o ideal para exercícios de força seguros, confortáveis ​​e eficientes."
         ]
       }
     ],
@@ -3987,13 +3987,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "126",
     "modelCode": "C401",
-    "name": "Seated Shoulder Press",
-    "description": "YR Fitness C401 is a strong and comfortable shoulder press machine. It has an adjustable seat, two handle positions, and soft padding. Made with high-quality steel and parts, it’s built to last. Great for safe, everyday shoulder workouts at any gym.",
+    "name": "Pressão de Ombro Sentado",
+    "description": "YR Fitness C401 é uma máquina de compressão de ombros forte e confortável. Possui assento ajustável, duas posições de alça e estofamento macio. Feito com aço e peças de alta qualidade, é construído para durar. Ótimo para exercícios diários e seguros de ombros em qualquer academia.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness C401 is a strong and comfortable shoulder press machine. It has an adjustable seat, two handle positions, and soft padding. Made with high-quality steel and parts, it’s built to last. Great for safe, everyday shoulder workouts at any gym."
+          "YR Fitness C401 é uma máquina de compressão de ombros forte e confortável. Possui assento ajustável, duas posições de alça e estofamento macio. Feito com aço e peças de alta qualidade, é construído para durar. Ótimo para exercícios diários e seguros de ombros em qualquer academia."
         ]
       }
     ],
@@ -4004,33 +4004,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "208kgs"
+        "label": "NO.",
+        "value": "208kg"
       },
       {
-        "label": "G.W.",
-        "value": "218kgs"
+        "label": "GW",
+        "value": "218kg"
       },
       {
-        "label": "Installation size",
+        "label": "Tamanho da instalação",
         "value": "1480*1310*1620mm"
       },
       {
-        "label": "Weight stacks",
-        "value": "70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kg-14 unidades"
       }
     ]
   },
   {
     "id": "127",
     "modelCode": "8509",
-    "name": "Smith & Functional Trainer and Power Rack Combo",
-    "description": "YR Fitness Smith &amp; Functional Trainer and Power Rack Combo 8509 is a heavy-duty all-in-one machine for serious strength training. It combines multiple functions in one stable frame, built with strong steel and high-quality parts for safe, effective workouts in any gym setting.",
+    "name": "Combinação de Smith & Functional Trainer e Power Rack",
+    "description": "YR Fitness Smith &amp; Functional Trainer e Power Rack Combo 8509 é uma máquina multifuncional resistente para treinamento de força sério. Combina múltiplas funções numa estrutura estável, construída com aço forte e peças de alta qualidade para treinos seguros e eficazes em qualquer ambiente de ginásio.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Smith &amp; Functional Trainer and Power Rack Combo 8509 is a heavy-duty all-in-one machine for serious strength training. It combines multiple functions in one stable frame, built with strong steel and high-quality parts for safe, effective workouts in any gym setting."
+          "YR Fitness Smith &amp; Functional Trainer e Power Rack Combo 8509 é uma máquina multifuncional resistente para treinamento de força sério. Combina múltiplas funções numa estrutura estável, construída com aço forte e peças de alta qualidade para treinos seguros e eficazes em qualquer ambiente de ginásio."
         ]
       }
     ],
@@ -4043,13 +4043,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "128",
     "modelCode": "82021",
-    "name": "Ground Base Jammer",
-    "description": "YR Fitness 82021 delivers powerful, functional training through ground-based pressing mechanics. It’s a go-to choice for building explosive upper-body strength and total-body athleticism.",
+    "name": "Bloqueador de base terrestre",
+    "description": "YR Fitness 82021 oferece treinamento funcional e poderoso por meio de mecânica de pressão baseada no solo. É a escolha certa para desenvolver força explosiva na parte superior do corpo e capacidade atlética de todo o corpo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82021 delivers powerful, functional training through ground-based pressing mechanics. It’s a go-to choice for building explosive upper-body strength and total-body athleticism."
+          "YR Fitness 82021 oferece treinamento funcional e poderoso por meio de mecânica de pressão baseada no solo. É a escolha certa para desenvolver força explosiva na parte superior do corpo e capacidade atlética de todo o corpo."
         ]
       }
     ],
@@ -4062,15 +4062,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "134kgs"
+        "label": "NO",
+        "value": "134kg"
       },
       {
         "label": "G.W",
-        "value": "205kgs"
+        "value": "205kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1660*1915*2030mm"
       }
     ]
@@ -4078,13 +4078,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "129",
     "modelCode": "7306",
-    "name": "Incline Chest Press",
-    "description": "YR Fitness 7306 Incline Chest Press targets the upper chest with independent, converging arms that mimic natural pressing motion. Built with durable materials and ergonomic features, it offers smooth, comfortable, and effective strength training.",
+    "name": "Pressão torácica inclinada",
+    "description": "YR Fitness 7306 Incline Chest Press tem como alvo a parte superior do tórax com braços independentes e convergentes que imitam o movimento natural de pressão. Construído com materiais duráveis ​​e recursos ergonômicos, oferece treinamento de força suave, confortável e eficaz.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7306 Incline Chest Press targets the upper chest with independent, converging arms that mimic natural pressing motion. Built with durable materials and ergonomic features, it offers smooth, comfortable, and effective strength training."
+          "YR Fitness 7306 Incline Chest Press tem como alvo a parte superior do tórax com braços independentes e convergentes que imitam o movimento natural de pressão. Construído com materiais duráveis ​​e recursos ergonômicos, oferece treinamento de força suave, confortável e eficaz."
         ]
       }
     ],
@@ -4095,33 +4095,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "260kgs"
+        "label": "NO",
+        "value": "260kg"
       },
       {
         "label": "G.W",
-        "value": "360kgs"
+        "value": "360kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1680*950*1815mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "90kg-18pcs"
+        "label": "Pilhas de peso",
+        "value": "90kg-18 unidades"
       }
     ]
   },
   {
     "id": "130",
     "modelCode": "61A10",
-    "name": "Biceps Curl",
-    "description": "YR Fitness 61A10 Biceps Curl offers smooth, isolated arm training with self-aligning handles for natural motion. Built for comfort and precision, it supports a wide range of users and delivers consistent results for biceps development.",
+    "name": "Rosca de bíceps",
+    "description": "YR Fitness 61A10 Biceps Curl oferece treinamento de braço suave e isolado com alças auto-alinhadas para movimento natural. Construído para oferecer conforto e precisão, ele oferece suporte a uma ampla gama de usuários e oferece resultados consistentes para o desenvolvimento do bíceps.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A10 Biceps Curl offers smooth, isolated arm training with self-aligning handles for natural motion. Built for comfort and precision, it supports a wide range of users and delivers consistent results for biceps development."
+          "YR Fitness 61A10 Biceps Curl oferece treinamento de braço suave e isolado com alças auto-alinhadas para movimento natural. Construído para oferecer conforto e precisão, ele oferece suporte a uma ampla gama de usuários e oferece resultados consistentes para o desenvolvimento do bíceps."
         ]
       }
     ],
@@ -4132,33 +4132,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "173kgs"
+        "label": "NO",
+        "value": "173kg"
       },
       {
         "label": "G.W",
-        "value": "183kgs"
+        "value": "183kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "120081270*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "60kg-12pcs"
+        "label": "Pilhas de peso",
+        "value": "60kg-12 unidades"
       }
     ]
   },
   {
     "id": "131",
     "modelCode": "61A12",
-    "name": "Triceps Extension",
-    "description": "YR Fitness 61A12 Triceps Extension delivers smooth, joint-friendly arm training with auto-adjusting handles and padded support. It’s ideal for isolating triceps muscles while ensuring comfort, alignment, and strength progression for all users.",
+    "name": "Extensão de tríceps",
+    "description": "A extensão de tríceps YR Fitness 61A12 oferece treinamento de braço suave e amigável às articulações, com alças de ajuste automático e suporte acolchoado. É ideal para isolar os músculos tríceps e, ao mesmo tempo, garantir conforto, alinhamento e progressão de força para todos os usuários.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A12 Triceps Extension delivers smooth, joint-friendly arm training with auto-adjusting handles and padded support. It’s ideal for isolating triceps muscles while ensuring comfort, alignment, and strength progression for all users."
+          "A extensão de tríceps YR Fitness 61A12 oferece treinamento de braço suave e amigável às articulações, com alças de ajuste automático e suporte acolchoado. É ideal para isolar os músculos tríceps e, ao mesmo tempo, garantir conforto, alinhamento e progressão de força para todos os usuários."
         ]
       }
     ],
@@ -4169,33 +4169,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "189kgs"
+        "label": "NO",
+        "value": "189kg"
       },
       {
         "label": "G.W",
-        "value": "198kgs"
+        "value": "198kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1150*1270*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "60kg-12pcs"
+        "label": "Pilhas de peso",
+        "value": "60kg-12 unidades"
       }
     ]
   },
   {
     "id": "132",
     "modelCode": "61A13",
-    "name": "Low Row",
-    "description": "YR Fitness 61A13 Low Row targets back muscles with rotating ergonomic handles that adapt to your natural pulling motion. Built for smooth, joint-friendly training, it delivers versatile and effective back workouts for all fitness levels.",
+    "name": "Linha Baixa",
+    "description": "YR Fitness 61A13 Low Row visa os músculos das costas com alças ergonômicas rotativas que se adaptam ao seu movimento natural de puxar. Construído para um treinamento suave e amigável às articulações, ele oferece exercícios de costas versáteis e eficazes para todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A13 Low Row targets back muscles with rotating ergonomic handles that adapt to your natural pulling motion. Built for smooth, joint-friendly training, it delivers versatile and effective back workouts for all fitness levels."
+          "YR Fitness 61A13 Low Row visa os músculos das costas com alças ergonômicas rotativas que se adaptam ao seu movimento natural de puxar. Construído para um treinamento suave e amigável às articulações, ele oferece exercícios de costas versáteis e eficazes para todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -4206,33 +4206,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "178kgs"
+        "label": "NO",
+        "value": "178kg"
       },
       {
         "label": "G.W",
-        "value": "187kgs"
+        "value": "187kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "720*2200*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "133",
     "modelCode": "61A15A",
-    "name": "Lat Pull Down Diverging",
-    "description": "YR Fitness 61A15A Lat Pull Down Diverging features rotating handles and a natural diverging pull path for smooth, joint-friendly motion. With adjustable thigh pads and ergonomic design, it offers versatile and effective back training for all users.",
+    "name": "Lat Pull Down Divergente",
+    "description": "YR Fitness 61A15A Lat Pull Down Diverging apresenta alças giratórias e um caminho de tração divergente natural para movimentos suaves e amigáveis ​​às articulações. Com almofadas ajustáveis ​​para as coxas e design ergonômico, oferece treinamento de costas versátil e eficaz para todos os usuários.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A15A Lat Pull Down Diverging features rotating handles and a natural diverging pull path for smooth, joint-friendly motion. With adjustable thigh pads and ergonomic design, it offers versatile and effective back training for all users."
+          "YR Fitness 61A15A Lat Pull Down Diverging apresenta alças giratórias e um caminho de tração divergente natural para movimentos suaves e amigáveis ​​às articulações. Com almofadas ajustáveis ​​para as coxas e design ergonômico, oferece treinamento de costas versátil e eficaz para todos os usuários."
         ]
       }
     ],
@@ -4243,33 +4243,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "246kgs"
+        "label": "NO",
+        "value": "246kg"
       },
       {
         "label": "G.W",
-        "value": "259kgs"
+        "value": "259kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1600*1100*2000mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "90kg-18pcs"
+        "label": "Pilhas de peso",
+        "value": "90kg-18 unidades"
       }
     ]
   },
   {
     "id": "134",
     "modelCode": "61A16",
-    "name": "Standing Assisted Chin/Dip",
-    "description": "YR Fitness 61A16 Standing Assisted Chin/Dip offers stable, beginner-friendly support for bodyweight training. With a standing footplate and multi-grip handles, it’s perfect for safely building strength in chin-up and dip exercises across all fitness levels.",
+    "name": "Queixo / mergulho assistido em pé",
+    "description": "YR Fitness 61A16 Standing Assisted Chin/Dip oferece suporte estável e adequado para iniciantes para treinamento de peso corporal. Com uma plataforma de pé e alças multi-grip, é perfeito para aumentar a força com segurança em exercícios de elevação e mergulho em todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A16 Standing Assisted Chin/Dip offers stable, beginner-friendly support for bodyweight training. With a standing footplate and multi-grip handles, it’s perfect for safely building strength in chin-up and dip exercises across all fitness levels."
+          "YR Fitness 61A16 Standing Assisted Chin/Dip oferece suporte estável e adequado para iniciantes para treinamento de peso corporal. Com uma plataforma de pé e alças multi-grip, é perfeito para aumentar a força com segurança em exercícios de elevação e mergulho em todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -4282,33 +4282,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "250kgs"
+        "label": "NO",
+        "value": "250kg"
       },
       {
         "label": "G.W",
-        "value": "270kgs"
+        "value": "270kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1000*1200*2250mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "135",
     "modelCode": "61A18",
-    "name": "Upper/Mid Abdominal Trainer",
-    "description": "YR Fitness 61A18 Upper/Mid Abdominal Trainer delivers effective abdominal training with controlled crunch motion and adjustable ankle pads. Built for comfort and precision, it helps users of all levels strengthen their core safely and efficiently.",
+    "name": "Treinador Abdominal Superior/Médio",
+    "description": "O YR Fitness 61A18 Upper/Mid Abdominal Trainer oferece treinamento abdominal eficaz com movimento de compressão controlado e almofadas de tornozelo ajustáveis. Construído para oferecer conforto e precisão, ajuda usuários de todos os níveis a fortalecer seu núcleo com segurança e eficiência.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A18 Upper/Mid Abdominal Trainer delivers effective abdominal training with controlled crunch motion and adjustable ankle pads. Built for comfort and precision, it helps users of all levels strengthen their core safely and efficiently."
+          "O YR Fitness 61A18 Upper/Mid Abdominal Trainer oferece treinamento abdominal eficaz com movimento de compressão controlado e almofadas de tornozelo ajustáveis. Construído para oferecer conforto e precisão, ajuda usuários de todos os níveis a fortalecer seu núcleo com segurança e eficiência."
         ]
       }
     ],
@@ -4319,33 +4319,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "181kgs"
+        "label": "NO",
+        "value": "181kg"
       },
       {
         "label": "G.W",
-        "value": "190kgs"
+        "value": "190kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1130*1030*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kg-14 unidades"
       }
     ]
   },
   {
     "id": "136",
     "modelCode": "61A17",
-    "name": "Back Extension",
-    "description": "YR Fitness 61A17 Back Extension ensures safe, biomechanically correct back training with lumbar support, non-slip footpads, and adjustable start positions. It’s ideal for strengthening the lower back across beginner to advanced fitness levels.",
+    "name": "Extensão traseira",
+    "description": "A extensão traseira YR Fitness 61A17 garante um treinamento de costas seguro e biomecanicamente correto com suporte lombar, pés antiderrapantes e posições iniciais ajustáveis. É ideal para fortalecer a região lombar em níveis de condicionamento físico iniciante a avançado.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A17 Back Extension ensures safe, biomechanically correct back training with lumbar support, non-slip footpads, and adjustable start positions. It’s ideal for strengthening the lower back across beginner to advanced fitness levels."
+          "A extensão traseira YR Fitness 61A17 garante um treinamento de costas seguro e biomecanicamente correto com suporte lombar, pés antiderrapantes e posições iniciais ajustáveis. É ideal para fortalecer a região lombar em níveis de condicionamento físico iniciante a avançado."
         ]
       }
     ],
@@ -4356,33 +4356,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "184kgs"
+        "label": "NO",
+        "value": "184kg"
       },
       {
         "label": "G.W",
-        "value": "194kgs"
+        "value": "194kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1061*1016*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kg-14 unidades"
       }
     ]
   },
   {
     "id": "137",
     "modelCode": "61A18A",
-    "name": "Lower Abdominal Trainer",
-    "description": "YR Fitness 61A18A Lower Abdominal Trainer uses a supine position and selectorized resistance to isolate lower abs comfortably and safely. Ideal for all fitness levels, it ensures smooth, effective core training with high-end build quality.",
+    "name": "Treinador Abdominal Inferior",
+    "description": "O instrutor abdominal inferior YR Fitness 61A18A usa uma posição supina e resistência seletorizada para isolar os abdominais inferiores com conforto e segurança. Ideal para todos os níveis de condicionamento físico, garante um treinamento central suave e eficaz com qualidade de construção de alta qualidade.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A18A Lower Abdominal Trainer uses a supine position and selectorized resistance to isolate lower abs comfortably and safely. Ideal for all fitness levels, it ensures smooth, effective core training with high-end build quality."
+          "O instrutor abdominal inferior YR Fitness 61A18A usa uma posição supina e resistência seletorizada para isolar os abdominais inferiores com conforto e segurança. Ideal para todos os níveis de condicionamento físico, garante um treinamento central suave e eficaz com qualidade de construção de alta qualidade."
         ]
       }
     ],
@@ -4393,33 +4393,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "193kgs"
+        "label": "NO",
+        "value": "193kg"
       },
       {
         "label": "G.W",
-        "value": "202kgs"
+        "value": "202kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1435*1146*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kg-14 unidades"
       }
     ]
   },
   {
     "id": "138",
     "modelCode": "61A19",
-    "name": "Rotary Torso",
-    "description": "YR Fitness 61A19 Rotary Torso provides full 360° rotational training to strengthen obliques and improve mobility. With multiple grip options and smooth pin-loaded resistance, it delivers effective, customizable core workouts for all user levels.",
+    "name": "Torso Rotativo",
+    "description": "YR Fitness 61A19 Rotary Torso oferece treinamento rotacional completo de 360° para fortalecer oblíquos e melhorar a mobilidade. Com múltiplas opções de aderência e resistência suave carregada por pinos, ele oferece exercícios básicos eficazes e personalizáveis ​​para todos os níveis de usuário.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A19 Rotary Torso provides full 360° rotational training to strengthen obliques and improve mobility. With multiple grip options and smooth pin-loaded resistance, it delivers effective, customizable core workouts for all user levels."
+          "YR Fitness 61A19 Rotary Torso oferece treinamento rotacional completo de 360° para fortalecer oblíquos e melhorar a mobilidade. Com múltiplas opções de aderência e resistência suave carregada por pinos, ele oferece exercícios básicos eficazes e personalizáveis ​​para todos os níveis de usuário."
         ]
       }
     ],
@@ -4431,33 +4431,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "179kgs"
+        "label": "NO",
+        "value": "179kg"
       },
       {
         "label": "G.W",
-        "value": "187kgs"
+        "value": "187kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "720*1458*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kg-14 unidades"
       }
     ]
   },
   {
     "id": "139",
     "modelCode": "61A20",
-    "name": "Multi Hip",
-    "description": "YR Fitness 61A20 Multi Hip is a versatile lower-body machine designed to train glutes, hips, and legs with smooth bidirectional motion. Its adjustable platform fits all users, making it ideal for rehab, strength, and functional training routines.",
+    "name": "Multi Quadril",
+    "description": "YR Fitness 61A20 Multi Hip é uma máquina versátil para a parte inferior do corpo projetada para treinar glúteos, quadris e pernas com movimentos bidirecionais suaves. Sua plataforma ajustável se adapta a todos os usuários, tornando-o ideal para rotinas de reabilitação, força e treinamento funcional.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A20 Multi Hip is a versatile lower-body machine designed to train glutes, hips, and legs with smooth bidirectional motion. Its adjustable platform fits all users, making it ideal for rehab, strength, and functional training routines."
+          "YR Fitness 61A20 Multi Hip é uma máquina versátil para a parte inferior do corpo projetada para treinar glúteos, quadris e pernas com movimentos bidirecionais suaves. Sua plataforma ajustável se adapta a todos os usuários, tornando-o ideal para rotinas de reabilitação, força e treinamento funcional."
         ]
       }
     ],
@@ -4468,33 +4468,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "223kgs"
+        "label": "NO",
+        "value": "223kg"
       },
       {
         "label": "G.W",
-        "value": "233kgs"
+        "value": "233kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1065*1508*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kg-14 unidades"
       }
     ]
   },
   {
     "id": "140",
     "modelCode": "61A21",
-    "name": "Gluteus Maximus Trainer",
-    "description": "YR Fitness 61A21 Gluteus Maximus Trainer delivers powerful glute-focused workouts with a back leg extension motion and rotating footplate. Designed for precision and comfort, it enhances strength, tone, and versatility for all users.",
+    "name": "Treinador de Glúteo Máximo",
+    "description": "YR Fitness 61A21 Gluteus Maximus Trainer oferece exercícios poderosos focados nos glúteos com movimento de extensão da perna traseira e plataforma giratória. Projetado para precisão e conforto, aumenta a força, o tom e a versatilidade para todos os usuários.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A21 Gluteus Maximus Trainer delivers powerful glute-focused workouts with a back leg extension motion and rotating footplate. Designed for precision and comfort, it enhances strength, tone, and versatility for all users."
+          "YR Fitness 61A21 Gluteus Maximus Trainer oferece exercícios poderosos focados nos glúteos com movimento de extensão da perna traseira e plataforma giratória. Projetado para precisão e conforto, aumenta a força, o tom e a versatilidade para todos os usuários."
         ]
       }
     ],
@@ -4505,33 +4505,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "196kgs"
+        "label": "NO",
+        "value": "196kg"
       },
       {
         "label": "G.W",
-        "value": "206kgs"
+        "value": "206kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1216*820*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "141",
     "modelCode": "61A22",
-    "name": "Inner Thigh Adductor",
-    "description": "YR Fitness 61A22 Inner Thigh Adductor offers smooth, controlled inner thigh training with adjustable positioning and ergonomic leg pads. Its stable build and easy-access weight stack make it ideal for effective and comfortable lower-body workouts.",
+    "name": "Adutor interno da coxa",
+    "description": "O adutor interno da coxa YR Fitness 61A22 oferece treinamento suave e controlado da parte interna da coxa com posicionamento ajustável e almofadas ergonômicas para as pernas. Sua construção estável e pilha de pesos de fácil acesso o tornam ideal para exercícios eficazes e confortáveis ​​para a parte inferior do corpo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A22 Inner Thigh Adductor offers smooth, controlled inner thigh training with adjustable positioning and ergonomic leg pads. Its stable build and easy-access weight stack make it ideal for effective and comfortable lower-body workouts."
+          "O adutor interno da coxa YR Fitness 61A22 oferece treinamento suave e controlado da parte interna da coxa com posicionamento ajustável e almofadas ergonômicas para as pernas. Sua construção estável e pilha de pesos de fácil acesso o tornam ideal para exercícios eficazes e confortáveis ​​para a parte inferior do corpo."
         ]
       }
     ],
@@ -4543,33 +4543,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "200kgs"
+        "label": "NO",
+        "value": "200kg"
       },
       {
         "label": "G.W",
-        "value": "208kgs"
+        "value": "208kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "720*1600*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "142",
     "modelCode": "61A23",
-    "name": "Outer Thigh Abductor",
-    "description": "YR Fitness 61A23 Outer Thigh Abductor provides smooth, privacy-conscious outer thigh workouts with large leg pads and adjustable positioning. Designed for comfort, control, and consistent performance, it&#8217;s ideal for all users looking to strengthen hip abductors.",
+    "name": "Abdutor externo da coxa",
+    "description": "O abdutor externo da coxa YR Fitness 61A23 oferece exercícios suaves e preocupados com a privacidade da parte externa da coxa, com grandes almofadas para as pernas e posicionamento ajustável. Projetado para conforto, controle e desempenho consistente, é ideal para todos os usuários que buscam fortalecer os abdutores do quadril.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A23 Outer Thigh Abductor provides smooth, privacy-conscious outer thigh workouts with large leg pads and adjustable positioning. Designed for comfort, control, and consistent performance, it&#8217;s ideal for all users looking to strengthen hip abductors."
+          "O abdutor externo da coxa YR Fitness 61A23 oferece exercícios suaves e preocupados com a privacidade da parte externa da coxa, com grandes almofadas para as pernas e posicionamento ajustável. Projetado para conforto, controle e desempenho consistente, é ideal para todos os usuários que buscam fortalecer os abdutores do quadril."
         ]
       }
     ],
@@ -4581,33 +4581,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "200kgs"
+        "label": "NO",
+        "value": "200kg"
       },
       {
         "label": "G.W",
-        "value": "208kgs"
+        "value": "208kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "720*1600*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "143",
     "modelCode": "61A25",
-    "name": "Seated Leg Curl",
-    "description": "YR Fitness 61A25 Seated Leg Curl provides safe and effective hamstring training with a five-position start system, adjustable foam roller, and dual-axis backrest. Its ergonomic design ensures smooth, comfortable motion for all fitness levels.",
+    "name": "Flexão de perna sentada",
+    "description": "YR Fitness 61A25 Seated Leg Curl oferece treinamento seguro e eficaz dos isquiotibiais com um sistema de início de cinco posições, rolo de espuma ajustável e encosto de eixo duplo. Seu design ergonômico garante movimentos suaves e confortáveis ​​para todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A25 Seated Leg Curl provides safe and effective hamstring training with a five-position start system, adjustable foam roller, and dual-axis backrest. Its ergonomic design ensures smooth, comfortable motion for all fitness levels."
+          "YR Fitness 61A25 Seated Leg Curl oferece treinamento seguro e eficaz dos isquiotibiais com um sistema de início de cinco posições, rolo de espuma ajustável e encosto de eixo duplo. Seu design ergonômico garante movimentos suaves e confortáveis ​​para todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -4618,33 +4618,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W.",
-        "value": "232kgs"
+        "label": "NO.",
+        "value": "232kg"
       },
       {
-        "label": "G.W.",
-        "value": "252kgs"
+        "label": "GW",
+        "value": "252kg"
       },
       {
-        "label": "Installation size",
+        "label": "Tamanho da instalação",
         "value": "1350*1200*1620mm"
       },
       {
-        "label": "Weight stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "144",
     "modelCode": "61A25A",
-    "name": "Standing Leg Curl",
-    "description": "YR Fitness 61A25A Standing Leg Curl offers customizable hamstring training with adjustable rollers, grip options, and platform. Built for comfort and control, it ensures safe, effective movement for users of all sizes and skill levels.",
+    "name": "Flexão de perna em pé",
+    "description": "YR Fitness 61A25A Standing Leg Curl oferece treinamento personalizável de isquiotibiais com rolos ajustáveis, opções de aderência e plataforma. Construído para oferecer conforto e controle, garante movimentos seguros e eficazes para usuários de todos os tamanhos e níveis de habilidade.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A25A Standing Leg Curl offers customizable hamstring training with adjustable rollers, grip options, and platform. Built for comfort and control, it ensures safe, effective movement for users of all sizes and skill levels."
+          "YR Fitness 61A25A Standing Leg Curl oferece treinamento personalizável de isquiotibiais com rolos ajustáveis, opções de aderência e plataforma. Construído para oferecer conforto e controle, garante movimentos seguros e eficazes para usuários de todos os tamanhos e níveis de habilidade."
         ]
       }
     ],
@@ -4655,33 +4655,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "235kgs"
+        "label": "NO",
+        "value": "235kg"
       },
       {
         "label": "G.W",
-        "value": "248kgs"
+        "value": "248kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": ": 1310*1135*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "100kg-20pcs"
+        "label": "Pilhas de peso",
+        "value": "100kg-20 unidades"
       }
     ]
   },
   {
     "id": "145",
     "modelCode": "61A26",
-    "name": "Prone Leg Curl",
-    "description": "YR Fitness 61A26 Prone Leg Curl isolates hamstrings in a safe lying position with a five-point adjustable start and angled support to reduce lower back strain. It’s perfect for smooth, effective leg training in any fitness setting.",
+    "name": "Flexão de perna prona",
+    "description": "YR Fitness 61A26 Prone Leg Curl isola os isquiotibiais em uma posição deitada segura com um início ajustável de cinco pontos e suporte angular para reduzir a tensão na parte inferior das costas. É perfeito para um treinamento de pernas suave e eficaz em qualquer ambiente de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A26 Prone Leg Curl isolates hamstrings in a safe lying position with a five-point adjustable start and angled support to reduce lower back strain. It’s perfect for smooth, effective leg training in any fitness setting."
+          "YR Fitness 61A26 Prone Leg Curl isola os isquiotibiais em uma posição deitada segura com um início ajustável de cinco pontos e suporte angular para reduzir a tensão na parte inferior das costas. É perfeito para um treinamento de pernas suave e eficaz em qualquer ambiente de condicionamento físico."
         ]
       }
     ],
@@ -4692,33 +4692,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "194kgs"
+        "label": "NO",
+        "value": "194kg"
       },
       {
         "label": "G.W",
-        "value": "205kgs"
+        "value": "205kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1580*1120*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "146",
     "modelCode": "82018",
-    "name": "Plate Loaded Seated Calf",
-    "description": "YR Fitness 82018 delivers efficient and isolated calf training through a simple, stable, and durable seated platform. It’s a must-have for completing any lower-body strength program.",
+    "name": "Panturrilha Sentada com Placa",
+    "description": "YR Fitness 82018 oferece treinamento de panturrilha eficiente e isolado por meio de uma plataforma sentada simples, estável e durável. É essencial para completar qualquer programa de força da parte inferior do corpo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82018 delivers efficient and isolated calf training through a simple, stable, and durable seated platform. It’s a must-have for completing any lower-body strength program."
+          "YR Fitness 82018 oferece treinamento de panturrilha eficiente e isolado por meio de uma plataforma sentada simples, estável e durável. É essencial para completar qualquer programa de força da parte inferior do corpo."
         ]
       }
     ],
@@ -4729,15 +4729,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "86kgs"
+        "label": "NO",
+        "value": "86kg"
       },
       {
         "label": "G.W",
-        "value": "135kgs"
+        "value": "135kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1670*690*1136mm"
       }
     ]
@@ -4745,13 +4745,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "147",
     "modelCode": "82019",
-    "name": "Standing Calf Machine",
-    "description": "YR Fitness 82019 delivers standing calf raises with adjustable resistance and balance-focused benefits, ideal for building powerful lower legs with functional control.",
+    "name": "Máquina de panturrilha em pé",
+    "description": "YR Fitness 82019 oferece elevações de panturrilha em pé com resistência ajustável e benefícios focados no equilíbrio, ideal para construir pernas poderosas com controle funcional.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82019 delivers standing calf raises with adjustable resistance and balance-focused benefits, ideal for building powerful lower legs with functional control."
+          "YR Fitness 82019 oferece elevações de panturrilha em pé com resistência ajustável e benefícios focados no equilíbrio, ideal para construir pernas poderosas com controle funcional."
         ]
       }
     ],
@@ -4762,15 +4762,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "123kgs"
+        "label": "NO",
+        "value": "123kg"
       },
       {
         "label": "G.W",
-        "value": "186kgs"
+        "value": "186kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1517*1060*1571mm"
       }
     ]
@@ -4778,13 +4778,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "148",
     "modelCode": "82023",
-    "name": "ISO Lateral Leg Extension",
-    "description": "YR Fitness 82023 delivers safe, isolated quad work with ergonomic support and customizable resistance—ideal for balanced lower-body strength development.",
+    "name": "Extensão lateral da perna ISO",
+    "description": "YR Fitness 82023 oferece trabalho quádruplo seguro e isolado com suporte ergonômico e resistência personalizável - ideal para o desenvolvimento equilibrado da força da parte inferior do corpo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82023 delivers safe, isolated quad work with ergonomic support and customizable resistance—ideal for balanced lower-body strength development."
+          "YR Fitness 82023 oferece trabalho quádruplo seguro e isolado com suporte ergonômico e resistência personalizável - ideal para o desenvolvimento equilibrado da força da parte inferior do corpo."
         ]
       }
     ],
@@ -4795,15 +4795,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "130kgs"
+        "label": "NO",
+        "value": "130kg"
       },
       {
         "label": "G.W",
-        "value": "164kgs"
+        "value": "164kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1500*1500*1000mm"
       }
     ]
@@ -4811,13 +4811,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "149",
     "modelCode": "82024",
-    "name": "ISO Lateral Leg Curl",
-    "description": "YR Fitness 82024 supports balanced hamstring training with independent leg action and ergonomic comfort—ideal for strength building and injury prevention in any leg program.",
+    "name": "Flexão lateral de perna ISO",
+    "description": "YR Fitness 82024 oferece suporte ao treinamento equilibrado dos isquiotibiais com ação independente das pernas e conforto ergonômico - ideal para fortalecimento de força e prevenção de lesões em qualquer programa de pernas.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82024 supports balanced hamstring training with independent leg action and ergonomic comfort—ideal for strength building and injury prevention in any leg program."
+          "YR Fitness 82024 oferece suporte ao treinamento equilibrado dos isquiotibiais com ação independente das pernas e conforto ergonômico - ideal para fortalecimento de força e prevenção de lesões em qualquer programa de pernas."
         ]
       }
     ],
@@ -4828,15 +4828,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "110kgs"
+        "label": "NO",
+        "value": "110kg"
       },
       {
         "label": "G.W",
-        "value": "143kgs"
+        "value": "143kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1700*1550*950mm"
       }
     ]
@@ -4844,13 +4844,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "150",
     "modelCode": "82025",
-    "name": "Hip Trainer",
-    "description": "YR Fitness 82025 enables dynamic hip and thigh training through its multi-functional design and adjustable resistance—perfect for developing strength, balance, and symmetry in the lower body.",
+    "name": "Treinador de quadril",
+    "description": "YR Fitness 82025 permite treinamento dinâmico de quadril e coxa por meio de seu design multifuncional e resistência ajustável - perfeito para desenvolver força, equilíbrio e simetria na parte inferior do corpo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82025 enables dynamic hip and thigh training through its multi-functional design and adjustable resistance—perfect for developing strength, balance, and symmetry in the lower body."
+          "YR Fitness 82025 permite treinamento dinâmico de quadril e coxa por meio de seu design multifuncional e resistência ajustável - perfeito para desenvolver força, equilíbrio e simetria na parte inferior do corpo."
         ]
       }
     ],
@@ -4861,15 +4861,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "120kgs"
+        "label": "NO",
+        "value": "120kg"
       },
       {
         "label": "G.W",
-        "value": "160kgs"
+        "value": "160kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1282*1160*1730mm"
       }
     ]
@@ -4877,13 +4877,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "151",
     "modelCode": "82026",
-    "name": "Combo Decline",
-    "description": "YR Fitness 82026 delivers a unique standing decline training experience that supports functional strength and lower chest development with customizable resistance and ergonomic design.",
+    "name": "Declínio de combinação",
+    "description": "YR Fitness 82026 oferece uma experiência única de treinamento em declínio em pé que apoia a força funcional e o desenvolvimento da parte inferior do tórax com resistência personalizável e design ergonômico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82026 delivers a unique standing decline training experience that supports functional strength and lower chest development with customizable resistance and ergonomic design."
+          "YR Fitness 82026 oferece uma experiência única de treinamento em declínio em pé que apoia a força funcional e o desenvolvimento da parte inferior do tórax com resistência personalizável e design ergonômico."
         ]
       }
     ],
@@ -4895,15 +4895,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "170kgs"
+        "label": "NO",
+        "value": "170kg"
       },
       {
         "label": "G.W",
-        "value": "220kgs"
+        "value": "220kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1580*1753*2160mm"
       }
     ]
@@ -4911,13 +4911,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "152",
     "modelCode": "82027",
-    "name": "Seated Shrug",
-    "description": "YR Fitness 82027 offers a secure and effective solution for upper back training with controlled shrug mechanics, ergonomic support, and customizable resistance.",
+    "name": "Encolher os ombros sentado",
+    "description": "YR Fitness 82027 oferece uma solução segura e eficaz para treinamento da parte superior das costas com mecânica de encolher de ombros controlada, suporte ergonômico e resistência personalizável.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82027 offers a secure and effective solution for upper back training with controlled shrug mechanics, ergonomic support, and customizable resistance."
+          "YR Fitness 82027 oferece uma solução segura e eficaz para treinamento da parte superior das costas com mecânica de encolher de ombros controlada, suporte ergonômico e resistência personalizável."
         ]
       }
     ],
@@ -4928,15 +4928,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "105kgs"
+        "label": "NO",
+        "value": "105kg"
       },
       {
         "label": "G.W",
-        "value": "112kgs"
+        "value": "112kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1365*1620*1045mm"
       }
     ]
@@ -4944,13 +4944,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "153",
     "modelCode": "82028",
-    "name": "Linear Leg Press",
-    "description": "YR Fitness 82028 delivers powerful lower-body training with a biomechanically sound 45-degree angle and smooth linear motion—ideal for users seeking strength, stability, and muscle growth.",
+    "name": "Leg Press Linear",
+    "description": "YR Fitness 82028 oferece treinamento poderoso para a parte inferior do corpo com um ângulo biomecanicamente sólido de 45 graus e movimento linear suave - ideal para usuários que buscam força, estabilidade e crescimento muscular.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82028 delivers powerful lower-body training with a biomechanically sound 45-degree angle and smooth linear motion—ideal for users seeking strength, stability, and muscle growth."
+          "YR Fitness 82028 oferece treinamento poderoso para a parte inferior do corpo com um ângulo biomecanicamente sólido de 45 graus e movimento linear suave - ideal para usuários que buscam força, estabilidade e crescimento muscular."
         ]
       }
     ],
@@ -4961,15 +4961,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "196kgs"
+        "label": "NO",
+        "value": "196kg"
       },
       {
         "label": "G.W",
-        "value": "234kgs"
+        "value": "234kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "2450*1200*1450mm"
       }
     ]
@@ -4977,13 +4977,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "154",
     "modelCode": "82029",
-    "name": "Ground Base Squat Lunge",
-    "description": "YR Fitness 82029 delivers versatile, functional lower-body training by combining squats and lunges in one ground-based unit—ideal for enhancing strength, power, and coordination.",
+    "name": "Agachamento com base no solo",
+    "description": "YR Fitness 82029 oferece treinamento versátil e funcional para a parte inferior do corpo, combinando agachamentos e estocadas em uma unidade terrestre - ideal para aumentar a força, potência e coordenação.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82029 delivers versatile, functional lower-body training by combining squats and lunges in one ground-based unit—ideal for enhancing strength, power, and coordination."
+          "YR Fitness 82029 oferece treinamento versátil e funcional para a parte inferior do corpo, combinando agachamentos e estocadas em uma unidade terrestre - ideal para aumentar a força, potência e coordenação."
         ]
       }
     ],
@@ -4995,15 +4995,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "77kgs"
+        "label": "NO",
+        "value": "77kg"
       },
       {
         "label": "G.W",
-        "value": "116kgs"
+        "value": "116kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1500*1325*800mm"
       }
     ]
@@ -5011,13 +5011,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "155",
     "modelCode": "82030",
-    "name": "Plate Loaded Glute",
-    "description": "YR Fitness 82030 is a dedicated glute training machine that supports strength, symmetry, and performance with safe, targeted movement and adjustable resistance.",
+    "name": "Glúteo Carregado com Prato",
+    "description": "YR Fitness 82030 é uma máquina dedicada para treinamento de glúteos que oferece suporte à força, simetria e desempenho com movimentos seguros e direcionados e resistência ajustável.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82030 is a dedicated glute training machine that supports strength, symmetry, and performance with safe, targeted movement and adjustable resistance."
+          "YR Fitness 82030 é uma máquina dedicada para treinamento de glúteos que oferece suporte à força, simetria e desempenho com movimentos seguros e direcionados e resistência ajustável."
         ]
       }
     ],
@@ -5028,15 +5028,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "82kgs"
+        "label": "NO",
+        "value": "82kg"
       },
       {
         "label": "G.W",
-        "value": "133kgs"
+        "value": "133kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1170*925*1420mm"
       }
     ]
@@ -5044,13 +5044,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "156",
     "modelCode": "6280B",
-    "name": "9 Station Multi Jungle",
-    "description": "YR Fitness 9 Station Multi Jungle 6280B is a versatile training system designed for group workouts and multiple strength exercises. It supports up to four users at once and features customizable setups, smooth cable motion, and durable construction, ideal for gyms focused on variety and performance.",
+    "name": "9 Estação Multi Selva",
+    "description": "YR Fitness 9 Station Multi Jungle 6280B é um sistema de treinamento versátil projetado para treinos em grupo e exercícios de força múltiplos. Ele suporta até quatro usuários ao mesmo tempo e apresenta configurações personalizáveis, movimento suave do cabo e construção durável, ideal para academias focadas em variedade e desempenho.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 9 Station Multi Jungle 6280B is a versatile training system designed for group workouts and multiple strength exercises. It supports up to four users at once and features customizable setups, smooth cable motion, and durable construction, ideal for gyms focused on variety and performance."
+          "YR Fitness 9 Station Multi Jungle 6280B é um sistema de treinamento versátil projetado para treinos em grupo e exercícios de força múltiplos. Ele suporta até quatro usuários ao mesmo tempo e apresenta configurações personalizáveis, movimento suave do cabo e construção durável, ideal para academias focadas em variedade e desempenho."
         ]
       }
     ],
@@ -5063,13 +5063,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "157",
     "modelCode": "6280C",
-    "name": "14 Station Multi Jungle",
-    "description": "YR Fitness 14 Station Multi Jungle 6280C is a powerful, space-saving solution for group training. It supports up to four users at once with endless cable exercise options, helping build strength, balance, and stability through smooth, customizable movements in a durable and high-quality design.",
+    "name": "14 Estação Multi Selva",
+    "description": "YR Fitness 14 Station Multi Jungle 6280C é uma solução poderosa e que economiza espaço para treinamento em grupo. Ele suporta até quatro usuários ao mesmo tempo com infinitas opções de exercícios com cabos, ajudando a desenvolver força, equilíbrio e estabilidade por meio de movimentos suaves e personalizáveis ​​em um design durável e de alta qualidade.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 14 Station Multi Jungle 6280C is a powerful, space-saving solution for group training. It supports up to four users at once with endless cable exercise options, helping build strength, balance, and stability through smooth, customizable movements in a durable and high-quality design."
+          "YR Fitness 14 Station Multi Jungle 6280C é uma solução poderosa e que economiza espaço para treinamento em grupo. Ele suporta até quatro usuários ao mesmo tempo com infinitas opções de exercícios com cabos, ajudando a desenvolver força, equilíbrio e estabilidade por meio de movimentos suaves e personalizáveis ​​em um design durável e de alta qualidade."
         ]
       }
     ],
@@ -5082,13 +5082,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "158",
     "modelCode": "61A57",
-    "name": "Sissy Squat Combo Trainer",
-    "description": "YR Fitness Sissy Squat Combo Trainer 61A57 is a compact, durable machine designed to build lower body strength. Made with strong steel, high-density foam, and easy-roll wheels, it offers a stable and comfortable workout for both home and commercial gyms.",
+    "name": "Treinador combinado de agachamento Sissy",
+    "description": "YR Fitness Sissy Squat Combo Trainer 61A57 é uma máquina compacta e durável projetada para aumentar a força da parte inferior do corpo. Feito com aço forte, espuma de alta densidade e rodas fáceis de rolar, oferece um treino estável e confortável para academias domésticas e comerciais.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Sissy Squat Combo Trainer 61A57 is a compact, durable machine designed to build lower body strength. Made with strong steel, high-density foam, and easy-roll wheels, it offers a stable and comfortable workout for both home and commercial gyms."
+          "YR Fitness Sissy Squat Combo Trainer 61A57 é uma máquina compacta e durável projetada para aumentar a força da parte inferior do corpo. Feito com aço forte, espuma de alta densidade e rodas fáceis de rolar, oferece um treino estável e confortável para academias domésticas e comerciais."
         ]
       }
     ],
@@ -5102,13 +5102,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "159",
     "modelCode": "61A21A",
-    "name": "Gluteus Maximus Trainer",
-    "description": "YR Fitness 61A21A Gluteus Maximus Trainer provides a safer, more effective glute workout than traditional machines. Its ergonomic, pin-loaded design ensures better muscle targeting, adjustable resistance, and smooth motion for all training levels.",
+    "name": "Treinador de Glúteo Máximo",
+    "description": "YR Fitness 61A21A Gluteus Maximus Trainer oferece um treino de glúteos mais seguro e eficaz do que as máquinas tradicionais. Seu design ergonômico com pinos garante melhor direcionamento muscular, resistência ajustável e movimento suave para todos os níveis de treinamento.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A21A Gluteus Maximus Trainer provides a safer, more effective glute workout than traditional machines. Its ergonomic, pin-loaded design ensures better muscle targeting, adjustable resistance, and smooth motion for all training levels."
+          "YR Fitness 61A21A Gluteus Maximus Trainer oferece um treino de glúteos mais seguro e eficaz do que as máquinas tradicionais. Seu design ergonômico com pinos garante melhor direcionamento muscular, resistência ajustável e movimento suave para todos os níveis de treinamento."
         ]
       }
     ],
@@ -5119,33 +5119,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "198kgs"
+        "label": "NO",
+        "value": "198kg"
       },
       {
         "label": "G.W",
-        "value": "210kgs"
+        "value": "210kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1216*820*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "160",
     "modelCode": "61A16A",
-    "name": "Knee-on Assisted Chin/Dip",
-    "description": "YR Fitness 61A16A Knee-on Assisted Chin/Dip offers safe and adjustable support for bodyweight exercises. With or without the knee pad, it helps users of all levels build upper body strength through controlled chin-up and dip training.",
+    "name": "Queixo/imersão assistida com joelho",
+    "description": "YR Fitness 61A16A queixo / mergulho assistido com joelho oferece suporte seguro e ajustável para exercícios de peso corporal. Com ou sem joelheira, ele ajuda usuários de todos os níveis a desenvolver força na parte superior do corpo por meio de treinamento controlado de elevação e mergulho.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A16A Knee-on Assisted Chin/Dip offers safe and adjustable support for bodyweight exercises. With or without the knee pad, it helps users of all levels build upper body strength through controlled chin-up and dip training."
+          "YR Fitness 61A16A queixo / mergulho assistido com joelho oferece suporte seguro e ajustável para exercícios de peso corporal. Com ou sem joelheira, ele ajuda usuários de todos os níveis a desenvolver força na parte superior do corpo por meio de treinamento controlado de elevação e mergulho."
         ]
       }
     ],
@@ -5158,33 +5158,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "223kgs"
+        "label": "NO",
+        "value": "223kg"
       },
       {
         "label": "G.W",
-        "value": "235kgs"
+        "value": "235kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1000*1200*2250mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "161",
     "modelCode": "TB01",
-    "name": "Triceps Weight Bar",
-    "description": "YR Fitness TB01 Triceps Weight Bar is perfect for targeting your triceps and upper body. With multiple grip options and a compact, durable design, it helps you train with control and comfort. Great for adding variety to your workout in any gym setup. &nbsp; &nbsp; &nbsp;",
+    "name": "Barra de peso para tríceps",
+    "description": "A barra de peso para tríceps YR Fitness TB01 é perfeita para atingir o tríceps e a parte superior do corpo. Com múltiplas opções de aderência e um design compacto e durável, ajuda você a treinar com controle e conforto. Ótimo para adicionar variedade ao seu treino em qualquer configuração de academia. &nbsp; &nbsp; &nbsp;",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness TB01 Triceps Weight Bar is perfect for targeting your triceps and upper body. With multiple grip options and a compact, durable design, it helps you train with control and comfort. Great for adding variety to your workout in any gym setup. &nbsp; &nbsp; &nbsp;"
+          "A barra de peso para tríceps YR Fitness TB01 é perfeita para atingir o tríceps e a parte superior do corpo. Com múltiplas opções de aderência e um design compacto e durável, ajuda você a treinar com controle e conforto. Ótimo para adicionar variedade ao seu treino em qualquer configuração de academia. &nbsp; &nbsp; &nbsp;"
         ]
       }
     ],
@@ -5197,13 +5197,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "162",
     "modelCode": "82031",
-    "name": "Prone Leg Trainer",
-    "description": "YR Fitness 82031 supports complete and isolated hamstring training with ergonomic support and resistance versatility—ideal for balanced leg development and performance enhancement.",
+    "name": "Treinador de Pernas Pronadas",
+    "description": "YR Fitness 82031 suporta treinamento completo e isolado de isquiotibiais com suporte ergonômico e versatilidade de resistência - ideal para desenvolvimento equilibrado das pernas e melhoria de desempenho.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82031 supports complete and isolated hamstring training with ergonomic support and resistance versatility—ideal for balanced leg development and performance enhancement."
+          "YR Fitness 82031 suporta treinamento completo e isolado de isquiotibiais com suporte ergonômico e versatilidade de resistência - ideal para desenvolvimento equilibrado das pernas e melhoria de desempenho."
         ]
       }
     ],
@@ -5214,29 +5214,29 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "206kgs"
+        "label": "NO",
+        "value": "206kg"
       },
       {
-        "label": "Installation Size",
-        "value": "2317*1402*1404mm / 77*43*54in"
+        "label": "Tamanho da instalação",
+        "value": "2317*1402*1404mm / 77*43*54 pol."
       },
       {
-        "label": "Muscle",
-        "value": "Hip, Leg"
+        "label": "Músculo",
+        "value": "Quadril, Perna"
       }
     ]
   },
   {
     "id": "163",
     "modelCode": "7357",
-    "name": "Squat Plate",
-    "description": "YR Fitness 7357 Squat Plate supports deep squat and sit-up training with adjustable seating for user comfort. Ideal for targeting lower body and core muscles in a compact, multi-use design.",
+    "name": "Placa de agachamento",
+    "description": "A placa de agachamento YR Fitness 7357 suporta treinamento profundo de agachamentos e abdominais com assento ajustável para conforto do usuário. Ideal para atingir os músculos da parte inferior do corpo e do núcleo em um design compacto e multiuso.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7357 Squat Plate supports deep squat and sit-up training with adjustable seating for user comfort. Ideal for targeting lower body and core muscles in a compact, multi-use design."
+          "A placa de agachamento YR Fitness 7357 suporta treinamento profundo de agachamentos e abdominais com assento ajustável para conforto do usuário. Ideal para atingir os músculos da parte inferior do corpo e do núcleo em um design compacto e multiuso."
         ]
       }
     ],
@@ -5247,15 +5247,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "45kgs"
+        "label": "NO",
+        "value": "45kg"
       },
       {
         "label": "G.W",
-        "value": "55kgs"
+        "value": "55kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "980*650*480mm"
       }
     ]
@@ -5263,13 +5263,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "164",
     "modelCode": "7355",
-    "name": "Utility Bench",
-    "description": "YR Fitness 7355 Utility Bench provides firm 90° back support for focused upper body workouts. Built with quality materials for lasting comfort and performance.",
+    "name": "Banco de utilidades",
+    "description": "O banco utilitário YR Fitness 7355 oferece suporte firme para as costas em 90° para exercícios focados na parte superior do corpo. Construído com materiais de qualidade para conforto e desempenho duradouros.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7355 Utility Bench provides firm 90° back support for focused upper body workouts. Built with quality materials for lasting comfort and performance."
+          "O banco utilitário YR Fitness 7355 oferece suporte firme para as costas em 90° para exercícios focados na parte superior do corpo. Construído com materiais de qualidade para conforto e desempenho duradouros."
         ]
       }
     ],
@@ -5281,15 +5281,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "20kgs"
+        "label": "NO",
+        "value": "20kg"
       },
       {
         "label": "G.W",
-        "value": "30kgs"
+        "value": "30kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "680*600*860mm"
       }
     ]
@@ -5297,13 +5297,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "165",
     "modelCode": "7354",
-    "name": "Barbell Rack",
-    "description": "YR Fitness 7354 Barbell Rack holds 9 barbells securely with thick stainless steel holders. Built for durability and safety, it helps keep training areas clean and well-organized.",
+    "name": "Suporte para barras",
+    "description": "YR Fitness 7354 Barbell Rack segura 9 halteres com suportes grossos de aço inoxidável. Construído para oferecer durabilidade e segurança, ajuda a manter as áreas de treinamento limpas e bem organizadas.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7354 Barbell Rack holds 9 barbells securely with thick stainless steel holders. Built for durability and safety, it helps keep training areas clean and well-organized."
+          "YR Fitness 7354 Barbell Rack segura 9 halteres com suportes grossos de aço inoxidável. Construído para oferecer durabilidade e segurança, ajuda a manter as áreas de treinamento limpas e bem organizadas."
         ]
       }
     ],
@@ -5314,15 +5314,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "80kgs"
+        "label": "NO",
+        "value": "80kg"
       },
       {
         "label": "G.W",
-        "value": "120kgs"
+        "value": "120kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "560*850*1300mm"
       }
     ]
@@ -5330,13 +5330,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "166",
     "modelCode": "7351",
-    "name": "Plate Rack",
-    "description": "YR Fitness 7351 Plate Rack is a heavy-duty storage solution with four strong, stainless steel sleeves. Built to last, it keeps plates organized and easily accessible in any fitness space.",
+    "name": "Rack de Pratos",
+    "description": "YR Fitness 7351 Plate Rack é uma solução de armazenamento resistente com quatro mangas fortes de aço inoxidável. Construído para durar, mantém os pratos organizados e facilmente acessíveis em qualquer espaço fitness.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7351 Plate Rack is a heavy-duty storage solution with four strong, stainless steel sleeves. Built to last, it keeps plates organized and easily accessible in any fitness space."
+          "YR Fitness 7351 Plate Rack é uma solução de armazenamento resistente com quatro mangas fortes de aço inoxidável. Construído para durar, mantém os pratos organizados e facilmente acessíveis em qualquer espaço fitness."
         ]
       }
     ],
@@ -5347,15 +5347,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "51kgs"
+        "label": "NO",
+        "value": "51kg"
       },
       {
         "label": "G.W",
-        "value": "101kgs"
+        "value": "101kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "610*525*915mm"
       }
     ]
@@ -5363,13 +5363,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "167",
     "modelCode": "7350",
-    "name": "Incline Bench 60°",
-    "description": "YR Fitness 7350 Incline Bench 60° offers a steeper incline for targeted upper body training. Built for comfort and durability, it ensures proper support and posture during demanding chest and shoulder exercises.",
+    "name": "Banco inclinado 60°",
+    "description": "Banco inclinado YR Fitness 7350 60° oferece uma inclinação mais íngreme para treinamento direcionado da parte superior do corpo. Construído para oferecer conforto e durabilidade, garante suporte e postura adequados durante exercícios exigentes de peito e ombros.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7350 Incline Bench 60° offers a steeper incline for targeted upper body training. Built for comfort and durability, it ensures proper support and posture during demanding chest and shoulder exercises."
+          "Banco inclinado YR Fitness 7350 60° oferece uma inclinação mais íngreme para treinamento direcionado da parte superior do corpo. Construído para oferecer conforto e durabilidade, garante suporte e postura adequados durante exercícios exigentes de peito e ombros."
         ]
       }
     ],
@@ -5381,15 +5381,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "27kgs"
+        "label": "NO",
+        "value": "27kg"
       },
       {
         "label": "G.W",
-        "value": "77kgs"
+        "value": "77kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1032*525*1087mm"
       }
     ]
@@ -5397,13 +5397,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "168",
     "modelCode": "7349",
-    "name": "Incline Bench 45°",
-    "description": "YR Fitness 7349 Incline Bench 45° provides a secure 45-degree incline for targeted upper chest training. Built with strong materials and cushioned support for lasting comfort and performance.",
+    "name": "Banco inclinado 45°",
+    "description": "O banco inclinado YR Fitness 7349 de 45 ° fornece uma inclinação segura de 45 graus para treinamento direcionado da parte superior do tórax. Construído com materiais resistentes e suporte acolchoado para conforto e desempenho duradouros.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7349 Incline Bench 45° provides a secure 45-degree incline for targeted upper chest training. Built with strong materials and cushioned support for lasting comfort and performance."
+          "O banco inclinado YR Fitness 7349 de 45 ° fornece uma inclinação segura de 45 graus para treinamento direcionado da parte superior do tórax. Construído com materiais resistentes e suporte acolchoado para conforto e desempenho duradouros."
         ]
       }
     ],
@@ -5415,15 +5415,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "27kgs"
+        "label": "NO",
+        "value": "27kg"
       },
       {
         "label": "G.W",
-        "value": "37kgs"
+        "value": "37kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1032*525*1087mm"
       }
     ]
@@ -5431,13 +5431,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "169",
     "modelCode": "7348",
-    "name": "Incline Bench 30°",
-    "description": "YR Fitness 7348 Incline Bench 30° delivers a stable 30-degree angle for focused upper chest workouts. Built with durable materials and quality padding for comfort and performance.",
+    "name": "Banco inclinado 30°",
+    "description": "O banco inclinado de 30° YR Fitness 7348 oferece um ângulo estável de 30 graus para exercícios focados na parte superior do tórax. Construído com materiais duráveis ​​e acolchoamento de qualidade para conforto e desempenho.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7348 Incline Bench 30° delivers a stable 30-degree angle for focused upper chest workouts. Built with durable materials and quality padding for comfort and performance."
+          "O banco inclinado de 30° YR Fitness 7348 oferece um ângulo estável de 30 graus para exercícios focados na parte superior do tórax. Construído com materiais duráveis ​​e acolchoamento de qualidade para conforto e desempenho."
         ]
       }
     ],
@@ -5449,15 +5449,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "27kgs"
+        "label": "NO",
+        "value": "27kg"
       },
       {
         "label": "G.W",
-        "value": "77kgs"
+        "value": "77kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1032*525*1087mm"
       }
     ]
@@ -5465,13 +5465,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "170",
     "modelCode": "7347",
-    "name": "Multifunctional Flat Bench",
-    "description": "YR Fitness 7347 Multifunctional Flat Bench offers strong, reliable support for full-body workouts, from chest presses to core exercises. Built for durability and comfort in any gym setting.",
+    "name": "Banco plano multifuncional",
+    "description": "O banco plano multifuncional YR Fitness 7347 oferece suporte forte e confiável para treinos de corpo inteiro, desde abdominais até exercícios básicos. Construído para durabilidade e conforto em qualquer ambiente de academia.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7347 Multifunctional Flat Bench offers strong, reliable support for full-body workouts, from chest presses to core exercises. Built for durability and comfort in any gym setting."
+          "O banco plano multifuncional YR Fitness 7347 oferece suporte forte e confiável para treinos de corpo inteiro, desde abdominais até exercícios básicos. Construído para durabilidade e conforto em qualquer ambiente de academia."
         ]
       }
     ],
@@ -5484,15 +5484,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "22kgs"
+        "label": "NO",
+        "value": "22kg"
       },
       {
         "label": "G.W",
-        "value": "72kgs"
+        "value": "72kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1153*536*485mm"
       }
     ]
@@ -5500,13 +5500,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "171",
     "modelCode": "7346",
-    "name": "Multifunction Adjustable Bench",
-    "description": "YR Fitness 7346 Multifunction Adjustable Bench offers ergonomic support with automatic seat adjustment and a slim back pad, making it ideal for versatile and unrestricted upper body workouts.",
+    "name": "Banco multifuncional ajustável",
+    "description": "O banco ajustável multifuncional YR Fitness 7346 oferece suporte ergonômico com ajuste automático do assento e um encosto fino, tornando-o ideal para exercícios versáteis e irrestritos da parte superior do corpo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7346 Multifunction Adjustable Bench offers ergonomic support with automatic seat adjustment and a slim back pad, making it ideal for versatile and unrestricted upper body workouts."
+          "O banco ajustável multifuncional YR Fitness 7346 oferece suporte ergonômico com ajuste automático do assento e um encosto fino, tornando-o ideal para exercícios versáteis e irrestritos da parte superior do corpo."
         ]
       }
     ],
@@ -5519,15 +5519,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "29kgs"
+        "label": "NO",
+        "value": "29kg"
       },
       {
         "label": "G.W",
-        "value": "79kgs"
+        "value": "79kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1265*526*1095mm"
       }
     ]
@@ -5535,13 +5535,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "172",
     "modelCode": "7345",
-    "name": "Knees Up/Dip",
-    "description": "YR Fitness 7345 Knees Up/Dip provides stable and comfortable support for core and upper body training. Ideal for users targeting abs, chest, and arms in a compact, durable design.",
+    "name": "Joelhos para cima/mergulho",
+    "description": "YR Fitness 7345 Knees Up/Dip fornece suporte estável e confortável para treinamento central e superior do corpo. Ideal para usuários que visam abdominais, tórax e braços em um design compacto e durável.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7345 Knees Up/Dip provides stable and comfortable support for core and upper body training. Ideal for users targeting abs, chest, and arms in a compact, durable design."
+          "YR Fitness 7345 Knees Up/Dip fornece suporte estável e confortável para treinamento central e superior do corpo. Ideal para usuários que visam abdominais, tórax e braços em um design compacto e durável."
         ]
       }
     ],
@@ -5554,15 +5554,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "59kgs"
+        "label": "NO",
+        "value": "59kg"
       },
       {
         "label": "G.W",
-        "value": "109kgs"
+        "value": "109kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1077*783*1643mm"
       }
     ]
@@ -5570,13 +5570,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "173",
     "modelCode": "7343",
-    "name": "Adjustable Roman Bench",
-    "description": "YR Fitness 7343 Adjustable Roman Bench offers strong support for back and core workouts with a 45° incline and customizable footplate. Designed for effective training across various fitness levels.",
+    "name": "Banco romano ajustável",
+    "description": "O banco romano ajustável YR Fitness 7343 oferece forte suporte para exercícios de costas e núcleo com inclinação de 45° e plataforma personalizável. Projetado para treinamento eficaz em vários níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7343 Adjustable Roman Bench offers strong support for back and core workouts with a 45° incline and customizable footplate. Designed for effective training across various fitness levels."
+          "O banco romano ajustável YR Fitness 7343 oferece forte suporte para exercícios de costas e núcleo com inclinação de 45° e plataforma personalizável. Projetado para treinamento eficaz em vários níveis de condicionamento físico."
         ]
       }
     ],
@@ -5588,15 +5588,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "43kgs"
+        "label": "NO",
+        "value": "43kg"
       },
       {
         "label": "G.W",
-        "value": "93kgs"
+        "value": "93kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1282*862*933mm"
       }
     ]
@@ -5604,13 +5604,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "174",
     "modelCode": "7342",
-    "name": "Angled Ab Board",
-    "description": "YR Fitness 7342 Angled Ab Board provides stable and comfortable support for core exercises, helping users build abdominal strength with proper form. Durable construction ensures safe long-term use.",
+    "name": "Placa Ab Angular",
+    "description": "A placa abdominal angular YR Fitness 7342 fornece suporte estável e confortável para exercícios básicos, ajudando os usuários a desenvolver força abdominal com a forma adequada. A construção durável garante um uso seguro a longo prazo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7342 Angled Ab Board provides stable and comfortable support for core exercises, helping users build abdominal strength with proper form. Durable construction ensures safe long-term use."
+          "A placa abdominal angular YR Fitness 7342 fornece suporte estável e confortável para exercícios básicos, ajudando os usuários a desenvolver força abdominal com a forma adequada. A construção durável garante um uso seguro a longo prazo."
         ]
       }
     ],
@@ -5621,15 +5621,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "41kgs"
+        "label": "NO",
+        "value": "41kg"
       },
       {
         "label": "G.W",
-        "value": "51kgs"
+        "value": "51kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1525*665*950mm"
       }
     ]
@@ -5637,13 +5637,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "175",
     "modelCode": "7341",
-    "name": "Adjustable Ab Board",
-    "description": "YR Fitness 7341 Adjustable Ab Board offers a stable and adjustable platform for core training. Ideal for performing a wide range of abdominal exercises with proper support and flexibility.",
+    "name": "Placa Ab ajustável",
+    "description": "A placa abdominal ajustável YR Fitness 7341 oferece uma plataforma estável e ajustável para treinamento básico. Ideal para realizar uma ampla gama de exercícios abdominais com suporte e flexibilidade adequados.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7341 Adjustable Ab Board offers a stable and adjustable platform for core training. Ideal for performing a wide range of abdominal exercises with proper support and flexibility."
+          "A placa abdominal ajustável YR Fitness 7341 oferece uma plataforma estável e ajustável para treinamento básico. Ideal para realizar uma ampla gama de exercícios abdominais com suporte e flexibilidade adequados."
         ]
       }
     ],
@@ -5654,15 +5654,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "71kgs"
+        "label": "NO",
+        "value": "71kg"
       },
       {
         "label": "G.W",
-        "value": "121kgs"
+        "value": "121kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1720*725*1340mm"
       }
     ]
@@ -5670,13 +5670,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "176",
     "modelCode": "7340",
-    "name": "Olympic Decline Bench",
-    "description": "YR Fitness 7340 Olympic Decline Bench delivers reliable support for decline pressing exercises. With a strong frame and comfort-focused design, it’s perfect for safe and effective strength training.",
+    "name": "Banco de Declínio Olímpico",
+    "description": "O banco de declínio olímpico YR Fitness 7340 oferece suporte confiável para exercícios de declínio. Com uma estrutura forte e design focado no conforto, é perfeito para um treinamento de força seguro e eficaz.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7340 Olympic Decline Bench delivers reliable support for decline pressing exercises. With a strong frame and comfort-focused design, it’s perfect for safe and effective strength training."
+          "O banco de declínio olímpico YR Fitness 7340 oferece suporte confiável para exercícios de declínio. Com uma estrutura forte e design focado no conforto, é perfeito para um treinamento de força seguro e eficaz."
         ]
       }
     ],
@@ -5688,15 +5688,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "100kgs"
+        "label": "NO",
+        "value": "100kg"
       },
       {
         "label": "G.W",
-        "value": "150kgs"
+        "value": "150kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1835*1785*1125mm"
       }
     ]
@@ -5704,13 +5704,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "177",
     "modelCode": "7339",
-    "name": "Olympic Flat Bench",
-    "description": "YR Fitness 7339 Olympic Flat Bench offers a sturdy platform for flat bench pressing. Designed for comfort and long-term use, it&#8217;s a reliable addition to any gym or strength training setup.",
+    "name": "Banco plano olímpico",
+    "description": "O banco plano olímpico YR Fitness 7339 oferece uma plataforma robusta para supino plano. Projetado para conforto e uso a longo prazo, é um complemento confiável para qualquer configuração de academia ou treinamento de força.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7339 Olympic Flat Bench offers a sturdy platform for flat bench pressing. Designed for comfort and long-term use, it&#8217;s a reliable addition to any gym or strength training setup."
+          "O banco plano olímpico YR Fitness 7339 oferece uma plataforma robusta para supino plano. Projetado para conforto e uso a longo prazo, é um complemento confiável para qualquer configuração de academia ou treinamento de força."
         ]
       }
     ],
@@ -5722,15 +5722,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "100kgs"
+        "label": "NO",
+        "value": "100kg"
       },
       {
         "label": "G.W",
-        "value": "150kgs"
+        "value": "150kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1835*1485*1125mm"
       }
     ]
@@ -5738,13 +5738,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "178",
     "modelCode": "7338",
-    "name": "Olympic Incline Bench",
-    "description": "YR Fitness 7338 Olympic Incline Bench provides secure and comfortable support for incline presses. With a heavy-duty frame and padded seating, it&#8217;s ideal for focused upper chest development in any training facility.",
+    "name": "Banco Inclinado Olímpico",
+    "description": "O banco inclinado olímpico YR Fitness 7338 fornece suporte seguro e confortável para prensas inclinadas. Com uma estrutura resistente e assento acolchoado, é ideal para o desenvolvimento concentrado da parte superior do tórax em qualquer centro de treinamento.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7338 Olympic Incline Bench provides secure and comfortable support for incline presses. With a heavy-duty frame and padded seating, it&#8217;s ideal for focused upper chest development in any training facility."
+          "O banco inclinado olímpico YR Fitness 7338 fornece suporte seguro e confortável para prensas inclinadas. Com uma estrutura resistente e assento acolchoado, é ideal para o desenvolvimento concentrado da parte superior do tórax em qualquer centro de treinamento."
         ]
       }
     ],
@@ -5756,15 +5756,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "102kgs"
+        "label": "NO",
+        "value": "102kg"
       },
       {
         "label": "G.W",
-        "value": "152kgs"
+        "value": "152kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1835*1740*1340mm"
       }
     ]
@@ -5772,13 +5772,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "179",
     "modelCode": "7337",
-    "name": "Biceps Curl Rack",
-    "description": "YR Fitness 7337 Biceps Curl Rack is designed for safe and stable arm training. With durable materials, ergonomic support, and reinforced safety features, it&#8217;s ideal for building stronger, well-defined biceps.",
+    "name": "Rack de rosca bíceps",
+    "description": "YR Fitness 7337 Biceps Curl Rack foi projetado para treinamento de braço seguro e estável. Com materiais duráveis, suporte ergonômico e recursos de segurança reforçados, é ideal para construir bíceps mais fortes e bem definidos.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7337 Biceps Curl Rack is designed for safe and stable arm training. With durable materials, ergonomic support, and reinforced safety features, it&#8217;s ideal for building stronger, well-defined biceps."
+          "YR Fitness 7337 Biceps Curl Rack foi projetado para treinamento de braço seguro e estável. Com materiais duráveis, suporte ergonômico e recursos de segurança reforçados, é ideal para construir bíceps mais fortes e bem definidos."
         ]
       }
     ],
@@ -5791,13 +5791,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "180",
     "modelCode": "7336",
-    "name": "T Bar",
-    "description": "YR Fitness 7336 T Bar is a compact and sturdy solution for effective back training. With a durable steel frame and sleek aluminum end caps, it supports powerful T-bar row workouts in any gym setting.",
+    "name": "Barra T",
+    "description": "A barra YR Fitness 7336 T é uma solução compacta e robusta para um treinamento eficaz das costas. Com uma estrutura de aço durável e tampas de alumínio elegantes, ele suporta exercícios poderosos de remada com barra T em qualquer ambiente de academia.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7336 T Bar is a compact and sturdy solution for effective back training. With a durable steel frame and sleek aluminum end caps, it supports powerful T-bar row workouts in any gym setting."
+          "A barra YR Fitness 7336 T é uma solução compacta e robusta para um treinamento eficaz das costas. Com uma estrutura de aço durável e tampas de alumínio elegantes, ele suporta exercícios poderosos de remada com barra T em qualquer ambiente de academia."
         ]
       }
     ],
@@ -5809,15 +5809,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "62kgs"
+        "label": "NO",
+        "value": "62kg"
       },
       {
         "label": "G.W",
-        "value": "112kgs"
+        "value": "112kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1570*830*500mm"
       }
     ]
@@ -5825,13 +5825,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "181",
     "modelCode": "7334",
-    "name": "Power Cage",
-    "description": "YR Fitness 7334 Power Cage provides a stable, reinforced frame for free weight training. With durable construction and integrated bar storage, it supports a wide range of strength exercises with safety and reliability.",
+    "name": "Gaiola de energia",
+    "description": "YR Fitness 7334 Power Cage fornece uma estrutura estável e reforçada para treinamento com pesos livres. Com construção durável e armazenamento de barra integrado, suporta uma ampla gama de exercícios de força com segurança e confiabilidade.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7334 Power Cage provides a stable, reinforced frame for free weight training. With durable construction and integrated bar storage, it supports a wide range of strength exercises with safety and reliability."
+          "YR Fitness 7334 Power Cage fornece uma estrutura estável e reforçada para treinamento com pesos livres. Com construção durável e armazenamento de barra integrado, suporta uma ampla gama de exercícios de força com segurança e confiabilidade."
         ]
       }
     ],
@@ -5844,13 +5844,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "182",
     "modelCode": "7333",
-    "name": "Smith Machine",
-    "description": "YR Fitness 7333 Smith Machine features a patented hook system and counterbalanced design for safe, smooth training. With high-strength materials and a 2000 lb capacity bar, it supports serious lifting in a secure, user-friendly setup.",
+    "name": "Máquina Smith",
+    "description": "YR Fitness 7333 Smith Machine apresenta um sistema de gancho patenteado e design contrabalançado para um treinamento seguro e suave. Com materiais de alta resistência e uma barra com capacidade de 2.000 lb, ele suporta levantamentos sérios em uma configuração segura e fácil de usar.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7333 Smith Machine features a patented hook system and counterbalanced design for safe, smooth training. With high-strength materials and a 2000 lb capacity bar, it supports serious lifting in a secure, user-friendly setup."
+          "YR Fitness 7333 Smith Machine apresenta um sistema de gancho patenteado e design contrabalançado para um treinamento seguro e suave. Com materiais de alta resistência e uma barra com capacidade de 2.000 lb, ele suporta levantamentos sérios em uma configuração segura e fácil de usar."
         ]
       }
     ],
@@ -5861,15 +5861,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "228kgs"
+        "label": "NO",
+        "value": "228kg"
       },
       {
         "label": "G.W",
-        "value": "278kgs"
+        "value": "278kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": ": 2502*1150*2310mm"
       }
     ]
@@ -5877,13 +5877,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "183",
     "modelCode": "7332A",
-    "name": "Functional Trainer",
-    "description": "YR Fitness 7332A Functional Trainer delivers smooth cable movement and over 60 exercises for a full-body workout. Ideal for gym, it combines strength, flexibility, and space-saving design.",
+    "name": "Treinador Funcional",
+    "description": "O YR Fitness 7332A Functional Trainer oferece movimento suave do cabo e mais de 60 exercícios para um treino de corpo inteiro. Ideal para academia, combina força, flexibilidade e design que economiza espaço.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7332A Functional Trainer delivers smooth cable movement and over 60 exercises for a full-body workout. Ideal for gym, it combines strength, flexibility, and space-saving design."
+          "O YR Fitness 7332A Functional Trainer oferece movimento suave do cabo e mais de 60 exercícios para um treino de corpo inteiro. Ideal para academia, combina força, flexibilidade e design que economiza espaço."
         ]
       }
     ],
@@ -5897,33 +5897,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "360kgs"
+        "label": "NO",
+        "value": "360kg"
       },
       {
         "label": "G.W",
-        "value": "410kgs"
+        "value": "410kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1765*1060*2220mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "140kg-28pcs"
+        "label": "Pilhas de peso",
+        "value": "140kg-28 unidades"
       }
     ]
   },
   {
     "id": "184",
     "modelCode": "7332",
-    "name": "Adjustable Crossover",
-    "description": "YR Fitness 7332 Adjustable Crossover delivers smooth and easy adjustments for diverse cable exercises. Built for stability, comfort, and wide usability, it supports full-body functional training with precision and control.",
+    "name": "Crossover Ajustável",
+    "description": "O crossover ajustável YR Fitness 7332 oferece ajustes suaves e fáceis para diversos exercícios com cabos. Construído para oferecer estabilidade, conforto e ampla usabilidade, ele oferece suporte ao treinamento funcional de corpo inteiro com precisão e controle.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7332 Adjustable Crossover delivers smooth and easy adjustments for diverse cable exercises. Built for stability, comfort, and wide usability, it supports full-body functional training with precision and control."
+          "O crossover ajustável YR Fitness 7332 oferece ajustes suaves e fáceis para diversos exercícios com cabos. Construído para oferecer estabilidade, conforto e ampla usabilidade, ele oferece suporte ao treinamento funcional de corpo inteiro com precisão e controle."
         ]
       }
     ],
@@ -5934,33 +5934,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "377kgs"
+        "label": "NO",
+        "value": "377kg"
       },
       {
         "label": "G.W",
-        "value": "427kgs"
+        "value": "427kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "3850*700*2295mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "140kg-28pcs"
+        "label": "Pilhas de peso",
+        "value": "140kg-28 unidades"
       }
     ]
   },
   {
     "id": "185",
     "modelCode": "7331",
-    "name": "Standing Calf",
-    "description": "YR Fitness 7331 Standing Calf is designed for safe and effective calf muscle training with adjustable pads and full ankle movement. Ideal for users of all sizes seeking better strength and definition in their lower legs.",
+    "name": "Panturrilha em pé",
+    "description": "YR Fitness 7331 Standing Calf foi projetado para treinamento seguro e eficaz dos músculos da panturrilha com almofadas ajustáveis ​​e movimento completo do tornozelo. Ideal para usuários de todos os tamanhos que buscam melhor força e definição na parte inferior das pernas.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7331 Standing Calf is designed for safe and effective calf muscle training with adjustable pads and full ankle movement. Ideal for users of all sizes seeking better strength and definition in their lower legs."
+          "YR Fitness 7331 Standing Calf foi projetado para treinamento seguro e eficaz dos músculos da panturrilha com almofadas ajustáveis ​​e movimento completo do tornozelo. Ideal para usuários de todos os tamanhos que buscam melhor força e definição na parte inferior das pernas."
         ]
       }
     ],
@@ -5971,33 +5971,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "268kgs"
+        "label": "NO",
+        "value": "268kg"
       },
       {
         "label": "G.W",
-        "value": "368kgs"
+        "value": "368kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1315*1100*1672mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "90kg-18pcs"
+        "label": "Pilhas de peso",
+        "value": "90kg-18 unidades"
       }
     ]
   },
   {
     "id": "186",
     "modelCode": "7330",
-    "name": "Seated Calf",
-    "description": "YR Fitness 7330 Seated Calf offers smooth and effective calf training with a unique pin-loaded design. It’s perfect for users seeking a safer and more convenient alternative to traditional plate-loaded machines.",
+    "name": "Panturrilha Sentada",
+    "description": "YR Fitness 7330 Seated Calf oferece treinamento suave e eficaz para panturrilhas com um design exclusivo carregado por pinos. É perfeito para usuários que buscam uma alternativa mais segura e conveniente às máquinas tradicionais carregadas com placas.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7330 Seated Calf offers smooth and effective calf training with a unique pin-loaded design. It’s perfect for users seeking a safer and more convenient alternative to traditional plate-loaded machines."
+          "YR Fitness 7330 Seated Calf oferece treinamento suave e eficaz para panturrilhas com um design exclusivo carregado por pinos. É perfeito para usuários que buscam uma alternativa mais segura e conveniente às máquinas tradicionais carregadas com placas."
         ]
       }
     ],
@@ -6008,33 +6008,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "244kgs"
+        "label": "NO",
+        "value": "244kg"
       },
       {
         "label": "G.W",
-        "value": "344kgs"
+        "value": "344kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1660*950*1610mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "100kg-20pcs"
+        "label": "Pilhas de peso",
+        "value": "100kg-20 unidades"
       }
     ]
   },
   {
     "id": "187",
     "modelCode": "7327",
-    "name": "Power Squat",
-    "description": "YR Fitness 7327 Power Squat builds explosive leg strength with proper form and safe design. Ideal for athletes and general users looking to enhance lower-body performance and stability.",
+    "name": "Agachamento poderoso",
+    "description": "YR Fitness 7327 Power Squat cria força explosiva nas pernas com forma adequada e design seguro. Ideal para atletas e usuários em geral que buscam melhorar o desempenho e a estabilidade da parte inferior do corpo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7327 Power Squat builds explosive leg strength with proper form and safe design. Ideal for athletes and general users looking to enhance lower-body performance and stability."
+          "YR Fitness 7327 Power Squat cria força explosiva nas pernas com forma adequada e design seguro. Ideal para atletas e usuários em geral que buscam melhorar o desempenho e a estabilidade da parte inferior do corpo."
         ]
       }
     ],
@@ -6046,33 +6046,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "268kgs"
+        "label": "NO",
+        "value": "268kg"
       },
       {
         "label": "G.W",
-        "value": "368kgs"
+        "value": "368kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "2015*1280*1610mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "90kg-18pcs"
+        "label": "Pilhas de peso",
+        "value": "90kg-18 unidades"
       }
     ]
   },
   {
     "id": "188",
     "modelCode": "7326",
-    "name": "Prone Leg Curl",
-    "description": "YR Fitness 7326 Prone Leg Curl is engineered to isolate and train hamstrings with superior comfort and range-of-motion adjustability. Ideal for safe and focused lower-body development in any training environment.",
+    "name": "Flexão de perna prona",
+    "description": "YR Fitness 7326 Prone Leg Curl foi projetado para isolar e treinar isquiotibiais com conforto superior e ajuste de amplitude de movimento. Ideal para o desenvolvimento seguro e focado da parte inferior do corpo em qualquer ambiente de treinamento.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7326 Prone Leg Curl is engineered to isolate and train hamstrings with superior comfort and range-of-motion adjustability. Ideal for safe and focused lower-body development in any training environment."
+          "YR Fitness 7326 Prone Leg Curl foi projetado para isolar e treinar isquiotibiais com conforto superior e ajuste de amplitude de movimento. Ideal para o desenvolvimento seguro e focado da parte inferior do corpo em qualquer ambiente de treinamento."
         ]
       }
     ],
@@ -6083,33 +6083,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "220kgs"
+        "label": "NO",
+        "value": "220kg"
       },
       {
         "label": "G.W",
-        "value": "320kgs"
+        "value": "320kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1680*1060*1610mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "90kg-18pcs"
+        "label": "Pilhas de peso",
+        "value": "90kg-18 unidades"
       }
     ]
   },
   {
     "id": "189",
     "modelCode": "7325",
-    "name": "Seated Leg Curl",
-    "description": "YR Fitness 7325 Seated Leg Curl helps build strong, defined hamstrings with adjustable positioning for comfort and proper form. Ideal for precise lower-body isolation and long-term training.",
+    "name": "Flexão de perna sentada",
+    "description": "YR Fitness 7325 Seated Leg Curl ajuda a construir isquiotibiais fortes e definidos com posicionamento ajustável para conforto e forma adequada. Ideal para isolamento preciso da parte inferior do corpo e treinamento de longo prazo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7325 Seated Leg Curl helps build strong, defined hamstrings with adjustable positioning for comfort and proper form. Ideal for precise lower-body isolation and long-term training."
+          "YR Fitness 7325 Seated Leg Curl ajuda a construir isquiotibiais fortes e definidos com posicionamento ajustável para conforto e forma adequada. Ideal para isolamento preciso da parte inferior do corpo e treinamento de longo prazo."
         ]
       }
     ],
@@ -6120,33 +6120,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "219kgs"
+        "label": "NO",
+        "value": "219kg"
       },
       {
         "label": "G.W",
-        "value": "319kgs"
+        "value": "319kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1650*1070*1610mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "90kg-18pcs"
+        "label": "Pilhas de peso",
+        "value": "90kg-18 unidades"
       }
     ]
   },
   {
     "id": "190",
     "modelCode": "7324",
-    "name": "Leg Extension",
-    "description": "YR Fitness 7324 Leg Extension is designed to isolate and build quadriceps strength with easy seat-side adjustments, smooth movement, and solid construction—ideal for focused lower-body training.",
+    "name": "Extensão de perna",
+    "description": "A extensão de perna YR Fitness 7324 foi projetada para isolar e aumentar a força do quadríceps com ajustes fáceis nas laterais do assento, movimentos suaves e construção sólida - ideal para treinamento focado na parte inferior do corpo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7324 Leg Extension is designed to isolate and build quadriceps strength with easy seat-side adjustments, smooth movement, and solid construction—ideal for focused lower-body training."
+          "A extensão de perna YR Fitness 7324 foi projetada para isolar e aumentar a força do quadríceps com ajustes fáceis nas laterais do assento, movimentos suaves e construção sólida - ideal para treinamento focado na parte inferior do corpo."
         ]
       }
     ],
@@ -6157,33 +6157,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "210kgs"
+        "label": "NO",
+        "value": "210kg"
       },
       {
         "label": "G.W",
-        "value": "310kgs"
+        "value": "310kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1600*1050*1610mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "90kg-18pcs"
+        "label": "Pilhas de peso",
+        "value": "90kg-18 unidades"
       }
     ]
   },
   {
     "id": "191",
     "modelCode": "7360",
-    "name": "Adduction/Abduction",
-    "description": "YR Fitness 7360 Adduction/Abduction offers two essential thigh workouts in one machine. With ergonomic adjustments and premium materials, it ensures safe, private, and effective lower body training for all users.",
+    "name": "Adução/Abdução",
+    "description": "YR Fitness 7360 Adduction/Abduction oferece dois exercícios essenciais para coxas em uma máquina. Com ajustes ergonômicos e materiais premium, garante um treinamento seguro, privado e eficaz da parte inferior do corpo para todos os usuários.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7360 Adduction/Abduction offers two essential thigh workouts in one machine. With ergonomic adjustments and premium materials, it ensures safe, private, and effective lower body training for all users."
+          "YR Fitness 7360 Adduction/Abduction oferece dois exercícios essenciais para coxas em uma máquina. Com ajustes ergonômicos e materiais premium, garante um treinamento seguro, privado e eficaz da parte inferior do corpo para todos os usuários."
         ]
       }
     ],
@@ -6195,33 +6195,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "238kgs"
+        "label": "NO",
+        "value": "238kg"
       },
       {
         "label": "G.W",
-        "value": "338kgs"
+        "value": "338kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": ": 1360*1160*1610mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": ": 90kg-18pcs"
+        "label": "Pilhas de peso",
+        "value": ": 90kg-18 unidades"
       }
     ]
   },
   {
     "id": "192",
     "modelCode": "7323",
-    "name": "Hip Abduction",
-    "description": "YR Fitness 7323 Hip Abduction provides smooth, stable, and targeted outer thigh training with premium materials, privacy-enhancing design, and adjustable features for a safe and comfortable experience.",
+    "name": "Abdução do quadril",
+    "description": "YR Fitness 7323 Hip Abduction oferece treinamento suave, estável e direcionado para a parte externa da coxa com materiais premium, design que aumenta a privacidade e recursos ajustáveis ​​para uma experiência segura e confortável.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7323 Hip Abduction provides smooth, stable, and targeted outer thigh training with premium materials, privacy-enhancing design, and adjustable features for a safe and comfortable experience."
+          "YR Fitness 7323 Hip Abduction oferece treinamento suave, estável e direcionado para a parte externa da coxa com materiais premium, design que aumenta a privacidade e recursos ajustáveis ​​para uma experiência segura e confortável."
         ]
       }
     ],
@@ -6232,33 +6232,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "238kgs"
+        "label": "NO",
+        "value": "238kg"
       },
       {
         "label": "G.W",
-        "value": "338kgs"
+        "value": "338kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1360*1160*1610mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "90kg-18pcs"
+        "label": "Pilhas de peso",
+        "value": "90kg-18 unidades"
       }
     ]
   },
   {
     "id": "193",
     "modelCode": "7322",
-    "name": "Hip Adduction",
-    "description": "YR Fitness 7322 Hip Adduction delivers safe and efficient inner thigh training with an ergonomic design, adjustable settings, and premium materials—perfect for both beginners and experienced gym users.",
+    "name": "Adução do quadril",
+    "description": "YR Fitness 7322 Hip Adduction oferece treinamento seguro e eficiente da parte interna da coxa com um design ergonômico, configurações ajustáveis ​​e materiais premium - perfeito para iniciantes e usuários experientes de academia.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7322 Hip Adduction delivers safe and efficient inner thigh training with an ergonomic design, adjustable settings, and premium materials—perfect for both beginners and experienced gym users."
+          "YR Fitness 7322 Hip Adduction oferece treinamento seguro e eficiente da parte interna da coxa com um design ergonômico, configurações ajustáveis ​​e materiais premium - perfeito para iniciantes e usuários experientes de academia."
         ]
       }
     ],
@@ -6269,33 +6269,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "238kgs"
+        "label": "NO",
+        "value": "238kg"
       },
       {
         "label": "G.W",
-        "value": "338kgs"
+        "value": "338kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1360*1160*1610mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "90kg-18pcs"
+        "label": "Pilhas de peso",
+        "value": "90kg-18 unidades"
       }
     ]
   },
   {
     "id": "194",
     "modelCode": "7321",
-    "name": "Gluteus Maximus Trainer",
-    "description": "YR Fitness 7321 Gluteus Maximus Trainer offers targeted glute development with a natural rear leg extension motion and a rotating footplate for added variety. Built for comfort and performance, it&#8217;s ideal for any gym setup.",
+    "name": "Treinador de Glúteo Máximo",
+    "description": "YR Fitness 7321 Gluteus Maximus Trainer oferece desenvolvimento direcionado de glúteos com um movimento natural de extensão da perna traseira e uma plataforma giratória para maior variedade. Construído para oferecer conforto e desempenho, é ideal para qualquer configuração de academia.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7321 Gluteus Maximus Trainer offers targeted glute development with a natural rear leg extension motion and a rotating footplate for added variety. Built for comfort and performance, it&#8217;s ideal for any gym setup."
+          "YR Fitness 7321 Gluteus Maximus Trainer oferece desenvolvimento direcionado de glúteos com um movimento natural de extensão da perna traseira e uma plataforma giratória para maior variedade. Construído para oferecer conforto e desempenho, é ideal para qualquer configuração de academia."
         ]
       }
     ],
@@ -6306,33 +6306,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "224kgs"
+        "label": "NO",
+        "value": "224kg"
       },
       {
         "label": "G.W",
-        "value": "324kgs"
+        "value": "324kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1220*890*1610mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kg-14 unidades"
       }
     ]
   },
   {
     "id": "195",
     "modelCode": "7320",
-    "name": "Multi Hip",
-    "description": "YR Fitness 7320 Multi Hip is a versatile machine for lower body development. Its adjustable platform and smooth bidirectional resistance make it ideal for targeted hip and leg workouts in any strength training program.",
+    "name": "Multi Quadril",
+    "description": "YR Fitness 7320 Multi Hip é uma máquina versátil para o desenvolvimento da parte inferior do corpo. Sua plataforma ajustável e resistência bidirecional suave o tornam ideal para exercícios direcionados de quadril e pernas em qualquer programa de treinamento de força.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7320 Multi Hip is a versatile machine for lower body development. Its adjustable platform and smooth bidirectional resistance make it ideal for targeted hip and leg workouts in any strength training program."
+          "YR Fitness 7320 Multi Hip é uma máquina versátil para o desenvolvimento da parte inferior do corpo. Sua plataforma ajustável e resistência bidirecional suave o tornam ideal para exercícios direcionados de quadril e pernas em qualquer programa de treinamento de força."
         ]
       }
     ],
@@ -6343,33 +6343,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "252kgs"
+        "label": "NO",
+        "value": "252kg"
       },
       {
         "label": "G.W",
-        "value": "352kgs"
+        "value": "352kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1290*1080*1610mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kg-14 unidades"
       }
     ]
   },
   {
     "id": "196",
     "modelCode": "7319A",
-    "name": "Side Training",
-    "description": "YR Fitness 7319A Side Training is designed to focus on the externus oblique for advanced muscle isolation. Ideal for professional settings, it delivers smooth movement, secure support, and durable performance, ensuring complete and balanced core development.",
+    "name": "Treinamento lateral",
+    "description": "O treinamento lateral YR Fitness 7319A foi projetado para focar no oblíquo externo para isolamento muscular avançado. Ideal para ambientes profissionais, oferece movimentos suaves, suporte seguro e desempenho durável, garantindo um desenvolvimento central completo e equilibrado.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7319A Side Training is designed to focus on the externus oblique for advanced muscle isolation. Ideal for professional settings, it delivers smooth movement, secure support, and durable performance, ensuring complete and balanced core development."
+          "O treinamento lateral YR Fitness 7319A foi projetado para focar no oblíquo externo para isolamento muscular avançado. Ideal para ambientes profissionais, oferece movimentos suaves, suporte seguro e desempenho durável, garantindo um desenvolvimento central completo e equilibrado."
         ]
       }
     ],
@@ -6381,33 +6381,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "260kgs"
+        "label": "NO",
+        "value": "260kg"
       },
       {
         "label": "G.W",
-        "value": "360kgs"
+        "value": "360kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1200*1060*1610mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kg-14 unidades"
       }
     ]
   },
   {
     "id": "197",
     "modelCode": "7319",
-    "name": "Rotary Torso",
-    "description": "YR Fitness 7319 Rotary Torso offers a safe and effective way to train your obliques and core muscles. With smooth rotational motion, excellent stabilization, and durable construction, it&#8217;s ideal for improving mobility, posture, and strength in one compact design.",
+    "name": "Torso Rotativo",
+    "description": "YR Fitness 7319 Rotary Torso oferece uma maneira segura e eficaz de treinar seus oblíquos e músculos centrais. Com movimento rotacional suave, excelente estabilização e construção durável, é ideal para melhorar a mobilidade, postura e força em um design compacto.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7319 Rotary Torso offers a safe and effective way to train your obliques and core muscles. With smooth rotational motion, excellent stabilization, and durable construction, it&#8217;s ideal for improving mobility, posture, and strength in one compact design."
+          "YR Fitness 7319 Rotary Torso oferece uma maneira segura e eficaz de treinar seus oblíquos e músculos centrais. Com movimento rotacional suave, excelente estabilização e construção durável, é ideal para melhorar a mobilidade, postura e força em um design compacto."
         ]
       }
     ],
@@ -6419,33 +6419,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "252kgs"
+        "label": "NO",
+        "value": "252kg"
       },
       {
         "label": "G.W",
-        "value": "352kgs"
+        "value": "352kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1200*1060*1610mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kg-14 unidades"
       }
     ]
   },
   {
     "id": "198",
     "modelCode": "7318A",
-    "name": "Lower Abdominal Trainer",
-    "description": "YR Fitness 7318A Lower Abdominal Trainer features a unique design that targets your lower abs with precision. Built for smooth motion and lasting durability, it offers a focused core workout ideal for strengthening and defining the lower abdominal muscles.",
+    "name": "Treinador Abdominal Inferior",
+    "description": "YR Fitness 7318A Lower Abdominal Trainer apresenta um design exclusivo que atinge seus abdominais inferiores com precisão. Construído para movimentos suaves e durabilidade duradoura, oferece um treino central focado, ideal para fortalecer e definir os músculos abdominais inferiores.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7318A Lower Abdominal Trainer features a unique design that targets your lower abs with precision. Built for smooth motion and lasting durability, it offers a focused core workout ideal for strengthening and defining the lower abdominal muscles."
+          "YR Fitness 7318A Lower Abdominal Trainer apresenta um design exclusivo que atinge seus abdominais inferiores com precisão. Construído para movimentos suaves e durabilidade duradoura, oferece um treino central focado, ideal para fortalecer e definir os músculos abdominais inferiores."
         ]
       }
     ],
@@ -6456,33 +6456,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "230kgs"
+        "label": "NO",
+        "value": "230kg"
       },
       {
         "label": "G.W",
-        "value": "330kgs"
+        "value": "330kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1480*1100*1610mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kg-14 unidades"
       }
     ]
   },
   {
     "id": "199",
     "modelCode": "7318",
-    "name": "Upper/Mid Abdominal Trainer",
-    "description": "YR Fitness 7318 Upper/Mid Abdominal Trainer helps you build strong core muscles safely and comfortably. With adjustable ankle pads and smooth motion, it offers a focused workout experience suitable for all fitness levels.",
+    "name": "Treinador Abdominal Superior/Médio",
+    "description": "O instrutor abdominal superior/médio YR Fitness 7318 ajuda você a construir músculos centrais fortes com segurança e conforto. Com tornozeleiras ajustáveis ​​e movimentos suaves, oferece uma experiência de treino focada, adequada para todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7318 Upper/Mid Abdominal Trainer helps you build strong core muscles safely and comfortably. With adjustable ankle pads and smooth motion, it offers a focused workout experience suitable for all fitness levels."
+          "O instrutor abdominal superior/médio YR Fitness 7318 ajuda você a construir músculos centrais fortes com segurança e conforto. Com tornozeleiras ajustáveis ​​e movimentos suaves, oferece uma experiência de treino focada, adequada para todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -6493,33 +6493,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "229kgs"
+        "label": "NO",
+        "value": "229kg"
       },
       {
         "label": "G.W",
-        "value": "329kgs"
+        "value": "329kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1200*1160*1610mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kg-14 unidades"
       }
     ]
   },
   {
     "id": "200",
     "modelCode": "7317",
-    "name": "Back Extension",
-    "description": "YR Fitness 7317 Back Extension supports safe and controlled lower back training with its five-position adjustable range. Built with high-quality materials and ergonomic design, it delivers smooth motion and reliable performance for all users.",
+    "name": "Extensão traseira",
+    "description": "A extensão traseira YR Fitness 7317 oferece suporte ao treinamento seguro e controlado da região lombar com sua faixa ajustável de cinco posições. Construído com materiais de alta qualidade e design ergonômico, proporciona movimentos suaves e desempenho confiável para todos os usuários.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7317 Back Extension supports safe and controlled lower back training with its five-position adjustable range. Built with high-quality materials and ergonomic design, it delivers smooth motion and reliable performance for all users."
+          "A extensão traseira YR Fitness 7317 oferece suporte ao treinamento seguro e controlado da região lombar com sua faixa ajustável de cinco posições. Construído com materiais de alta qualidade e design ergonômico, proporciona movimentos suaves e desempenho confiável para todos os usuários."
         ]
       }
     ],
@@ -6530,33 +6530,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "220kgs"
+        "label": "NO",
+        "value": "220kg"
       },
       {
         "label": "G.W",
-        "value": "320kgs"
+        "value": "320kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1260*1100*1610mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "90kg-18pcs"
+        "label": "Pilhas de peso",
+        "value": "90kg-18 unidades"
       }
     ]
   },
   {
     "id": "201",
     "modelCode": "7316",
-    "name": "Assisted Dip/Chinning",
-    "description": "YR Fitness 7316 Assisted Dip/Chinning helps users build upper body strength with beginner-friendly support and multi-grip options. It offers safe and comfortable training for dips and chin-ups, making it perfect for all fitness levels.",
+    "name": "Mergulho/Chinning Assistido",
+    "description": "YR Fitness 7316 Assisted Dip/Chinning ajuda os usuários a desenvolver força na parte superior do corpo com suporte para iniciantes e opções de múltiplas pegadas. Oferece treinamento seguro e confortável para mergulhos e barras fixas, tornando-o perfeito para todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7316 Assisted Dip/Chinning helps users build upper body strength with beginner-friendly support and multi-grip options. It offers safe and comfortable training for dips and chin-ups, making it perfect for all fitness levels."
+          "YR Fitness 7316 Assisted Dip/Chinning ajuda os usuários a desenvolver força na parte superior do corpo com suporte para iniciantes e opções de múltiplas pegadas. Oferece treinamento seguro e confortável para mergulhos e barras fixas, tornando-o perfeito para todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -6569,20 +6569,20 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "222kgs"
+        "label": "NO",
+        "value": "222kg"
       },
       {
         "label": "G.W",
-        "value": "322kgs"
+        "value": "322kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1250*1000*2450mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "90kg-18pcs"
+        "label": "Pilhas de peso",
+        "value": "90kg-18 unidades"
       }
     ]
   },
@@ -6590,12 +6590,12 @@ const rawProducts: RawProduct[] = [
     "id": "202",
     "modelCode": "7315",
     "name": "Lat Pull Down",
-    "description": "YR Fitness 7315 Lat Pull Down provides a natural, diverging pulling motion with ergonomic rotating handles. Ideal for building upper back strength, it delivers smooth performance and high comfort for effective training.",
+    "description": "YR Fitness 7315 Lat Pull Down oferece um movimento de puxar natural e divergente com alças rotativas ergonômicas. Ideal para aumentar a força da parte superior das costas, proporciona desempenho suave e alto conforto para um treinamento eficaz.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7315 Lat Pull Down provides a natural, diverging pulling motion with ergonomic rotating handles. Ideal for building upper back strength, it delivers smooth performance and high comfort for effective training."
+          "YR Fitness 7315 Lat Pull Down oferece um movimento de puxar natural e divergente com alças rotativas ergonômicas. Ideal para aumentar a força da parte superior das costas, proporciona desempenho suave e alto conforto para um treinamento eficaz."
         ]
       }
     ],
@@ -6606,33 +6606,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "271kgs"
+        "label": "NO",
+        "value": "271kg"
       },
       {
         "label": "G.W",
-        "value": "371kgs"
+        "value": "371kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1400*1145*2126mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "90kg-18pcs"
+        "label": "Pilhas de peso",
+        "value": "90kg-18 unidades"
       }
     ]
   },
   {
     "id": "203",
     "modelCode": "7314A",
-    "name": "45° Upper Back Pull Down",
-    "description": "YR Fitness 7314A 45° Upper Back Pull Down features independent diverging arms and rotating handles for a natural, customized upper back workout. With ergonomic design and durable construction, it’s ideal for high-performance strength training.",
+    "name": "45° Puxar a parte superior das costas para baixo",
+    "description": "YR Fitness 7314A 45° Upper Back Pull Down apresenta braços divergentes independentes e alças rotativas para um treino natural e personalizado da parte superior das costas. Com design ergonômico e construção durável, é ideal para treinamento de força de alto desempenho.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7314A 45° Upper Back Pull Down features independent diverging arms and rotating handles for a natural, customized upper back workout. With ergonomic design and durable construction, it’s ideal for high-performance strength training."
+          "YR Fitness 7314A 45° Upper Back Pull Down apresenta braços divergentes independentes e alças rotativas para um treino natural e personalizado da parte superior das costas. Com design ergonômico e construção durável, é ideal para treinamento de força de alto desempenho."
         ]
       }
     ],
@@ -6643,33 +6643,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "271kgs"
+        "label": "NO",
+        "value": "271kg"
       },
       {
         "label": "G.W",
-        "value": "371kgs"
+        "value": "371kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1400*1145*2126mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "90kg-18pcs"
+        "label": "Pilhas de peso",
+        "value": "90kg-18 unidades"
       }
     ]
   },
   {
     "id": "204",
     "modelCode": "7314",
-    "name": "Seated Row",
-    "description": "YR Fitness 7314 Seated Row delivers a natural and powerful pulling motion through independent arms and ergonomic handles. Designed for optimal back engagement and user comfort, it&#8217;s built for performance and long-term durability.",
+    "name": "Fila Sentada",
+    "description": "YR Fitness 7314 Seated Row oferece um movimento de tração natural e poderoso por meio de braços independentes e alças ergonômicas. Projetado para um ótimo encaixe nas costas e conforto do usuário, ele é construído para desempenho e durabilidade a longo prazo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7314 Seated Row delivers a natural and powerful pulling motion through independent arms and ergonomic handles. Designed for optimal back engagement and user comfort, it&#8217;s built for performance and long-term durability."
+          "YR Fitness 7314 Seated Row oferece um movimento de tração natural e poderoso por meio de braços independentes e alças ergonômicas. Projetado para um ótimo encaixe nas costas e conforto do usuário, ele é construído para desempenho e durabilidade a longo prazo."
         ]
       }
     ],
@@ -6680,33 +6680,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "238kgs"
+        "label": "NO",
+        "value": "238kg"
       },
       {
         "label": "G.W",
-        "value": "338kgs"
+        "value": "338kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1465*1020*1610mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "90kg-18pcs"
+        "label": "Pilhas de peso",
+        "value": "90kg-18 unidades"
       }
     ]
   },
   {
     "id": "205",
     "modelCode": "7313",
-    "name": "Low Row",
-    "description": "YR Fitness 7313 Low Row offers natural, independent arm movement with ergonomic rotating handles for optimal back muscle activation. Built with precision and durability, it ensures a smooth and effective strength training experience.",
+    "name": "Linha Baixa",
+    "description": "YR Fitness 7313 Low Row oferece movimento natural e independente do braço com alças rotativas ergonômicas para ativação ideal dos músculos das costas. Construído com precisão e durabilidade, garante uma experiência de treinamento de força suave e eficaz.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7313 Low Row offers natural, independent arm movement with ergonomic rotating handles for optimal back muscle activation. Built with precision and durability, it ensures a smooth and effective strength training experience."
+          "YR Fitness 7313 Low Row oferece movimento natural e independente do braço com alças rotativas ergonômicas para ativação ideal dos músculos das costas. Construído com precisão e durabilidade, garante uma experiência de treinamento de força suave e eficaz."
         ]
       }
     ],
@@ -6717,33 +6717,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "190kgs"
+        "label": "NO",
+        "value": "190kg"
       },
       {
         "label": "G.W",
-        "value": "290kgs"
+        "value": "290kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1660*1070*1610mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "90kg-18pcs"
+        "label": "Pilhas de peso",
+        "value": "90kg-18 unidades"
       }
     ]
   },
   {
     "id": "206",
     "modelCode": "7312",
-    "name": "Triceps Extension",
-    "description": "YR Fitness 7312 Triceps Extension features independent arms and pivoting handles for smooth, joint-friendly motion. Engineered for precise triceps targeting, it blends ergonomic comfort with commercial-grade durability for advanced strength training.",
+    "name": "Extensão de tríceps",
+    "description": "A extensão de tríceps YR Fitness 7312 apresenta braços independentes e alças giratórias para movimentos suaves e amigáveis ​​às articulações. Projetado para direcionamento preciso do tríceps, combina conforto ergonômico com durabilidade de nível comercial para treinamento de força avançado.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7312 Triceps Extension features independent arms and pivoting handles for smooth, joint-friendly motion. Engineered for precise triceps targeting, it blends ergonomic comfort with commercial-grade durability for advanced strength training."
+          "A extensão de tríceps YR Fitness 7312 apresenta braços independentes e alças giratórias para movimentos suaves e amigáveis ​​às articulações. Projetado para direcionamento preciso do tríceps, combina conforto ergonômico com durabilidade de nível comercial para treinamento de força avançado."
         ]
       }
     ],
@@ -6754,33 +6754,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "227kgs"
+        "label": "NO",
+        "value": "227kg"
       },
       {
         "label": "G.W",
-        "value": "327kgs"
+        "value": "327kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1560*930*1610mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kg-14 unidades"
       }
     ]
   },
   {
     "id": "207",
     "modelCode": "7311",
-    "name": "Tricep Dip",
-    "description": "YR Fitness 7311 Tricep Dip uses independent arms and rotating EZ handles to create a smooth, joint-friendly pressing motion. Built for durability and comfort, it delivers focused triceps training with excellent ergonomic support.",
+    "name": "Mergulho de tríceps",
+    "description": "YR Fitness 7311 Tricep Dip usa braços independentes e alças EZ giratórias para criar um movimento de pressão suave e amigável às articulações. Construído para durabilidade e conforto, oferece treinamento focado de tríceps com excelente suporte ergonômico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7311 Tricep Dip uses independent arms and rotating EZ handles to create a smooth, joint-friendly pressing motion. Built for durability and comfort, it delivers focused triceps training with excellent ergonomic support."
+          "YR Fitness 7311 Tricep Dip usa braços independentes e alças EZ giratórias para criar um movimento de pressão suave e amigável às articulações. Construído para durabilidade e conforto, oferece treinamento focado de tríceps com excelente suporte ergonômico."
         ]
       }
     ],
@@ -6791,33 +6791,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "230kgs"
+        "label": "NO",
+        "value": "230kg"
       },
       {
         "label": "G.W",
-        "value": "330kgs"
+        "value": "330kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1510*1225*1610mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kg-14 unidades"
       }
     ]
   },
   {
     "id": "208",
     "modelCode": "7309",
-    "name": "Pectoral Fly / Rear Deltoid",
-    "description": "YR Fitness 7309 Pectoral Fly / Rear Deltoid combines two upper body exercises in one machine. With rotating handles and ergonomic design, it ensures smooth motion and joint safety while building chest and rear shoulder strength.",
+    "name": "Mosca Peitoral / Deltoide Posterior",
+    "description": "YR Fitness 7309 Pectoral Fly / Rear Deltoid combina dois exercícios para a parte superior do corpo em uma máquina. Com alças giratórias e design ergonômico, garante movimentos suaves e segurança das articulações ao mesmo tempo em que fortalece o tórax e os ombros traseiros.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7309 Pectoral Fly / Rear Deltoid combines two upper body exercises in one machine. With rotating handles and ergonomic design, it ensures smooth motion and joint safety while building chest and rear shoulder strength."
+          "YR Fitness 7309 Pectoral Fly / Rear Deltoid combina dois exercícios para a parte superior do corpo em uma máquina. Com alças giratórias e design ergonômico, garante movimentos suaves e segurança das articulações ao mesmo tempo em que fortalece o tórax e os ombros traseiros."
         ]
       }
     ],
@@ -6830,33 +6830,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "215kgs"
+        "label": "NO",
+        "value": "215kg"
       },
       {
         "label": "G.W",
-        "value": "315kgs"
+        "value": "315kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1290*1050*1713mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "90kg-18pcs"
+        "label": "Pilhas de peso",
+        "value": "90kg-18 unidades"
       }
     ]
   },
   {
     "id": "209",
     "modelCode": "7308",
-    "name": "Cross Arm Trainer",
-    "description": "YR Fitness 7308 Cross Arm Trainer is a unique machine by Yanre, designed to isolate and sculpt the lateral chest muscles. With smooth mechanics and ergonomic design, it&#8217;s the ideal for advanced users focused on detailed chest developme",
+    "name": "Treinador de braço cruzado",
+    "description": "YR Fitness 7308 Cross Arm Trainer é uma máquina exclusiva da Yanre, projetada para isolar e esculpir os músculos laterais do peito. Com mecânica suave e design ergonômico, é ideal para usuários avançados focados no desenvolvimento detalhado do tórax",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7308 Cross Arm Trainer is a unique machine by Yanre, designed to isolate and sculpt the lateral chest muscles. With smooth mechanics and ergonomic design, it&#8217;s the ideal for advanced users focused on detailed chest developme"
+          "YR Fitness 7308 Cross Arm Trainer é uma máquina exclusiva da Yanre, projetada para isolar e esculpir os músculos laterais do peito. Com mecânica suave e design ergonômico, é ideal para usuários avançados focados no desenvolvimento detalhado do tórax"
         ]
       }
     ],
@@ -6868,33 +6868,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "215kgs"
+        "label": "NO",
+        "value": "215kg"
       },
       {
         "label": "G.W",
-        "value": "315kgs"
+        "value": "315kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1290*1050*1713mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "90kg-18pcs"
+        "label": "Pilhas de peso",
+        "value": "90kg-18 unidades"
       }
     ]
   },
   {
     "id": "210",
     "modelCode": "7307",
-    "name": "Pectoral Butterfly",
-    "description": "YR Fitness 7307 Pectoral Butterfly features independent converging arms for natural motion and focused chest muscle activation. Engineered for comfort, precision, and durability, it supports effective and progressive upper body training.",
+    "name": "Borboleta Peitoral",
+    "description": "YR Fitness 7307 Pectoral Butterfly apresenta braços convergentes independentes para movimento natural e ativação focada do músculo peitoral. Projetado para conforto, precisão e durabilidade, ele suporta treinamento eficaz e progressivo da parte superior do corpo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7307 Pectoral Butterfly features independent converging arms for natural motion and focused chest muscle activation. Engineered for comfort, precision, and durability, it supports effective and progressive upper body training."
+          "YR Fitness 7307 Pectoral Butterfly apresenta braços convergentes independentes para movimento natural e ativação focada do músculo peitoral. Projetado para conforto, precisão e durabilidade, ele suporta treinamento eficaz e progressivo da parte superior do corpo."
         ]
       }
     ],
@@ -6906,33 +6906,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "285kgs"
+        "label": "NO",
+        "value": "285kg"
       },
       {
         "label": "G.W",
-        "value": "385kgs"
+        "value": "385kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1830*1650*1610mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "90kg-18pcs"
+        "label": "Pilhas de peso",
+        "value": "90kg-18 unidades"
       }
     ]
   },
   {
     "id": "211",
     "modelCode": "7305A",
-    "name": "Seated Upper Chest Press",
-    "description": "YR Fitness 7305A Seated Upper Chest Press is designed with independent converging arms to provide a natural pressing motion for effective upper chest activation. Built for performance and comfort, it&#8217;s ideal for strength progression in any gym setting.",
+    "name": "Pressão torácica superior sentada",
+    "description": "A prensa torácica sentada YR Fitness 7305A foi projetada com braços convergentes independentes para fornecer um movimento de pressão natural para uma ativação eficaz da parte superior do tórax. Construído para desempenho e conforto, é ideal para progressão de força em qualquer ambiente de academia.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7305A Seated Upper Chest Press is designed with independent converging arms to provide a natural pressing motion for effective upper chest activation. Built for performance and comfort, it&#8217;s ideal for strength progression in any gym setting."
+          "A prensa torácica sentada YR Fitness 7305A foi projetada com braços convergentes independentes para fornecer um movimento de pressão natural para uma ativação eficaz da parte superior do tórax. Construído para desempenho e conforto, é ideal para progressão de força em qualquer ambiente de academia."
         ]
       }
     ],
@@ -6943,33 +6943,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "260kgs"
+        "label": "NO",
+        "value": "260kg"
       },
       {
         "label": "G.W",
-        "value": "360kgs"
+        "value": "360kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1680*950*1815mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "90kg-18pcs"
+        "label": "Pilhas de peso",
+        "value": "90kg-18 unidades"
       }
     ]
   },
   {
     "id": "212",
     "modelCode": "7305",
-    "name": "Mid Chest Press",
-    "description": "YR Fitness 7305 Mid Chest Press features independent converging arms for a natural, effective motion that targets the mid-chest. With premium build quality and ergonomic comfort, it&#8217;s designed to support users at all fitness levels.",
+    "name": "Pressão média do peito",
+    "description": "YR Fitness 7305 Mid Chest Press apresenta braços convergentes independentes para um movimento natural e eficaz que atinge o meio do peito. Com qualidade de construção premium e conforto ergonômico, ele foi projetado para oferecer suporte a usuários em todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7305 Mid Chest Press features independent converging arms for a natural, effective motion that targets the mid-chest. With premium build quality and ergonomic comfort, it&#8217;s designed to support users at all fitness levels."
+          "YR Fitness 7305 Mid Chest Press apresenta braços convergentes independentes para um movimento natural e eficaz que atinge o meio do peito. Com qualidade de construção premium e conforto ergonômico, ele foi projetado para oferecer suporte a usuários em todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -6980,33 +6980,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "254kgs"
+        "label": "NO",
+        "value": "254kg"
       },
       {
         "label": "G.W",
-        "value": "354kgs"
+        "value": "354kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1680*950*1815mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "90kg-18pcs"
+        "label": "Pilhas de peso",
+        "value": "90kg-18 unidades"
       }
     ]
   },
   {
     "id": "213",
     "modelCode": "7304",
-    "name": "Lower Chest Press Machine",
-    "description": "YR Fitness 7304 Lower Chest Press features independent converging arms for natural, focused lower chest training. With premium construction and ergonomic design, it’s perfect for users building strength and form in their chest workouts.",
+    "name": "Máquina de prensa torácica inferior",
+    "description": "YR Fitness 7304 Lower Chest Press apresenta braços convergentes independentes para treinamento natural e focado na parte inferior do tórax. Com construção premium e design ergonômico, é perfeito para usuários que desenvolvem força e forma em seus treinos de peito.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7304 Lower Chest Press features independent converging arms for natural, focused lower chest training. With premium construction and ergonomic design, it’s perfect for users building strength and form in their chest workouts."
+          "YR Fitness 7304 Lower Chest Press apresenta braços convergentes independentes para treinamento natural e focado na parte inferior do tórax. Com construção premium e design ergonômico, é perfeito para usuários que desenvolvem força e forma em seus treinos de peito."
         ]
       }
     ],
@@ -7017,33 +7017,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "250kgs"
+        "label": "NO",
+        "value": "250kg"
       },
       {
         "label": "G.W",
-        "value": "350kgs"
+        "value": "350kg"
       },
       {
-        "label": "Installation size",
+        "label": "Tamanho da instalação",
         "value": "1690*870*1610mm"
       },
       {
-        "label": "Weight stacks",
-        "value": "90kg-18pcs"
+        "label": "Pilhas de peso",
+        "value": "90kg-18 unidades"
       }
     ]
   },
   {
     "id": "214",
     "modelCode": "7303",
-    "name": "Seated Lateral Raise",
-    "description": "YR Fitness 7303 Seated Lateral Raise uses independent arms and a smooth cam system to replicate natural shoulder movement. Ideal for isolating the middle deltoids, it provides consistent resistance and ergonomic support for efficient shoulder training.",
+    "name": "Elevação lateral sentada",
+    "description": "YR Fitness 7303 Seated Lateral Raise usa braços independentes e um sistema de came suave para replicar o movimento natural dos ombros. Ideal para isolar os deltóides médios, proporciona resistência consistente e suporte ergonômico para um treinamento eficiente dos ombros.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7303 Seated Lateral Raise uses independent arms and a smooth cam system to replicate natural shoulder movement. Ideal for isolating the middle deltoids, it provides consistent resistance and ergonomic support for efficient shoulder training."
+          "YR Fitness 7303 Seated Lateral Raise usa braços independentes e um sistema de came suave para replicar o movimento natural dos ombros. Ideal para isolar os deltóides médios, proporciona resistência consistente e suporte ergonômico para um treinamento eficiente dos ombros."
         ]
       }
     ],
@@ -7054,33 +7054,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "250kgs"
+        "label": "NO",
+        "value": "250kg"
       },
       {
         "label": "G.W",
-        "value": "350kgs"
+        "value": "350kg"
       },
       {
-        "label": "Installation size",
+        "label": "Tamanho da instalação",
         "value": "1250*890*1610mm"
       },
       {
-        "label": "Weight stacks",
-        "value": "70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kg-14 unidades"
       }
     ]
   },
   {
     "id": "215",
     "modelCode": "7302",
-    "name": "Shoulder Pull Up",
-    "description": "YR Fitness 7302 Shoulder Pull Up is designed for users with shoulder limitations, offering a safer alternative to traditional presses. Its diverging arms and rotating handles ensure natural motion and comfort for effective shoulder workouts.",
+    "name": "Elevação do ombro",
+    "description": "YR Fitness 7302 Shoulder Pull Up foi projetado para usuários com limitações nos ombros, oferecendo uma alternativa mais segura aos desenvolvimentos tradicionais. Seus braços divergentes e alças rotativas garantem movimento natural e conforto para exercícios eficazes de ombros.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7302 Shoulder Pull Up is designed for users with shoulder limitations, offering a safer alternative to traditional presses. Its diverging arms and rotating handles ensure natural motion and comfort for effective shoulder workouts."
+          "YR Fitness 7302 Shoulder Pull Up foi projetado para usuários com limitações nos ombros, oferecendo uma alternativa mais segura aos desenvolvimentos tradicionais. Seus braços divergentes e alças rotativas garantem movimento natural e conforto para exercícios eficazes de ombros."
         ]
       }
     ],
@@ -7093,13 +7093,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "216",
     "modelCode": "7301",
-    "name": "Seated Shoulder Press",
-    "description": "YR Fitness 7301 Seated Shoulder Press features independent converging arms for natural motion and dual-position handles for training variety. Built with durable materials and smooth mechanics, it offers premium shoulder strength training for all fitness levels.",
+    "name": "Pressão de Ombro Sentado",
+    "description": "YR Fitness 7301 Seated Shoulder Press apresenta braços convergentes independentes para movimento natural e alças de posição dupla para variedade de treinamento. Construído com materiais duráveis ​​e mecânica suave, oferece treinamento premium de força nos ombros para todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7301 Seated Shoulder Press features independent converging arms for natural motion and dual-position handles for training variety. Built with durable materials and smooth mechanics, it offers premium shoulder strength training for all fitness levels."
+          "YR Fitness 7301 Seated Shoulder Press apresenta braços convergentes independentes para movimento natural e alças de posição dupla para variedade de treinamento. Construído com materiais duráveis ​​e mecânica suave, oferece treinamento premium de força nos ombros para todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -7110,33 +7110,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "247kgs"
+        "label": "NO",
+        "value": "247kg"
       },
       {
         "label": "G.W",
-        "value": "347kgs"
+        "value": "347kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1630*1400*1610mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kg-14 unidades"
       }
     ]
   },
   {
     "id": "217",
     "modelCode": "5336",
-    "name": "3 Station 6 Function Trainer",
-    "description": "YR Fitness 3 Station 6 Function Trainer 5336 offers a full-body workout in one machine. With six key functions and ergonomic design, it targets both upper and lower body muscles. Easy to use, durable, and built for high-performance training in any gym setting.",
+    "name": "3 Estação 6 Treinador de Função",
+    "description": "YR Fitness 3 Station 6 Function Trainer 5336 oferece um treino de corpo inteiro em uma máquina. Com seis funções principais e design ergonômico, atinge os músculos superiores e inferiores do corpo. Fácil de usar, durável e construído para treinamento de alto desempenho em qualquer ambiente de academia.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 3 Station 6 Function Trainer 5336 offers a full-body workout in one machine. With six key functions and ergonomic design, it targets both upper and lower body muscles. Easy to use, durable, and built for high-performance training in any gym setting."
+          "YR Fitness 3 Station 6 Function Trainer 5336 oferece um treino de corpo inteiro em uma máquina. Com seis funções principais e design ergonômico, atinge os músculos superiores e inferiores do corpo. Fácil de usar, durável e construído para treinamento de alto desempenho em qualquer ambiente de academia."
         ]
       }
     ],
@@ -7149,13 +7149,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "218",
     "modelCode": "82016",
-    "name": "Plate Loaded Leg Press",
-    "description": "YR Fitness 82016 offers controlled, ergonomic leg pressing with a focus on safety and performance. Its plate-loaded design and structural support make it ideal for developing lower-body strength efficiently.",
+    "name": "Leg press com placa",
+    "description": "YR Fitness 82016 oferece leg press controlado e ergonômico com foco na segurança e no desempenho. Seu design com placa e suporte estrutural o tornam ideal para desenvolver a força da parte inferior do corpo com eficiência.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82016 offers controlled, ergonomic leg pressing with a focus on safety and performance. Its plate-loaded design and structural support make it ideal for developing lower-body strength efficiently."
+          "YR Fitness 82016 oferece leg press controlado e ergonômico com foco na segurança e no desempenho. Seu design com placa e suporte estrutural o tornam ideal para desenvolver a força da parte inferior do corpo com eficiência."
         ]
       }
     ],
@@ -7166,15 +7166,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "199kgs"
+        "label": "NO",
+        "value": "199kg"
       },
       {
         "label": "G.W",
-        "value": "276kgs"
+        "value": "276kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1835*1660*1530mm"
       }
     ]
@@ -7182,13 +7182,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "219",
     "modelCode": "82015",
-    "name": "ISO-Lateral Horizontal Bench Press",
-    "description": "YR Fitness 82015 replicates the traditional bench press with added benefits of independent arm movement and joint-friendly mechanics, supporting safe and effective chest training.",
+    "name": "Supino Horizontal ISO-Lateral",
+    "description": "YR Fitness 82015 replica o supino tradicional com benefícios adicionais de movimento independente do braço e mecânica favorável às articulações, apoiando um treinamento torácico seguro e eficaz.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82015 replicates the traditional bench press with added benefits of independent arm movement and joint-friendly mechanics, supporting safe and effective chest training."
+          "YR Fitness 82015 replica o supino tradicional com benefícios adicionais de movimento independente do braço e mecânica favorável às articulações, apoiando um treinamento torácico seguro e eficaz."
         ]
       }
     ],
@@ -7201,15 +7201,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "116kgs"
+        "label": "NO",
+        "value": "116kg"
       },
       {
         "label": "G.W",
-        "value": "156kgs"
+        "value": "156kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1690*1786*894mm"
       }
     ]
@@ -7217,13 +7217,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "220",
     "modelCode": "82014",
-    "name": "ISO-Lateral Bench Press",
-    "description": "YR Fitness 82014 delivers seated, iso-lateral bench pressing for balanced chest development and safe strength gains. Its ergonomic design and resistance versatility make it ideal for comprehensive upper-body training.",
+    "name": "Supino ISO-lateral",
+    "description": "YR Fitness 82014 oferece supino sentado isolateral para desenvolvimento equilibrado do tórax e ganhos de força seguros. Seu design ergonômico e versatilidade de resistência o tornam ideal para treinamento abrangente da parte superior do corpo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82014 delivers seated, iso-lateral bench pressing for balanced chest development and safe strength gains. Its ergonomic design and resistance versatility make it ideal for comprehensive upper-body training."
+          "YR Fitness 82014 oferece supino sentado isolateral para desenvolvimento equilibrado do tórax e ganhos de força seguros. Seu design ergonômico e versatilidade de resistência o tornam ideal para treinamento abrangente da parte superior do corpo."
         ]
       }
     ],
@@ -7234,15 +7234,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "146kgs"
+        "label": "NO",
+        "value": "146kg"
       },
       {
         "label": "G.W",
-        "value": "215kgs"
+        "value": "215kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1908*1068*1842mm"
       }
     ]
@@ -7250,13 +7250,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "221",
     "modelCode": "82013",
-    "name": "ISO Lateral Decline Bench Press",
-    "description": "YR Fitness 82013 delivers smooth, isolated decline pressing to effectively target the lower chest. Its independent arms and adjustable resistance make it a valuable asset for building balanced upper body strength.",
+    "name": "Supino de declínio lateral ISO",
+    "description": "YR Fitness 82013 oferece pressão de declínio suave e isolada para atingir efetivamente a parte inferior do tórax. Seus braços independentes e resistência ajustável tornam-no um recurso valioso para desenvolver força equilibrada na parte superior do corpo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82013 delivers smooth, isolated decline pressing to effectively target the lower chest. Its independent arms and adjustable resistance make it a valuable asset for building balanced upper body strength."
+          "YR Fitness 82013 oferece pressão de declínio suave e isolada para atingir efetivamente a parte inferior do tórax. Seus braços independentes e resistência ajustável tornam-no um recurso valioso para desenvolver força equilibrada na parte superior do corpo."
         ]
       }
     ],
@@ -7269,15 +7269,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "126kgs"
+        "label": "NO",
+        "value": "126kg"
       },
       {
         "label": "G.W",
-        "value": "171kgs"
+        "value": "171kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1863*1625*816mm"
       }
     ]
@@ -7285,13 +7285,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "222",
     "modelCode": "61A60",
-    "name": "Adductor and Abductor",
-    "description": "YR Fitness 61A60 Adductor and Abductor combines two exercises in one smooth, user-friendly machine. With adjustable settings, supportive leg pads, and durable construction, it’s perfect for effective inner and outer thigh training.",
+    "name": "Adutor e Abdutor",
+    "description": "O adutor e abdutor YR Fitness 61A60 combina dois exercícios em uma máquina suave e fácil de usar. Com configurações ajustáveis, almofadas de apoio para as pernas e construção durável, é perfeito para um treinamento eficaz na parte interna e externa das coxas.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A60 Adductor and Abductor combines two exercises in one smooth, user-friendly machine. With adjustable settings, supportive leg pads, and durable construction, it’s perfect for effective inner and outer thigh training."
+          "O adutor e abdutor YR Fitness 61A60 combina dois exercícios em uma máquina suave e fácil de usar. Com configurações ajustáveis, almofadas de apoio para as pernas e construção durável, é perfeito para um treinamento eficaz na parte interna e externa das coxas."
         ]
       }
     ],
@@ -7303,33 +7303,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "212kgs"
+        "label": "NO",
+        "value": "212kg"
       },
       {
         "label": "G.W",
-        "value": "221kgs"
+        "value": "221kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "720*1600*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "223",
     "modelCode": "82012",
-    "name": "Incline Chest Press",
-    "description": "YR Fitness 82012 offers smooth incline pressing with adjustable resistance, making it an ideal choice for building strength and definition in the upper chest, shoulders, and arms.",
+    "name": "Pressão torácica inclinada",
+    "description": "YR Fitness 82012 oferece pressão inclinada suave com resistência ajustável, tornando-o a escolha ideal para aumentar a força e definição na parte superior do tórax, ombros e braços.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82012 offers smooth incline pressing with adjustable resistance, making it an ideal choice for building strength and definition in the upper chest, shoulders, and arms."
+          "YR Fitness 82012 oferece pressão inclinada suave com resistência ajustável, tornando-o a escolha ideal para aumentar a força e definição na parte superior do tórax, ombros e braços."
         ]
       }
     ],
@@ -7342,29 +7342,29 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "142kgs / 341lbs"
+        "label": "NO",
+        "value": "142 kg / 341 libras"
       },
       {
         "label": "G.W",
-        "value": "203kgs / 452lbs"
+        "value": "203 kg / 452 libras"
       },
       {
-        "label": "Installation Size",
-        "value": "2000*1782*1210mm / 79*67*59in"
+        "label": "Tamanho da instalação",
+        "value": "2000*1782*1210mm / 79*67*59 pol."
       }
     ]
   },
   {
     "id": "224",
     "modelCode": "61A55",
-    "name": "Utility Bench",
-    "description": "YR Fitness Utility Bench 61A55 is a compact, durable bench designed for various strength exercises. Built with strong steel, high-density foam, and smooth PU leather, it also features wheels for easy movement—perfect for home gyms or professional training spaces.",
+    "name": "Banco de utilidades",
+    "description": "YR Fitness Utility Bench 61A55 é um banco compacto e durável projetado para vários exercícios de força. Construído com aço forte, espuma de alta densidade e couro PU macio, também possui rodas para facilitar a movimentação - perfeito para academias domésticas ou espaços de treinamento profissional.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Utility Bench 61A55 is a compact, durable bench designed for various strength exercises. Built with strong steel, high-density foam, and smooth PU leather, it also features wheels for easy movement—perfect for home gyms or professional training spaces."
+          "YR Fitness Utility Bench 61A55 é um banco compacto e durável projetado para vários exercícios de força. Construído com aço forte, espuma de alta densidade e couro PU macio, também possui rodas para facilitar a movimentação - perfeito para academias domésticas ou espaços de treinamento profissional."
         ]
       }
     ],
@@ -7378,13 +7378,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "225",
     "modelCode": "82011",
-    "name": "Ground Base Combo Twist (Right Pull)",
-    "description": "YR Fitness 82011 delivers focused right-side core engagement with a plate-loaded, ground-based system. It’s ideal for developing rotational strength, improving stability, and supporting balanced, functional fitness.",
+    "name": "Torção combinada da base terrestre (puxar para a direita)",
+    "description": "YR Fitness 82011 oferece envolvimento central do lado direito com um sistema baseado no solo carregado com placa. É ideal para desenvolver força rotacional, melhorar a estabilidade e apoiar um condicionamento físico equilibrado e funcional.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82011 delivers focused right-side core engagement with a plate-loaded, ground-based system. It’s ideal for developing rotational strength, improving stability, and supporting balanced, functional fitness."
+          "YR Fitness 82011 oferece envolvimento central do lado direito com um sistema baseado no solo carregado com placa. É ideal para desenvolver força rotacional, melhorar a estabilidade e apoiar um condicionamento físico equilibrado e funcional."
         ]
       }
     ],
@@ -7398,15 +7398,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "75kgs"
+        "label": "NO",
+        "value": "75kg"
       },
       {
         "label": "G.W",
-        "value": "125kgs"
+        "value": "125kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1300*1400*1200mm"
       }
     ]
@@ -7414,13 +7414,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "226",
     "modelCode": "61A54",
-    "name": "Five Tiers Barbell Rack",
-    "description": "YR Fitness Five Tiers Barbell Rack 61A54 is a strong, space-saving rack that holds up to ten straight or curved barbells. Built with durable steel and stainless-steel hooks, it offers easy access and secure storage—ideal for keeping training areas neat and efficient.",
+    "name": "Rack de barra de cinco camadas",
+    "description": "YR Fitness Five Tiers Barbell Rack 61A54 é um rack forte e que economiza espaço que suporta até dez barras retas ou curvas. Construído com ganchos duráveis ​​de aço e aço inoxidável, oferece fácil acesso e armazenamento seguro – ideal para manter as áreas de treinamento organizadas e eficientes.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Five Tiers Barbell Rack 61A54 is a strong, space-saving rack that holds up to ten straight or curved barbells. Built with durable steel and stainless-steel hooks, it offers easy access and secure storage—ideal for keeping training areas neat and efficient."
+          "YR Fitness Five Tiers Barbell Rack 61A54 é um rack forte e que economiza espaço que suporta até dez barras retas ou curvas. Construído com ganchos duráveis ​​de aço e aço inoxidável, oferece fácil acesso e armazenamento seguro – ideal para manter as áreas de treinamento organizadas e eficientes."
         ]
       }
     ],
@@ -7433,13 +7433,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "227",
     "modelCode": "82010",
-    "name": "Ground Base Combo Twist (Left Pull)",
-    "description": "YR Fitness 82010 enhances core strength and rotational performance with a left-side focus. Its plate-loaded setup and stable base make it ideal for athletes and users seeking powerful, functional core training.",
+    "name": "Torção combinada da base terrestre (puxar para a esquerda)",
+    "description": "YR Fitness 82010 melhora a força central e o desempenho rotacional com foco no lado esquerdo. Sua configuração com placa e base estável o tornam ideal para atletas e usuários que buscam um treinamento central poderoso e funcional.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82010 enhances core strength and rotational performance with a left-side focus. Its plate-loaded setup and stable base make it ideal for athletes and users seeking powerful, functional core training."
+          "YR Fitness 82010 melhora a força central e o desempenho rotacional com foco no lado esquerdo. Sua configuração com placa e base estável o tornam ideal para atletas e usuários que buscam um treinamento central poderoso e funcional."
         ]
       }
     ],
@@ -7453,15 +7453,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "75kgs"
+        "label": "NO",
+        "value": "75kg"
       },
       {
         "label": "G.W",
-        "value": "125kgs"
+        "value": "125kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1300*1400*1200mm"
       }
     ]
@@ -7469,13 +7469,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "228",
     "modelCode": "61A53A",
-    "name": "Dumbbell Rack",
-    "description": "YR Fitness 15 Pairs Dumbbell Rack 61A53A is built to store up to 15 pairs of dumbbells safely and neatly. Its strong three-tier steel frame keeps your gym space organized, making it easy to access and manage weights during any workout.",
+    "name": "Suporte para halteres",
+    "description": "O rack de halteres de 15 pares YR Fitness 61A53A foi construído para armazenar até 15 pares de halteres com segurança e organização. Sua forte estrutura de aço de três camadas mantém o espaço da sua academia organizado, facilitando o acesso e o gerenciamento de pesos durante qualquer treino.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 15 Pairs Dumbbell Rack 61A53A is built to store up to 15 pairs of dumbbells safely and neatly. Its strong three-tier steel frame keeps your gym space organized, making it easy to access and manage weights during any workout."
+          "O rack de halteres de 15 pares YR Fitness 61A53A foi construído para armazenar até 15 pares de halteres com segurança e organização. Sua forte estrutura de aço de três camadas mantém o espaço da sua academia organizado, facilitando o acesso e o gerenciamento de pesos durante qualquer treino."
         ]
       }
     ],
@@ -7488,13 +7488,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "229",
     "modelCode": "61A51",
-    "name": "Plate Rack",
-    "description": "YR Fitness Plate Rack 61A51 is a strong and reliable storage solution for weight plates. Built with durable steel and four chrome-coated sleeves, it keeps plates organized and easy to access—perfect for maintaining a clean, efficient gym space.",
+    "name": "Rack de Pratos",
+    "description": "YR Fitness Plate Rack 61A51 é uma solução de armazenamento forte e confiável para placas de peso. Construído com aço durável e quatro mangas revestidas de cromo, mantém as placas organizadas e de fácil acesso - perfeitas para manter um espaço de academia limpo e eficiente.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Plate Rack 61A51 is a strong and reliable storage solution for weight plates. Built with durable steel and four chrome-coated sleeves, it keeps plates organized and easy to access—perfect for maintaining a clean, efficient gym space."
+          "YR Fitness Plate Rack 61A51 é uma solução de armazenamento forte e confiável para placas de peso. Construído com aço durável e quatro mangas revestidas de cromo, mantém as placas organizadas e de fácil acesso - perfeitas para manter um espaço de academia limpo e eficiente."
         ]
       }
     ],
@@ -7507,13 +7507,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "230",
     "modelCode": "61A47",
-    "name": "Multifunctional Flat Bench",
-    "description": "YR Fitness Multifunctional Flat Bench 61A47 is built for a variety of strength exercises with strong steel construction, multiple grip options, and safety features like anti-skid pads. It offers comfortable support with high-density foam and durable PU leather, making it great for any training setup.",
+    "name": "Banco plano multifuncional",
+    "description": "O banco plano multifuncional YR Fitness 61A47 foi construído para uma variedade de exercícios de força com construção em aço resistente, várias opções de aderência e recursos de segurança como almofadas antiderrapantes. Oferece suporte confortável com espuma de alta densidade e couro PU durável, tornando-o ideal para qualquer configuração de treinamento.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Multifunctional Flat Bench 61A47 is built for a variety of strength exercises with strong steel construction, multiple grip options, and safety features like anti-skid pads. It offers comfortable support with high-density foam and durable PU leather, making it great for any training setup."
+          "O banco plano multifuncional YR Fitness 61A47 foi construído para uma variedade de exercícios de força com construção em aço resistente, várias opções de aderência e recursos de segurança como almofadas antiderrapantes. Oferece suporte confortável com espuma de alta densidade e couro PU durável, tornando-o ideal para qualquer configuração de treinamento."
         ]
       }
     ],
@@ -7527,13 +7527,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "231",
     "modelCode": "82009",
-    "name": "Ground Base Combo Incline",
-    "description": "YR Fitness 82009 delivers a powerful combination of incline pressing and pulling in one stable, ground-based unit. Its compact design supports total upper body development for strength, performance, and muscle growth.",
+    "name": "Inclinação combinada da base terrestre",
+    "description": "YR Fitness 82009 oferece uma combinação poderosa de pressão e tração inclinada em uma unidade estável baseada no solo. Seu design compacto suporta o desenvolvimento total da parte superior do corpo para força, desempenho e crescimento muscular.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82009 delivers a powerful combination of incline pressing and pulling in one stable, ground-based unit. Its compact design supports total upper body development for strength, performance, and muscle growth."
+          "YR Fitness 82009 oferece uma combinação poderosa de pressão e tração inclinada em uma unidade estável baseada no solo. Seu design compacto suporta o desenvolvimento total da parte superior do corpo para força, desempenho e crescimento muscular."
         ]
       }
     ],
@@ -7547,15 +7547,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "81kgs"
+        "label": "NO",
+        "value": "81kg"
       },
       {
         "label": "G.W",
-        "value": "115kgs"
+        "value": "115kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1460*1420*1170mm"
       }
     ]
@@ -7563,13 +7563,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "232",
     "modelCode": "61A45A",
-    "name": "Knees Up/Dip",
-    "description": "YR Fitness Knees Up/Dip 61A45A is a sturdy and compact station for bodyweight exercises like knee raises and dips. With multiple grip options, anti-slip pedals, and padded support, it offers a safe and comfortable way to train your upper body and core.",
+    "name": "Joelhos para cima/mergulho",
+    "description": "YR Fitness Knees Up/Dip 61A45A é uma estação robusta e compacta para exercícios de peso corporal, como elevação e descida de joelhos. Com várias opções de aderência, pedais antiderrapantes e suporte acolchoado, oferece uma maneira segura e confortável de treinar a parte superior do corpo e o núcleo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Knees Up/Dip 61A45A is a sturdy and compact station for bodyweight exercises like knee raises and dips. With multiple grip options, anti-slip pedals, and padded support, it offers a safe and comfortable way to train your upper body and core."
+          "YR Fitness Knees Up/Dip 61A45A é uma estação robusta e compacta para exercícios de peso corporal, como elevação e descida de joelhos. Com várias opções de aderência, pedais antiderrapantes e suporte acolchoado, oferece uma maneira segura e confortável de treinar a parte superior do corpo e o núcleo."
         ]
       }
     ],
@@ -7584,13 +7584,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "233",
     "modelCode": "61A45",
-    "name": "Knees Up/Dip",
-    "description": "YR Fitness Knees Up/Dip 61A45 is built for core and upper body training with a strong steel frame and safe, user-friendly design. It features anti-skid pads, high-density foam padding, and durable PU leather for a secure and comfortable workout experience.",
+    "name": "Joelhos para cima/mergulho",
+    "description": "YR Fitness Knees Up/Dip 61A45 foi construído para treinamento central e superior do corpo com uma estrutura de aço forte e design seguro e fácil de usar. Possui almofadas antiderrapantes, acolchoamento de espuma de alta densidade e couro PU durável para uma experiência de treino segura e confortável.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Knees Up/Dip 61A45 is built for core and upper body training with a strong steel frame and safe, user-friendly design. It features anti-skid pads, high-density foam padding, and durable PU leather for a secure and comfortable workout experience."
+          "YR Fitness Knees Up/Dip 61A45 foi construído para treinamento central e superior do corpo com uma estrutura de aço forte e design seguro e fácil de usar. Possui almofadas antiderrapantes, acolchoamento de espuma de alta densidade e couro PU durável para uma experiência de treino segura e confortável."
         ]
       }
     ],
@@ -7605,13 +7605,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "234",
     "modelCode": "61A43",
-    "name": "Adjustable Roman Bench",
-    "description": "YR Fitness Adjustable Roman Bench 61A43 is designed for core and lower back training with a 45-degree angle and adjustable foot position. Built with strong steel and comfortable padding, it offers safe, stable, and effective support for various workout styles in any gym.",
+    "name": "Banco romano ajustável",
+    "description": "O banco romano ajustável YR Fitness 61A43 foi projetado para treinamento central e lombar com um ângulo de 45 graus e posição ajustável dos pés. Construído com aço forte e acolchoamento confortável, oferece suporte seguro, estável e eficaz para vários estilos de treino em qualquer academia.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Adjustable Roman Bench 61A43 is designed for core and lower back training with a 45-degree angle and adjustable foot position. Built with strong steel and comfortable padding, it offers safe, stable, and effective support for various workout styles in any gym."
+          "O banco romano ajustável YR Fitness 61A43 foi projetado para treinamento central e lombar com um ângulo de 45 graus e posição ajustável dos pés. Construído com aço forte e acolchoamento confortável, oferece suporte seguro, estável e eficaz para vários estilos de treino em qualquer academia."
         ]
       }
     ],
@@ -7625,13 +7625,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "235",
     "modelCode": "61A42",
-    "name": "Angled AB Board",
-    "description": "YR Fitness Angled AB Board 61A42 is designed for effective core workouts with a stable, angled surface that boosts intensity. It features a strong steel frame, high-density foam padding, and durable PU leather for comfort and support during every rep.",
+    "name": "Placa AB Angulada",
+    "description": "A placa YR Fitness Angled AB 61A42 foi projetada para exercícios básicos eficazes com uma superfície estável e angular que aumenta a intensidade. Possui uma estrutura de aço forte, acolchoamento de espuma de alta densidade e couro PU durável para conforto e suporte durante cada repetição.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Angled AB Board 61A42 is designed for effective core workouts with a stable, angled surface that boosts intensity. It features a strong steel frame, high-density foam padding, and durable PU leather for comfort and support during every rep."
+          "A placa YR Fitness Angled AB 61A42 foi projetada para exercícios básicos eficazes com uma superfície estável e angular que aumenta a intensidade. Possui uma estrutura de aço forte, acolchoamento de espuma de alta densidade e couro PU durável para conforto e suporte durante cada repetição."
         ]
       }
     ],
@@ -7644,13 +7644,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "236",
     "modelCode": "61A41",
-    "name": "Adjustable AB Board",
-    "description": "YR Fitness Adjustable AB Board 61A41 is a compact bench designed for effective core workouts. It features an adjustable foot pad, high-density padding, and built-in wheels for easy movement—ideal for gyms or home users who want comfort, stability, and convenience in one unit.",
+    "name": "Placa AB ajustável",
+    "description": "YR Fitness Adjustable AB Board 61A41 é um banco compacto projetado para exercícios básicos eficazes. Possui uma almofada para os pés ajustável, acolchoamento de alta densidade e rodas integradas para facilitar os movimentos - ideal para academias ou usuários domésticos que desejam conforto, estabilidade e conveniência em uma unidade.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Adjustable AB Board 61A41 is a compact bench designed for effective core workouts. It features an adjustable foot pad, high-density padding, and built-in wheels for easy movement—ideal for gyms or home users who want comfort, stability, and convenience in one unit."
+          "YR Fitness Adjustable AB Board 61A41 é um banco compacto projetado para exercícios básicos eficazes. Possui uma almofada para os pés ajustável, acolchoamento de alta densidade e rodas integradas para facilitar os movimentos - ideal para academias ou usuários domésticos que desejam conforto, estabilidade e conveniência em uma unidade."
         ]
       }
     ],
@@ -7663,13 +7663,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "237",
     "modelCode": "82008",
-    "name": "Stand Pull Back",
-    "description": "YR Fitness 82008 combines upper body training with core activation through standing pull-backs. Its plate-loaded design and ergonomic build promote strength, posture, and total-body stability.",
+    "name": "Fique em pé, puxe para trás",
+    "description": "YR Fitness 82008 combina o treinamento da parte superior do corpo com a ativação do núcleo por meio de flexões em pé. Seu design com placa e construção ergonômica promovem força, postura e estabilidade total do corpo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82008 combines upper body training with core activation through standing pull-backs. Its plate-loaded design and ergonomic build promote strength, posture, and total-body stability."
+          "YR Fitness 82008 combina o treinamento da parte superior do corpo com a ativação do núcleo por meio de flexões em pé. Seu design com placa e construção ergonômica promovem força, postura e estabilidade total do corpo."
         ]
       }
     ],
@@ -7680,15 +7680,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "80kgs"
+        "label": "NO",
+        "value": "80kg"
       },
       {
         "label": "G.W",
-        "value": "118kgs"
+        "value": "118kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "2006*886*1291mm"
       }
     ]
@@ -7696,13 +7696,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "238",
     "modelCode": "61A40",
-    "name": "Olympic Decline Bench",
-    "description": "YR Fitness Olympic Decline Bench 61A40 is designed for stable and safe decline press training. Built with strong steel, high-density foam, and durable PU leather, it includes a barbell hanging rod and secure hook plate to support serious strength workouts in any gym setting.",
+    "name": "Banco de Declínio Olímpico",
+    "description": "O banco de declínio olímpico YR Fitness 61A40 foi projetado para treinamento estável e seguro de declínio de pressão. Construído com aço forte, espuma de alta densidade e couro PU durável, inclui uma haste para pendurar a barra e uma placa de gancho segura para suportar exercícios de força sérios em qualquer ambiente de academia.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Olympic Decline Bench 61A40 is designed for stable and safe decline press training. Built with strong steel, high-density foam, and durable PU leather, it includes a barbell hanging rod and secure hook plate to support serious strength workouts in any gym setting."
+          "O banco de declínio olímpico YR Fitness 61A40 foi projetado para treinamento estável e seguro de declínio de pressão. Construído com aço forte, espuma de alta densidade e couro PU durável, inclui uma haste para pendurar a barra e uma placa de gancho segura para suportar exercícios de força sérios em qualquer ambiente de academia."
         ]
       }
     ],
@@ -7716,13 +7716,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "239",
     "modelCode": "61A39",
-    "name": "Olympic Flat Bench",
-    "description": "YR Fitness Olympic Flat Bench 61A39 is a strong and stable bench designed for safe and effective barbell training. With high-strength steel, secure bar hooks, and comfortable padding, it’s a reliable choice for any gym focused on performance and durability.",
+    "name": "Banco plano olímpico",
+    "description": "YR Fitness Olympic Flat Bench 61A39 é um banco forte e estável projetado para treinamento seguro e eficaz com barra. Com aço de alta resistência, ganchos de barra seguros e acolchoamento confortável, é uma escolha confiável para qualquer academia focada em desempenho e durabilidade.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Olympic Flat Bench 61A39 is a strong and stable bench designed for safe and effective barbell training. With high-strength steel, secure bar hooks, and comfortable padding, it’s a reliable choice for any gym focused on performance and durability."
+          "YR Fitness Olympic Flat Bench 61A39 é um banco forte e estável projetado para treinamento seguro e eficaz com barra. Com aço de alta resistência, ganchos de barra seguros e acolchoamento confortável, é uma escolha confiável para qualquer academia focada em desempenho e durabilidade."
         ]
       }
     ],
@@ -7736,13 +7736,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "240",
     "modelCode": "61A38",
-    "name": "Olympic Incline Bench",
-    "description": "YR Fitness Olympic Incline Bench 61A38 is built for safe and effective upper body training. It features a strong steel frame, adjustable seat with torsion spring, high-density padding, and secure barbell support—ideal for gyms focused on performance and durability.",
+    "name": "Banco Inclinado Olímpico",
+    "description": "O banco inclinado YR Fitness Olympic 61A38 foi construído para um treinamento seguro e eficaz da parte superior do corpo. Possui uma estrutura de aço forte, assento ajustável com mola de torção, acolchoamento de alta densidade e suporte seguro para barra – ideal para academias focadas em desempenho e durabilidade.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Olympic Incline Bench 61A38 is built for safe and effective upper body training. It features a strong steel frame, adjustable seat with torsion spring, high-density padding, and secure barbell support—ideal for gyms focused on performance and durability."
+          "O banco inclinado YR Fitness Olympic 61A38 foi construído para um treinamento seguro e eficaz da parte superior do corpo. Possui uma estrutura de aço forte, assento ajustável com mola de torção, acolchoamento de alta densidade e suporte seguro para barra – ideal para academias focadas em desempenho e durabilidade."
         ]
       }
     ],
@@ -7756,13 +7756,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "241",
     "modelCode": "82007",
-    "name": "ISO Lateral Row",
-    "description": "YR Fitness 82007 features independent arm motion and ergonomic support to help users build upper back strength with proper alignment. Its plate-loaded system delivers both flexibility and performance for effective training.",
+    "name": "Linha lateral ISO",
+    "description": "YR Fitness 82007 apresenta movimento independente do braço e suporte ergonômico para ajudar os usuários a aumentar a força da parte superior das costas com alinhamento adequado. Seu sistema carregado com placas oferece flexibilidade e desempenho para um treinamento eficaz.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82007 features independent arm motion and ergonomic support to help users build upper back strength with proper alignment. Its plate-loaded system delivers both flexibility and performance for effective training."
+          "YR Fitness 82007 apresenta movimento independente do braço e suporte ergonômico para ajudar os usuários a aumentar a força da parte superior das costas com alinhamento adequado. Seu sistema carregado com placas oferece flexibilidade e desempenho para um treinamento eficaz."
         ]
       }
     ],
@@ -7773,15 +7773,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "148kgs"
+        "label": "NO",
+        "value": "148kg"
       },
       {
         "label": "G.W",
-        "value": "209kgs"
+        "value": "209kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1877*1069*1667mm"
       }
     ]
@@ -7789,13 +7789,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "242",
     "modelCode": "61A37",
-    "name": "Biceps Curl Rack",
-    "description": "YR Fitness Biceps Curl Rack 61A37 is built for focused arm training with strong steel construction and a user-friendly adjustable seat. With premium cushioning and a clean, durable finish, it offers both comfort and stability for effective biceps workouts in any training space.",
+    "name": "Rack de rosca bíceps",
+    "description": "O YR Fitness Biceps Curl Rack 61A37 foi construído para treinamento focado nos braços com construção em aço forte e um assento ajustável de fácil utilização. Com amortecimento premium e acabamento limpo e durável, oferece conforto e estabilidade para treinos eficazes de bíceps em qualquer espaço de treinamento.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Biceps Curl Rack 61A37 is built for focused arm training with strong steel construction and a user-friendly adjustable seat. With premium cushioning and a clean, durable finish, it offers both comfort and stability for effective biceps workouts in any training space."
+          "O YR Fitness Biceps Curl Rack 61A37 foi construído para treinamento focado nos braços com construção em aço forte e um assento ajustável de fácil utilização. Com amortecimento premium e acabamento limpo e durável, oferece conforto e estabilidade para treinos eficazes de bíceps em qualquer espaço de treinamento."
         ]
       }
     ],
@@ -7808,13 +7808,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "243",
     "modelCode": "82006",
-    "name": "T Bar Row",
-    "description": "YR Fitness 82006 is a solid, plate-loaded T Bar Row built for efficient back training. Its compact yet robust design supports heavy lifting and full engagement of upper-body pulling muscles.",
+    "name": "Linha da barra T",
+    "description": "YR Fitness 82006 é um T Bar Row sólido e carregado com placas, construído para um treinamento eficiente de costas. Seu design compacto, porém robusto, suporta levantamento de peso e envolvimento total dos músculos que puxam a parte superior do corpo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82006 is a solid, plate-loaded T Bar Row built for efficient back training. Its compact yet robust design supports heavy lifting and full engagement of upper-body pulling muscles."
+          "YR Fitness 82006 é um T Bar Row sólido e carregado com placas, construído para um treinamento eficiente de costas. Seu design compacto, porém robusto, suporta levantamento de peso e envolvimento total dos músculos que puxam a parte superior do corpo."
         ]
       }
     ],
@@ -7825,15 +7825,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "78kgs"
+        "label": "NO",
+        "value": "78kg"
       },
       {
         "label": "G.W",
-        "value": "127kgs"
+        "value": "127kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1920*970*1220mm"
       }
     ]
@@ -7841,13 +7841,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "244",
     "modelCode": "82005",
-    "name": "Ground Base Plate Loaded Squat/High Pull",
-    "description": "YR Fitness 82005 supports ground-based training with explosive squat and pull motions. Its ergonomic, plate-loaded design enhances power, stability, and functional performance across all fitness levels.",
+    "name": "Placa de base de solo carregada agachamento/tração alta",
+    "description": "YR Fitness 82005 oferece suporte ao treinamento no solo com movimentos explosivos de agachamento e tração. Seu design ergonômico com placa aumenta a potência, a estabilidade e o desempenho funcional em todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82005 supports ground-based training with explosive squat and pull motions. Its ergonomic, plate-loaded design enhances power, stability, and functional performance across all fitness levels."
+          "YR Fitness 82005 oferece suporte ao treinamento no solo com movimentos explosivos de agachamento e tração. Seu design ergonômico com placa aumenta a potência, a estabilidade e o desempenho funcional em todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -7861,15 +7861,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "106kgs"
+        "label": "NO",
+        "value": "106kg"
       },
       {
         "label": "G.W",
-        "value": "152kgs"
+        "value": "152kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1850*1735*1350mm"
       }
     ]
@@ -7877,13 +7877,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "245",
     "modelCode": "82004",
-    "name": "ISO-Lateral High Row",
-    "description": "YR Fitness 82004 features a high row design with independent arm movement and multiple grip options to support balanced, upper-back training. Its plate-loaded setup delivers a smooth and customizable workout experience.",
+    "name": "Linha alta ISO-lateral",
+    "description": "YR Fitness 82004 apresenta um design de remada alta com movimento independente do braço e múltiplas opções de aderência para apoiar um treinamento equilibrado da parte superior das costas. Sua configuração carregada com placa oferece uma experiência de treino suave e personalizável.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82004 features a high row design with independent arm movement and multiple grip options to support balanced, upper-back training. Its plate-loaded setup delivers a smooth and customizable workout experience."
+          "YR Fitness 82004 apresenta um design de remada alta com movimento independente do braço e múltiplas opções de aderência para apoiar um treinamento equilibrado da parte superior das costas. Sua configuração carregada com placa oferece uma experiência de treino suave e personalizável."
         ]
       }
     ],
@@ -7894,15 +7894,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "155kgs"
+        "label": "NO",
+        "value": "155kg"
       },
       {
         "label": "G.W",
-        "value": "205kgs"
+        "value": "205kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "2000*1450*1780mm"
       }
     ]
@@ -7910,13 +7910,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "246",
     "modelCode": "61A34",
-    "name": "Power Cage",
-    "description": "YR Fitness Power Cage 61A34 is designed for safe and effective strength training. Built with a strong steel frame and safety features like a secure hook plate and bolt connections, it offers smooth performance and reliable support for serious lifting in any gym setting.",
+    "name": "Gaiola de energia",
+    "description": "YR Fitness Power Cage 61A34 foi projetado para treinamento de força seguro e eficaz. Construído com uma estrutura de aço forte e recursos de segurança como uma placa de gancho segura e conexões de parafuso, ele oferece desempenho suave e suporte confiável para levantamentos sérios em qualquer ambiente de academia.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Power Cage 61A34 is designed for safe and effective strength training. Built with a strong steel frame and safety features like a secure hook plate and bolt connections, it offers smooth performance and reliable support for serious lifting in any gym setting."
+          "YR Fitness Power Cage 61A34 foi projetado para treinamento de força seguro e eficaz. Construído com uma estrutura de aço forte e recursos de segurança como uma placa de gancho segura e conexões de parafuso, ele oferece desempenho suave e suporte confiável para levantamentos sérios em qualquer ambiente de academia."
         ]
       }
     ],
@@ -7929,13 +7929,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "247",
     "modelCode": "82003",
-    "name": "Iso-Lateral Wide Pulldown",
-    "description": "YR Fitness 82003 delivers wide-grip pulldown training with independent arm motion to target and develop a broad, balanced back. Its plate-loaded design and stable seat ensure an effective and natural training experience.",
+    "name": "Pulldown amplo isolateral",
+    "description": "YR Fitness 82003 oferece treinamento pulldown de grande aderência com movimento independente do braço para direcionar e desenvolver costas amplas e equilibradas. Seu design com placa e assento estável garantem uma experiência de treinamento eficaz e natural.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82003 delivers wide-grip pulldown training with independent arm motion to target and develop a broad, balanced back. Its plate-loaded design and stable seat ensure an effective and natural training experience."
+          "YR Fitness 82003 oferece treinamento pulldown de grande aderência com movimento independente do braço para direcionar e desenvolver costas amplas e equilibradas. Seu design com placa e assento estável garantem uma experiência de treinamento eficaz e natural."
         ]
       }
     ],
@@ -7946,15 +7946,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "132kgs"
+        "label": "NO",
+        "value": "132kg"
       },
       {
         "label": "G.W",
-        "value": "194kgs"
+        "value": "194kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1700*1300*2000mm"
       }
     ]
@@ -7962,13 +7962,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "248",
     "modelCode": "82002",
-    "name": "Plate Loaded ISO-Lateral Shoulder Press",
-    "description": "YR Fitness 82002 features a seated shoulder press with independent arm movement to support balanced development. Its plate-loaded resistance offers a natural lifting feel, making it ideal for targeted and controlled shoulder training.",
+    "name": "Prensa de ombro ISO-lateral com placa",
+    "description": "YR Fitness 82002 apresenta um desenvolvimento de ombros sentado com movimento independente do braço para apoiar um desenvolvimento equilibrado. Sua resistência carregada com placas oferece uma sensação de levantamento natural, tornando-o ideal para treinamento de ombros direcionado e controlado.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82002 features a seated shoulder press with independent arm movement to support balanced development. Its plate-loaded resistance offers a natural lifting feel, making it ideal for targeted and controlled shoulder training."
+          "YR Fitness 82002 apresenta um desenvolvimento de ombros sentado com movimento independente do braço para apoiar um desenvolvimento equilibrado. Sua resistência carregada com placas oferece uma sensação de levantamento natural, tornando-o ideal para treinamento de ombros direcionado e controlado."
         ]
       }
     ],
@@ -7979,15 +7979,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "131kgs"
+        "label": "NO",
+        "value": "131kg"
       },
       {
         "label": "G.W",
-        "value": "182kgs"
+        "value": "182kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1600*1620*1600mm"
       }
     ]
@@ -7995,13 +7995,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "249",
     "modelCode": "82001",
-    "name": "ISO-Lateral Incline Shoulder Press",
-    "description": "YR Fitness 82001 offers a dual-arm incline shoulder press with independent motion for balanced muscle development. Its plate-loaded design and stable seated position provide effective and versatile upper body training for all fitness levels.",
+    "name": "Prensa de ombro inclinada ISO-lateral",
+    "description": "YR Fitness 82001 oferece uma pressão de ombro inclinada com dois braços e movimento independente para um desenvolvimento muscular equilibrado. Seu design com placa e posição sentada estável proporcionam um treinamento eficaz e versátil da parte superior do corpo para todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82001 offers a dual-arm incline shoulder press with independent motion for balanced muscle development. Its plate-loaded design and stable seated position provide effective and versatile upper body training for all fitness levels."
+          "YR Fitness 82001 oferece uma pressão de ombro inclinada com dois braços e movimento independente para um desenvolvimento muscular equilibrado. Seu design com placa e posição sentada estável proporcionam um treinamento eficaz e versátil da parte superior do corpo para todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -8012,15 +8012,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "115kgs"
+        "label": "NO",
+        "value": "115kg"
       },
       {
         "label": "G.W",
-        "value": "174kgs"
+        "value": "174kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1793*1777*975mm"
       }
     ]
@@ -8028,13 +8028,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "250",
     "modelCode": "61A33",
-    "name": "Smith Machine",
-    "description": "YR Fitness Smith Machine 61A33 is a safe and durable training system for guided barbell exercises. With a counterbalance design, built-in safety features, and a 2000lb capacity Olympic bar, it’s perfect for controlled, effective strength training in any gym.",
+    "name": "Máquina Smith",
+    "description": "YR Fitness Smith Machine 61A33 é um sistema de treinamento seguro e durável para exercícios guiados com barra. Com um design de contrapeso, recursos de segurança integrados e uma barra olímpica com capacidade de 2.000 libras, é perfeito para treinamento de força controlado e eficaz em qualquer academia.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Smith Machine 61A33 is a safe and durable training system for guided barbell exercises. With a counterbalance design, built-in safety features, and a 2000lb capacity Olympic bar, it’s perfect for controlled, effective strength training in any gym."
+          "YR Fitness Smith Machine 61A33 é um sistema de treinamento seguro e durável para exercícios guiados com barra. Com um design de contrapeso, recursos de segurança integrados e uma barra olímpica com capacidade de 2.000 libras, é perfeito para treinamento de força controlado e eficaz em qualquer academia."
         ]
       }
     ],
@@ -8047,13 +8047,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "251",
     "modelCode": "61A32",
-    "name": "Cable Crossover",
-    "description": "YR Fitness 61A32 Cable Crossover offers smooth adjustments and a full range of motion with its elevated frame and long cables. Ideal for full-body functional training, its sleek and durable design supports a wide variety of exercises.",
+    "name": "Cruzamento de cabos",
+    "description": "YR Fitness 61A32 Cable Crossover oferece ajustes suaves e uma gama completa de movimentos com sua estrutura elevada e cabos longos. Ideal para treinamento funcional de corpo inteiro, seu design elegante e durável suporta uma ampla variedade de exercícios.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A32 Cable Crossover offers smooth adjustments and a full range of motion with its elevated frame and long cables. Ideal for full-body functional training, its sleek and durable design supports a wide variety of exercises."
+          "YR Fitness 61A32 Cable Crossover oferece ajustes suaves e uma gama completa de movimentos com sua estrutura elevada e cabos longos. Ideal para treinamento funcional de corpo inteiro, seu design elegante e durável suporta uma ampla variedade de exercícios."
         ]
       }
     ],
@@ -8064,33 +8064,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "385kgs"
+        "label": "NO",
+        "value": "385kg"
       },
       {
         "label": "G.W",
-        "value": "433kgs"
+        "value": "433kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "3940*720*2415mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kg-14 unidades"
       }
     ]
   },
   {
     "id": "252",
     "modelCode": "61A31",
-    "name": "Standing Calf",
-    "description": "YR Fitness 61A31 Standing Calf provides stable, full-range calf training with adjustable shoulder pads and contoured non-slip footplates. Designed for safety and performance, it effectively builds strength and definition in the lower legs.",
+    "name": "Panturrilha em pé",
+    "description": "YR Fitness 61A31 Standing Calf oferece treinamento estável e completo para panturrilhas com ombreiras ajustáveis ​​e bases antiderrapantes contornadas. Projetado para segurança e desempenho, ele efetivamente cria força e definição na parte inferior das pernas.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A31 Standing Calf provides stable, full-range calf training with adjustable shoulder pads and contoured non-slip footplates. Designed for safety and performance, it effectively builds strength and definition in the lower legs."
+          "YR Fitness 61A31 Standing Calf oferece treinamento estável e completo para panturrilhas com ombreiras ajustáveis ​​e bases antiderrapantes contornadas. Projetado para segurança e desempenho, ele efetivamente cria força e definição na parte inferior das pernas."
         ]
       }
     ],
@@ -8101,33 +8101,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "214kgs"
+        "label": "NO",
+        "value": "214kg"
       },
       {
         "label": "G.W",
-        "value": "222kgs"
+        "value": "222kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1280*720*1640mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "100kg-20pcs"
+        "label": "Pilhas de peso",
+        "value": "100kg-20 unidades"
       }
     ]
   },
   {
     "id": "253",
     "modelCode": "61A30",
-    "name": "Seated Calf",
-    "description": "YR Fitness 61A30 Seated Calf delivers focused calf muscle training with ergonomic support, pin-loaded resistance, and a stable base. Easy to use and built for durability, it&#8217;s perfect for both beginners and advanced users.",
+    "name": "Panturrilha Sentada",
+    "description": "YR Fitness 61A30 Seated Calf oferece treinamento muscular focado na panturrilha com suporte ergonômico, resistência carregada com pinos e uma base estável. Fácil de usar e construído para durabilidade, é perfeito para usuários iniciantes e avançados.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A30 Seated Calf delivers focused calf muscle training with ergonomic support, pin-loaded resistance, and a stable base. Easy to use and built for durability, it&#8217;s perfect for both beginners and advanced users."
+          "YR Fitness 61A30 Seated Calf oferece treinamento muscular focado na panturrilha com suporte ergonômico, resistência carregada com pinos e uma base estável. Fácil de usar e construído para durabilidade, é perfeito para usuários iniciantes e avançados."
         ]
       }
     ],
@@ -8138,33 +8138,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "184kgs"
+        "label": "NO",
+        "value": "184kg"
       },
       {
         "label": "G.W",
-        "value": "194kgs"
+        "value": "194kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1583*720*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "254",
     "modelCode": "61A09",
-    "name": "Pectoral Fly and Rear Deltoid",
-    "description": "YR Fitness 61A09 Pectoral Fly and Rear Deltoid combines two exercises in one machine with wrist-friendly rotating grips. Designed for comfort and precision, it targets both chest and rear shoulder muscles with smooth, balanced motion for complete upper-body training.",
+    "name": "Mosca Peitoral e Deltoide Posterior",
+    "description": "YR Fitness 61A09 Pectoral Fly e Rear Deltoid combinam dois exercícios em uma máquina com alças rotativas fáceis de usar. Projetado para conforto e precisão, ele atinge os músculos do peito e dos ombros traseiros com movimentos suaves e equilibrados para um treinamento completo da parte superior do corpo.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A09 Pectoral Fly and Rear Deltoid combines two exercises in one machine with wrist-friendly rotating grips. Designed for comfort and precision, it targets both chest and rear shoulder muscles with smooth, balanced motion for complete upper-body training."
+          "YR Fitness 61A09 Pectoral Fly e Rear Deltoid combinam dois exercícios em uma máquina com alças rotativas fáceis de usar. Projetado para conforto e precisão, ele atinge os músculos do peito e dos ombros traseiros com movimentos suaves e equilibrados para um treinamento completo da parte superior do corpo."
         ]
       }
     ],
@@ -8179,13 +8179,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "255",
     "modelCode": "61A07",
-    "name": "Pectoral Fly",
-    "description": "YR Fitness 61A07 Pectoral Fly isolates inner chest muscles with minimal shoulder strain. Designed for comfort and precision, it offers smooth motion and focused training, trusted by professionals for its effectiveness and ergonomic advantage.",
+    "name": "Mosca Peitoral",
+    "description": "YR Fitness 61A07 Pectoral Fly isola os músculos internos do peito com tensão mínima nos ombros. Projetado para oferecer conforto e precisão, oferece movimentos suaves e treinamento focado, sendo confiável pelos profissionais por sua eficácia e vantagem ergonômica.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A07 Pectoral Fly isolates inner chest muscles with minimal shoulder strain. Designed for comfort and precision, it offers smooth motion and focused training, trusted by professionals for its effectiveness and ergonomic advantage."
+          "YR Fitness 61A07 Pectoral Fly isola os músculos internos do peito com tensão mínima nos ombros. Projetado para oferecer conforto e precisão, oferece movimentos suaves e treinamento focado, sendo confiável pelos profissionais por sua eficácia e vantagem ergonômica."
         ]
       }
     ],
@@ -8198,13 +8198,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "256",
     "modelCode": "61A04A",
-    "name": "Chest Press Converging",
-    "description": "YR Fitness 61A04A Chest Press Converging features a natural pressing motion, adjustable seat, and multiple grip options. Designed for effective chest muscle activation, it combines ergonomic comfort with strength-building efficiency for users at every level.",
+    "name": "Pressão Peito Convergente",
+    "description": "YR Fitness 61A04A Chest Press Converging apresenta um movimento de pressão natural, assento ajustável e várias opções de aderência. Projetado para ativação eficaz dos músculos do peito, combina conforto ergonômico com eficiência de fortalecimento de força para usuários de todos os níveis.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A04A Chest Press Converging features a natural pressing motion, adjustable seat, and multiple grip options. Designed for effective chest muscle activation, it combines ergonomic comfort with strength-building efficiency for users at every level."
+          "YR Fitness 61A04A Chest Press Converging apresenta um movimento de pressão natural, assento ajustável e várias opções de aderência. Projetado para ativação eficaz dos músculos do peito, combina conforto ergonômico com eficiência de fortalecimento de força para usuários de todos os níveis."
         ]
       }
     ],
@@ -8215,33 +8215,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": ": 218kgs"
+        "label": "NO",
+        "value": ": 218kg"
       },
       {
         "label": "G.W",
-        "value": ": 228kgs"
+        "value": ": 228kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": ": 1150*1500*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "80kg-16pcs"
+        "label": "Pilhas de peso",
+        "value": "80kg-16 unidades"
       }
     ]
   },
   {
     "id": "257",
     "modelCode": "61A04",
-    "name": "Chest Press",
-    "description": "YR Fitness 61A04 Chest Press is designed for effective chest muscle training with a sleek, approachable look. Its ergonomic seat and smooth mechanics ensure comfort and control, making it ideal for users of all fitness levels.",
+    "name": "Pressão Peitoral",
+    "description": "O YR Fitness 61A04 Chest Press foi projetado para um treinamento eficaz dos músculos do peito com uma aparência elegante e acessível. Seu assento ergonômico e mecânica suave garantem conforto e controle, tornando-o ideal para usuários de todos os níveis de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A04 Chest Press is designed for effective chest muscle training with a sleek, approachable look. Its ergonomic seat and smooth mechanics ensure comfort and control, making it ideal for users of all fitness levels."
+          "O YR Fitness 61A04 Chest Press foi projetado para um treinamento eficaz dos músculos do peito com uma aparência elegante e acessível. Seu assento ergonômico e mecânica suave garantem conforto e controle, tornando-o ideal para usuários de todos os níveis de condicionamento físico."
         ]
       }
     ],
@@ -8254,13 +8254,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "258",
     "modelCode": "61A03",
-    "name": "Lateral Raise",
-    "description": "YR Fitness 61A03 Lateral Raise supports natural shoulder movement with self-aligning handles and a smooth strength curve. Designed for precise deltoid isolation, it ensures comfort, stability, and proper form for users of all sizes and skill levels.",
+    "name": "Elevação Lateral",
+    "description": "YR Fitness 61A03 Lateral Raise suporta o movimento natural dos ombros com alças auto-alinhadas e uma curva de força suave. Projetado para isolamento preciso do deltóide, garante conforto, estabilidade e forma adequada para usuários de todos os tamanhos e níveis de habilidade.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A03 Lateral Raise supports natural shoulder movement with self-aligning handles and a smooth strength curve. Designed for precise deltoid isolation, it ensures comfort, stability, and proper form for users of all sizes and skill levels."
+          "YR Fitness 61A03 Lateral Raise suporta o movimento natural dos ombros com alças auto-alinhadas e uma curva de força suave. Projetado para isolamento preciso do deltóide, garante conforto, estabilidade e forma adequada para usuários de todos os tamanhos e níveis de habilidade."
         ]
       }
     ],
@@ -8273,13 +8273,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "259",
     "modelCode": "61A02",
-    "name": "Pull Up Shoulder",
-    "description": "YR Fitness 61A02 Pull Up Shoulder is designed for users with shoulder limitations. It modifies shoulder press motion to reduce joint stress while maintaining training effectiveness. Ideal for rehabilitation or low-impact shoulder workouts with safety and support built in.",
+    "name": "Puxe o ombro para cima",
+    "description": "O ombro pull up YR Fitness 61A02 foi projetado para usuários com limitações nos ombros. Ele modifica o movimento de pressão dos ombros para reduzir o estresse nas articulações, mantendo a eficácia do treinamento. Ideal para reabilitação ou exercícios de ombro de baixo impacto com segurança e suporte integrados.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A02 Pull Up Shoulder is designed for users with shoulder limitations. It modifies shoulder press motion to reduce joint stress while maintaining training effectiveness. Ideal for rehabilitation or low-impact shoulder workouts with safety and support built in."
+          "O ombro pull up YR Fitness 61A02 foi projetado para usuários com limitações nos ombros. Ele modifica o movimento de pressão dos ombros para reduzir o estresse nas articulações, mantendo a eficácia do treinamento. Ideal para reabilitação ou exercícios de ombro de baixo impacto com segurança e suporte integrados."
         ]
       }
     ],
@@ -8292,13 +8292,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "260",
     "modelCode": "61A01A",
-    "name": "Shoulder Press Converging",
-    "description": "YR Fitness 61A01A Shoulder Press Converging features an ergonomic converging motion path for effective shoulder workouts. With adjustable seating and grip options, it offers comfort, natural movement, and targeted muscle engagement for users of all levels.",
+    "name": "Pressão de Ombro Convergente",
+    "description": "YR Fitness 61A01A Shoulder Press Converging apresenta um caminho de movimento convergente ergonômico para exercícios eficazes de ombros. Com assento ajustável e opções de aderência, oferece conforto, movimento natural e envolvimento muscular direcionado para usuários de todos os níveis.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A01A Shoulder Press Converging features an ergonomic converging motion path for effective shoulder workouts. With adjustable seating and grip options, it offers comfort, natural movement, and targeted muscle engagement for users of all levels."
+          "YR Fitness 61A01A Shoulder Press Converging apresenta um caminho de movimento convergente ergonômico para exercícios eficazes de ombros. Com assento ajustável e opções de aderência, oferece conforto, movimento natural e envolvimento muscular direcionado para usuários de todos os níveis."
         ]
       }
     ],
@@ -8309,33 +8309,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": ": 224kgs"
+        "label": "NO",
+        "value": ": 224kg"
       },
       {
         "label": "G.W",
-        "value": ": 233kgs"
+        "value": ": 233kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": ": 1480*1460*1620mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": ": 70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": ": 70kg-14 unidades"
       }
     ]
   },
   {
     "id": "261",
     "modelCode": "61A01",
-    "name": "Shoulder Press",
-    "description": "YR Fitness 61A01 Shoulder Press offers essential upper-body training with adjustable seating and dual-grip handles. Designed for comfort, safety, and smooth movement, it’s ideal for effective and reliable shoulder workouts at any fitness level.",
+    "name": "Pressão de ombro",
+    "description": "YR Fitness 61A01 Shoulder Press oferece treinamento essencial para a parte superior do corpo com assento ajustável e alças duplas. Projetado para conforto, segurança e movimentos suaves, é ideal para exercícios de ombros eficazes e confiáveis ​​em qualquer nível de condicionamento físico.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 61A01 Shoulder Press offers essential upper-body training with adjustable seating and dual-grip handles. Designed for comfort, safety, and smooth movement, it’s ideal for effective and reliable shoulder workouts at any fitness level."
+          "YR Fitness 61A01 Shoulder Press oferece treinamento essencial para a parte superior do corpo com assento ajustável e alças duplas. Projetado para conforto, segurança e movimentos suaves, é ideal para exercícios de ombros eficazes e confiáveis ​​em qualquer nível de condicionamento físico."
         ]
       }
     ],
@@ -8348,13 +8348,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "262",
     "modelCode": "8504",
-    "name": "Smith & Functional Trainer Combo",
-    "description": "YR Fitness Smith &amp; Functional Trainer Combo 8504 is a space-saving machine that combines a smooth Smith system with a versatile functional trainer. Built with strong steel and high-strength parts, it’s perfect for full-body workouts in professional gyms or training studios.",
+    "name": "Combinação Smith e Treinador Funcional",
+    "description": "YR Fitness Smith &amp; O Functional Trainer Combo 8504 é uma máquina que economiza espaço e combina um sistema Smith suave com um treinador funcional versátil. Construído com aço forte e peças de alta resistência, é perfeito para treinos de corpo inteiro em academias profissionais ou estúdios de treinamento.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Smith &amp; Functional Trainer Combo 8504 is a space-saving machine that combines a smooth Smith system with a versatile functional trainer. Built with strong steel and high-strength parts, it’s perfect for full-body workouts in professional gyms or training studios."
+          "YR Fitness Smith &amp; O Functional Trainer Combo 8504 é uma máquina que economiza espaço e combina um sistema Smith suave com um treinador funcional versátil. Construído com aço forte e peças de alta resistência, é perfeito para treinos de corpo inteiro em academias profissionais ou estúdios de treinamento."
         ]
       }
     ],
@@ -8367,13 +8367,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "263",
     "modelCode": "8502",
-    "name": "Smith & Functional Trainer Combo",
-    "description": "YR Fitness Smith &amp; Functional Trainer Combo 8502 combines two powerful training systems in one space-saving design. Built with strong steel and secure connections, it supports a wide range of strength exercises, making it perfect for gyms focused on safety, versatility, and performance.",
+    "name": "Combinação Smith e Treinador Funcional",
+    "description": "YR Fitness Smith &amp; O Functional Trainer Combo 8502 combina dois sistemas de treinamento poderosos em um design que economiza espaço. Construído com aço resistente e conexões seguras, suporta uma ampla gama de exercícios de força, tornando-o perfeito para academias focadas em segurança, versatilidade e desempenho.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Smith &amp; Functional Trainer Combo 8502 combines two powerful training systems in one space-saving design. Built with strong steel and secure connections, it supports a wide range of strength exercises, making it perfect for gyms focused on safety, versatility, and performance."
+          "YR Fitness Smith &amp; O Functional Trainer Combo 8502 combina dois sistemas de treinamento poderosos em um design que economiza espaço. Construído com aço resistente e conexões seguras, suporta uma ampla gama de exercícios de força, tornando-o perfeito para academias focadas em segurança, versatilidade e desempenho."
         ]
       }
     ],
@@ -8386,13 +8386,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "264",
     "modelCode": "82007A",
-    "name": "ISO Lateral Upper Back Pull Down",
-    "description": "YR Fitness 82007A combines independent arm mechanics with ergonomic adjustments to support effective upper back training and balanced strength development, suitable for all user levels.",
+    "name": "Pull down lateral superior das costas ISO",
+    "description": "YR Fitness 82007A combina mecânica de braço independente com ajustes ergonômicos para apoiar um treinamento eficaz da parte superior das costas e desenvolvimento de força equilibrado, adequado para todos os níveis de usuário.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82007A combines independent arm mechanics with ergonomic adjustments to support effective upper back training and balanced strength development, suitable for all user levels."
+          "YR Fitness 82007A combina mecânica de braço independente com ajustes ergonômicos para apoiar um treinamento eficaz da parte superior das costas e desenvolvimento de força equilibrado, adequado para todos os níveis de usuário."
         ]
       }
     ],
@@ -8403,11 +8403,11 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
+        "label": "NO",
         "value": "145kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1884*1284*1748mm"
       }
     ]
@@ -8415,13 +8415,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "265",
     "modelCode": "82004A",
-    "name": "ISO-Lateral Front Lat Pull Down",
-    "description": "YR Fitness 82004A provides a seated lat pulldown experience with independent arms and adjustable support pads. It promotes balanced back development and controlled movement for safe, effective training.",
+    "name": "Pull down lateral frontal ISO-lateral",
+    "description": "YR Fitness 82004A oferece uma experiência de pulldown sentado com braços independentes e almofadas de suporte ajustáveis. Promove o desenvolvimento equilibrado das costas e movimentos controlados para um treinamento seguro e eficaz.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 82004A provides a seated lat pulldown experience with independent arms and adjustable support pads. It promotes balanced back development and controlled movement for safe, effective training."
+          "YR Fitness 82004A oferece uma experiência de pulldown sentado com braços independentes e almofadas de suporte ajustáveis. Promove o desenvolvimento equilibrado das costas e movimentos controlados para um treinamento seguro e eficaz."
         ]
       }
     ],
@@ -8432,7 +8432,7 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
+        "label": "NO",
         "value": "152kg"
       },
       {
@@ -8440,7 +8440,7 @@ const rawProducts: RawProduct[] = [
         "value": "230kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1750*1800*2000mm"
       }
     ]
@@ -8448,13 +8448,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "266",
     "modelCode": "7346A",
-    "name": "Decline Adjustable Bench",
-    "description": "YR Fitness 7346A Decline Adjustable Bench provides secure, comfortable support for decline presses and abdominal training, offering durable construction and ergonomic features for consistent performance.",
+    "name": "Banco ajustável Decline",
+    "description": "O banco ajustável de declínio YR Fitness 7346A fornece suporte seguro e confortável para prensas de declínio e treinamento abdominal, oferecendo construção durável e recursos ergonômicos para desempenho consistente.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7346A Decline Adjustable Bench provides secure, comfortable support for decline presses and abdominal training, offering durable construction and ergonomic features for consistent performance."
+          "O banco ajustável de declínio YR Fitness 7346A fornece suporte seguro e confortável para prensas de declínio e treinamento abdominal, oferecendo construção durável e recursos ergonômicos para desempenho consistente."
         ]
       }
     ],
@@ -8467,15 +8467,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "62kgs"
+        "label": "NO",
+        "value": "62kg"
       },
       {
         "label": "G.W",
-        "value": "112kgs"
+        "value": "112kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1600*630*1340mm"
       }
     ]
@@ -8483,13 +8483,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "267",
     "modelCode": "7301A",
-    "name": "Incline Shoulder Press",
-    "description": "YR Fitness 7301A Incline Shoulder Press targets upper chest and shoulder muscles with independent arms for natural motion and dual handles for variety. Built for strength, comfort, and durability, it&#8217;s ideal for upper body development in any gym setting.",
+    "name": "Pressão de ombro inclinada",
+    "description": "YR Fitness 7301A Incline Shoulder Press tem como alvo os músculos da parte superior do tórax e dos ombros com braços independentes para movimento natural e alças duplas para variedade. Construído para oferecer resistência, conforto e durabilidade, é ideal para o desenvolvimento da parte superior do corpo em qualquer ambiente de academia.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7301A Incline Shoulder Press targets upper chest and shoulder muscles with independent arms for natural motion and dual handles for variety. Built for strength, comfort, and durability, it&#8217;s ideal for upper body development in any gym setting."
+          "YR Fitness 7301A Incline Shoulder Press tem como alvo os músculos da parte superior do tórax e dos ombros com braços independentes para movimento natural e alças duplas para variedade. Construído para oferecer resistência, conforto e durabilidade, é ideal para o desenvolvimento da parte superior do corpo em qualquer ambiente de academia."
         ]
       }
     ],
@@ -8500,33 +8500,33 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "245kgs"
+        "label": "NO",
+        "value": "245kg"
       },
       {
         "label": "G.W",
-        "value": "3435kgs"
+        "value": "3.435kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "1630*1650*1610mm"
       },
       {
-        "label": "Weight Stacks",
-        "value": "70kg-14pcs"
+        "label": "Pilhas de peso",
+        "value": "70kg-14 unidades"
       }
     ]
   },
   {
     "id": "268",
     "modelCode": "61A46B",
-    "name": "Multifunction Adjustable Bench",
-    "description": "YR Fitness Multifunction Adjustable Bench 61A46B is a durable, easy-to-use bench designed for strength training. With adjustable angles, automatic seat adjustment, and built-in wheels for easy movement, it’s ideal for a variety of exercises in any gym or fitness space.",
+    "name": "Banco multifuncional ajustável",
+    "description": "O banco ajustável multifuncional YR Fitness 61A46B é um banco durável e fácil de usar, projetado para treinamento de força. Com ângulos ajustáveis, ajuste automático do assento e rodas integradas para facilitar os movimentos, é ideal para uma variedade de exercícios em qualquer academia ou espaço fitness.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness Multifunction Adjustable Bench 61A46B is a durable, easy-to-use bench designed for strength training. With adjustable angles, automatic seat adjustment, and built-in wheels for easy movement, it’s ideal for a variety of exercises in any gym or fitness space."
+          "O banco ajustável multifuncional YR Fitness 61A46B é um banco durável e fácil de usar, projetado para treinamento de força. Com ângulos ajustáveis, ajuste automático do assento e rodas integradas para facilitar os movimentos, é ideal para uma variedade de exercícios em qualquer academia ou espaço fitness."
         ]
       }
     ],
@@ -8540,13 +8540,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "269",
     "modelCode": "7353",
-    "name": "10 Pairs Dumbell Rack",
-    "description": "YR Fitness 7353 Dumbbell Rack is a strong two-tier rack designed to store 10 pairs of dumbbells. It keeps weights organized and accessible, making it ideal for commercial gyms.",
+    "name": "Suporte para halteres de 10 pares",
+    "description": "O rack de halteres YR Fitness 7353 é um rack forte de duas camadas projetado para armazenar 10 pares de halteres. Mantém os pesos organizados e acessíveis, tornando-o ideal para academias comerciais.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7353 Dumbbell Rack is a strong two-tier rack designed to store 10 pairs of dumbbells. It keeps weights organized and accessible, making it ideal for commercial gyms."
+          "O rack de halteres YR Fitness 7353 é um rack forte de duas camadas projetado para armazenar 10 pares de halteres. Mantém os pesos organizados e acessíveis, tornando-o ideal para academias comerciais."
         ]
       }
     ],
@@ -8557,15 +8557,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "74kgs"
+        "label": "NO",
+        "value": "74kg"
       },
       {
         "label": "G.W",
-        "value": "94kgs"
+        "value": "94kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "2422*660*940mm"
       }
     ]
@@ -8573,13 +8573,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "270",
     "modelCode": "7333A",
-    "name": "3D Smith Machine",
-    "description": "YR Fitness 7333A 3D Smith Machine features a patented 3D motion system and secure wrist-controlled hook, offering natural movement for dynamic lifts. With heavy-duty materials and advanced safety, it’s ideal for versatile, professional-grade training.",
+    "name": "Máquina Smith 3D",
+    "description": "A máquina YR Fitness 7333A 3D Smith apresenta um sistema de movimento 3D patenteado e um gancho seguro controlado pelo pulso, oferecendo movimento natural para levantamentos dinâmicos. Com materiais resistentes e segurança avançada, é ideal para treinamento versátil de nível profissional.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 7333A 3D Smith Machine features a patented 3D motion system and secure wrist-controlled hook, offering natural movement for dynamic lifts. With heavy-duty materials and advanced safety, it’s ideal for versatile, professional-grade training."
+          "A máquina YR Fitness 7333A 3D Smith apresenta um sistema de movimento 3D patenteado e um gancho seguro controlado pelo pulso, oferecendo movimento natural para levantamentos dinâmicos. Com materiais resistentes e segurança avançada, é ideal para treinamento versátil de nível profissional."
         ]
       }
     ],
@@ -8590,15 +8590,15 @@ const rawProducts: RawProduct[] = [
     ],
     "specifications": [
       {
-        "label": "N.W",
-        "value": "280kgs"
+        "label": "NO",
+        "value": "280kg"
       },
       {
         "label": "G.W",
-        "value": "330kgs"
+        "value": "330kg"
       },
       {
-        "label": "Installation Size",
+        "label": "Tamanho da instalação",
         "value": "2430*1783*2440"
       }
     ]
@@ -8606,13 +8606,13 @@ const rawProducts: RawProduct[] = [
   {
     "id": "271",
     "modelCode": "61A53",
-    "name": "10 Pairs Dumbbell Rack",
-    "description": "YR Fitness 10 Pairs Dumbbell Rack 61A53 is built to hold up to 10 pairs of dumbbells, supporting weights up to 50 kg each. Its strong steel frame and two-tier design keep your space organized, making it perfect for any gym or training area.",
+    "name": "Suporte para halteres de 10 pares",
+    "description": "O rack de halteres YR Fitness 10 pares 61A53 foi construído para acomodar até 10 pares de halteres, suportando pesos de até 50 kg cada. Sua forte estrutura de aço e design de duas camadas mantêm seu espaço organizado, tornando-o perfeito para qualquer academia ou área de treinamento.",
     "detailSections": [
       {
-        "title": "Product Overview",
+        "title": "Visão geral do produto",
         "bullets": [
-          "YR Fitness 10 Pairs Dumbbell Rack 61A53 is built to hold up to 10 pairs of dumbbells, supporting weights up to 50 kg each. Its strong steel frame and two-tier design keep your space organized, making it perfect for any gym or training area."
+          "O rack de halteres YR Fitness 10 pares 61A53 foi construído para acomodar até 10 pares de halteres, suportando pesos de até 50 kg cada. Sua forte estrutura de aço e design de duas camadas mantêm seu espaço organizado, tornando-o perfeito para qualquer academia ou área de treinamento."
         ]
       }
     ],

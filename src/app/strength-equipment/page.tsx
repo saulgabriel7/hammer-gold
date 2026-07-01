@@ -23,9 +23,9 @@ const BeforeAfterSlider = dynamic(
 );
 
 export const metadata: Metadata = {
-  title: "Strength Equipment",
+  title: "Equipamentos de Força",
   description:
-    "Premium commercial strength equipment. Built by athletes, for athletes. Explore our complete product lineup.",
+    "Equipamentos de força comerciais premium. Construídos por atletas, para atletas. Explore nossa linha completa de produtos.",
 };
 
 export default function StrengthEquipmentPage() {

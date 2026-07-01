@@ -3,14 +3,14 @@ import { z } from "zod";
 export const contactFormSchema = z.object({
   name: z
     .string()
-    .min(2, "Name must be at least 2 characters")
-    .max(100, "Name must be under 100 characters"),
-  email: z.string().email("Please enter a valid email address"),
+    .min(2, "O nome deve ter pelo menos 2 caracteres")
+    .max(100, "O nome deve ter menos de 100 caracteres"),
+  email: z.string().email("Por favor, insira um endereço de e-mail válido"),
   phone: z.string().optional(),
   message: z
     .string()
-    .min(10, "Enquiry must be at least 10 characters")
-    .max(2000, "Enquiry must be under 2000 characters"),
+    .min(10, "A mensagem deve ter pelo menos 10 caracteres")
+    .max(2000, "A mensagem deve ter menos de 2000 caracteres"),
 });
 
 export type ContactFormValues = z.infer<typeof contactFormSchema>;

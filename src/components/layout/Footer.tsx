@@ -14,8 +14,8 @@ export default function Footer() {
               <span className="text-primary">HAMMER</span> GOLD
             </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
-              Premium commercial gym equipment manufacturer. Built by athletes,
-              for athletes. Trusted by 5,000+ gyms in 86 countries since 1997.
+              Fabricante premium de equipamentos de academia comerciais. Construído por atletas,
+              para atletas. Confiado por mais de 5.000 academias em 86 países desde 1997.
             </p>
           </div>
 
@@ -44,7 +44,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="mt-16 pt-8 border-t border-gray-800">
           <p className="text-center text-sm text-gray-500">
-            © {currentYear} {SITE_NAME}. All rights reserved.
+            © {currentYear} {SITE_NAME}. Todos os direitos reservados.
           </p>
         </div>
       </div>

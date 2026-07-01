@@ -12,17 +12,17 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Hammer Gold — Commercial Gym Equipment Manufacturer",
+    default: "Hammer Gold — Fabricante de Equipamentos de Academia Comerciais",
     template: "%s | Hammer Gold",
   },
   description:
-    "Built by Athletes, For Athletes. Premium commercial strength equipment manufacturer since 1997. Trusted by 5,000+ gyms in 86 countries.",
+    "Construído por Atletas, Para Atletas. Fabricante premium de equipamentos de força comerciais desde 1997. Confiado por mais de 5.000 academias em 86 países.",
   openGraph: {
-    title: "Hammer Gold — Commercial Gym Equipment Manufacturer",
+    title: "Hammer Gold — Fabricante de Equipamentos de Academia Comerciais",
     description:
-      "Premium commercial strength equipment. Built tough, built precise, built to last.",
+      "Equipamentos de força comerciais premium. Construído forte, construído preciso, construído para durar.",
     type: "website",
-    locale: "en_US",
+    locale: "pt_BR",
     siteName: "Hammer Gold",
   },
 };
@@ -33,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="pt-BR" className={inter.variable}>
       <body className="min-h-screen bg-white antialiased">
         <Header />
         <main>{children}</main>

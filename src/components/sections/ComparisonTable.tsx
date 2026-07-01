@@ -21,121 +21,121 @@ interface TableRow {
 
 const series: Series[] = [
   {
-    subtitle: "Tough",
-    name: "73 Series",
-    image: "/assets/images/7304-1024x867.png",
-    imageAlt: "73 Tough Series gym equipment",
-    bullets: ["Heavy-Duty Frame", "Pro-Level Movement", "High-End Line"],
+    subtitle: "Resistente",
+    name: "Série 73 Tough",
+    image: "/assets/images/7304-1024x867.jpeg",
+    imageAlt: "Equipamento de academia da Série 73 Tough",
+    bullets: ["Estrutura de Alta Resistência", "Movimento de Nível Profissional", "Linha Premium"],
   },
   {
-    subtitle: "Racing",
-    name: "61A Series",
+    subtitle: "Esportivo",
+    name: "Série 61A Racing",
     image: "/assets/images/61A01.jpg",
-    imageAlt: "61A Racing Series gym equipment",
-    bullets: ["Durable", "Affordable", "Best-Selling"],
+    imageAlt: "Equipamento de academia da Série 61A Racing",
+    bullets: ["Durável", "Acessível", "Mais Vendido"],
   },
   {
-    subtitle: "Revival",
-    name: "C4 Series",
+    subtitle: "Renascimento",
+    name: "Série C4 Revival",
     image: "/assets/images/C4A10.jpg",
-    imageAlt: "C4 Revival Series gym equipment",
-    bullets: ["Modern Aesthetics", "Advanced Adjustability", "Innovation"],
+    imageAlt: "Equipamento de academia da Série C4 Revival",
+    bullets: ["Estética Moderna", "Ajustabilidade Avançada", "Inovação"],
   },
 ];
 
 const tableRows: TableRow[] = [
-  { label: "Launch Year", values: ["2008", "2016", "2025"] },
+  { label: "Ano de Lançamento", values: ["2008", "2016", "2025"] },
   {
-    label: "Design Focus",
+    label: "Foco do Design",
     values: [
-      "High-end performance and biomechanics",
-      "Space-saving, budget-friendly, market-driven",
-      "Combines 61A's simplicity with 73's advanced features",
+      "Desempenho e biomecânica de alto nível",
+      "Economia de espaço, econômico, voltado ao mercado",
+      "Combina a simplicidade da 61A com os recursos avançados da 73",
     ],
   },
   {
-    label: "Frame Tubing",
+    label: "Tubulação da Estrutura",
     values: [
-      "75×130×3.0 mm (main) + 58×101×3.0 mm (functional)",
-      "75×118×3.0 mm (main) + 50×120 / 40×80 / 50×100 mm",
-      "150×50×3.0 mm (main) + 50×120 / 40×80 / 50×100 mm",
+      "75×130×3,0 mm (principal) + 58×101×3,0 mm (funcional)",
+      "75×118×3,0 mm (principal) + 50×120 / 40×80 / 50×100 mm",
+      "150×50×3,0 mm (principal) + 50×120 / 40×80 / 50×100 mm",
     ],
   },
   {
-    label: "Aesthetic Design",
+    label: "Design Estético",
     values: [
-      "Parabolic, bold, aluminum accents",
-      "Compact and practical",
-      "Stylish, modern, fits younger gym aesthetics",
+      "Parabólico, ousado, detalhes em alumínio",
+      "Compacto e prático",
+      "Elegante, moderno, adapta-se à estética de academias mais jovens",
     ],
   },
   {
-    label: "Durability Level",
+    label: "Nível de Durabilidade",
     values: [
-      "Heavy-duty, custom-engineered components",
-      "Very durable, many still running after 20+ years",
-      "Same durability level with upgraded styling and adjustability",
+      "Componentes de alta resistência e engenharia personalizada",
+      "Muito durável, muitos ainda em funcionamento após mais de 20 anos",
+      "Mesmo nível de durabilidade com estilo e ajustabilidade atualizados",
     ],
   },
   {
-    label: "Movement Types",
+    label: "Tipos de Movimento",
     values: [
-      "Independent converging/diverging paths",
-      "Standard movement paths",
-      "Includes both standard and independent paths (split models)",
+      "Caminhos independentes convergentes/divergentes",
+      "Caminhos de movimento padrão",
+      "Inclui caminhos padrão e independentes (modelos divididos)",
     ],
   },
   {
-    label: "Adjustability",
+    label: "Ajustabilidade",
     values: [
-      "Basic adjustability",
-      "Standard user adjustability",
-      "Advanced: rotating handles, adjustable pads, backrests, etc.",
+      "Ajustabilidade básica",
+      "Ajustabilidade padrão do usuário",
+      "Avançada: manípulos rotativos, apoios ajustáveis, encostos, etc.",
     ],
   },
   {
-    label: "Innovation Level",
+    label: "Nível de Inovação",
     values: [
-      "First of its kind globally in 2008",
-      "Refined through years of customer feedback",
-      "Integrated innovation from both series + unique new machines",
+      "Primeiro de seu tipo globalmente em 2008",
+      "Refinado através de anos de feedback dos clientes",
+      "Inovação integrada de ambas as séries + novas máquinas exclusivas",
     ],
   },
   {
-    label: "Series Size",
-    values: ["62 models", "62 models", "74 models (still expanding)"],
+    label: "Tamanho da Série",
+    values: ["62 modelos", "62 modelos", "74 modelos (ainda em expansão)"],
   },
   {
-    label: "Target Buyer",
+    label: "Comprador Alvo",
     values: [
-      "High-end gyms, serious training centers",
-      "Budget-conscious gyms, franchise chains",
-      "Gyms that want both performance and style",
+      "Academias de alto padrão, centros de treinamento sérios",
+      "Academias econômicas, redes de franquias",
+      "Academias que desejam desempenho e estilo",
     ],
   },
   {
-    label: "Pricing",
+    label: "Preço",
     values: [
       "Premium",
-      "Most affordable",
-      "Mid-range, with excellent feature-to-price ratio",
+      "Mais acessível",
+      "Intermediário, com excelente relação custo-benefício",
     ],
   },
   {
-    label: "Production Method",
+    label: "Método de Produção",
     values: [
-      "Partially handmade due to complex design",
-      "Fully industrialized",
-      "Industrial production with some specialty detailing",
+      "Parcialmente feito à mão devido ao design complexo",
+      "Totalmente industrializado",
+      "Produção industrial com alguns detalhes especiais",
     ],
   },
   {
-    label: "After-Sales Service",
-    values: ["Lifetime support", "Lifetime support", "Lifetime support"],
+    label: "Serviço Pós-Venda",
+    values: ["Suporte vitalício", "Suporte vitalício", "Suporte vitalício"],
   },
 ];
 
-const colHeaders = ["73 Tough Series", "61A Racing Series", "C4 Revival Series"];
+const colHeaders = ["Série 73 Tough", "Série 61A Racing", "Série C4 Revival"];
 
 export default function ComparisonTable() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -171,8 +171,8 @@ export default function ComparisonTable() {
         {/* ── Heading ── */}
         <div className="text-center mb-14">
           <h2 className="text-4xl sm:text-5xl font-extrabold text-dark">
-            Compare Our{" "}
-            <span className="text-primary">Key Series</span>
+            Compare Nossas{" "}
+            <span className="text-primary">Principais Séries</span>
           </h2>
         </div>
 
@@ -226,7 +226,7 @@ export default function ComparisonTable() {
         <div className="comparison-table-wrap">
           {/* Table sub-title */}
           <p className="text-center text-sm font-semibold tracking-widest text-black mb-6">
-            Quick Comparison At A Glance
+            Comparação Rápida em um Vislumbre
           </p>
 
           <div className="overflow-x-auto">
@@ -235,7 +235,7 @@ export default function ComparisonTable() {
               <thead>
                 <tr>
                   <th className="text-left py-6 px-5 font-bold text-white bg-[#3a3a3a] border border-[#555] w-[20%]">
-                    Feature
+                    Recurso
                   </th>
                   {colHeaders.map((h) => (
                     <th
@@ -274,7 +274,7 @@ export default function ComparisonTable() {
 
           {/* Row count */}
           <p className="mt-3 text-xs text-muted">
-            Showing 1 to {tableRows.length} of {tableRows.length} entries
+            Mostrando 1 a {tableRows.length} de {tableRows.length} entradas
           </p>
 
           {/* CTA */}
@@ -283,7 +283,7 @@ export default function ComparisonTable() {
               href="#contact"
               className="px-8 py-3 border border-primary text-primary font-semibold text-sm rounded hover:bg-primary hover:text-white transition-colors duration-200"
             >
-              Choose My Series
+              Escolher Minha Série
             </a>
           </div>
         </div>
