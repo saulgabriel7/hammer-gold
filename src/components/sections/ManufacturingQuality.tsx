@@ -1,134 +1,66 @@
-"use client";
-
-import { useEffect, useRef } from "react";
 import Image from "next/image";
-import { gsap } from "@/animations/gsap-config";
-import { useReducedMotion } from "@/hooks/useReducedMotion";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+
+const engineeringItems = [
+  {
+    title: "Estruturas de alta rigidez",
+    text: "Tubos de aço Q235 com 3,0 mm ou mais, reforços estruturais e estabilidade para rotinas de alta carga.",
+    image: "/images/institucional/dobra-cnc-reforcada.png",
+  },
+  {
+    title: "Movimento biomecânico",
+    text: "Trajetórias pensadas para controle, amplitude e repetibilidade do exercício em diferentes perfis de usuário.",
+    image: "/images/institucional/solda-robotizada-acabamento.png",
+  },
+  {
+    title: "Ajustes que trabalham",
+    text: "Pontos de regulagem diretos, componentes de contato robustos e experiência intuitiva para o salão de treino.",
+    image: "/images/institucional/corte-laser-precisao.png",
+  },
+];
 
 export default function ManufacturingQuality() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const prefersReducedMotion = useReducedMotion();
-
-  useEffect(() => {
-    if (!sectionRef.current || prefersReducedMotion) return;
-
-    const ctx = gsap.context(() => {
-      const duration = 0.8;
-
-      gsap.from("[data-quality-header]", {
-        y: 30,
-        opacity: 0,
-        duration,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 80%",
-          once: true,
-        },
-      });
-
-      gsap.from("[data-quality-left]", {
-        x: -40,
-        opacity: 0,
-        duration,
-        delay: 0.2,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 80%",
-          once: true,
-        },
-      });
-
-      gsap.from("[data-quality-right]", {
-        x: 40,
-        opacity: 0,
-        duration,
-        delay: 0.2,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 80%",
-          once: true,
-        },
-      });
-
-      gsap.from("[data-quality-cta]", {
-        y: 20,
-        opacity: 0,
-        duration,
-        delay: 0.4,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 85%",
-          once: true,
-        },
-      });
-    }, sectionRef);
-
-    return () => ctx.revert();
-  }, [prefersReducedMotion]);
-
   return (
-    <section
-      ref={sectionRef}
-      id="manufacturing-quality"
-      className="bg-white py-20 md:py-28"
-    >
-      <div className="mx-auto max-w-7xl px-6">
-        {/* Header */}
-        <div className="text-center mb-16" data-quality-header>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-text tracking-tight mb-4 uppercase font-sans">
-            <span className="text-primary">Padrão de Qualidade</span> Hammer Gold
-          </h2>
-          <div className="w-20 h-0.5 bg-primary mx-auto mb-6" />
-          <p className="text-[#4B5563] text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-            {"É por isso que temos a confiança de competir com a qualidade de grandes marcas, mas por 1/5 do preço."}
-          </p>
-        </div>
-
-        {/* Grid Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left Content */}
-          <div className="flex flex-col justify-center" data-quality-left>
-            <h3 className="text-3xl md:text-4xl font-extrabold text-text leading-tight mb-6">
-              Construído com Força: Tubos de
-              <br />
-              Aço Sólido de 3,0 mm
-            </h3>
-            <p className="text-[#4B5563] text-base sm:text-lg leading-relaxed">
-              {"Usamos tubos de aço "}
-              <span className="font-semibold text-text">
-                {"Q235 espessos de 3,0 mm+ para cada parte da máquina"}
-              </span>
-              {" — seja a estrutura ou a área de treino, não importa o tamanho. Com dobras de reforço adicionadas, nossas máquinas permanecem fortes e estáveis. Sem tremores, apenas potência sólida."}
+    <section id="manufacturing-quality" className="dark-grid section-space text-white scroll-mt-24">
+      <div className="site-container">
+        <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+          <div>
+            <p className="eyebrow text-white/45">Engenharia e qualidade</p>
+            <h2 className="section-title mt-5">Construção silenciosa. Desempenho evidente.</h2>
+          </div>
+          <div>
+            <p className="body-large max-w-2xl text-white/60">
+              Qualidade comparável às grandes marcas por 1/5 do preço, com foco em materiais, estabilidade e experiência de uso profissional.
             </p>
-          </div>
-
-          {/* Right Image */}
-          <div className="w-full" data-quality-right>
-            <div className="relative aspect-16/10 w-full overflow-hidden rounded-2xl shadow-md border border-gray-100">
-              <Image
-                src="/assets/images/quality_steel.png"
-                alt="Medição de tubos de aço de qualidade na YR Fitness"
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
-                priority
-              />
-            </div>
+            <Link href="/engineering-quality" className="button-secondary mt-7">
+              Conhecer nossa engenharia
+              <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </Link>
           </div>
         </div>
 
-        {/* CTA Button */}
-        <div className="text-center mt-16" data-quality-cta>
-          <a
-            href="#quality"
-            className="inline-block border-2 border-primary text-primary] hover:bg-primary hover:text-white transition-all duration-300 font-semibold px-8 py-3 rounded-md text-sm tracking-wider"
-          >
-            Saiba Mais Sobre a Qualidade
-          </a>
+        <div className="mt-14 grid gap-5 lg:grid-cols-3">
+          {engineeringItems.map((item, index) => (
+            <article key={item.title} className="overflow-hidden rounded-2xl border border-white/10 bg-white/4">
+              <div className="relative aspect-square overflow-hidden">
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 33vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/35">
+                  0{index + 1}
+                </p>
+                <h3 className="mt-3 text-xl font-extrabold tracking-tight">{item.title}</h3>
+                <p className="mt-3 text-sm leading-6 text-white/55">{item.text}</p>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>

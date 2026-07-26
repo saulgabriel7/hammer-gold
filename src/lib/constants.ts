@@ -1,24 +1,20 @@
 export const SITE_NAME = "Hammer Gold";
 export const SITE_DESCRIPTION =
-  "Construído por Atletas, Para Atletas. Fabricante premium de equipamentos de academia comerciais desde 1997.";
+  "Equipamentos preparados para suportar a força dos atletas e a rotina das melhores academias.";
 
-export const CDN_BASE =
-  "https://cdn.yanrefitness.com/cdn-cgi/imagedelivery/m94-xP3Y6Xwv_FOE9Rj47w/www.yanrefitness.com/";
+export const WHATSAPP_NUMBER = "5511974963278";
 
 export interface NavLink {
   label: string;
   href: string;
-  isRed?: boolean;
 }
 
 export const NAV_LINKS: readonly NavLink[] = [
-  { label: "Início", href: "/strength-equipment" },
-  { label: "Produtos", href: "/strength-equipment#products", isRed: true },
-  { label: "Design", href: "/strength-equipment#series" },
-  { label: "Qualidade", href: "/strength-equipment#manufacturing-quality" },
-  { label: "Comparativo", href: "/strength-equipment#comparison" },
-  { label: "Layout de Academia", href: "/strength-equipment#muscle-filter" },
-  { label: "Sobre Nós", href: "/strength-equipment#manufacturing-quality" },
+  { label: "Início", href: "/" },
+  { label: "Produtos", href: "/products" },
+  { label: "Soluções", href: "/solutions" },
+  { label: "Engenharia", href: "/engineering-quality" },
+  { label: "Sobre nós", href: "/about" },
   { label: "Contato", href: "/contact" },
 ];
 
@@ -26,28 +22,29 @@ export const FOOTER_COLUMNS = [
   {
     title: "Produtos",
     links: [
-      { label: "Série C4 Revival", href: "/strength-equipment#series" },
-      { label: "Série C4D Dual Function", href: "/strength-equipment#series" },
-      { label: "Série 61A Racing", href: "/strength-equipment#series" },
-      { label: "Série 73 Tough", href: "/strength-equipment#series" },
-      { label: "Série Multi Station", href: "/strength-equipment#series" },
-      { label: "Série 82 Plate Loaded", href: "/strength-equipment#series" },
+      { label: "Forja", href: "/series/forja" },
+      { label: "Bigorna", href: "/series/bigorna" },
+      { label: "Lastro", href: "/series/lastro" },
+      { label: "Dupla Função", href: "/series/dupla-funcao" },
+      { label: "Coletiva", href: "/series/coletiva" },
+      { label: "Acessórios", href: "/series/acessorios" },
+      { label: "Cardio", href: "/series/cardio" },
+      { label: "Scan", href: "/series/scan" },
     ],
   },
   {
     title: "Recursos",
     links: [
-      { label: "Catálogo de Produtos", href: "/strength-equipment" },
-      { label: "Padrão de Qualidade", href: "/strength-equipment#manufacturing-quality" },
-      { label: "Comparar Séries", href: "/strength-equipment#comparison" },
+      { label: "Simulador 3D de Layout", href: "/planner" },
+      { label: "Todos os produtos", href: "/products" },
     ],
   },
   {
     title: "Empresa",
     links: [
-      { label: "Sobre Nós", href: "/strength-equipment" },
-      { label: "Tour na Fábrica", href: "/strength-equipment" },
-      { label: "Padrão de Qualidade", href: "/strength-equipment#manufacturing-quality" },
+      { label: "Sobre nós", href: "/about" },
+      { label: "Soluções", href: "/solutions" },
+      { label: "Engenharia e qualidade", href: "/engineering-quality" },
     ],
   },
 ] as const;

@@ -1,89 +1,80 @@
-"use client";
-
-import { useEffect, useRef } from "react";
-import { gsap } from "@/animations/gsap-config";
-import { useReducedMotion } from "@/hooks/useReducedMotion";
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight, MessageCircle } from "lucide-react";
+import { WHATSAPP_NUMBER } from "@/lib/constants";
 
 export default function HeroSection() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const prefersReducedMotion = useReducedMotion();
-
-  useEffect(() => {
-    if (!sectionRef.current) return;
-
-    const ctx = gsap.context(() => {
-      const duration = prefersReducedMotion ? 0 : 1;
-      const staggerDelay = prefersReducedMotion ? 0 : 0.15;
-
-      gsap.from("[data-hero-headline]", {
-        y: 40,
-        opacity: 0,
-        duration,
-        delay: 0.3,
-        ease: "power3.out",
-      });
-
-      gsap.from("[data-hero-subtext]", {
-        y: 20,
-        opacity: 0,
-        duration,
-        stagger: staggerDelay,
-        delay: 0.7,
-        ease: "power3.out",
-      });
-
-      gsap.from("[data-hero-image]", {
-        x: 40,
-        opacity: 0,
-        duration: duration * 1.2,
-        delay: 0.5,
-        ease: "power3.out",
-      });
-    }, sectionRef);
-
-    return () => ctx.revert();
-  }, [prefersReducedMotion]);
 
   return (
     <section
-      ref={sectionRef}
-      className="flex items-center overflow-hidden pt-28 pb-16 md:pt-36 md:pb-24 bg-white"
       id="hero"
+      className="dark-grid page-top relative flex min-h-svh flex-col overflow-hidden text-white"
     >
-      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          {/* Text Content */}
-          <div className="lg:col-span-7 flex flex-col justify-center text-left">
-            <h1
-              data-hero-headline
-              className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight leading-[1.05] uppercase"
-            >
-              <span className="block text-primary">EQUIPAMENTO DE FORÇA</span>
-              <span className="block text-text">FABRICADO NA</span>
-              <span className="block text-dark">CHINA</span>
-            </h1>
+      <div className="absolute inset-0 lg:left-[56%]">
+        <Image
+          src="/images/series/serie-forja-racing.jpeg"
+          alt="Equipamento profissional Hammer Gold em ambiente industrial"
+          fill
+          sizes="(max-width: 1024px) 100vw, 52vw"
+          className="object-cover opacity-55 grayscale lg:opacity-85"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/20 to-black lg:bg-gradient-to-r lg:from-black lg:via-black/25 lg:to-black/10" />
+      </div>
 
-            <div className="mt-8 space-y-4 max-w-xl text-neutral-800 font-medium text-base sm:text-lg">
-              <p data-hero-subtext>Construído por atletas, para atletas.</p>
-              <p data-hero-subtext>Construído para suportar todos os tipos de treinamento de força.</p>
-              <p data-hero-subtext>Construído com ângulos de movimento precisos desde 1997.</p>
+      <div className="site-container relative z-10 flex min-w-0 flex-1 items-center py-10 sm:py-14 lg:py-10">
+        <div className="min-w-0 max-w-4xl">
+          <p className="t-stagger-line eyebrow max-w-full text-pretty text-white/55">
+            Importadora de equipamentos profissionais
+          </p>
+          <h1 className="t-stagger-line t-stagger-line--2 hero-title mt-5 max-w-[12ch] sm:mt-7">
+            Engenharia para quem exige mais de cada treino.
+          </h1>
+          <div className="t-stagger-line t-stagger-line--3">
+            <p className="body-large mt-5 max-w-2xl text-pretty text-white/65 sm:mt-7">
+              Hammer Gold. Equipamentos preparados para suportar a força dos atletas e a
+              rotina das melhores academias.
+            </p>
+            <div className="mt-7 flex flex-col gap-3 sm:mt-9 sm:flex-row">
+              <Link href="/products" className="button-secondary w-full sm:w-auto">
+                Explorar equipamentos
+                <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              </Link>
+              <a
+                href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+                  "Olá, gostaria de falar com um consultor da Hammer Gold."
+                )}`}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full border border-white/25 px-6 text-xs font-bold uppercase tracking-wider text-white transition-colors duration-200 hover:border-white hover:bg-white/10 sm:w-auto"
+              >
+                <MessageCircle className="h-4 w-4" aria-hidden="true" />
+                Falar com consultor
+              </a>
             </div>
           </div>
+        </div>
+      </div>
 
-          {/* Product Image */}
-          <div
-            data-hero-image
-            className="lg:col-span-5 flex items-center justify-center relative w-full aspect-square max-w-md mx-auto"
-          >
-            <video
-              src="/assets/videos/gsap-config.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="w-full h-auto object-contain max-h-[450px] select-none"
-              draggable={false}
-            />
+      <div className="relative z-10 shrink-0 border-t border-white/10 bg-black/65 backdrop-blur-md">
+        <div className="site-container grid grid-cols-3 divide-x divide-white/10 py-4 text-center sm:py-5">
+          <div className="min-w-0 px-1 sm:px-3">
+            <p className="text-xl font-black sm:text-2xl">289</p>
+            <p className="mt-1 text-[8px] leading-tight uppercase tracking-[0.06em] text-white/45 sm:text-[10px] sm:tracking-wider">
+              Equipamentos
+            </p>
+          </div>
+          <div className="min-w-0 px-1 sm:px-3">
+            <p className="text-xl font-black sm:text-2xl">8</p>
+            <p className="mt-1 text-[8px] leading-tight uppercase tracking-[0.06em] text-white/45 sm:text-[10px] sm:tracking-wider">
+              Categorias
+            </p>
+          </div>
+          <div className="min-w-0 px-1 sm:px-3">
+            <p className="text-xl font-black sm:text-2xl">1/5</p>
+            <p className="mt-1 text-[8px] leading-tight uppercase tracking-[0.06em] text-white/45 sm:text-[10px] sm:tracking-wider">
+              Do preço de grandes marcas
+            </p>
           </div>
         </div>
       </div>

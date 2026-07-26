@@ -1,50 +1,77 @@
 import { contactFormSchema } from "@/lib/validations";
-import type { RateLimitEntry } from "@/types/api";
+import {
+  checkRateLimit,
+  getClientIp,
+  readJsonWithLimit,
+  RequestBodyError,
+  type RateLimitEntry,
+} from "@/lib/server/request-security";
 
-const rateLimitMap = new Map<string, RateLimitEntry>();
+const MAX_BODY_BYTES = 16_000;
+const WINDOW_MS = 60 * 60 * 1_000;
+const REQUESTS_PER_WINDOW = 5;
+const NO_STORE_HEADERS = { "Cache-Control": "no-store" };
+
+const globalRateLimit = globalThis as typeof globalThis & {
+  hammerContactRateLimit?: Map<string, RateLimitEntry>;
+};
+
+const rateLimitMap =
+  globalRateLimit.hammerContactRateLimit ??
+  (globalRateLimit.hammerContactRateLimit = new Map<string, RateLimitEntry>());
 
 export async function POST(request: Request) {
-  const ip = request.headers.get("x-forwarded-for") ?? "unknown";
-  const now = Date.now();
-  const entry = rateLimitMap.get(ip);
+  const rateLimit = checkRateLimit(
+    rateLimitMap,
+    getClientIp(request),
+    REQUESTS_PER_WINDOW,
+    WINDOW_MS
+  );
 
-  if (entry && now < entry.reset && entry.count >= 5) {
+  if (!rateLimit.allowed) {
     return Response.json(
       { success: false, error: "Muitas solicitações. Por favor, tente novamente mais tarde." },
-      { status: 429 }
+      {
+        status: 429,
+        headers: {
+          ...NO_STORE_HEADERS,
+          "Retry-After": String(rateLimit.retryAfterSeconds),
+        },
+      }
     );
   }
 
-  if (!entry || now >= entry.reset) {
-    rateLimitMap.set(ip, { count: 1, reset: now + 60 * 60 * 1000 });
-  } else {
-    entry.count++;
-  }
-
+  let body: unknown;
   try {
-    const body = await request.json();
-    const result = contactFormSchema.safeParse(body);
-
-    if (!result.success) {
+    body = await readJsonWithLimit(request, MAX_BODY_BYTES);
+  } catch (error) {
+    if (error instanceof RequestBodyError && error.reason === "too_large") {
       return Response.json(
-        {
-          success: false,
-          error: result.error.issues[0]?.message ?? "Entrada inválida",
-        },
-        { status: 400 }
+        { success: false, error: "Corpo da solicitação muito extenso" },
+        { status: 413, headers: NO_STORE_HEADERS }
       );
     }
 
-    // In production, send email or forward to CRM
-    if (process.env.NODE_ENV === "development") {
-      console.log("Contact form submission:", result.data);
-    }
-
-    return Response.json({ success: true });
-  } catch {
     return Response.json(
       { success: false, error: "Corpo da solicitação inválido" },
-      { status: 400 }
+      { status: 400, headers: NO_STORE_HEADERS }
     );
   }
+
+  const result = contactFormSchema.safeParse(body);
+
+  if (!result.success) {
+    return Response.json(
+      {
+        success: false,
+        error: result.error.issues[0]?.message ?? "Entrada inválida",
+      },
+      { status: 400, headers: NO_STORE_HEADERS }
+    );
+  }
+
+  return Response.json(
+    { success: true },
+    { headers: NO_STORE_HEADERS }
+  );
 }

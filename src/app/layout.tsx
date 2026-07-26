@@ -1,26 +1,28 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { HammerAssistantLoader } from "@/components/assistant/HammerAssistantLoader";
+import { AttributionTracker } from "@/components/analytics/AttributionTracker";
+import { getSiteUrl } from "@/lib/site-url";
 import "./globals.css";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
 export const metadata: Metadata = {
+  metadataBase: getSiteUrl(),
   title: {
-    default: "Hammer Gold — Fabricante de Equipamentos de Academia Comerciais",
+    default: "Hammer Gold — Equipamentos Profissionais para Academias",
     template: "%s | Hammer Gold",
   },
   description:
-    "Construído por Atletas, Para Atletas. Fabricante premium de equipamentos de força comerciais desde 1997. Confiado por mais de 5.000 academias em 86 países.",
+    "Equipamentos preparados para suportar a força dos atletas e a rotina das melhores academias.",
+  icons: {
+    icon: "/images/logo/logo-hammer-gold-quadrada.jpeg",
+    shortcut: "/images/logo/logo-hammer-gold-quadrada.jpeg",
+    apple: "/images/logo/logo-hammer-gold-quadrada.jpeg",
+  },
   openGraph: {
-    title: "Hammer Gold — Fabricante de Equipamentos de Academia Comerciais",
+    title: "Hammer Gold — Equipamentos Profissionais para Academias",
     description:
-      "Equipamentos de força comerciais premium. Construído forte, construído preciso, construído para durar.",
+      "Equipamentos comerciais premium para academias, condomínios, hotéis, clubes e studios.",
     type: "website",
     locale: "pt_BR",
     siteName: "Hammer Gold",
@@ -33,10 +35,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={inter.variable}>
+    <html lang="pt-BR">
       <body className="min-h-screen bg-white antialiased">
+        <AttributionTracker />
         <Header />
         <main>{children}</main>
+        <HammerAssistantLoader />
         <Footer />
       </body>
     </html>

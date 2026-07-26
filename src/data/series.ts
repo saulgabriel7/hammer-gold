@@ -2,57 +2,67 @@ import type { Series } from "@/types/product";
 
 export const series: Series[] = [
   {
-    id: "c4-revival",
-    name: "Série C4 Revival",
+    id: "forja",
+    name: "Forja",
     description:
-      "Nossa linha principal com seletor de pinos — biomecânica refinada, acabamento premium e tamanho compacto.",
-    image:
-      "https://www.yanrefitness.com/wp-content/uploads/2023/03/c4-chest-press-YR-fitness.gif",
-    slug: "c4-revival-series",
+      "Linha principal de força com seletor de pinos — biomecânica refinada, ergonomia intuitiva e acabamento premium.",
+    image: "/images/series/serie-forja-racing.jpeg",
+    slug: "forja",
   },
   {
-    id: "c4d-dual",
-    name: "C4D Dual Function",
+    id: "bigorna",
+    name: "Bigorna",
     description:
-      "Dois exercícios em uma estação — maximize o espaço do seu salão sem sacrificar a variedade.",
-    image:
-      "https://www.yanrefitness.com/wp-content/uploads/2023/09/C4D-Leg-extension-curl-YR-Fitness.gif",
-    slug: "c4d-dual-function-series",
+      "Linha pesada de alta resistência — chassi de aço reforçado para operações de altíssimo fluxo e uso contínuo.",
+    image: "/images/series/serie-bigorna-plate-loaded.jpeg",
+    slug: "bigorna",
   },
   {
-    id: "multi-station",
-    name: "Multi Station",
+    id: "lastro",
+    name: "Lastro",
     description:
-      "Soluções de multiestações completas para instalações comerciais que necessitam de versatilidade máxima.",
-    image:
-      "https://www.yanrefitness.com/wp-content/uploads/2023/03/multi-station-gym-equipment.jpg",
-    slug: "commercial-multi-station-gym-equipment",
+      "Linha articulada acionada por anilhas (Plate Loaded) — trajetória guiada convergente para sensação autêntica de peso livre.",
+    image: "/images/series/serie-lastro-pin-selected.avif",
+    slug: "lastro",
   },
   {
-    id: "61a-racing",
-    name: "Série 61A Racing",
+    id: "dupla-funcao",
+    name: "Dupla Função",
     description:
-      "Estética elegante inspirada em carros de corrida com engenharia de desempenho para áreas de treino premium.",
-    image:
-      "https://www.yanrefitness.com/wp-content/uploads/2024/02/61A13A-Low-Row.gif",
-    slug: "61a-series-best-sale",
+      "Dois exercícios em uma única estação de alta precisão — máxima eficiência de espaço no salão.",
+    image: "/images/series/serie-dupla-funcao.jpeg",
+    slug: "dupla-funcao",
   },
   {
-    id: "73-tough",
-    name: "Série 73 Tough",
+    id: "coletiva",
+    name: "Coletiva",
     description:
-      "Construída para durar — estruturas de aço extra espessas e componentes pesados para academias de alto fluxo.",
-    image:
-      "https://www.yanrefitness.com/wp-content/uploads/2023/03/73-10-Seated-Row-YR-Fitness.gif",
-    slug: "73-series-top-quality",
+      "Sistemas de estações integradas e multiestações para treinos em grupo e múltiplos usuários simultâneos.",
+    image: "/images/series/serie-coletiva-multi-jungle.avif",
+    slug: "coletiva",
   },
   {
-    id: "82-plate-loaded",
-    name: "82 Plate Loaded",
+    id: "acessorios",
+    name: "Acessórios",
     description:
-      "Sensação de peso livre com mecânica guiada — máquinas carregadas por anilhas para atletas de verdade.",
-    image:
-      "https://www.yanrefitness.com/wp-content/uploads/2024/11/G2K28-45-Degree-Leg-Press-Machine-with-Linear-Bearings.gif",
-    slug: "plate-loaded-gym-equipment",
+      "Bancos olímpicos, gaiolas de agachamento, Smith Machines, suportes de pesagem e organizadores de peso livre.",
+    image: "/images/series/serie-acessorios.jpeg",
+    slug: "acessorios",
+  },
+  {
+    id: "cardio",
+    name: "Cardio",
+    description:
+      "Esteiras comerciais, elípticos e bicicletas ergométricas com ergonomia avançada e presença imponente.",
+    image: "/images/produtos/cardio/IMG_2666.png",
+    slug: "cardio",
+  },
+  {
+    id: "scan",
+    name: "Scan",
+    description:
+      "Dois modelos de avaliação corporal: o 790 para medições integradas e composição corporal, e o 880 para escaneamento postural IA 360°.",
+    image: "/images/produtos/scan/scan-escaneamento-360-02.png",
+    slug: "scan",
   },
 ];

@@ -1,5 +1,5 @@
-import type { MuscleGroup, Product } from "@/types/product";
-import { products } from "@/data/products";
+import type { CatalogProduct, MuscleGroup } from "@/types/product";
+import { catalogProducts } from "@/data/catalog-products";
 
 /**
  * Generate a URL-friendly slug from model code and product name.
@@ -13,15 +13,15 @@ export function generateProductSlug(modelCode: string, name: string): string {
 }
 
 /** Lookup map built once at module load for O(1) slug lookups. */
-const slugMap = new Map<string, Product>();
-for (const p of products) {
+const slugMap = new Map<string, CatalogProduct>();
+for (const p of catalogProducts) {
   slugMap.set(p.slug, p);
 }
 
 /**
  * Find a product by its slug. O(1) via pre-built map.
  */
-export function getProductBySlug(slug: string): Product | undefined {
+export function getProductBySlug(slug: string): CatalogProduct | undefined {
   return slugMap.get(slug);
 }
 
@@ -29,10 +29,10 @@ export function getProductBySlug(slug: string): Product | undefined {
  * Get related products (same muscle group or series), excluding the current product.
  */
 export function getRelatedProducts(
-  product: Product,
+  product: CatalogProduct,
   limit = 4
-): Product[] {
-  const scored = products
+): CatalogProduct[] {
+  const scored = catalogProducts
     .filter((p) => p.id !== product.id)
     .map((p) => {
       let score = 0;
@@ -58,10 +58,10 @@ export function getProductsByPage(
   page: number,
   perPage: number,
   muscleFilter?: MuscleGroup | null
-): { items: Product[]; total: number; totalPages: number } {
-  let filtered = products;
+): { items: CatalogProduct[]; total: number; totalPages: number } {
+  let filtered = catalogProducts;
   if (muscleFilter) {
-    filtered = products.filter((p) => p.muscleGroups.includes(muscleFilter));
+    filtered = catalogProducts.filter((p) => p.muscleGroups.includes(muscleFilter));
   }
   const total = filtered.length;
   const totalPages = Math.max(1, Math.ceil(total / perPage));

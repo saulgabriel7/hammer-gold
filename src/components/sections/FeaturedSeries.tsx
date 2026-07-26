@@ -1,96 +1,73 @@
-import Image from "next/image";
-import { cn } from "@/lib/utils";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+import { ProductMedia } from "@/components/ui/product-media";
 import { series } from "@/data/series";
+import { getSeriesImageFit } from "@/lib/series-media";
 
-const SERIES_IMAGES: Record<string, string> = {
-  "c4-revival": "/assets/images/1.jpeg",
-  "61a-racing": "/assets/images/2.jpeg",
-  "73-tough": "/assets/images/3.jpeg",
-  "c4d-dual": "/assets/images/5.jpeg",
-  "multi-station": "/assets/images/6.avif",
-  "82-plate-loaded": "/assets/images/7.avif",
+const localImages: Record<string, string> = {
+  forja: "/images/series/serie-forja-racing.jpeg",
+  bigorna: "/images/series/serie-bigorna-plate-loaded.jpeg",
+  lastro: "/images/series/serie-lastro-pin-selected.avif",
+  "dupla-funcao": "/images/series/serie-dupla-funcao.jpeg",
+  coletiva: "/images/series/serie-coletiva-multi-jungle.avif",
+  acessorios: "/images/series/serie-acessorios.jpeg",
+  cardio: "/images/series/serie-cardio-performance.png",
+  scan: "/images/produtos/scan/scan-escaneamento-360-02.png",
 };
-
-const SERIES_TITLES: Record<string, string> = {
-  "c4-revival": "SÉRIE C4 REVIVAL",
-  "61a-racing": "SÉRIE 61A RACING",
-  "73-tough": "SÉRIE 73 TOUGH",
-  "c4d-dual": "SÉRIE C4D DUAL FUNCTION",
-  "multi-station": "SÉRIE MULTI STATION",
-  "82-plate-loaded": "SÉRIE 82 PLATE LOADED",
-};
-
-const orderedSeries = [
-  series.find((s) => s.id === "c4-revival"),
-  series.find((s) => s.id === "61a-racing"),
-  series.find((s) => s.id === "73-tough"),
-  series.find((s) => s.id === "c4d-dual"),
-  series.find((s) => s.id === "multi-station"),
-  series.find((s) => s.id === "82-plate-loaded"),
-].filter(Boolean);
 
 export default function FeaturedSeries() {
   return (
-    <section id="series" className="bg-white py-20 md:py-28">
-      <div className="mx-auto max-w-7xl px-6">
-        {/* Heading */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-black text-text uppercase tracking-tight">
-            Séries de Produtos em Destaque
-          </h2>
+    <section className="section-space bg-white" aria-labelledby="featured-series-title">
+      <div className="site-container">
+        <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+          <div className="max-w-3xl">
+            <p className="eyebrow text-muted">Linhas Hammer Gold</p>
+            <h2 id="featured-series-title" className="section-title mt-5">
+              Uma arquitetura de produtos para cada operação.
+            </h2>
+          </div>
+          <Link href="/series" className="button-ghost self-start lg:self-auto">
+            Conhecer todas as linhas
+            <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+          </Link>
         </div>
 
-        {/* Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {orderedSeries.map((s) => {
-            if (!s) return null;
-
-            const isC4Revival = s.id === "c4-revival";
-            const colSpanClass =
-              s.id === "c4-revival" || s.id === "82-plate-loaded"
-                ? "md:col-span-2 lg:col-span-2"
-                : "md:col-span-1 lg:col-span-1";
-
-            const textPositionClass = isC4Revival
-              ? "top-6 left-6"
-              : "bottom-6 left-6";
-
-            return (
-              <a
-                key={s.id}
-                href={`/strength-equipment/${s.slug}`}
-                className={cn(
-                  "group relative overflow-hidden rounded-lg bg-neutral-900",
-                  "h-[300px] sm:h-[350px] md:h-[380px] w-full",
-                  "transition-all duration-300 hover:shadow-xl",
-                  colSpanClass
-                )}
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+          {series.map((item, index) => (
+            <Link
+              key={item.id}
+              href={`/series/${item.slug}`}
+              className="group block min-w-0 overflow-hidden rounded-xl bg-black"
+            >
+              <ProductMedia
+                src={localImages[item.id] ?? item.image}
+                alt={item.name}
+                sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 25vw"
+                fit={getSeriesImageFit(item.id)}
+                imageClassName="grayscale transition-transform duration-700 ease-out group-hover:scale-[1.035]"
               >
-                {/* Background Image */}
-                <div className="relative w-full h-full">
-                  <Image
-                    src={SERIES_IMAGES[s.id] || s.image}
-                    alt={s.name}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover transition-transform duration-700 group-hover:scale-105 brightness-75"
-                    priority={s.id === "c4-revival" || s.id === "61a-racing"}
-                  />
-
-                  {/* Dark Overlay */}
-                  <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/40" />
+                <div className="absolute inset-0 z-1 bg-linear-to-t from-black via-black/35 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 z-2 p-5 text-white sm:p-6">
+                  <div className="flex items-end justify-between gap-4">
+                    <div className="min-w-0">
+                      <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-white/50">
+                        Série {String(index + 1).padStart(2, "0")}
+                      </p>
+                      <h3 className="mt-2 text-xl font-extrabold tracking-tight">
+                        {item.name}
+                      </h3>
+                      <p className="mt-2 line-clamp-2 text-xs leading-5 text-white/65">
+                        {item.description}
+                      </p>
+                    </div>
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/30 bg-black/20 backdrop-blur-sm transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1">
+                      <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+                    </span>
+                  </div>
                 </div>
-
-                {/* Text Overlay */}
-                <div className={cn("absolute p-6 z-10", textPositionClass)}>
-                  <h3 className="text-lg sm:text-xl font-bold text-white tracking-wide uppercase">
-                    {SERIES_TITLES[s.id] || s.name}
-                  </h3>
-                  <div className="w-10 h-0.5 bg-primary mt-2 transition-all duration-300 group-hover:w-16" />
-                </div>
-              </a>
-            );
-          })}
+              </ProductMedia>
+            </Link>
+          ))}
         </div>
       </div>
     </section>
