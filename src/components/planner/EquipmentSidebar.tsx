@@ -225,6 +225,7 @@ export function EquipmentSidebar() {
                     src={product.image}
                     alt={product.name}
                     fill
+                    sizes="56px"
                     className="object-contain p-1 group-hover:scale-105 transition-transform"
                   />
                 </div>
