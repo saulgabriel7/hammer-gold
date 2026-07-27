@@ -94,6 +94,25 @@ function cleanOpaqueBackground(
   }
 }
 
+function getMimeType(imagePath: string): string {
+  const ext = imagePath.split(".").pop()?.toLowerCase();
+  switch (ext) {
+    case "avif":
+      return "image/avif";
+    case "webp":
+      return "image/webp";
+    case "png":
+      return "image/png";
+    case "jpg":
+    case "jpeg":
+      return "image/jpeg";
+    case "svg":
+      return "image/svg+xml";
+    default:
+      return "image/jpeg";
+  }
+}
+
 export async function GET(
   _request: Request,
   { params }: { params: Promise<{ slug: string }> }
@@ -107,28 +126,44 @@ export async function GET(
     );
   }
 
+  let source: Buffer | null = null;
+  const mimeType = getMimeType(product.image);
+
+  try {
+    const imagePath = path.join(
+      process.cwd(),
+      "public",
+      product.image.replace(/^\//, "")
+    );
+    source = await readFile(imagePath);
+  } catch {
+    try {
+      const origin = new URL(_request.url).origin;
+      const cleanPath = product.image.startsWith("/")
+        ? product.image
+        : `/${product.image}`;
+      const res = await fetch(`${origin}${cleanPath}`);
+      if (res.ok) {
+        source = Buffer.from(await res.arrayBuffer());
+      }
+    } catch {
+      source = null;
+    }
+  }
+
+  if (!source) {
+    const safeModel = product.modelCode.replace(/[<>&"']/g, "");
+    const placeholder = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200"><rect width="1200" height="1200" fill="#f4f4f1"/><rect x="32" y="32" width="1136" height="1136" rx="28" fill="none" stroke="#ddddda" stroke-width="2"/><text x="600" y="575" fill="#111111" font-family="Arial, sans-serif" font-size="42" font-weight="700" text-anchor="middle">HAMMER GOLD</text><text x="600" y="635" fill="#686868" font-family="Arial, sans-serif" font-size="28" text-anchor="middle">${safeModel}</text><text x="600" y="690" fill="#686868" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">Imagem em atualização</text></svg>`;
+    return new Response(placeholder, {
+      headers: {
+        "Content-Type": "image/svg+xml; charset=utf-8",
+        "Cache-Control": "public, max-age=3600",
+      },
+    });
+  }
+
   try {
     const sharp = (await import("sharp")).default;
-    let source: Buffer;
-
-    try {
-      const imagePath = path.join(
-        process.cwd(),
-        "public",
-        product.image.replace(/^\//, "")
-      );
-      source = await readFile(imagePath);
-    } catch {
-      // In serverless production (e.g. Vercel), public/ files are on CDN
-      const origin = new URL(_request.url).origin;
-      const cleanPath = product.image.startsWith("/") ? product.image : `/${product.image}`;
-      const res = await fetch(`${origin}${cleanPath}`);
-      if (!res.ok) {
-        throw new Error(`Failed to fetch static asset: ${res.statusText}`);
-      }
-      source = Buffer.from(await res.arrayBuffer());
-    }
-
     const rawImg = await sharp(source, { page: 0 })
       .rotate()
       .ensureAlpha()
@@ -173,17 +208,17 @@ export async function GET(
       },
     });
   } catch {
-    // If runtime image processing fails for any reason, redirect to the raw static image
-    if (product.image) {
-      return NextResponse.redirect(new URL(product.image, _request.url));
-    }
+    // If sharp fails (e.g. sharp lacks AVIF decoder in serverless environment),
+    // serve the raw original image buffer directly with its correct MIME type!
+    const body = source.buffer.slice(
+      source.byteOffset,
+      source.byteOffset + source.byteLength
+    ) as ArrayBuffer;
 
-    const safeModel = product.modelCode.replace(/[<>&"']/g, "");
-    const placeholder = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200"><rect width="1200" height="1200" fill="#f4f4f1"/><rect x="32" y="32" width="1136" height="1136" rx="28" fill="none" stroke="#ddddda" stroke-width="2"/><text x="600" y="575" fill="#111111" font-family="Arial, sans-serif" font-size="42" font-weight="700" text-anchor="middle">HAMMER GOLD</text><text x="600" y="635" fill="#686868" font-family="Arial, sans-serif" font-size="28" text-anchor="middle">${safeModel}</text><text x="600" y="690" fill="#686868" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">Imagem em atualização</text></svg>`;
-    return new Response(placeholder, {
+    return new Response(body, {
       headers: {
-        "Content-Type": "image/svg+xml; charset=utf-8",
-        "Cache-Control": "public, max-age=3600",
+        "Content-Type": mimeType,
+        "Cache-Control": "public, max-age=31536000, immutable",
       },
     });
   }
