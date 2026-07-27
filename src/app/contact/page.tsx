@@ -1,16 +1,22 @@
 import type { Metadata } from "next";
 import ContactCTA from "@/components/sections/ContactCTA";
+import { PageIntro } from "@/components/layout/PageIntro";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
+  title: "Fale Conosco",
   description:
-    "Get a custom quote for your gym. Our team responds within 24 hours with pricing, lead times, and customization options.",
+    "Fale com a Hammer Gold ou envie uma seleção completa de equipamentos pelo WhatsApp.",
 };
 
 export default function ContactPage() {
   return (
-    <div className="pt-20">
+    <>
+      <PageIntro
+        eyebrow="Contato"
+        title="Uma conversa direta com quem entende seu projeto."
+        description="Use o WhatsApp para uma dúvida rápida ou monte uma seleção completa com equipamentos, quantidades e dados da sua empresa."
+      />
       <ContactCTA />
-    </div>
+    </>
   );
 }

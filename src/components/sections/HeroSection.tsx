@@ -1,170 +1,83 @@
-"use client";
-
-import { useEffect, useRef, useState } from "react";
-import { gsap } from "@/animations/gsap-config";
-import { useReducedMotion } from "@/hooks/useReducedMotion";
-import { cn } from "@/lib/utils";
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight, MessageCircle } from "lucide-react";
+import { WHATSAPP_NUMBER } from "@/lib/constants";
 
 export default function HeroSection() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [videoFailed, setVideoFailed] = useState(false);
-  const prefersReducedMotion = useReducedMotion();
-
-  useEffect(() => {
-    if (!sectionRef.current) return;
-
-    const ctx = gsap.context(() => {
-      const duration = prefersReducedMotion ? 0 : 1;
-      const staggerDelay = prefersReducedMotion ? 0 : 0.2;
-
-      gsap.from("[data-hero-headline]", {
-        y: 40,
-        opacity: 0,
-        duration,
-        delay: 0.3,
-        ease: "power3.out",
-      });
-
-      gsap.from("[data-hero-subtext]", {
-        y: 30,
-        opacity: 0,
-        duration,
-        stagger: staggerDelay,
-        delay: 0.6,
-        ease: "power3.out",
-      });
-
-      gsap.from("[data-hero-cta]", {
-        y: 20,
-        opacity: 0,
-        duration,
-        stagger: staggerDelay,
-        delay: 1.2,
-        ease: "power3.out",
-      });
-    }, sectionRef);
-
-    return () => ctx.revert();
-  }, [prefersReducedMotion]);
 
   return (
     <section
-      ref={sectionRef}
-      className="relative h-screen w-full overflow-hidden"
+      id="hero"
+      className="dark-grid page-top relative flex min-h-svh flex-col overflow-hidden text-white"
     >
-      {/* Video Background */}
-      {!videoFailed && (
-        <video
-          ref={videoRef}
-          className="absolute inset-0 h-full w-full object-cover"
-          src="/assets/videos/hero.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-          onError={() => setVideoFailed(true)}
-          aria-hidden="true"
+      <div className="absolute inset-0 lg:left-[56%]">
+        <Image
+          src="/images/series/serie-forja-racing.jpeg"
+          alt="Equipamento profissional Hammer Gold em ambiente industrial"
+          fill
+          sizes="(max-width: 1024px) 100vw, 52vw"
+          className="object-cover opacity-55 grayscale lg:opacity-85"
+          priority
         />
-      )}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/20 to-black lg:bg-gradient-to-r lg:from-black lg:via-black/25 lg:to-black/10" />
+      </div>
 
-      {/* Dark Gradient Overlay */}
-      <div className="absolute inset-0 bg-black/60" aria-hidden="true" />
-
-      {/* Content */}
-      <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
-        <h1
-          data-hero-headline
-          className="mb-8 max-w-4xl text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl lg:text-7xl"
-        >
-          Built by Athletes, For Athletes
-        </h1>
-
-        <div className="mb-10 flex max-w-2xl flex-col gap-3">
-          <p
-            data-hero-subtext
-            className="text-base text-white/90 sm:text-lg"
-          >
-            Built tough to handle every strength training.
+      <div className="site-container relative z-10 flex min-w-0 flex-1 items-center py-10 sm:py-14 lg:py-10">
+        <div className="min-w-0 max-w-4xl">
+          <p className="t-stagger-line eyebrow max-w-full text-pretty text-white/55">
+            Importadora de equipamentos profissionais
           </p>
-          <p
-            data-hero-subtext
-            className="text-base text-white/90 sm:text-lg"
-          >
-            Built with precise movement angles since 1997.
-          </p>
-          <p
-            data-hero-subtext
-            className="text-base text-white/90 sm:text-lg"
-          >
-            Trusted by 5,000+ commercial gyms in 86 countries.
-          </p>
-        </div>
-
-        <div className="flex flex-col gap-4 sm:flex-row">
-          <a
-            data-hero-cta
-            href="#products"
-            className={cn(
-              "rounded-lg bg-[#CC0000] px-8 py-3.5 text-sm font-semibold text-white",
-              "transition-colors hover:bg-[#AA0000]",
-              "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-            )}
-          >
-            See All Products
-          </a>
-          <a
-            data-hero-cta
-            href="#contact"
-            className={cn(
-              "rounded-lg border-2 border-white bg-transparent px-8 py-3.5 text-sm font-semibold text-white",
-              "transition-colors hover:bg-white/10",
-              "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-            )}
-          >
-            Get a Quote
-          </a>
+          <h1 className="t-stagger-line t-stagger-line--2 hero-title mt-5 max-w-[12ch] sm:mt-7">
+            Engenharia para quem exige mais de cada treino.
+          </h1>
+          <div className="t-stagger-line t-stagger-line--3">
+            <p className="body-large mt-5 max-w-2xl text-pretty text-white/65 sm:mt-7">
+              Hammer Gold. Equipamentos preparados para suportar a força dos atletas e a
+              rotina das melhores academias.
+            </p>
+            <div className="mt-7 flex flex-col gap-3 sm:mt-9 sm:flex-row">
+              <Link href="/products" className="button-secondary w-full sm:w-auto">
+                Explorar equipamentos
+                <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              </Link>
+              <a
+                href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+                  "Olá, gostaria de falar com um consultor da Hammer Gold."
+                )}`}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full border border-white/25 px-6 text-xs font-bold uppercase tracking-wider text-white transition-colors duration-200 hover:border-white hover:bg-white/10 sm:w-auto"
+              >
+                <MessageCircle className="h-4 w-4" aria-hidden="true" />
+                Falar com consultor
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Scroll-down Arrow */}
-      <div className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2">
-        <a
-          href="#series"
-          aria-label="Scroll down"
-          className="flex flex-col items-center text-white/70 transition-colors hover:text-white"
-        >
-          <svg
-            className="h-8 w-8 animate-hero-bounce"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M19 14l-7 7m0 0l-7-7m7 7V3"
-            />
-          </svg>
-        </a>
+      <div className="relative z-10 shrink-0 border-t border-white/10 bg-black/65 backdrop-blur-md">
+        <div className="site-container grid grid-cols-3 divide-x divide-white/10 py-4 text-center sm:py-5">
+          <div className="min-w-0 px-1 sm:px-3">
+            <p className="text-xl font-black sm:text-2xl">289</p>
+            <p className="mt-1 text-[8px] leading-tight uppercase tracking-[0.06em] text-white/45 sm:text-[10px] sm:tracking-wider">
+              Equipamentos
+            </p>
+          </div>
+          <div className="min-w-0 px-1 sm:px-3">
+            <p className="text-xl font-black sm:text-2xl">8</p>
+            <p className="mt-1 text-[8px] leading-tight uppercase tracking-[0.06em] text-white/45 sm:text-[10px] sm:tracking-wider">
+              Categorias
+            </p>
+          </div>
+          <div className="min-w-0 px-1 sm:px-3">
+            <p className="text-xl font-black sm:text-2xl">1/5</p>
+            <p className="mt-1 text-[8px] leading-tight uppercase tracking-[0.06em] text-white/45 sm:text-[10px] sm:tracking-wider">
+              Do preço de grandes marcas
+            </p>
+          </div>
+        </div>
       </div>
-
-      {/* CSS bounce keyframes */}
-      <style jsx>{`
-        @keyframes hero-bounce {
-          0%,
-          100% {
-            transform: translateY(0);
-          }
-          50% {
-            transform: translateY(-12px);
-          }
-        }
-        .animate-hero-bounce {
-          animation: hero-bounce 2s ease-in-out infinite;
-        }
-      `}</style>
     </section>
   );
 }

@@ -1,170 +1,75 @@
-"use client";
-
-import { useEffect, useRef, useCallback, useState } from "react";
-import Image from "next/image";
-import { gsap } from "@/animations/gsap-config";
-import { useReducedMotion } from "@/hooks/useReducedMotion";
-import { cn } from "@/lib/utils";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+import { ProductMedia } from "@/components/ui/product-media";
 import { series } from "@/data/series";
+import { getSeriesImageFit } from "@/lib/series-media";
+
+const localImages: Record<string, string> = {
+  forja: "/images/series/serie-forja-racing.jpeg",
+  bigorna: "/images/series/serie-bigorna-plate-loaded.jpeg",
+  lastro: "/images/series/serie-lastro-pin-selected.avif",
+  "dupla-funcao": "/images/series/serie-dupla-funcao.jpeg",
+  coletiva: "/images/series/serie-coletiva-multi-jungle.avif",
+  acessorios: "/images/series/serie-acessorios.jpeg",
+  cardio: "/images/series/serie-cardio-performance.png",
+  scan: "/images/produtos/scan/scan-escaneamento-360-02.png",
+};
 
 export default function FeaturedSeries() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const prefersReducedMotion = useReducedMotion();
-
-  // ── Drag-to-scroll state ──
-  const [isDragging, setIsDragging] = useState(false);
-  const dragState = useRef({ isDown: false, startX: 0, scrollLeft: 0 });
-
-  const handlePointerDown = useCallback(
-    (e: React.PointerEvent<HTMLDivElement>) => {
-      const el = scrollContainerRef.current;
-      if (!el) return;
-      dragState.current.isDown = true;
-      dragState.current.startX = e.pageX - el.offsetLeft;
-      dragState.current.scrollLeft = el.scrollLeft;
-      setIsDragging(true);
-      el.setPointerCapture(e.pointerId);
-    },
-    []
-  );
-
-  const handlePointerMove = useCallback(
-    (e: React.PointerEvent<HTMLDivElement>) => {
-      if (!dragState.current.isDown) return;
-      const el = scrollContainerRef.current;
-      if (!el) return;
-      e.preventDefault();
-      const x = e.pageX - el.offsetLeft;
-      const walk = (x - dragState.current.startX) * 1.5;
-      el.scrollLeft = dragState.current.scrollLeft - walk;
-    },
-    []
-  );
-
-  const handlePointerUp = useCallback(
-    (e: React.PointerEvent<HTMLDivElement>) => {
-      dragState.current.isDown = false;
-      setIsDragging(false);
-      const el = scrollContainerRef.current;
-      if (el) el.releasePointerCapture(e.pointerId);
-    },
-    []
-  );
-
-  // ── GSAP stagger reveal ──
-  useEffect(() => {
-    if (!sectionRef.current) return;
-
-    const ctx = gsap.context(() => {
-      const duration = prefersReducedMotion ? 0 : 0.6;
-
-      gsap.from("[data-series-card]", {
-        y: 60,
-        opacity: 0,
-        duration,
-        stagger: prefersReducedMotion ? 0 : 0.12,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 80%",
-          once: true,
-        },
-      });
-    }, sectionRef);
-
-    return () => ctx.revert();
-  }, [prefersReducedMotion]);
-
   return (
-    <section
-      ref={sectionRef}
-      id="series"
-      className="bg-[#111111] py-20 md:py-28"
-    >
-      <div className="mx-auto max-w-7xl px-6">
-        {/* Heading */}
-        <div className="mb-12 text-center">
-          <h2 className="mb-3 text-3xl font-bold text-white sm:text-4xl">
-            Explore Our Series
-          </h2>
-          <p className="mx-auto max-w-xl text-[#6B7280]">
-            Six equipment lines engineered for different training goals,
-            budgets, and floor plans.
-          </p>
+    <section className="section-space bg-white" aria-labelledby="featured-series-title">
+      <div className="site-container">
+        <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+          <div className="max-w-3xl">
+            <p className="eyebrow text-muted">Linhas Hammer Gold</p>
+            <h2 id="featured-series-title" className="section-title mt-5">
+              Uma arquitetura de produtos para cada operação.
+            </h2>
+          </div>
+          <Link href="/series" className="button-ghost self-start lg:self-auto">
+            Conhecer todas as linhas
+            <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+          </Link>
         </div>
 
-        {/* Scroll Container */}
-        <div
-          ref={scrollContainerRef}
-          onPointerDown={handlePointerDown}
-          onPointerMove={handlePointerMove}
-          onPointerUp={handlePointerUp}
-          onPointerLeave={handlePointerUp}
-          className={cn(
-            "flex gap-6 overflow-x-auto pb-4",
-            "scroll-snap-x-mandatory",
-            isDragging ? "cursor-grabbing" : "cursor-grab",
-            "select-none"
-          )}
-          style={{
-            scrollSnapType: "x mandatory",
-            scrollbarWidth: "none",
-            msOverflowStyle: "none",
-          }}
-        >
-          {series.map((s) => (
-            <a
-              key={s.id}
-              href={`/strength-equipment/${s.slug}`}
-              data-series-card
-              className={cn(
-                "group relative flex-shrink-0 overflow-hidden rounded-2xl",
-                "w-[280px] sm:w-[300px]",
-                "transition-transform duration-300 hover:scale-105",
-                "snap-start"
-              )}
-              style={{ scrollSnapAlign: "start" }}
-              draggable={false}
-              onClick={(e) => {
-                if (isDragging) e.preventDefault();
-              }}
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+          {series.map((item, index) => (
+            <Link
+              key={item.id}
+              href={`/series/${item.slug}`}
+              className="group block min-w-0 overflow-hidden rounded-xl bg-black"
             >
-              {/* Image */}
-              <div className="relative h-[400px] w-full">
-                <Image
-                  src={s.image}
-                  alt={s.name}
-                  fill
-                  sizes="300px"
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  draggable={false}
-                />
-
-                {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-              </div>
-
-              {/* Text */}
-              <div className="absolute bottom-0 left-0 right-0 p-5">
-                <h3 className="mb-1 text-lg font-semibold text-white">
-                  {s.name}
-                </h3>
-                <p className="text-sm leading-snug text-white/70">
-                  {s.description}
-                </p>
-              </div>
-            </a>
+              <ProductMedia
+                src={localImages[item.id] ?? item.image}
+                alt={item.name}
+                sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 25vw"
+                fit={getSeriesImageFit(item.id)}
+                imageClassName="grayscale transition-transform duration-700 ease-out group-hover:scale-[1.035]"
+              >
+                <div className="absolute inset-0 z-1 bg-linear-to-t from-black via-black/35 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 z-2 p-5 text-white sm:p-6">
+                  <div className="flex items-end justify-between gap-4">
+                    <div className="min-w-0">
+                      <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-white/50">
+                        Série {String(index + 1).padStart(2, "0")}
+                      </p>
+                      <h3 className="mt-2 text-xl font-extrabold tracking-tight">
+                        {item.name}
+                      </h3>
+                      <p className="mt-2 line-clamp-2 text-xs leading-5 text-white/65">
+                        {item.description}
+                      </p>
+                    </div>
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/30 bg-black/20 backdrop-blur-sm transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1">
+                      <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+                    </span>
+                  </div>
+                </div>
+              </ProductMedia>
+            </Link>
           ))}
         </div>
       </div>
-
-      {/* Hide scrollbar */}
-      <style jsx>{`
-        div::-webkit-scrollbar {
-          display: none;
-        }
-      `}</style>
     </section>
   );
 }

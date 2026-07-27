@@ -1,44 +1,72 @@
 export const SITE_NAME = "Hammer Gold";
 export const SITE_DESCRIPTION =
-  "Built by Athletes, For Athletes. Premium commercial gym equipment manufacturer since 1997.";
+  "Equipamentos preparados para suportar a força dos atletas e a rotina das melhores academias.";
 
-export const CDN_BASE =
-  "https://cdn.yanrefitness.com/cdn-cgi/imagedelivery/m94-xP3Y6Xwv_FOE9Rj47w/www.yanrefitness.com/";
+export const WHATSAPP_NUMBER = "5511974963278";
 
-export const NAV_LINKS = [
-  { label: "Strength Equipment", href: "/strength-equipment" },
-  { label: "By Muscle Groups", href: "/by-muscle-groups" },
-  { label: "Contact", href: "/contact" },
-] as const;
+export interface NavLink {
+  label: string;
+  href: string;
+}
+
+export const NAV_LINKS: readonly NavLink[] = [
+  { label: "Início", href: "/" },
+  { label: "Produtos", href: "/products" },
+  { label: "Soluções", href: "/solutions" },
+  { label: "Engenharia", href: "/engineering-quality" },
+  { label: "Sobre nós", href: "/about" },
+  { label: "Contato", href: "/contact" },
+];
 
 export const FOOTER_COLUMNS = [
   {
-    title: "Products",
+    title: "Produtos",
     links: [
-      { label: "C4 Revival Series", href: "/strength-equipment#series" },
-      { label: "C4D Dual Function", href: "/strength-equipment#series" },
-      { label: "61A Racing Series", href: "/strength-equipment#series" },
-      { label: "73 Tough Series", href: "/strength-equipment#series" },
-      { label: "Multi Station", href: "/strength-equipment#series" },
-      { label: "82 Plate Loaded", href: "/strength-equipment#series" },
+      { label: "Forja", href: "/series/forja" },
+      { label: "Bigorna", href: "/series/bigorna" },
+      { label: "Lastro", href: "/series/lastro" },
+      { label: "Dupla Função", href: "/series/dupla-funcao" },
+      { label: "Coletiva", href: "/series/coletiva" },
+      { label: "Acessórios", href: "/series/acessorios" },
+      { label: "Cardio", href: "/series/cardio" },
+      { label: "Scan", href: "/series/scan" },
     ],
   },
   {
-    title: "Resources",
+    title: "Recursos",
     links: [
-      { label: "Product Catalogue", href: "/strength-equipment" },
-      { label: "Certifications", href: "/strength-equipment#quality" },
-      { label: "Compare Series", href: "/strength-equipment#comparison" },
+      { label: "Simulador 3D de Layout", href: "/planner" },
+      { label: "Todos os produtos", href: "/products" },
     ],
   },
   {
-    title: "Company",
+    title: "Empresa",
     links: [
-      { label: "About Us", href: "/strength-equipment" },
-      { label: "Factory Tour", href: "/strength-equipment" },
-      { label: "Testimonials", href: "/strength-equipment#testimonials" },
+      { label: "Sobre nós", href: "/about" },
+      { label: "Soluções", href: "/solutions" },
+      { label: "Engenharia e qualidade", href: "/engineering-quality" },
     ],
   },
 ] as const;
 
 export const PRODUCTS_PER_PAGE = 9;
+
+export const TRANSLATED_MUSCLE_GROUPS: Record<string, string> = {
+  "Leg": "Perna",
+  "Shoulder": "Ombro",
+  "Arm": "Braço",
+  "Chest": "Peito",
+  "Abdominal": "Abdômen",
+  "Back": "Costas",
+  "Hip": "Quadril",
+  "Full Body": "Corpo Inteiro"
+};
+
+export const TRANSLATED_SPECS: Record<string, string> = {
+  "N.W.": "Peso Líquido",
+  "G.W.": "Peso Bruto",
+  "Packing Size": "Dimensões da Embalagem",
+  "Weight Stack": "Pilha de Peso",
+  "Max Load": "Carga Máxima",
+  "Installation Size": "Dimensões de Instalação"
+};

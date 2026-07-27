@@ -1,51 +1,83 @@
 import Link from "next/link";
-import { SITE_NAME, FOOTER_COLUMNS } from "@/lib/constants";
+import { ArrowUpRight } from "lucide-react";
+import { InstagramLogo, WhatsappLogo } from "@phosphor-icons/react/dist/ssr";
+import { FOOTER_COLUMNS, SITE_NAME, WHATSAPP_NUMBER } from "@/lib/constants";
+import { Logo } from "@/components/layout/Logo";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
-
   return (
-    <footer className="bg-dark text-white">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
-          {/* Brand column */}
-          <div className="lg:col-span-2">
-            <div className="text-2xl font-bold tracking-tight mb-4">
-              <span className="text-primary">HAMMER</span> GOLD
-            </div>
-            <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
-              Premium commercial gym equipment manufacturer. Built by athletes,
-              for athletes. Trusted by 5,000+ gyms in 86 countries since 1997.
+    <footer className="border-t border-white/10 bg-black text-white">
+      <div className="site-container py-16 lg:py-24">
+        <div className="grid gap-14 lg:grid-cols-[1.3fr_2fr]">
+          <div>
+            <Logo />
+            <p className="mt-6 max-w-md text-sm leading-7 text-white/55">
+              Hammer Gold. Equipamentos preparados para suportar a força dos atletas
+              e a rotina das melhores academias.
             </p>
+            <div className="mt-8 flex flex-wrap items-center gap-3">
+              <Link href="/quote" className="button-secondary">
+                Solicitar cotação
+                <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+              </Link>
+              <a
+                href="https://www.instagram.com/hammergold.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 text-xs font-bold tracking-wider text-white/80 transition-all duration-200 hover:border-white hover:bg-white hover:text-black"
+                aria-label="Siga a Hammer Gold no Instagram"
+              >
+                <InstagramLogo weight="bold" className="h-4 w-4 shrink-0" />
+                <span>@hammergold.br</span>
+              </a>
+            </div>
           </div>
 
-          {/* Nav columns */}
-          {FOOTER_COLUMNS.map((column) => (
-            <div key={column.title}>
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400 mb-4">
-                {column.title}
-              </h3>
-              <ul className="space-y-3">
-                {column.links.map((link) => (
-                  <li key={link.label}>
-                    <Link
-                      href={link.href}
-                      className="text-sm text-gray-300 hover:text-primary transition-colors"
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          <div className="grid gap-10 sm:grid-cols-3">
+            {FOOTER_COLUMNS.map((column) => (
+              <div key={column.title}>
+                <h2 className="text-xs font-bold uppercase tracking-[0.16em] text-white/40">
+                  {column.title}
+                </h2>
+                <ul className="mt-5 space-y-3">
+                  {column.links.map((link) => (
+                    <li key={link.label}>
+                      <Link
+                        href={link.href}
+                        className="text-sm text-white/70 transition-colors duration-200 hover:text-white"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
 
-        {/* Copyright */}
-        <div className="mt-16 pt-8 border-t border-gray-800">
-          <p className="text-center text-sm text-gray-500">
-            © {currentYear} {SITE_NAME}. All rights reserved.
-          </p>
+        <div className="mt-16 flex flex-col gap-4 border-t border-white/10 pt-6 text-xs text-white/35 sm:flex-row sm:items-center sm:justify-between">
+          <p>© {new Date().getFullYear()} {SITE_NAME}. Todos os direitos reservados.</p>
+          <div className="flex items-center gap-6">
+            <a
+              href="https://www.instagram.com/hammergold.br"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 transition-colors duration-200 hover:text-white"
+            >
+              <InstagramLogo weight="bold" className="h-4 w-4" />
+              <span>Instagram</span>
+            </a>
+            <a
+              href={`https://wa.me/${WHATSAPP_NUMBER}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 transition-colors duration-200 hover:text-white"
+            >
+              <WhatsappLogo className="h-4 w-4" />
+              <span>WhatsApp</span>
+            </a>
+          </div>
         </div>
       </div>
     </footer>

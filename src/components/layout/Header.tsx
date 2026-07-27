@@ -1,97 +1,63 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
-import { gsap, ScrollTrigger } from "@/animations/gsap-config";
-import { useReducedMotion } from "@/hooks/useReducedMotion";
-import { cn } from "@/lib/utils";
+import { Menu, X } from "lucide-react";
 import { NAV_LINKS } from "@/lib/constants";
-import MobileNav from "./MobileNav";
+import { Logo } from "@/components/layout/Logo";
+import { QuoteCountLink } from "@/components/layout/QuoteCountLink";
+import MobileNav from "@/components/layout/MobileNav";
 
 export default function Header() {
-  const headerRef = useRef<HTMLElement>(null);
-  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const reducedMotion = useReducedMotion();
 
   useEffect(() => {
-    if (!headerRef.current) return;
-
-    const ctx = gsap.context(() => {
-      ScrollTrigger.create({
-        trigger: document.body,
-        start: "80px top",
-        onEnter: () => setScrolled(true),
-        onLeaveBack: () => setScrolled(false),
-      });
-    }, headerRef);
-
-    return () => ctx.revert();
-  }, [reducedMotion]);
+    document.body.style.overflow = mobileOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileOpen]);
 
   return (
     <>
-      <header
-        ref={headerRef}
-        className={cn(
-          "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-          scrolled
-            ? "bg-white shadow-md"
-            : "bg-transparent"
-        )}
-      >
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex h-20 items-center justify-between">
-            {/* Logo */}
-            <Link href="/strength-equipment" className="flex items-center gap-2">
-              <div
-                className={cn(
-                  "text-2xl font-bold tracking-tight transition-colors duration-300",
-                  scrolled ? "text-dark" : "text-white"
-                )}
-              >
-                <span className="text-primary">HAMMER</span> GOLD
-              </div>
-            </Link>
+      <header className="fixed inset-x-0 top-0 z-50 h-[88px] border-b border-white/10 bg-black/95 text-white backdrop-blur-md">
+        <div className="site-container flex h-full items-center justify-between gap-3 sm:gap-6">
+          <Logo />
 
-            {/* Desktop Nav */}
-            <nav className="hidden md:flex items-center gap-8">
-              {NAV_LINKS.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={cn(
-                    "text-sm font-medium transition-colors duration-300 hover:text-primary",
-                    scrolled ? "text-dark" : "text-white"
-                  )}
-                >
-                  {link.label}
-                </Link>
-              ))}
+          <nav className="hidden items-center gap-5 xl:flex" aria-label="Navegação principal">
+            {NAV_LINKS.map((link) => (
               <Link
-                href="/contact"
-                className="rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-red-700 hover:shadow-lg"
+                key={link.href}
+                href={link.href}
+                className="text-[12px] font-semibold uppercase tracking-[0.08em] text-white/70 transition-colors duration-200 hover:text-white"
               >
-                Quick Quote
+                {link.label}
               </Link>
-            </nav>
+            ))}
+          </nav>
 
-            {/* Mobile Hamburger */}
+          <div className="flex items-center gap-2">
+            <QuoteCountLink />
             <button
               type="button"
-              onClick={() => setMobileOpen(true)}
-              className="md:hidden flex flex-col gap-1.5 p-2"
-              aria-label="Open menu"
+              onClick={() => setMobileOpen((open) => !open)}
+              className="relative flex h-11 w-11 items-center justify-center rounded-full border border-white/25 text-white xl:hidden"
+              aria-expanded={mobileOpen}
+              aria-controls="mobile-navigation"
+              aria-label={mobileOpen ? "Fechar menu" : "Abrir menu"}
             >
-              {[0, 1, 2].map((i) => (
-                <span
-                  key={i}
-                  className={cn(
-                    "block h-0.5 w-6 transition-colors duration-300",
-                    scrolled ? "bg-dark" : "bg-white"
-                  )}
-                />
-              ))}
+              <Menu
+                className={`absolute h-5 w-5 transition-[transform,opacity] duration-200 ${
+                  mobileOpen ? "scale-0 opacity-0" : "scale-100 opacity-100"
+                }`}
+                aria-hidden="true"
+              />
+              <X
+                className={`absolute h-5 w-5 transition-[transform,opacity] duration-200 ${
+                  mobileOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"
+                }`}
+                aria-hidden="true"
+              />
             </button>
           </div>
         </div>

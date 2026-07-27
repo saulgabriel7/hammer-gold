@@ -1,7 +1,8 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
+import { ArrowUpRight } from "lucide-react";
 import { NAV_LINKS } from "@/lib/constants";
 
 interface MobileNavProps {
@@ -10,73 +11,68 @@ interface MobileNavProps {
 }
 
 export default function MobileNav({ open, onClose }: MobileNavProps) {
+  const panelRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") onClose();
+    };
+    window.addEventListener("keydown", handleEscape);
+    panelRef.current?.focus();
+    return () => window.removeEventListener("keydown", handleEscape);
+  }, [open, onClose]);
+
   return (
-    <>
-      {/* Overlay */}
-      <div
-        className={cn(
-          "fixed inset-0 z-50 bg-black/50 transition-opacity duration-300 md:hidden",
-          open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-        )}
+    <div
+      className={`fixed inset-0 z-40 xl:hidden ${open ? "pointer-events-auto" : "pointer-events-none"}`}
+      aria-hidden={!open}
+    >
+      <button
+        type="button"
         onClick={onClose}
-        aria-hidden="true"
+        className={`absolute inset-0 bg-black/70 transition-opacity duration-300 ${
+          open ? "opacity-100" : "opacity-0"
+        }`}
+        aria-label="Fechar menu"
+        tabIndex={open ? 0 : -1}
       />
-
-      {/* Drawer */}
       <div
-        className={cn(
-          "fixed top-0 right-0 z-50 h-full w-80 max-w-[85vw] bg-white shadow-2xl transition-transform duration-300 ease-in-out md:hidden",
-          open ? "translate-x-0" : "translate-x-full"
-        )}
+        id="mobile-navigation"
+        ref={panelRef}
+        tabIndex={-1}
+        data-open={open}
+        className="t-panel-slide absolute inset-x-0 top-[88px] max-h-[calc(100dvh-88px)] overflow-y-auto border-t border-white/10 bg-black px-5 py-8 text-white"
       >
-        <div className="flex items-center justify-between p-6 border-b border-border">
-          <span className="text-xl font-bold text-dark">
-            <span className="text-primary">HAMMER</span> GOLD
-          </span>
-          <button
-            type="button"
-            onClick={onClose}
-            className="p-2 text-muted hover:text-dark transition-colors"
-            aria-label="Close menu"
-          >
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <line x1="18" y1="6" x2="6" y2="18" />
-              <line x1="6" y1="6" x2="18" y2="18" />
-            </svg>
-          </button>
-        </div>
-
-        <nav className="flex flex-col p-6 gap-1">
-          {NAV_LINKS.map((link) => (
+        <nav className="site-container flex flex-col" aria-label="Navegação mobile">
+          {NAV_LINKS.map((link, index) => (
             <Link
               key={link.href}
               href={link.href}
               onClick={onClose}
-              className="rounded-lg px-4 py-3 text-base font-medium text-dark hover:bg-gray-50 hover:text-primary transition-colors"
+              tabIndex={open ? 0 : -1}
+              className="flex items-center justify-between border-b border-white/10 py-4 text-xl font-bold tracking-tight"
             >
-              {link.label}
+              <span>
+                <span className="mr-3 text-xs font-medium text-white/35">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                {link.label}
+              </span>
+              <ArrowUpRight className="h-5 w-5 text-white/50" aria-hidden="true" />
             </Link>
           ))}
-          <div className="mt-4 pt-4 border-t border-border">
-            <Link
-              href="/contact"
-              onClick={onClose}
-              className="block w-full rounded-lg bg-primary px-4 py-3 text-center text-base font-semibold text-white hover:bg-red-700 transition-colors"
-            >
-              Quick Quote
-            </Link>
-          </div>
+          <Link
+            href="/quote"
+            onClick={onClose}
+            tabIndex={open ? 0 : -1}
+            className="button-secondary mt-7 w-full"
+          >
+            Abrir minha cotação
+          </Link>
         </nav>
       </div>
-    </>
+    </div>
   );
 }
