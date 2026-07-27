@@ -18,7 +18,7 @@ export default function HeroSection() {
           className="object-cover opacity-55 grayscale lg:opacity-85"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/20 to-black lg:bg-gradient-to-r lg:from-black lg:via-black/25 lg:to-black/10" />
+        <div className="absolute inset-0 bg-linear-to-b from-black/25 via-black/20 to-black lg:bg-gradient-to-r lg:from-black lg:via-black/25 lg:to-black/10" />
       </div>
 
       <div className="site-container relative z-10 flex min-w-0 flex-1 items-center py-10 sm:py-14 lg:py-10">
@@ -56,29 +56,6 @@ export default function HeroSection() {
                 Falar com consultor
               </ButtonLink>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="relative z-10 shrink-0 border-t border-white/10 bg-black/65 backdrop-blur-md">
-        <div className="site-container grid grid-cols-3 divide-x divide-white/10 py-4 text-center sm:py-5">
-          <div className="min-w-0 px-1 sm:px-3">
-            <p className="text-xl font-black sm:text-2xl">289</p>
-            <p className="mt-1 text-kicker leading-tight tracking-[0.06em] text-on-dark-muted uppercase sm:text-xs sm:tracking-wider">
-              Equipamentos
-            </p>
-          </div>
-          <div className="min-w-0 px-1 sm:px-3">
-            <p className="text-xl font-black sm:text-2xl">8</p>
-            <p className="mt-1 text-kicker leading-tight tracking-[0.06em] text-on-dark-muted uppercase sm:text-xs sm:tracking-wider">
-              Categorias
-            </p>
-          </div>
-          <div className="min-w-0 px-1 sm:px-3">
-            <p className="text-xl font-black sm:text-2xl">1/5</p>
-            <p className="mt-1 text-kicker leading-tight tracking-[0.06em] text-on-dark-muted uppercase sm:text-xs sm:tracking-wider">
-              Do preço de grandes marcas
-            </p>
           </div>
         </div>
       </div>

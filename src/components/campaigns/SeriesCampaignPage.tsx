@@ -262,36 +262,41 @@ export function SeriesCampaignPage({ campaign }: SeriesCampaignPageProps) {
         )}
       >
         <div className="site-container">
-          <div className="grid gap-10 lg:grid-cols-[0.68fr_1.32fr]">
-            <div>
+          <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+            <div className="max-w-2xl">
               <p className="eyebrow text-muted">Diferenciais da linha</p>
               <h2 className="section-title mt-5">
                 Uma seleção coerente com o objetivo da operação.
               </h2>
             </div>
+            <p className="body-large max-w-md text-muted lg:pb-1">
+              Engenharia, ergonomia e consistência projetadas para elevar o padrão da linha {line.name}.
+            </p>
+          </div>
 
-            <div className="grid gap-4 sm:grid-cols-3">
-              {campaign.benefits.map((benefit, index) => {
-                const Icon = benefitIcons[index] ?? Dumbbell;
+          <div className="mt-12 grid gap-5 sm:grid-cols-3">
+            {campaign.benefits.map((benefit, index) => {
+              const Icon = benefitIcons[index] ?? Dumbbell;
 
-                return (
-                  <article
-                    key={benefit.title}
-                    className="rounded-xl border border-border bg-white p-6 sm:p-7"
-                  >
-                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-black text-white">
-                      <Icon className="h-5 w-5" aria-hidden="true" />
+              return (
+                <article
+                  key={benefit.title}
+                  className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-border bg-white p-7 shadow-2xs transition-shadow duration-300 hover:shadow-md"
+                >
+                  <div>
+                    <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-black text-white transition-transform duration-300 group-hover:scale-105">
+                      <Icon className="h-6 w-6" aria-hidden="true" />
                     </span>
-                    <h3 className="mt-7 text-xl font-extrabold tracking-tight">
+                    <h3 className="mt-6 text-xl font-extrabold tracking-tight text-black">
                       {benefit.title}
                     </h3>
-                    <p className="mt-3 text-sm leading-6 text-muted">
+                    <p className="mt-3 text-sm leading-relaxed text-muted">
                       {benefit.description}
                     </p>
-                  </article>
-                );
-              })}
-            </div>
+                  </div>
+                </article>
+              );
+            })}
           </div>
         </div>
       </section>

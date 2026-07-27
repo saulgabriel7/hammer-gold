@@ -10,7 +10,7 @@ const solutionCardVariants = cva(
     variants: {
       size: {
         hero: "min-h-95 sm:col-span-2 lg:col-span-2 lg:row-span-2 lg:min-h-165",
-        banner: "min-h-65 sm:col-span-2 lg:col-span-2 lg:min-h-75",
+        banner: "min-h-65 sm:col-span-2 lg:col-span-4 lg:min-h-75",
         regular: "col-span-1 min-h-77.5",
       },
     },

@@ -54,7 +54,7 @@ export function QuoteItemList({
                 alt={product.name}
                 unoptimized
                 sizes="96px"
-                className="self-start rounded-[var(--radius-md)]"
+                className="self-start rounded-md"
               />
               <div className="min-w-0">
                 <p className="text-[10px] font-bold uppercase tracking-wider text-muted">
@@ -105,7 +105,7 @@ export function QuoteItemList({
           ))}
         </div>
       ) : (
-        <div className="mt-7 rounded-[var(--radius-lg)] bg-paper px-6 py-14 text-center">
+        <div className="mt-7 rounded-lg bg-paper px-6 py-14 text-center">
           <p className="font-bold">Sua seleção está vazia.</p>
           <p className="mt-2 text-sm leading-6 text-muted">
             Adicione os equipamentos que deseja cotar. Todos serão enviados juntos.

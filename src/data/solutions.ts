@@ -92,4 +92,20 @@ export const solutions: Solution[] = [
     ],
     preferredCategories: ["Funcional", "Peso livre", "Bancos", "Racks e suportes"],
   },
+  {
+    slug: "clinicas-e-estetica",
+    segment: "Clínicas de estética",
+    eyebrow: "Clínicas, Spas & Avaliação",
+    title: "Diagnóstico & Precisão",
+    description:
+      "Scanners corporais 360° e analisadores multifuncionais com Inteligência Artificial para clínicas de estética, spas, consultórios e academias que priorizam avaliação científica e diagnóstico corporal.",
+    image: "/images/produtos/scan/scan-escaneamento-360-02.png",
+    benefits: [
+      "Escaneamento corporal 360° com IA",
+      "Ideal para clínicas de estética, spas e estúdios",
+      "Mais de 30 indicadores de bioimpedância e composição",
+      "Análise postural e diagnósticos de precisão",
+    ],
+    preferredCategories: ["Scan"],
+  },
 ];

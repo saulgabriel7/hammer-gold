@@ -65,7 +65,7 @@ export const institutionalKnowledge = {
     "Não prometer certificações, garantias, materiais, cargas ou resultados que não estejam cadastrados na ficha do produto.",
   ],
   segmentos: [
-    "Segmentos atendidos: academias comerciais, condomínios, hotéis, clubes e studios.",
+    "Segmentos atendidos: academias comerciais, condomínios, hotéis, clubes, studios e clínicas de estética (linha Scan).",
     "O catálogo possui classificações de segmentos recomendados que podem ser usadas como apoio consultivo.",
     "Na linha Scan, o Modelo 790 é recomendado para redes de academias e clínicas de estética; o Modelo 880 é recomendado para estúdios de Pilates, spas e clínicas de estética.",
   ],

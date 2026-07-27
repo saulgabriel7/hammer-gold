@@ -144,7 +144,7 @@ export default function AboutPage() {
                 />
               </div>
               <p className="mt-6 text-xs font-bold tracking-[0.22em] text-white/60 uppercase">
-                Engenharia & Performance
+                Performance & precisão
               </p>
             </div>
             <div className="absolute right-6 bottom-6 left-6 z-10">

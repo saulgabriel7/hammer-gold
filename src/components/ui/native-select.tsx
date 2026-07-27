@@ -12,7 +12,7 @@ const NativeSelect = React.forwardRef<HTMLSelectElement, NativeSelectProps>(
       <select
         ref={ref}
         className={cn(
-          "h-12 w-full appearance-none rounded-[var(--radius-md)] border border-input bg-background px-4 pe-10 text-sm font-semibold text-foreground cursor-pointer outline-none transition-colors focus-visible:border-foreground focus-visible:ring-2 focus-visible:ring-ring/20 disabled:cursor-not-allowed disabled:opacity-50",
+          "h-12 w-full appearance-none rounded-md border border-input bg-background px-4 pe-10 text-sm font-semibold text-foreground cursor-pointer outline-none transition-colors focus-visible:border-foreground focus-visible:ring-2 focus-visible:ring-ring/20 disabled:cursor-not-allowed disabled:opacity-50",
           className
         )}
         {...props}
@@ -20,7 +20,7 @@ const NativeSelect = React.forwardRef<HTMLSelectElement, NativeSelectProps>(
         {children}
       </select>
       <ChevronDown
-        className="pointer-events-none absolute end-3.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground"
+        className="pointer-events-none absolute inset-e-3.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground"
         aria-hidden="true"
       />
     </div>

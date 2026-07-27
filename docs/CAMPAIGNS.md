@@ -19,7 +19,7 @@ Não existe uma aplicação de landing page separada no workspace.
 
 | Linha | Rota da campanha | Continuidade no catálogo |
 | --- | --- | --- |
-| Forja | `/campanhas/forja` | `/series/forja` |
+| Forja | `grid items-end gap-8 lg:grid-cols-[1fr_0.55fr]` | `/series/forja` |
 | Bigorna | `/campanhas/bigorna` | `/series/bigorna` |
 | Lastro | `/campanhas/lastro` | `/series/lastro` |
 | Dupla Função | `/campanhas/dupla-funcao` | `/series/dupla-funcao` |

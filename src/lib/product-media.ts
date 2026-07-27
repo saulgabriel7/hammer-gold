@@ -1,4 +1,4 @@
-const PRODUCT_IMAGE_VERSION = "10";
+const PRODUCT_IMAGE_VERSION = "11";
 
 function withProductImageVersion(imagePath: string) {
   const separator = imagePath.includes("?") ? "&" : "?";

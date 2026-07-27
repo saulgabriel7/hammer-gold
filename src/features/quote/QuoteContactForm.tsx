@@ -26,7 +26,7 @@ export function QuoteContactForm({ form, onSubmit, disabled }: QuoteContactFormP
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="rounded-[var(--radius-xl)] bg-black p-5 text-white sm:p-8"
+      className="rounded-2xl bg-black p-5 text-white sm:p-8"
       noValidate
     >
       <p className="eyebrow text-white/45">Dados para atendimento</p>
@@ -93,6 +93,9 @@ export function QuoteContactForm({ form, onSubmit, disabled }: QuoteContactFormP
             <option>Hotéis</option>
             <option>Clubes</option>
             <option>Studios</option>
+            <option>Clínicas de estética</option>
+            <option>Estúdios de Pilates</option>
+            <option>Spas</option>
           </NativeSelect>
         </QuoteField>
         <QuoteField label="Tipo de projeto" error={errors.projectType?.message}>
@@ -104,9 +107,10 @@ export function QuoteContactForm({ form, onSubmit, disabled }: QuoteContactFormP
             <option value="" disabled>
               Selecione
             </option>
-            <option>Nova academia</option>
-            <option>Expansão</option>
+            <option>Novo projeto / Novo espaço</option>
+            <option>Expansão de espaço</option>
             <option>Renovação de equipamentos</option>
+            <option>Implantação de Avaliação Corporal / Scan</option>
             <option>Compra pontual</option>
           </NativeSelect>
         </QuoteField>
@@ -125,7 +129,7 @@ export function QuoteContactForm({ form, onSubmit, disabled }: QuoteContactFormP
         disabled={disabled || isSubmitting}
         className="mt-7 w-full gap-2"
       >
-        <WhatsappIcon className="h-5 w-5 text-emerald-400" aria-hidden="true" />
+        <WhatsappIcon className="h-5 w-5" aria-hidden="true" />
         Enviar seleção completa no WhatsApp
         <ArrowRight aria-hidden="true" />
       </Button>
