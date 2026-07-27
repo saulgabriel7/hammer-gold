@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import { ButtonLink } from "@/components/ui/button-link";
 import { ProductMedia } from "@/components/ui/product-media";
 import { series } from "@/data/series";
 import { getSeriesImageFit } from "@/lib/series-media";
@@ -17,7 +18,10 @@ const localImages: Record<string, string> = {
 
 export default function FeaturedSeries() {
   return (
-    <section className="section-space bg-white" aria-labelledby="featured-series-title">
+    <section
+      className="section-space bg-white"
+      aria-labelledby="featured-series-title"
+    >
       <div className="site-container">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-3xl">
@@ -26,10 +30,14 @@ export default function FeaturedSeries() {
               Uma arquitetura de produtos para cada operação.
             </h2>
           </div>
-          <Link href="/series" className="button-ghost self-start lg:self-auto">
+          <ButtonLink
+            href="/series"
+            variant="outline"
+            className="self-start lg:self-auto"
+          >
             Conhecer todas as linhas
             <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-          </Link>
+          </ButtonLink>
         </div>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
@@ -50,7 +58,7 @@ export default function FeaturedSeries() {
                 <div className="absolute inset-x-0 bottom-0 z-2 p-5 text-white sm:p-6">
                   <div className="flex items-end justify-between gap-4">
                     <div className="min-w-0">
-                      <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-white/50">
+                      <p className="text-kicker font-bold tracking-[0.15em] text-white/50 uppercase">
                         Série {String(index + 1).padStart(2, "0")}
                       </p>
                       <h3 className="mt-2 text-xl font-extrabold tracking-tight">
@@ -60,7 +68,7 @@ export default function FeaturedSeries() {
                         {item.description}
                       </p>
                     </div>
-                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/30 bg-black/20 backdrop-blur-sm transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1">
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/30 bg-black/20 backdrop-blur-sm transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
                       <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
                     </span>
                   </div>

@@ -5,9 +5,9 @@ import dynamic from "next/dynamic";
 const HammerAssistant = dynamic(
   () =>
     import("@/components/assistant/HammerAssistant").then(
-      (module) => module.HammerAssistant
+      (module) => module.HammerAssistant,
     ),
-  { ssr: false }
+  { ssr: false },
 );
 
 export function HammerAssistantLoader() {

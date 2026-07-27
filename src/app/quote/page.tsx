@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import { PageIntro } from "@/components/layout/PageIntro";
 import { QuoteBuilder } from "@/features/quote/QuoteBuilder";
 
-export const metadata: Metadata = { title: "Minha cotação", description: "Monte sua seleção de equipamentos Hammer Gold e envie todos os itens pelo WhatsApp." };
+export const metadata: Metadata = {
+  title: "Minha cotação",
+  description: "Monte sua seleção de equipamentos Hammer Gold e envie todos os itens pelo WhatsApp.",
+};
 
 export default function QuotePage() {
   return (

@@ -61,7 +61,7 @@ export const series: Series[] = [
     id: "scan",
     name: "Scan",
     description:
-      "Dois modelos de avaliação corporal: o 790 para medições integradas e composição corporal, e o 880 para escaneamento postural IA 360°.",
+      "Avaliação corporal e diagnóstico por IA para clínicas de estética, spas, estúdios e academias: Modelo 790 para medições integradas e Modelo 880 para escaneamento postural 360°.",
     image: "/images/produtos/scan/scan-escaneamento-360-02.png",
     slug: "scan",
   },

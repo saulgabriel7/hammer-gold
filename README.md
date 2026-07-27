@@ -1,111 +1,201 @@
 # Hammer Gold
 
-Plataforma Web Oficial da **Hammer Gold** — Equipamentos de Musculação de Alta Performance e Luxo Industrial.
-Desenvolvida com foco em performance, estética cinematográfica e cotação consultiva sem fricção, projetada especificamente para o público B2B de alto padrão (academias, estúdios, condomínios e centros de treinamento).
+Site institucional e plataforma comercial B2B da **Hammer Gold**, marca de
+equipamentos de musculação de alta performance.
 
----
+O projeto reúne catálogo técnico, páginas de campanhas, planejador 3D,
+assistente consultivo com IA e um fluxo de solicitação de cotação. A experiência
+foi construída com foco em performance, acessibilidade, tráfego mobile e na
+identidade visual de luxo industrial da marca.
 
-## 🛠️ Tecnologias Utilizadas
+## Funcionalidades
 
-O projeto utiliza um stack de tecnologias modernas e de alta performance:
+- **Catálogo de equipamentos** com busca, filtros por linha, categoria e grupo
+  muscular.
+- **Páginas individuais de produto** com especificações e imagens responsivas.
+- **Ficha técnica em PDF** gerada sob demanda para cada produto.
+- **Campanhas por linha** integradas ao catálogo e ao fluxo de cotação.
+- **Assistente Hammer Gold** com recomendações de equipamentos usando Groq e
+  Vercel AI SDK.
+- **Planejador 3D** para posicionar equipamentos, configurar o ambiente,
+  visualizar zonas de segurança e transferir o projeto para a cotação.
+- **Cotação consultiva** com seleção persistida localmente e envio estruturado
+  para atendimento comercial.
+- **SEO técnico** com metadata, sitemap, robots e geração estática das páginas de
+  catálogo, séries, campanhas e soluções.
 
-- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
-- **Biblioteca Core**: [React 19](https://react.dev/)
-- **Componentes UI**: [shadcn/ui](https://ui.shadcn.com/) (baseado em Radix UI)
-- **Estilização**: [Tailwind CSS v4](https://tailwindcss.com/) (com PostCSS e CSS Variables)
-- **Inteligência Artificial**: [Vercel AI SDK](https://sdk.vercel.ai/docs) com modelos Groq (`llama-3.3-70b`)
-- **Gerenciamento de Estado**: [Zustand](https://zustand-demo.pmnd.rs/) (carrinho de cotação e comparador de produtos)
-- **Formulários e Validação**: [React Hook Form](https://react-hook-form.com/) & [Zod](https://zod.dev/)
-- **Geração de Ficha Técnica**: [pdf-lib](https://pdf-lib.js.org/) (geração dinâmica de PDFs A4)
-- **Linter**: ESLint 9 (Flat Config `eslint.config.mjs`)
-- **Linguagem**: [TypeScript](https://www.typescriptlang.org/)
+## Stack
 
----
+- Next.js 16 com App Router e Turbopack
+- React 19 e TypeScript
+- Tailwind CSS v4 com PostCSS
+- Radix UI e componentes baseados em shadcn/ui
+- `class-variance-authority`, `clsx` e `tailwind-merge`
+- Zustand para estado do catálogo, cotação e planejador
+- Three.js para o planejador 3D
+- Vercel AI SDK com Groq
+- React Hook Form e Zod
+- `pdf-lib` para geração de fichas técnicas
+- ESLint 9
+- Prettier com ordenação automática de classes Tailwind
+- Bun como gerenciador de pacotes
 
-## ✨ Funcionalidades Principais
+## Requisitos
 
-- 📦 **Catálogo Completo de Equipamentos**: Integração dos equipamentos das linhas Força (Series 82, Racing 61A, C4 Revival, C4D, Multi Jungle) e Cardio Performance.
-- 🤖 **Assistente Consultivo com IA (Hammer AI)**: Chat interativo treinado na base de conhecimento da marca para recomendação personalizada de máquinas e auxílio em projetos.
-- 🔍 **Busca & Filtros Inteligentes**: Pesquisa insensível a acentos por nome, código, descrição, série e grupo muscular.
-- 🫁 **Filtro Anatômico por Músculo**: Seleção de equipamentos por região muscular alvo com mapas visuais integrados.
-- ⚖️ **Comparador de Equipamentos**: Comparação lado a lado de até 3 produtos simultaneamente (série, categoria, subcategoria, tipo de carga) com persistência local.
-- 📄 **Ficha Técnica Dinâmica em PDF**: Download instantâneo da ficha técnica oficial em formato A4 formatado para impressão ou apresentação.
-- 💬 **Fluxo de Cotação Consultiva via WhatsApp**: Coleta estruturada dos dados do lead e envio direto para o canal de atendimento oficial.
-- 🎨 **DNA Visual Hammer Gold**:
-  - Layout escuro de alto contraste (Chiaroscuro) inspirado na estética de marcas como Technogym, Porsche e Apple.
-  - Fotografia publicitária de alto padrão e tipografia moderna (Inter).
-  - Respeito total às diretrizes visuais da marca documentadas em `.agents/AGENTS.md`.
+- [Bun](https://bun.sh/) 1.3 ou superior
+- Node.js 20.9 ou superior, caso o projeto seja executado sem o runtime do Bun
 
----
+O gerenciador definido no projeto é `bun@1.3.13`.
 
-## 📂 Arquitetura e Estrutura do Repositório
+## Configuração local
 
-Os principais módulos do sistema estão organizados em:
+Instale as dependências:
 
-- **`.agents/`**: Diretrizes de marca, linguagem, iluminação e instruções para assistentes de IA (`AGENTS.md` e `HAMMER_GOLD_DESIGN_BRIEF.md`).
-- **`src/data/`**:
-  - `products.ts`: Coleção principal de produtos de força.
-  - `cardio-products.ts`: Coleção da linha Cardio.
-  - `scan-products.ts`: Modelos 790 e 880 da linha Scan.
-  - `catalog-products.ts`: Catálogo unificado e lógica de indexação.
-  - `campaigns.ts`: Conteúdo central das campanhas por linha.
-  - `series.ts` & `solutions.ts`: Séries de equipamentos e soluções por tipo de ambiente.
-- **`src/components/`**:
-  - `assistant/`: Componentes da interface do assistente Hammer AI (`HammerAssistant.tsx`).
-  - `campaigns/`: Template integrado das campanhas de tráfego pago.
-  - `catalog/`: Catálogo interativo e barras de comparação.
-  - `sections/`: Seções da página inicial e páginas institucionais.
-  - `ui/`: Design system e componentes reutilizáveis.
-- **`src/app/`**:
-  - `campanhas/[slug]/`: Campanhas dinâmicas conectadas ao catálogo e à cotação.
-  - `about/`, `engineering-quality/`, `solutions/`, `planner/`, `quote/`: Páginas do App Router.
-  - `api/chat/route.ts`: Endpoint da API do assistente de IA.
-  - `api/products/[slug]/pdf/route.ts`: Endpoint para geração de fichas técnicas em PDF.
-- **`src/store/useAppStore.ts`**: Gerenciador global de estado (cotação e comparação).
+```bash
+bun install
+```
 
----
+Copie o arquivo de exemplo das variáveis de ambiente:
 
-## 🚀 Como Executar o Projeto Localmente
+```bash
+cp .env.example .env.local
+```
 
-### Pré-requisitos
-- Node.js >= 20.9.0
-- Gerenciador de pacotes: `npm`, `bun`, `pnpm` ou `yarn`
+Configure os valores necessários em `.env.local`:
 
-### Passo a Passo
+```env
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+GROQ_API_KEY=
+GROQ_MODEL=llama-3.3-70b-versatile
+```
 
-1. **Instalar dependências**:
-   ```bash
-   npm install
-   # ou
-   bun install
-   ```
+| Variável               | Obrigatória       | Uso                                                                                            |
+| ---------------------- | ----------------- | ---------------------------------------------------------------------------------------------- |
+| `NEXT_PUBLIC_SITE_URL` | Não               | URL canônica usada por metadata, sitemap e robots. O fallback local é `http://localhost:3000`. |
+| `GROQ_API_KEY`         | Para o assistente | Chave privada usada exclusivamente no servidor pela rota `/api/chat`.                          |
+| `GROQ_MODEL`           | Não               | Modelo do Groq. O padrão é `llama-3.3-70b-versatile`.                                          |
+| `CONTACT_EMAIL`        | Não               | Variável reservada para integrações futuras de contato.                                        |
 
-2. **Configurar variáveis de ambiente**:
-   Crie um arquivo `.env.local` na raiz baseado no `.env.example`:
-   ```env
-   GROQ_API_KEY=sua_chave_groq_aqui
-   ```
+Nunca adicione chaves privadas com prefixo `NEXT_PUBLIC_`.
 
-3. **Iniciar o servidor de desenvolvimento**:
-   ```bash
-   npm run dev
-   # ou
-   bun dev
-   ```
+Inicie o ambiente de desenvolvimento:
 
-4. **Acessar a aplicação**:
-   Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
+```bash
+bun run dev
+```
 
-5. **Compilar para Produção**:
-   ```bash
-   npm run build
-   ```
+A aplicação ficará disponível em
+[http://localhost:3000](http://localhost:3000).
 
----
+## Scripts
 
-## 📜 Diretrizes da Marca & Regras de Desenvolvimento
+| Comando                | Descrição                                                         |
+| ---------------------- | ----------------------------------------------------------------- |
+| `bun run dev`          | Inicia o servidor de desenvolvimento.                             |
+| `bun run build`        | Gera o build otimizado de produção.                               |
+| `bun run start`        | Executa localmente um build de produção existente.                |
+| `bun run lint`         | Executa o ESLint em todo o projeto.                               |
+| `bun run format`       | Formata páginas e componentes próprios e ordena classes Tailwind. |
+| `bun run format:check` | Verifica formatação e ordem das classes sem alterar arquivos.     |
+| `bunx tsc --noEmit`    | Valida os tipos sem gerar arquivos.                               |
 
-1. **Não introduzir preços públicos**: A venda é 100% consultiva B2B.
-2. **Respeitar o DNA Visual**: Manter a paleta sóbria, iluminação cinematográfica e zero elementos gráficos em vermelho.
-3. **Preservar a Biomecânica**: As especificações técnicas dos equipamentos e fotos de produto não devem ser alteradas sem aprovação.
-4. **Acessibilidade & Performance**: Garantir conformidade WCAG (contraste, foco e suporte a leitores de tela).
+Antes de abrir um pull request, execute:
+
+```bash
+bun run format:check
+bun run lint
+bunx tsc --noEmit
+bun run build
+```
+
+## Estrutura do projeto
+
+```text
+src/
+├── app/                  # Rotas, páginas, metadata e endpoints do App Router
+│   ├── api/              # Chat, contato, imagens e PDFs
+│   ├── campanhas/        # Landing pages dinâmicas de campanhas
+│   ├── planner/          # Planejador de academia em 3D
+│   ├── products/         # Catálogo e páginas de produto
+│   ├── quote/            # Fluxo de cotação
+│   ├── series/           # Páginas das linhas de equipamentos
+│   └── solutions/        # Soluções por tipo de operação
+├── components/
+│   ├── ai-elements/      # Primitivos externos usados pelo assistente
+│   ├── assistant/        # Interface e integração do Hammer Assistant
+│   ├── campaigns/        # Componentes compartilhados das campanhas
+│   ├── catalog/          # Busca, filtros e cards do catálogo
+│   ├── layout/           # Header, navegação, footer e introduções
+│   ├── planner/          # Canvas, controles e resumo do planejador
+│   ├── sections/         # Seções institucionais e da landing page
+│   └── ui/               # Primitivos e variantes do design system
+├── data/                 # Catálogo, campanhas, séries e soluções
+├── features/quote/       # Componentes e regras do fluxo de cotação
+├── lib/                  # Utilitários, IA, segurança e geração de mídia
+├── store/                # Stores Zustand
+└── types/                # Tipos compartilhados
+```
+
+As diretrizes de marca e criação ficam em `.agents/AGENTS.md` e
+`.agents/HAMMER_GOLD_DESIGN_BRIEF.md`.
+
+## Tailwind e design system
+
+O projeto utiliza **Tailwind CSS v4**. Não existe `tailwind.config.js`: o ponto de
+entrada, os tokens e as camadas CSS ficam em `src/app/globals.css`.
+
+### Tokens
+
+Os tokens definidos em `@theme` incluem:
+
+- paleta dourada da marca: `brand-gold`, `brand-gold-soft`,
+  `brand-gold-muted` e `brand-gold-deep`;
+- superfícies do site, planejador e assistente;
+- cores de texto e borda;
+- escalas tipográficas `text-kicker` e `text-caption`;
+- gradientes, sombras e animações compartilhadas.
+
+Use classes semânticas como `text-brand-gold`, `bg-planner-canvas` e
+`text-on-dark-muted`. Valores arbitrários devem ficar restritos a layouts ou
+efeitos realmente específicos, sem token equivalente.
+
+### Composição de classes
+
+- Use `cn()` para composição condicional de classes.
+- Use `cva()` quando o componente possuir variantes ou estados visuais.
+- Use `Button`, `buttonVariants` ou `ButtonLink` para ações e links com aparência
+  de botão.
+- Evite concatenação manual de strings, ternários aninhados no JSX e
+  `transition-all`.
+- O plugin do Prettier ordena classes na sequência recomendada pelo Tailwind.
+
+### Tema
+
+O site opera exclusivamente em **tema claro**, com seções escuras usadas como
+parte da identidade visual. Não adicione variantes `dark:`. O token
+`--color-dark` representa uma superfície preta e não um modo de tema.
+
+## Convenções de interface
+
+- Desenvolva com abordagem mobile-first.
+- Preserve breakpoints e layouts adequados para tráfego mobile de campanhas.
+- Elementos interativos devem ter área clicável próxima ou superior a 40 px.
+- Todo estado `hover:` deve possuir navegação por teclado perceptível por meio de
+  `focus-visible`.
+- Mantenha contraste suficiente entre texto e fundo.
+- Use `next/image` para imagens de conteúdo.
+- Preserve textos alternativos, labels, semântica HTML e atributos ARIA.
+- Não altere componentes externos em `ui/` ou `ai-elements/` sem necessidade
+  comprovada.
+
+## Regras comerciais e de marca
+
+1. **Não publicar preços:** a venda é consultiva e voltada ao mercado B2B.
+2. **Preservar o DNA visual:** luxo industrial, alto contraste, tipografia
+   sóbria e uso controlado do dourado.
+3. **Não alterar biomecânica ou especificações:** dados e imagens de produto
+   exigem validação antes de qualquer mudança.
+4. **Evitar vermelho decorativo:** elementos vermelhos só devem aparecer quando
+   fizerem parte física do equipamento.
+5. **Priorizar acessibilidade e performance:** contraste, foco, responsividade e
+   carregamento fazem parte dos critérios de aceite.

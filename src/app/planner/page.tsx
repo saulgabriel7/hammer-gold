@@ -11,57 +11,62 @@ import { PlannerSummaryModal } from "@/components/planner/PlannerSummaryModal";
 const PlannerCanvas3D = dynamic(
   () =>
     import("@/components/planner/PlannerCanvas3D").then(
-      (mod) => mod.PlannerCanvas3D
+      (mod) => mod.PlannerCanvas3D,
     ),
   {
     ssr: false,
     loading: () => (
-      <div className="w-full h-full bg-[#090909] flex flex-col items-center justify-center text-zinc-400 gap-3">
-        <div className="w-9 h-9 border-2 border-[#c5a15a] border-t-transparent rounded-full animate-spin" />
-        <div className="text-[11px] font-semibold text-zinc-300 tracking-[0.14em] uppercase">
+      <div className="flex h-full w-full flex-col items-center justify-center gap-3 bg-planner-canvas text-zinc-400">
+        <div className="h-9 w-9 animate-spin rounded-full border-2 border-brand-gold-muted border-t-transparent" />
+        <div className="text-caption font-semibold tracking-[0.14em] text-zinc-300 uppercase">
           Carregando planejador 3D
         </div>
       </div>
     ),
-  }
+  },
 );
 
 export default function PlannerPage() {
   return (
     <>
       {/* 1. Mensagem para Dispositivos Móveis e Tablets (< 1024px) */}
-      <div className="lg:hidden flex flex-col items-center justify-center min-h-[calc(100vh-88px)] mt-[88px] bg-[#090909] px-6 py-12 text-center text-zinc-100">
-        <div className="max-w-md w-full bg-[#111111] border border-white/10 p-7 rounded-xl shadow-2xl flex flex-col items-center">
+      <div className="mt-(--header-height) flex min-h-[calc(100vh-var(--header-height))] flex-col items-center justify-center bg-planner-canvas px-6 py-12 text-center text-zinc-100 xl:hidden">
+        <div className="flex w-full max-w-md flex-col items-center rounded-xl border border-white/10 bg-planner-panel p-7 shadow-2xl">
           <div className="mb-6">
-            <div className="w-16 h-16 rounded-lg bg-white/[0.04] border border-white/10 flex items-center justify-center text-[#c5a15a]">
-              <Monitor className="w-8 h-8" />
+            <div className="flex h-16 w-16 items-center justify-center rounded-lg border border-white/10 bg-white/4 text-brand-gold-muted">
+              <Monitor className="h-8 w-8" />
             </div>
           </div>
 
-          <span className="text-[10px] font-semibold text-[#e3c47e] uppercase tracking-[0.16em] mb-3">
+          <span className="mb-3 text-kicker font-semibold tracking-[0.16em] text-brand-gold-soft uppercase">
             Planejador 3D
           </span>
 
-          <h1 className="text-xl font-bold text-zinc-100 mb-3 font-sans">
+          <h1 className="mb-3 font-sans text-xl font-bold text-zinc-100">
             Simulador 3D Disponível Apenas no Computador
           </h1>
 
-          <p className="text-xs text-zinc-400 leading-relaxed mb-6">
-            Para manter o posicionamento preciso dos equipamentos e a navegação fluida, o <strong className="font-semibold text-zinc-200">Planejador 3D Hammer Gold</strong> está disponível em computadores e telas maiores.
+          <p className="mb-6 text-xs leading-relaxed text-zinc-400">
+            Para manter o posicionamento preciso dos equipamentos e a navegação
+            fluida, o{" "}
+            <strong className="font-semibold text-zinc-200">
+              Planejador 3D Hammer Gold
+            </strong>{" "}
+            está disponível em computadores e telas maiores.
           </p>
 
           {/* Benefícios no Desktop */}
-          <div className="w-full bg-black/20 border border-white/10 rounded-lg p-4 mb-6 text-left space-y-2.5">
+          <div className="mb-6 w-full space-y-2.5 rounded-lg border border-white/10 bg-black/20 p-4 text-left">
             <div className="flex items-center gap-2.5 text-xs text-zinc-300">
-              <ShieldCheck className="w-4 h-4 text-[#c5a15a] shrink-0" />
+              <ShieldCheck className="h-4 w-4 shrink-0 text-brand-gold-muted" />
               <span>Navegação orbital e controles 3D de alta precisão</span>
             </div>
             <div className="flex items-center gap-2.5 text-xs text-zinc-300">
-              <ShieldCheck className="w-4 h-4 text-[#c5a15a] shrink-0" />
+              <ShieldCheck className="h-4 w-4 shrink-0 text-brand-gold-muted" />
               <span>Planta baixa com margem de segurança e circulação</span>
             </div>
             <div className="flex items-center gap-2.5 text-xs text-zinc-300">
-              <ShieldCheck className="w-4 h-4 text-[#c5a15a] shrink-0" />
+              <ShieldCheck className="h-4 w-4 shrink-0 text-brand-gold-muted" />
               <span>Cotação técnica instantânea do seu projeto</span>
             </div>
           </div>
@@ -70,16 +75,16 @@ export default function PlannerPage() {
           <div className="w-full space-y-2.5">
             <Link
               href="/products"
-              className="w-full flex items-center justify-center gap-2 rounded-lg bg-white py-3 px-4 text-xs font-bold text-black transition-colors hover:bg-[#e3c47e]"
+              className="flex w-full items-center justify-center gap-2 rounded-lg bg-white px-4 py-3 text-xs font-bold text-black transition-colors hover:bg-brand-gold-soft"
             >
-              <ShoppingBag className="w-4 h-4" />
+              <ShoppingBag className="h-4 w-4" />
               Explorar Catálogo de Produtos
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="h-4 w-4" />
             </Link>
 
             <Link
               href="/contact"
-              className="w-full block rounded-lg border border-white/10 bg-white/[0.04] py-2.5 px-4 text-xs text-zinc-300 transition-colors hover:bg-white/[0.09]"
+              className="block w-full rounded-lg border border-white/10 bg-white/4 px-4 py-2.5 text-xs text-zinc-300 transition-colors hover:bg-white/9"
             >
               Falar com Consultor Comercial
             </Link>
@@ -88,12 +93,12 @@ export default function PlannerPage() {
       </div>
 
       {/* 2. Visualizador 3D Completo para Desktop (>= 1024px) */}
-      <main className="hidden lg:flex relative w-full h-[calc(100vh-88px)] mt-[88px] bg-[#090909] overflow-hidden">
+      <main className="relative mt-(--header-height) hidden h-[calc(100vh-var(--header-height))] w-full overflow-hidden bg-planner-canvas xl:flex">
         {/* Sidebar do Catálogo e Presets */}
         <EquipmentSidebar />
 
         {/* Viewport 3D Principal */}
-        <div className="relative flex-1 h-full bg-[#090909]">
+        <div className="relative h-full flex-1 bg-planner-canvas">
           <PlannerControls />
           <PlannerCanvas3D />
         </div>

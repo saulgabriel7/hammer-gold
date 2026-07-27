@@ -29,7 +29,7 @@ export default async function SeriesPage({ params }: Props) {
       <section className="page-top dark-grid text-white">
         <div className="site-container grid min-h-155 items-end gap-10 py-16 lg:grid-cols-[1fr_0.8fr] lg:items-center">
           <div>
-            <p className="eyebrow text-white/45">Série Hammer Gold</p>
+            <p className="eyebrow text-on-dark-muted">Série Hammer Gold</p>
             <h1 className="display-title mt-6 max-w-[10ch]">{item.name}</h1>
             <p className="body-large mt-7 max-w-2xl text-white/60">
               {item.description}
@@ -49,7 +49,7 @@ export default async function SeriesPage({ params }: Props) {
       <section className="section-space bg-white">
         <div className="site-container">
           <p className="eyebrow text-muted">Catálogo da série</p>
-          <h2 className="section-title mb-10 mt-5">
+          <h2 className="section-title mt-5 mb-10">
             Todos os equipamentos desta linha.
           </h2>
           <ProductCatalog initialSeries={item.name} />

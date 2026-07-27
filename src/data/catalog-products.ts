@@ -17,8 +17,16 @@ function searchableText(product: Product): string {
     .toLowerCase();
 }
 
+function identityText(product: Product): string {
+  return `${product.name} ${product.modelCode} ${product.series}`
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase();
+}
+
 function getCategory(product: Product): ProductCategory {
   const text = searchableText(product);
+  const identity = identityText(product);
 
   if (product.series === "Cardio") return "Cardio";
   if (product.series === "Scan") return "Scan";
@@ -26,7 +34,7 @@ function getCategory(product: Product): ProductCategory {
   if (/halter|anilha|barra olimpica|kettlebell|storage|armazenamento/.test(text)) {
     return "Acessórios";
   }
-  if (/rack|suporte|gaiola|smith machine|maquina smith/.test(text)) {
+  if (/rack|suporte|gaiola|smith machine|maquina smith/.test(identity)) {
     return "Racks e suportes";
   }
   if (product.series === "Coletiva" || /multiestacao|multi estacao|estacao coletiva/.test(text)) {

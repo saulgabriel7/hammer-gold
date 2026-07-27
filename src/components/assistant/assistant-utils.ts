@@ -3,7 +3,11 @@ import { catalogProducts } from "@/data/catalog-products";
 import { WHATSAPP_NUMBER } from "@/lib/constants";
 import type { CatalogProduct } from "@/types/product";
 
-export const STORAGE_KEY = "hammer-gold-assistant-conversation";
+export const STORAGE_KEY = "hammer-gold-assistant-conversation-v3";
+const LEGACY_STORAGE_KEYS = [
+  "hammer-gold-assistant-conversation",
+  "hammer-gold-assistant-conversation-v2",
+];
 const STORAGE_TTL_MS = 24 * 60 * 60 * 1_000;
 
 interface StoredConversation {
@@ -20,11 +24,8 @@ export const SUGGESTIONS = [
 export type ConfigurationStatus = "unknown" | "checking" | "ready" | "missing";
 
 export function getMessageText(message: UIMessage): string {
-  return message.parts
-    .filter((part) => part.type === "text")
-    .map((part) => part.text)
-    .join("")
-    .trim();
+  const textParts = message.parts.filter((part) => part.type === "text");
+  return textParts.at(-1)?.text.trim() ?? "";
 }
 
 export function extractProductsFromText(text: string): CatalogProduct[] {
@@ -55,18 +56,6 @@ export function extractProductsFromText(text: string): CatalogProduct[] {
     }
   }
 
-  // 3. Product Name pattern
-  if (matched.length === 0) {
-    for (const product of catalogProducts) {
-      if (matched.length >= 4) break;
-      if (text.toLowerCase().includes(product.name.toLowerCase())) {
-        if (!matched.some((p) => p.id === product.id)) {
-          matched.push(product);
-        }
-      }
-    }
-  }
-
   return matched.slice(0, 4);
 }
 
@@ -75,6 +64,7 @@ export function cleanAssistantText(text: string, hasProductCards: boolean): stri
   let cleaned = text;
 
   if (hasProductCards) {
+    cleaned = cleaned.replace(/<a\b[^>]*>(.*?)<\/a>/gi, "$1");
     cleaned = cleaned.replace(/\[([^\]]+)\]\(\/products\/[^)]+\)/gi, "");
     cleaned = cleaned.replace(/\/products\/[a-z0-9-]+/gi, "");
     cleaned = cleaned.replace(/Ver produto/gi, "");
@@ -133,6 +123,10 @@ export function readStoredMessages(): UIMessage[] {
   if (typeof window === "undefined") return [];
 
   try {
+    for (const legacyKey of LEGACY_STORAGE_KEYS) {
+      window.localStorage.removeItem(legacyKey);
+    }
+
     const stored = window.localStorage.getItem(STORAGE_KEY);
     if (!stored) return [];
     const parsed: unknown = JSON.parse(stored);

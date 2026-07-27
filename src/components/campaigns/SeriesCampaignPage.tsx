@@ -12,11 +12,13 @@ import { CampaignAttribution } from "@/components/campaigns/CampaignAttribution"
 import { CampaignQuoteBar } from "@/components/campaigns/CampaignQuoteBar";
 import ProductCard from "@/components/catalog/ProductCard";
 import { Badge } from "@/components/ui/badge";
+import { ButtonLink } from "@/components/ui/button-link";
 import { ProductMedia } from "@/components/ui/product-media";
 import { catalogProducts } from "@/data/catalog-products";
 import type { SeriesCampaign } from "@/data/campaigns";
 import { series } from "@/data/series";
 import type { CatalogProduct } from "@/types/product";
+import { cn } from "@/lib/utils";
 
 interface SeriesCampaignPageProps {
   campaign: SeriesCampaign;
@@ -85,17 +87,18 @@ export function SeriesCampaignPage({ campaign }: SeriesCampaignPageProps) {
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <a href="#equipamentos" className="button-secondary">
+              <ButtonLink href="#equipamentos" variant="inverse">
                 Ver equipamentos
                 <ArrowDown className="h-4 w-4" aria-hidden="true" />
-              </a>
-              <Link
+              </ButtonLink>
+              <ButtonLink
                 href={`/series/${line.slug}`}
-                className="button-ghost border-white/25 text-white hover:border-white hover:bg-white hover:text-black"
+                variant="outline"
+                className="border-white/25 text-white hover:border-white hover:bg-white hover:text-black"
               >
                 Explorar linha completa
                 <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-              </Link>
+              </ButtonLink>
             </div>
 
             <ul className="mt-9 grid gap-3 text-sm text-white/70 sm:grid-cols-2">
@@ -113,7 +116,7 @@ export function SeriesCampaignPage({ campaign }: SeriesCampaignPageProps) {
 
           <Link
             href={`/series/${line.slug}`}
-            className="group relative block overflow-hidden rounded-[var(--radius-xl)] border border-white/15 bg-white/5"
+            className="group relative block overflow-hidden rounded-xl border border-white/15 bg-white/5"
           >
             <ProductMedia
               src={line.image}
@@ -125,18 +128,18 @@ export function SeriesCampaignPage({ campaign }: SeriesCampaignPageProps) {
               imageClassName="grayscale transition duration-700 group-hover:scale-[1.025] group-hover:grayscale-0"
             />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black via-black/75 to-transparent p-6 pt-20 sm:p-8 sm:pt-28">
-              <p className="text-[11px] font-black uppercase tracking-[0.16em] text-white/55">
+              <p className="text-caption font-black tracking-[0.16em] text-white/55 uppercase">
                 Linha {line.name}
               </p>
               <div className="mt-3 flex items-end justify-between gap-6">
-                <p className="max-w-md text-lg font-extrabold leading-snug">
+                <p className="max-w-md text-lg leading-snug font-extrabold">
                   {line.description}
                 </p>
                 <span className="shrink-0 text-right">
                   <strong className="block text-3xl font-black">
                     {lineProducts.length}
                   </strong>
-                  <span className="text-[10px] font-bold uppercase tracking-[0.12em] text-white/55">
+                  <span className="text-kicker font-bold tracking-[0.12em] text-white/55 uppercase">
                     equipamentos
                   </span>
                 </span>
@@ -179,10 +182,10 @@ export function SeriesCampaignPage({ campaign }: SeriesCampaignPageProps) {
           />
 
           <div className="mt-8 text-center">
-            <Link href={`/series/${line.slug}`} className="button-ghost">
+            <ButtonLink href={`/series/${line.slug}`} variant="outline">
               Ver os {lineProducts.length} equipamentos da linha
               <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-            </Link>
+            </ButtonLink>
           </div>
         </div>
       </section>
@@ -200,14 +203,14 @@ export function SeriesCampaignPage({ campaign }: SeriesCampaignPageProps) {
               </p>
             </div>
 
-            <div className="mt-12 overflow-x-auto rounded-[var(--radius-xl)] border border-border bg-white">
+            <div className="mt-12 overflow-x-auto rounded-xl border border-border bg-white">
               <table className="w-full min-w-[760px] border-collapse text-left">
                 <caption className="sr-only">
                   Comparação de equipamentos da linha {line.name}
                 </caption>
                 <thead>
                   <tr className="border-b border-border">
-                    <th className="w-[24%] p-5 text-[11px] font-black uppercase tracking-[0.14em] text-muted sm:p-6">
+                    <th className="w-[24%] p-5 text-caption font-black tracking-[0.14em] text-muted uppercase sm:p-6">
                       Critério
                     </th>
                     {campaign.comparison.columns.map((column) => (
@@ -253,39 +256,47 @@ export function SeriesCampaignPage({ campaign }: SeriesCampaignPageProps) {
       ) : null}
 
       <section
-        className={`section-space ${campaign.comparison ? "bg-white" : "bg-paper"}`}
+        className={cn(
+          "section-space",
+          campaign.comparison ? "bg-white" : "bg-paper",
+        )}
       >
         <div className="site-container">
-          <div className="grid gap-10 lg:grid-cols-[0.68fr_1.32fr]">
-            <div>
+          <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+            <div className="max-w-2xl">
               <p className="eyebrow text-muted">Diferenciais da linha</p>
               <h2 className="section-title mt-5">
                 Uma seleção coerente com o objetivo da operação.
               </h2>
             </div>
+            <p className="body-large max-w-md text-muted lg:pb-1">
+              Engenharia, ergonomia e consistência projetadas para elevar o padrão da linha {line.name}.
+            </p>
+          </div>
 
-            <div className="grid gap-4 sm:grid-cols-3">
-              {campaign.benefits.map((benefit, index) => {
-                const Icon = benefitIcons[index] ?? Dumbbell;
+          <div className="mt-12 grid gap-5 sm:grid-cols-3">
+            {campaign.benefits.map((benefit, index) => {
+              const Icon = benefitIcons[index] ?? Dumbbell;
 
-                return (
-                  <article
-                    key={benefit.title}
-                    className="rounded-[var(--radius-xl)] border border-border bg-white p-6 sm:p-7"
-                  >
-                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-black text-white">
-                      <Icon className="h-5 w-5" aria-hidden="true" />
+              return (
+                <article
+                  key={benefit.title}
+                  className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-border bg-white p-7 shadow-2xs transition-shadow duration-300 hover:shadow-md"
+                >
+                  <div>
+                    <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-black text-white transition-transform duration-300 group-hover:scale-105">
+                      <Icon className="h-6 w-6" aria-hidden="true" />
                     </span>
-                    <h3 className="mt-7 text-xl font-extrabold tracking-tight">
+                    <h3 className="mt-6 text-xl font-extrabold tracking-tight text-black">
                       {benefit.title}
                     </h3>
-                    <p className="mt-3 text-sm leading-6 text-muted">
+                    <p className="mt-3 text-sm leading-relaxed text-muted">
                       {benefit.description}
                     </p>
-                  </article>
-                );
-              })}
-            </div>
+                  </div>
+                </article>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -309,7 +320,7 @@ export function SeriesCampaignPage({ campaign }: SeriesCampaignPageProps) {
             {campaign.applications.map((application) => (
               <article
                 key={application.title}
-                className="rounded-[var(--radius-xl)] border border-border p-6 sm:p-7"
+                className="rounded-xl border border-border p-6 sm:p-7"
               >
                 <Building2 className="h-6 w-6" aria-hidden="true" />
                 <h3 className="mt-7 text-xl font-extrabold tracking-tight">
@@ -326,25 +337,26 @@ export function SeriesCampaignPage({ campaign }: SeriesCampaignPageProps) {
 
       <section className="bg-white pb-6">
         <div className="site-container">
-          <div className="dark-grid flex flex-col gap-8 rounded-[var(--radius-xl)] p-8 text-white sm:p-10 lg:flex-row lg:items-center lg:justify-between lg:p-14">
+          <div className="dark-grid flex flex-col gap-8 rounded-xl p-8 text-white sm:p-10 lg:flex-row lg:items-center lg:justify-between lg:p-14">
             <div>
-              <p className="eyebrow text-white/45">Próximo passo</p>
+              <p className="eyebrow text-on-dark-muted">Próximo passo</p>
               <h2 className="section-title mt-5 max-w-[14ch]">
                 Leve a linha {line.name} para uma cotação personalizada.
               </h2>
             </div>
             <div className="flex shrink-0 flex-col gap-3">
-              <Link href="/quote" className="button-secondary">
+              <ButtonLink href="/quote" variant="inverse">
                 Abrir minha cotação
                 <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-              </Link>
-              <Link
+              </ButtonLink>
+              <ButtonLink
                 href={`/series/${line.slug}`}
-                className="button-ghost border-white/25 text-white hover:border-white hover:bg-white hover:text-black"
+                variant="outline"
+                className="border-white/25 text-white hover:border-white hover:bg-white hover:text-black"
               >
                 Ver linha completa
                 <Layers3 className="h-4 w-4" aria-hidden="true" />
-              </Link>
+              </ButtonLink>
             </div>
           </div>
         </div>

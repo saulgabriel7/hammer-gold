@@ -33,7 +33,9 @@ export function PlannerCanvas3D() {
 
   // Estado de Drag & Drop no Canvas 3D
   const draggingIdRef = useRef<string | null>(null);
-  const dragPlaneRef = useRef<THREE.Plane>(new THREE.Plane(new THREE.Vector3(0, 1, 0), 0));
+  const dragPlaneRef = useRef<THREE.Plane>(
+    new THREE.Plane(new THREE.Vector3(0, 1, 0), 0),
+  );
   const raycasterRef = useRef<THREE.Raycaster>(new THREE.Raycaster());
   const mouseRef = useRef<THREE.Vector2>(new THREE.Vector2());
 
@@ -50,7 +52,11 @@ export function PlannerCanvas3D() {
 
     // Câmera (Posicionada mais próxima para visualização em alta definição)
     const camera = new THREE.PerspectiveCamera(40, width / height, 0.1, 100);
-    camera.position.set(room.width * 0.45, room.height * 0.75, room.length * 0.6);
+    camera.position.set(
+      room.width * 0.45,
+      room.height * 0.75,
+      room.length * 0.6,
+    );
     cameraRef.current = camera;
 
     // Renderer de Alta Fidelidade Visual
@@ -58,7 +64,7 @@ export function PlannerCanvas3D() {
     renderer.setSize(width, height);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     renderer.shadowMap.enabled = true;
-    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    renderer.shadowMap.type = THREE.PCFShadowMap;
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1.1;
 
@@ -77,7 +83,8 @@ export function PlannerCanvas3D() {
 
     // Listener de Redimensionamento
     const handleResize = () => {
-      if (!containerRef.current || !rendererRef.current || !cameraRef.current) return;
+      if (!containerRef.current || !rendererRef.current || !cameraRef.current)
+        return;
       const w = containerRef.current.clientWidth;
       const h = containerRef.current.clientHeight;
       cameraRef.current.aspect = w / h;
@@ -115,7 +122,8 @@ export function PlannerCanvas3D() {
 
     // Limpar luzes antigas
     const existingLights = scene.children.filter(
-      (child) => child instanceof THREE.Light || child instanceof THREE.HemisphereLight
+      (child) =>
+        child instanceof THREE.Light || child instanceof THREE.HemisphereLight,
     );
     existingLights.forEach((light) => scene.remove(light));
 
@@ -152,7 +160,11 @@ export function PlannerCanvas3D() {
       scene.add(hemiLight);
 
       const keyLight = new THREE.DirectionalLight(0xffffff, 2.65);
-      keyLight.position.set(room.width * 0.5, room.height * 1.5, room.length * 0.5);
+      keyLight.position.set(
+        room.width * 0.5,
+        room.height * 1.5,
+        room.length * 0.5,
+      );
       keyLight.castShadow = true;
       keyLight.shadow.mapSize.width = 2048;
       keyLight.shadow.mapSize.height = 2048;
@@ -160,10 +172,20 @@ export function PlannerCanvas3D() {
       scene.add(keyLight);
 
       const fillLight = new THREE.DirectionalLight(0xd9d9d9, 0.85);
-      fillLight.position.set(-room.width * 0.5, room.height, -room.length * 0.5);
+      fillLight.position.set(
+        -room.width * 0.5,
+        room.height,
+        -room.length * 0.5,
+      );
       scene.add(fillLight);
 
-      const warmLight = new THREE.SpotLight(0xc5a15a, 0.75, 36, Math.PI / 3, 0.65);
+      const warmLight = new THREE.SpotLight(
+        0xc5a15a,
+        0.75,
+        36,
+        Math.PI / 3,
+        0.65,
+      );
       warmLight.position.set(0, room.height * 1.2, 0);
       scene.add(warmLight);
 
@@ -196,7 +218,7 @@ export function PlannerCanvas3D() {
 
     // Limite discreto do ambiente, visível sem disputar atenção com os produtos.
     const borderGeo = new THREE.EdgesGeometry(
-      new THREE.BoxGeometry(room.width, 0.02, room.length)
+      new THREE.BoxGeometry(room.width, 0.02, room.length),
     );
     const borderMat = new THREE.LineBasicMaterial({
       color: 0x6b6252,
@@ -213,7 +235,7 @@ export function PlannerCanvas3D() {
       maxDim,
       maxDim * 2,
       new THREE.Color(0x4a4a4a),
-      new THREE.Color(0x272727)
+      new THREE.Color(0x272727),
     );
     grid.position.y = 0.008;
     scene.add(grid);
@@ -249,13 +271,21 @@ export function PlannerCanvas3D() {
       let meshGroup = currentMeshes.get(item.id);
 
       if (!meshGroup) {
-        meshGroup = createEquipment3DMesh(item.category, item.name, item.dimensions);
+        meshGroup = createEquipment3DMesh(
+          item.category,
+          item.name,
+          item.dimensions,
+        );
         meshGroup.userData = { id: item.id, name: item.name };
         scene.add(meshGroup);
         currentMeshes.set(item.id, meshGroup);
       }
 
-      meshGroup.position.set(item.position[0], item.position[1], item.position[2]);
+      meshGroup.position.set(
+        item.position[0],
+        item.position[1],
+        item.position[2],
+      );
       meshGroup.rotation.y = (item.rotation * Math.PI) / 180;
 
       const isSelected = item.id === selectedItemId;
@@ -267,7 +297,7 @@ export function PlannerCanvas3D() {
           const ringGeo = new THREE.RingGeometry(
             item.safetyRadius * 0.92,
             item.safetyRadius,
-            32
+            32,
           );
           const ringMat = new THREE.MeshBasicMaterial({
             color: isSelected ? 0xc5a15a : 0x52525b,
@@ -281,8 +311,12 @@ export function PlannerCanvas3D() {
           currentRings.set(item.id, ringMesh);
         }
         ringMesh.position.set(item.position[0], 0.015, item.position[2]);
-        (ringMesh.material as THREE.MeshBasicMaterial).color.setHex(isSelected ? 0xc5a15a : 0x52525b);
-        (ringMesh.material as THREE.MeshBasicMaterial).opacity = isSelected ? 0.85 : 0.4;
+        (ringMesh.material as THREE.MeshBasicMaterial).color.setHex(
+          isSelected ? 0xc5a15a : 0x52525b,
+        );
+        (ringMesh.material as THREE.MeshBasicMaterial).opacity = isSelected
+          ? 0.85
+          : 0.4;
         ringMesh.visible = true;
       } else if (ringMesh) {
         ringMesh.visible = false;
@@ -308,7 +342,11 @@ export function PlannerCanvas3D() {
       controls.maxPolarAngle = Math.PI / 2 + 0.05;
     } else {
       // Visão Órbita 3D Próxima
-      camera.position.set(room.width * 0.45, room.height * 0.75, room.length * 0.6);
+      camera.position.set(
+        room.width * 0.45,
+        room.height * 0.75,
+        room.length * 0.6,
+      );
       controls.target.set(0, 0.5, 0);
       controls.maxPolarAngle = Math.PI / 2 - 0.01;
     }
@@ -317,7 +355,8 @@ export function PlannerCanvas3D() {
 
   // 6. Arrastar e Soltar no Plano XZ
   const handlePointerDown = (event: React.PointerEvent<HTMLDivElement>) => {
-    if (!containerRef.current || !cameraRef.current || !sceneRef.current) return;
+    if (!containerRef.current || !cameraRef.current || !sceneRef.current)
+      return;
 
     const rect = containerRef.current.getBoundingClientRect();
     mouseRef.current.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
@@ -356,7 +395,10 @@ export function PlannerCanvas3D() {
 
     if (draggingIdRef.current) {
       const intersectionPoint = new THREE.Vector3();
-      raycasterRef.current.ray.intersectPlane(dragPlaneRef.current, intersectionPoint);
+      raycasterRef.current.ray.intersectPlane(
+        dragPlaneRef.current,
+        intersectionPoint,
+      );
 
       if (intersectionPoint) {
         let newX = intersectionPoint.x;
@@ -376,7 +418,10 @@ export function PlannerCanvas3D() {
       }
     } else {
       const meshesArray = Array.from(equipmentMeshesRef.current.values());
-      const intersects = raycasterRef.current.intersectObjects(meshesArray, true);
+      const intersects = raycasterRef.current.intersectObjects(
+        meshesArray,
+        true,
+      );
 
       if (intersects.length > 0) {
         let parent: THREE.Object3D | null = intersects[0].object;
@@ -412,7 +457,11 @@ export function PlannerCanvas3D() {
 
   const resetCamera = () => {
     if (!cameraRef.current || !controlsRef.current) return;
-    cameraRef.current.position.set(room.width * 0.45, room.height * 0.75, room.length * 0.6);
+    cameraRef.current.position.set(
+      room.width * 0.45,
+      room.height * 0.75,
+      room.length * 0.6,
+    );
     controlsRef.current.target.set(0, 0.5, 0);
     controlsRef.current.update();
   };
@@ -420,48 +469,52 @@ export function PlannerCanvas3D() {
   return (
     <div
       ref={containerRef}
-      className="relative w-full h-full cursor-grab active:cursor-grabbing select-none overflow-hidden bg-[#090909]"
+      className="relative h-full w-full cursor-grab overflow-hidden bg-planner-canvas select-none active:cursor-grabbing"
       onPointerDown={handlePointerDown}
       onPointerMove={handlePointerMove}
       onPointerUp={handlePointerUp}
     >
       {/* Tooltip de Hover */}
       {hoveredItemName && !selectedItemId && (
-        <div className="absolute top-20 left-1/2 -translate-x-1/2 rounded-md border border-white/10 bg-[#111111]/95 px-3.5 py-1.5 text-xs font-semibold text-zinc-100 backdrop-blur-md shadow-xl pointer-events-none z-10">
+        <div className="pointer-events-none absolute top-20 left-1/2 z-10 -translate-x-1/2 rounded-md border border-white/10 bg-planner-panel/95 px-3.5 py-1.5 text-xs font-semibold text-zinc-100 shadow-xl backdrop-blur-md">
           {hoveredItemName}
         </div>
       )}
 
       {/* Botões de Controle de Zoom Flutuantes no Canvas */}
-      <div className="absolute right-4 top-20 z-10 flex flex-col gap-1.5 rounded-lg border border-white/10 bg-[#111111]/95 p-1.5 backdrop-blur-xl shadow-xl">
+      <div className="absolute top-20 right-4 z-10 flex flex-col gap-1.5 rounded-lg border border-white/10 bg-planner-panel/95 p-1.5 shadow-xl backdrop-blur-xl">
         <button
+          type="button"
           onClick={zoomIn}
-          className="w-8 h-8 rounded-md bg-white/[0.04] hover:bg-white/[0.1] border border-white/10 text-zinc-300 hover:text-white flex items-center justify-center transition-colors"
-          title="Aproximar Zoom (+)"
+          className="flex size-10 items-center justify-center rounded-md border border-white/10 bg-white/4 text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
+          aria-label="Aproximar zoom"
         >
-          <ZoomIn className="w-4 h-4" />
+          <ZoomIn className="h-4 w-4" />
         </button>
         <button
+          type="button"
           onClick={zoomOut}
-          className="w-8 h-8 rounded-md bg-white/[0.04] hover:bg-white/[0.1] border border-white/10 text-zinc-300 hover:text-white flex items-center justify-center transition-colors"
-          title="Afastar Zoom (-)"
+          className="flex size-10 items-center justify-center rounded-md border border-white/10 bg-white/4 text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
+          aria-label="Afastar zoom"
         >
-          <ZoomOut className="w-4 h-4" />
+          <ZoomOut className="h-4 w-4" />
         </button>
         <button
+          type="button"
           onClick={resetCamera}
-          className="w-8 h-8 rounded-md bg-white/[0.04] hover:bg-white/[0.1] border border-white/10 text-zinc-300 hover:text-white flex items-center justify-center transition-colors"
-          title="Resetar Câmera Central"
+          className="flex size-10 items-center justify-center rounded-md border border-white/10 bg-white/4 text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
+          aria-label="Centralizar câmera"
         >
-          <RotateCcw className="w-4 h-4" />
+          <RotateCcw className="h-4 w-4" />
         </button>
       </div>
 
       {/* Dica do Rodapé com Instruções Claras */}
-      <div className="absolute bottom-4 left-6 z-10 text-[11px] text-zinc-300 bg-[#111111]/95 border border-white/10 px-3.5 py-2 rounded-lg backdrop-blur-md shadow-xl pointer-events-none flex items-center gap-2">
-        <span className="w-2 h-2 rounded-full bg-[#c5a15a]" />
+      <div className="pointer-events-none absolute bottom-4 left-6 z-10 flex items-center gap-2 rounded-lg border border-white/10 bg-planner-panel/95 px-3.5 py-2 text-caption text-zinc-300 shadow-xl backdrop-blur-md">
+        <span className="h-2 w-2 rounded-full bg-brand-gold-muted" />
         <span>
-          <strong>Clique e arraste</strong> o equipamento para mover • <strong>Botão direito</strong> para rotacionar a câmera
+          <strong>Clique e arraste</strong> o equipamento para mover •{" "}
+          <strong>Botão direito</strong> para rotacionar a câmera
         </span>
       </div>
     </div>

@@ -6,6 +6,94 @@ import { catalogProducts } from "@/data/catalog-products";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
+function cleanOpaqueBackground(
+  pixels: Uint8Array,
+  width: number,
+  height: number
+): void {
+  const corners = [
+    0,
+    (width - 1) * 4,
+    (height - 1) * width * 4,
+    ((height - 1) * width + (width - 1)) * 4,
+  ];
+
+  let totalR = 0,
+    totalG = 0,
+    totalB = 0;
+  for (const c of corners) {
+    totalR += pixels[c];
+    totalG += pixels[c + 1];
+    totalB += pixels[c + 2];
+  }
+  const bgR = Math.round(totalR / 4);
+  const bgG = Math.round(totalG / 4);
+  const bgB = Math.round(totalB / 4);
+
+  const isUniformBackground = corners.every((c) => {
+    const dr = Math.abs(pixels[c] - bgR);
+    const dg = Math.abs(pixels[c + 1] - bgG);
+    const db = Math.abs(pixels[c + 2] - bgB);
+    return dr + dg + db < 35;
+  });
+
+  if (!isUniformBackground) return;
+
+  const visited = new Uint8Array(width * height);
+  const queue = new Int32Array(width * height);
+  let tail = 0;
+
+  const startIndices = [
+    0,
+    width - 1,
+    (height - 1) * width,
+    (height - 1) * width + (width - 1),
+  ];
+
+  for (const idx of startIndices) {
+    if (!visited[idx]) {
+      visited[idx] = 1;
+      queue[tail++] = idx;
+    }
+  }
+
+  let head = 0;
+  const tolerance = 45;
+
+  while (head < tail) {
+    const idx = queue[head++];
+    const px = idx % width;
+    const py = (idx / width) | 0;
+    const pOff = idx * 4;
+
+    const r = pixels[pOff];
+    const g = pixels[pOff + 1];
+    const b = pixels[pOff + 2];
+
+    const dist = Math.abs(r - bgR) + Math.abs(g - bgG) + Math.abs(b - bgB);
+    if (dist <= tolerance) {
+      pixels[pOff + 3] = 0;
+
+      if (px > 0 && !visited[idx - 1]) {
+        visited[idx - 1] = 1;
+        queue[tail++] = idx - 1;
+      }
+      if (px < width - 1 && !visited[idx + 1]) {
+        visited[idx + 1] = 1;
+        queue[tail++] = idx + 1;
+      }
+      if (py > 0 && !visited[idx - width]) {
+        visited[idx - width] = 1;
+        queue[tail++] = idx - width;
+      }
+      if (py < height - 1 && !visited[idx + width]) {
+        visited[idx + width] = 1;
+        queue[tail++] = idx + width;
+      }
+    }
+  }
+}
+
 export async function GET(
   _request: Request,
   { params }: { params: Promise<{ slug: string }> }
@@ -13,7 +101,10 @@ export async function GET(
   const { slug } = await params;
   const product = catalogProducts.find((item) => item.slug === slug);
   if (!product) {
-    return NextResponse.json({ error: "Produto não encontrado" }, { status: 404 });
+    return NextResponse.json(
+      { error: "Produto não encontrado" },
+      { status: 404 }
+    );
   }
 
   try {
@@ -24,9 +115,22 @@ export async function GET(
       product.image.replace(/^\//, "")
     );
     const source = await readFile(imagePath);
-    const image = await sharp(source, { page: 0 })
+
+    const rawImg = await sharp(source, { page: 0 })
       .rotate()
-      .flatten({ background: "#f4f4f1" })
+      .ensureAlpha()
+      .raw()
+      .toBuffer({ resolveWithObject: true });
+
+    cleanOpaqueBackground(rawImg.data, rawImg.info.width, rawImg.info.height);
+
+    const image = await sharp(rawImg.data, {
+      raw: {
+        width: rawImg.info.width,
+        height: rawImg.info.height,
+        channels: 4,
+      },
+    })
       .trim({ threshold: 8 })
       .resize({
         width: 1136,

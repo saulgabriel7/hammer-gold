@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import { InstagramLogo, WhatsappLogo } from "@phosphor-icons/react/dist/ssr";
+import { InstagramIcon, WhatsappIcon } from "@/components/icons";
 import { FOOTER_COLUMNS, SITE_NAME, WHATSAPP_NUMBER } from "@/lib/constants";
 import { Logo } from "@/components/layout/Logo";
+import { ButtonLink } from "@/components/ui/button-link";
 
 export default function Footer() {
   return (
@@ -12,22 +13,22 @@ export default function Footer() {
           <div>
             <Logo />
             <p className="mt-6 max-w-md text-sm leading-7 text-white/55">
-              Hammer Gold. Equipamentos preparados para suportar a força dos atletas
-              e a rotina das melhores academias.
+              Hammer Gold. Equipamentos preparados para suportar a força dos
+              atletas e a rotina das melhores academias.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
-              <Link href="/quote" className="button-secondary">
+              <ButtonLink href="/quote" variant="inverse">
                 Solicitar cotação
                 <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-              </Link>
+              </ButtonLink>
               <a
                 href="https://www.instagram.com/hammergold.br"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 text-xs font-bold tracking-wider text-white/80 transition-all duration-200 hover:border-white hover:bg-white hover:text-black"
+                className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 text-xs font-bold tracking-wider text-white/80 transition-[color,background-color,border-color] duration-200 hover:border-white hover:bg-white hover:text-black"
                 aria-label="Siga a Hammer Gold no Instagram"
               >
-                <InstagramLogo weight="bold" className="h-4 w-4 shrink-0" />
+                <InstagramIcon className="h-4 w-4 shrink-0" />
                 <span>@hammergold.br</span>
               </a>
             </div>
@@ -36,7 +37,7 @@ export default function Footer() {
           <div className="grid gap-10 sm:grid-cols-3">
             {FOOTER_COLUMNS.map((column) => (
               <div key={column.title}>
-                <h2 className="text-xs font-bold uppercase tracking-[0.16em] text-white/40">
+                <h2 className="text-xs font-bold tracking-[0.16em] text-on-dark-muted uppercase">
                   {column.title}
                 </h2>
                 <ul className="mt-5 space-y-3">
@@ -56,8 +57,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 flex flex-col gap-4 border-t border-white/10 pt-6 text-xs text-white/35 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} {SITE_NAME}. Todos os direitos reservados.</p>
+        <div className="mt-16 flex flex-col gap-4 border-t border-white/10 pt-6 text-xs text-on-dark-muted sm:flex-row sm:items-center sm:justify-between">
+          <p>
+            © {new Date().getFullYear()} {SITE_NAME}. Todos os direitos
+            reservados.
+          </p>
           <div className="flex items-center gap-6">
             <a
               href="https://www.instagram.com/hammergold.br"
@@ -65,7 +69,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="flex items-center gap-2 transition-colors duration-200 hover:text-white"
             >
-              <InstagramLogo weight="bold" className="h-4 w-4" />
+              <InstagramIcon className="h-4 w-4" />
               <span>Instagram</span>
             </a>
             <a
@@ -74,7 +78,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="flex items-center gap-2 transition-colors duration-200 hover:text-white"
             >
-              <WhatsappLogo className="h-4 w-4" />
+              <WhatsappIcon className="h-4 w-4" />
               <span>WhatsApp</span>
             </a>
           </div>

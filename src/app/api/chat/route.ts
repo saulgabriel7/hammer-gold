@@ -23,6 +23,20 @@ const WINDOW_MS = 60_000;
 const REQUESTS_PER_WINDOW = 20;
 const MAX_BODY_BYTES = 80_000;
 const NO_STORE_HEADERS = { "Cache-Control": "no-store" };
+const GREETING_ONLY_PATTERN =
+  /^(oi+|ol[aá]|bom dia|boa tarde|boa noite|tudo bem|fala|e a[ií])[\s!,.?]*$/i;
+const COMPARISON_PATTERN =
+  /\b(comparar|compare|comparação|comparacao|qual (?:é|e) melhor|melhor entre|versus|vs\.?|ou)\b/i;
+const COMPARISON_START_PATTERN =
+  /^(?:(?:eu )?(?:quero|gostaria de|preciso|desejo)\s+)?(?:comparar|compare)\s+(?:dois|2)\s+(?:produtos|equipamentos)[\s!,.?]*$/i;
+const COMPARISON_CONNECTOR_ONLY_PATTERN =
+  /^(ou|e|versus|vs\.?|com|contra)[\s!,.?]*$/i;
+const NO_PRODUCT_SELECTED_PATTERN =
+  /^(?:n[aã]o tenho|n[aã]o sei|nenhum|nenhum ainda|ainda n[aã]o)[\s!,.?]*$/i;
+const RECOMMENDATION_PATTERN =
+  /\b(sugira|sugerir|sugest[aã]o|recomende|recomendar|indique|indicar|me mostre|mostre op[cç][oõ]es)\b/i;
+const NEED_DESCRIPTION_PATTERN =
+  /\b(?:quero|preciso|procuro|busco)\b.*\b(?:treino|treinar|academia|equipamento|aparelho|superiores|inferiores|bra[cç]os|ombros|peito|costas|pernas|gl[uú]teos|cardio)\b/i;
 
 const globalRateLimit = globalThis as typeof globalThis & {
   hammerAssistantRateLimit?: Map<string, RateLimitEntry>;
@@ -99,6 +113,116 @@ function sanitizeMessages(value: unknown): UIMessage[] | undefined {
   }
 
   return sanitizedMessages;
+}
+
+function getMessageText(message: UIMessage): string {
+  return message.parts
+    .filter((part) => part.type === "text")
+    .map((part) => part.text)
+    .join(" ")
+    .trim();
+}
+
+function getTurnContext(messages: UIMessage[]): {
+  directive: string;
+  toolMode: "all" | "comparison" | "recommendation" | "none";
+} {
+  const latestMessage = messages.at(-1);
+  const latestText = latestMessage ? getMessageText(latestMessage) : "";
+
+  if (GREETING_ONLY_PATTERN.test(latestText)) {
+    return {
+      directive: [
+        "A mensagem atual é uma saudação isolada.",
+        "Responda cordialmente em 1 frase, sem ferramentas e sem encaminhamento.",
+      ].join(" "),
+      toolMode: "none",
+    };
+  }
+
+  if (COMPARISON_START_PATTERN.test(latestText)) {
+    return {
+      directive: [
+        "O cliente iniciou uma comparação, mas ainda não informou os produtos.",
+        "Pergunte apenas quais são os dois nomes ou códigos que deseja comparar.",
+        "Não use ferramentas nesta resposta e não responda com saudação.",
+      ].join(" "),
+      toolMode: "none",
+    };
+  }
+
+  if (NO_PRODUCT_SELECTED_PATTERN.test(latestText)) {
+    return {
+      directive: [
+        "O cliente informou que ainda não escolheu produtos.",
+        "Encerre o pedido de códigos e faça apenas uma pergunta curta sobre o objetivo do treino, o segmento ou a necessidade para então recomendar opções.",
+        "Não use ferramentas nesta resposta e não repita a explicação sobre comparação.",
+      ].join(" "),
+      toolMode: "none",
+    };
+  }
+
+  const isLatestComparison = COMPARISON_PATTERN.test(latestText);
+  const isRecommendationRequest =
+    RECOMMENDATION_PATTERN.test(latestText) ||
+    NEED_DESCRIPTION_PATTERN.test(latestText);
+
+  if (!isLatestComparison && isRecommendationRequest) {
+    return {
+      directive: [
+        "O cliente mudou o fluxo para descoberta e recomendação por necessidade.",
+        "Não peça nomes ou códigos e não continue cobrando os dois produtos da comparação anterior.",
+        "Use buscarProdutos antes de responder e considere as necessidades informadas nas mensagens recentes.",
+        "Se o cliente pedir uma quantidade, retorne exatamente essa quantidade de produtos distintos e cadastrados, cada um com código e link real do catálogo.",
+        "Não invente nomes genéricos nem afirme que recomendou um produto ausente do resultado da ferramenta.",
+      ].join(" "),
+      toolMode: "recommendation",
+    };
+  }
+
+  const recentUserTexts = messages
+    .filter((message) => message.role === "user")
+    .slice(-4)
+    .map(getMessageText);
+  const isComparisonContext = recentUserTexts.some((text) =>
+    COMPARISON_PATTERN.test(text),
+  );
+
+  if (
+    isComparisonContext &&
+    COMPARISON_CONNECTOR_ONLY_PATTERN.test(latestText)
+  ) {
+    return {
+      directive: [
+        "O cliente enviou apenas um conector e ainda precisa informar o próximo produto da comparação.",
+        "Peça somente o nome ou código do outro produto.",
+        "Não use ferramentas e não responda com saudação.",
+      ].join(" "),
+      toolMode: "none",
+    };
+  }
+
+  if (isComparisonContext) {
+    return {
+      directive: [
+        "A conversa atual está em um fluxo de comparação de produtos.",
+        "É proibido responder com a saudação padrão.",
+        "Considere nomes, códigos e fragmentos enviados nas últimas mensagens como partes da mesma comparação.",
+        "Use detalharProduto diretamente para cada nome ou código informado, sem presumir filtros de categoria.",
+        "Se algum produto não existir, peça a correção sem inventar dados.",
+      ].join(" "),
+      toolMode: "comparison",
+    };
+  }
+
+  return {
+    directive: [
+      "A mensagem atual não é uma saudação isolada.",
+      "É proibido responder com uma saudação genérica.",
+      "Responda diretamente à intenção presente na mensagem mais recente.",
+    ].join(" "),
+    toolMode: "all",
+  };
 }
 
 export async function GET() {
@@ -188,12 +312,23 @@ export async function POST(request: Request) {
         parallelToolCalls: true,
       } satisfies GroqLanguageModelOptions,
     };
+    const turnContext = getTurnContext(recentMessages);
+    const activeTools: Array<keyof typeof assistantTools> | undefined =
+      turnContext.toolMode === "comparison"
+        ? ["detalharProduto"]
+        : turnContext.toolMode === "recommendation"
+          ? ["buscarProdutos"]
+          : turnContext.toolMode === "none"
+            ? []
+            : undefined;
 
     const result = streamText({
       model: groq(MODEL),
-      system: HAMMER_ASSISTANT_PROMPT,
+      system: `${HAMMER_ASSISTANT_PROMPT}\n\nDIRETRIZ DA MENSAGEM ATUAL\n${turnContext.directive}`,
       messages: modelMessages,
       tools: assistantTools,
+      ...(activeTools ? { activeTools } : {}),
+      ...(turnContext.toolMode === "none" ? { toolChoice: "none" as const } : {}),
       stopWhen: stepCountIs(4),
       temperature: 0.2,
       maxOutputTokens: 700,
