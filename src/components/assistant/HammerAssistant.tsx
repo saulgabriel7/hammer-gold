@@ -25,16 +25,17 @@ import {
 } from "@/components/ai-elements/message";
 import { AssistantProductCard } from "@/components/assistant/AssistantProductCard";
 import {
+  cleanAssistantText,
+  extractProductsFromText,
+  getMessageText,
   readStoredMessages,
   serializeStoredMessages,
   STORAGE_KEY,
 } from "@/components/assistant/assistant-utils";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
-import { catalogProducts } from "@/data/catalog-products";
 import { WHATSAPP_NUMBER } from "@/lib/constants";
 import { cn } from "@/lib/utils";
-import type { CatalogProduct } from "@/types/product";
 
 const STORAGE_OPEN_KEY = "hammer-gold-assistant-open-state";
 
@@ -44,100 +45,10 @@ const suggestions = [
   "Como funciona a solicitação de cotação?",
 ];
 
+const ASSISTANT_INPUT_PLACEHOLDER =
+  "Pergunte sobre produtos, séries ou aplicações…";
+
 type ConfigurationStatus = "unknown" | "checking" | "ready" | "missing";
-
-function getMessageText(message: UIMessage): string {
-  return message.parts
-    .filter((part) => part.type === "text")
-    .map((part) => part.text)
-    .join("")
-    .trim();
-}
-
-function extractProductsFromText(text: string): CatalogProduct[] {
-  if (!text) return [];
-
-  const matched: CatalogProduct[] = [];
-
-  // 1. URL pattern: /products/[slug]
-  const urlMatches = text.match(/\/products\/([a-z0-9-]+)/gi) || [];
-  for (const match of urlMatches) {
-    const slug = match.replace("/products/", "").toLowerCase();
-    const product = catalogProducts.find((p) => p.slug === slug);
-    if (product && !matched.some((p) => p.id === product.id)) {
-      matched.push(product);
-    }
-  }
-
-  // 2. Model Code pattern (e.g. 7314A, 55A08, C4D10, 61A13A, G2K28)
-  for (const product of catalogProducts) {
-    if (matched.some((p) => p.id === product.id)) continue;
-    const code = product.modelCode.trim();
-    if (code.length >= 3) {
-      const escaped = code.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&");
-      const regex = new RegExp(`(?:\\b|\\()${escaped}(?:\\b|\\))`, "i");
-      if (regex.test(text)) {
-        matched.push(product);
-      }
-    }
-  }
-
-  // 3. Product Name pattern
-  if (matched.length === 0) {
-    for (const product of catalogProducts) {
-      if (matched.length >= 4) break;
-      if (text.toLowerCase().includes(product.name.toLowerCase())) {
-        if (!matched.some((p) => p.id === product.id)) {
-          matched.push(product);
-        }
-      }
-    }
-  }
-
-  return matched.slice(0, 4);
-}
-
-function cleanAssistantText(text: string, hasProductCards: boolean): string {
-  if (!text) return "";
-  let cleaned = text;
-
-  if (hasProductCards) {
-    const lines = cleaned.split("\n");
-    const nonBulletLines = lines.filter((line) => {
-      const trimmed = line.trim();
-      if (!trimmed) return false;
-      if (
-        trimmed.startsWith("-") ||
-        trimmed.startsWith("*") ||
-        /^[0-9]+\./.test(trimmed) ||
-        /—|:\s*\d+\s*(kg|mm|cm|m)/i.test(trimmed) ||
-        /\[Ver produto\]/i.test(trimmed)
-      ) {
-        return false;
-      }
-      return true;
-    });
-
-    cleaned = nonBulletLines.join("\n");
-    cleaned = cleaned.replace(
-      /Para mais informações ou para cotar[^\n]*\n?/gi,
-      "",
-    );
-    cleaned = cleaned.replace(
-      /Se tiver alguma dúvida ou precisar de mais ajuda[^\n]*\n?/gi,
-      "",
-    );
-    cleaned = cleaned.replace(/\n{2,}/g, "\n\n").trim();
-
-    if (!cleaned) {
-      cleaned =
-        text.split("\n")[0] ||
-        "Para a sua operação, estes são os modelos recomendados:";
-    }
-  }
-
-  return cleaned;
-}
 
 function createWhatsAppUrl(messages: UIMessage[]): string {
   if (messages.length === 0) {
@@ -581,31 +492,41 @@ export function HammerAssistant() {
                 />
                 Continuar no WhatsApp
               </a>
-              <div className="flex items-center gap-2 rounded-xl border border-black/10 bg-assistant-input p-1.5 shadow-2xs transition-[background-color,border-color,box-shadow] duration-200 focus-within:border-brand-gold focus-within:bg-white focus-within:ring-2 focus-within:ring-brand-gold/25">
+              <div className="assistant-composer flex items-center gap-2 rounded-xl border border-black/10 bg-assistant-surface p-1.5 shadow-2xs transition-[background-color,border-color,box-shadow] duration-200 focus-within:border-brand-gold/70 focus-within:bg-white focus-within:ring-2 focus-within:ring-brand-gold/15">
                 <label htmlFor="hammer-assistant-input" className="sr-only">
                   Mensagem para o Assistente Hammer Gold
                 </label>
-                <Textarea
-                  id="hammer-assistant-input"
-                  ref={inputRef}
-                  name="assistant-message"
-                  value={input}
-                  onChange={(event) =>
-                    setInput(event.target.value.slice(0, 1_200))
-                  }
-                  onKeyDown={(event) => {
-                    if (event.key === "Enter" && !event.shiftKey) {
-                      event.preventDefault();
-                      submitMessage(input);
+                <div className="relative min-w-0 flex-1">
+                  {!input && (
+                    <span
+                      aria-hidden="true"
+                      className="pointer-events-none absolute inset-x-3 top-1/2 -translate-y-1/2 truncate text-sm leading-5 text-black/45"
+                    >
+                      {ASSISTANT_INPUT_PLACEHOLDER}
+                    </span>
+                  )}
+                  <Textarea
+                    id="hammer-assistant-input"
+                    ref={inputRef}
+                    name="assistant-message"
+                    value={input}
+                    onChange={(event) =>
+                      setInput(event.target.value.slice(0, 1_200))
                     }
-                  }}
-                  rows={1}
-                  maxLength={1_200}
-                  disabled={configuration !== "ready" || busy}
-                  autoComplete="off"
-                  placeholder="Pergunte sobre produtos, séries ou aplicações…"
-                  className="max-h-24 min-h-10 w-full resize-none border-none bg-transparent px-3 py-2 text-sm text-black outline-none placeholder:text-black/40 focus:border-none focus:ring-0 focus:outline-none focus-visible:border-none focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:outline-none"
-                />
+                    onKeyDown={(event) => {
+                      if (event.key === "Enter" && !event.shiftKey) {
+                        event.preventDefault();
+                        submitMessage(input);
+                      }
+                    }}
+                    rows={1}
+                    maxLength={1_200}
+                    disabled={configuration !== "ready" || busy}
+                    autoComplete="off"
+                    placeholder={ASSISTANT_INPUT_PLACEHOLDER}
+                    className="max-h-24 min-h-10 w-full resize-none border-none bg-transparent px-3 py-2 text-sm leading-5 text-black outline-none placeholder:text-transparent focus:border-none focus:ring-0 focus:outline-none focus-visible:border-none focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:outline-none"
+                  />
+                </div>
                 {busy ? (
                   <Button
                     type="button"
@@ -622,7 +543,7 @@ export function HammerAssistant() {
                     size="icon"
                     disabled={!input.trim() || configuration !== "ready"}
                     aria-label="Enviar mensagem"
-                    className="size-10 shrink-0 rounded-lg bg-black text-brand-gold transition-colors hover:bg-assistant-hover hover:text-white disabled:opacity-30"
+                    className="size-10 shrink-0 rounded-lg bg-black text-brand-gold transition-colors hover:bg-assistant-hover hover:text-white disabled:border-transparent disabled:bg-black/8 disabled:text-black/25 disabled:opacity-100"
                   >
                     <Send className="h-4 w-4" aria-hidden="true" />
                   </Button>

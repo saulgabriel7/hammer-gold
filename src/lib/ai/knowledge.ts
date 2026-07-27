@@ -103,10 +103,41 @@ function compact(value: string): string {
   return normalize(value).replace(/\s+/g, "");
 }
 
-function resolveMuscleGroup(value?: string): MuscleGroup | undefined {
+function resolveMuscleGroups(value?: string): MuscleGroup[] | undefined {
   if (!value) return undefined;
   const normalized = compact(value);
-  return muscleAliases[normalized] ?? muscleAliases[normalize(value).split(" ")[0]];
+
+  if (
+    normalized === "superiores" ||
+    normalized === "membrossuperiores" ||
+    normalized === "upperbody"
+  ) {
+    return ["Arm", "Shoulder", "Chest", "Back"];
+  }
+  if (
+    normalized === "inferiores" ||
+    normalized === "membrosinferiores" ||
+    normalized === "lowerbody"
+  ) {
+    return ["Leg", "Hip"];
+  }
+
+  const muscleGroup =
+    muscleAliases[normalized] ?? muscleAliases[normalize(value).split(" ")[0]];
+  return muscleGroup ? [muscleGroup] : undefined;
+}
+
+function clarifySpecificationLabel(label: string): string {
+  const compactLabel = label.toUpperCase().replace(/[^A-Z]/g, "");
+
+  if (compactLabel === "NO" || compactLabel === "NW") {
+    return "Peso líquido do equipamento";
+  }
+  if (compactLabel === "GW") {
+    return "Peso bruto com embalagem";
+  }
+
+  return label;
 }
 
 const SEARCH_STOP_WORDS = new Set([
@@ -200,9 +231,36 @@ function scoreProduct(product: CatalogProduct, query?: string): number {
   return score;
 }
 
+function scoreMuscleFit(
+  product: CatalogProduct,
+  requestedMuscleGroups?: MuscleGroup[]
+): number {
+  if (!requestedMuscleGroups) return 0;
+
+  const matchedGroups = requestedMuscleGroups.filter((muscleGroup) =>
+    product.muscleGroups.includes(muscleGroup)
+  ).length;
+  const accessoryLikeName =
+    /\b(barra|punho|pegador|puxador|manopla|acessorio)\b/.test(
+      normalize(product.name)
+    );
+
+  return (
+    matchedGroups * 40 +
+    Math.min(product.specifications?.length ?? 0, 4) * 2 +
+    (product.category === "Força" ? 10 : 0) +
+    (product.equipmentType === "Individual" ? 4 : 0) -
+    (accessoryLikeName ? 100 : 0)
+  );
+}
+
 function serializeProduct(product: CatalogProduct, detailed = false) {
-  const specDestaque = product.specifications?.[0]
-    ? `${product.specifications[0].label}: ${product.specifications[0].value}`
+  const specifications = (product.specifications ?? []).map((specification) => ({
+    ...specification,
+    label: clarifySpecificationLabel(specification.label),
+  }));
+  const specDestaque = specifications[0]
+    ? `${specifications[0].label}: ${specifications[0].value}`
     : product.loadType;
 
   return {
@@ -217,7 +275,7 @@ function serializeProduct(product: CatalogProduct, detailed = false) {
     tipoDeCarga: product.loadType,
     configuracao: product.equipmentType,
     segmentosRecomendados: product.recommendedSegments,
-    especificacoes: product.specifications ?? [],
+    especificacoes: specifications,
     specDestaque,
     image: product.image,
     slug: product.slug,
@@ -232,7 +290,7 @@ function serializeProduct(product: CatalogProduct, detailed = false) {
 }
 
 export function searchCatalog(options: CatalogSearchOptions) {
-  const muscleGroup = resolveMuscleGroup(options.muscleGroup);
+  const muscleGroups = resolveMuscleGroups(options.muscleGroup);
   const normalizedSeries = options.series ? normalize(options.series) : undefined;
   const limit = Math.max(1, Math.min(options.limit ?? 5, 8));
 
@@ -243,17 +301,36 @@ export function searchCatalog(options: CatalogSearchOptions) {
         !normalizedSeries || normalize(product.series).includes(normalizedSeries)
     )
     .filter(
-      (product) => !muscleGroup || product.muscleGroups.includes(muscleGroup)
+      (product) =>
+        !muscleGroups ||
+        muscleGroups.some((muscleGroup) =>
+          product.muscleGroups.includes(muscleGroup)
+        )
     )
     .filter(
       (product) =>
         !options.segment || product.recommendedSegments.includes(options.segment)
     )
-    .map((product) => ({ product, score: scoreProduct(product, options.query) }))
+    .map((product) => ({
+      product,
+      score:
+        scoreProduct(product, options.query) +
+        scoreMuscleFit(product, muscleGroups),
+    }))
     .filter(({ score }) => score > 0)
     .sort((a, b) => b.score - a.score || a.product.name.localeCompare(b.product.name));
 
-  const matches = ranked
+  const distinctRanked = muscleGroups
+    ? ranked.filter(
+        ({ product }, index, products) =>
+          products.findIndex(
+            ({ product: candidate }) =>
+              normalize(candidate.name) === normalize(product.name)
+          ) === index
+      )
+    : ranked;
+
+  const matches = distinctRanked
     .slice(0, limit)
     .map(({ product }) => serializeProduct(product));
 

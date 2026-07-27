@@ -128,6 +128,11 @@ select:focus-visible {
   outline-offset: 3px;
 }
 
+.assistant-composer textarea:focus-visible {
+  outline: none;
+  outline-offset: 0;
+}
+
 ::selection {
   background: var(--color-surface);
   color: var(--color-background);

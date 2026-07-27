@@ -16,8 +16,20 @@ export function AssistantProductCard({
   product,
   onNavigate,
 }: AssistantProductCardProps) {
-  const specHighlight = product.specifications?.[0]
-    ? `${product.specifications[0].label}: ${product.specifications[0].value}`
+  const preferredSpecification =
+    product.specifications?.find((specification) =>
+      /pilhas? de peso|torre de pesos/i.test(specification.label),
+    ) ?? product.specifications?.[0];
+  const specificationLabel = preferredSpecification?.label
+    .replace(/^N\.?O\.?$/i, "Peso líquido")
+    .replace(/^N\.?W\.?$/i, "Peso líquido")
+    .replace(/^G\.?W\.?$/i, "Peso bruto");
+  const specificationValue = preferredSpecification?.value.replace(
+    /^:\s*/,
+    "",
+  );
+  const specHighlight = preferredSpecification
+    ? `${specificationLabel}: ${specificationValue}`
     : product.loadType;
 
   return (

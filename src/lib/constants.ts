@@ -12,6 +12,7 @@ export interface NavLink {
 export const NAV_LINKS: readonly NavLink[] = [
   { label: "Início", href: "/" },
   { label: "Produtos", href: "/products" },
+  { label: "Simulador 3D", href: "/planner" },
   { label: "Soluções", href: "/solutions" },
   { label: "Engenharia", href: "/engineering-quality" },
   { label: "Sobre nós", href: "/about" },
