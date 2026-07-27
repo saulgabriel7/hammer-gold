@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import type { UseFormReturn } from "react-hook-form";
 import { ArrowRight } from "lucide-react";
 import { WhatsappIcon } from "@/components/icons";
+import { cn } from "@/lib/utils";
 import type { QuoteFormValues } from "@/lib/validations";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -26,7 +27,7 @@ export function QuoteContactForm({ form, onSubmit, disabled }: QuoteContactFormP
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="rounded-2xl bg-black p-5 text-white sm:p-8"
+      className="w-full min-w-0 rounded-2xl bg-black p-5 text-white sm:p-8"
       noValidate
     >
       <p className="eyebrow text-white/45">Dados para atendimento</p>
@@ -127,11 +128,11 @@ export function QuoteContactForm({ form, onSubmit, disabled }: QuoteContactFormP
         type="submit"
         variant="inverse"
         disabled={disabled || isSubmitting}
-        className="mt-7 w-full gap-2"
+        className="mt-7 h-auto min-h-12 w-full gap-2 whitespace-normal px-4 py-3.5 text-center sm:whitespace-nowrap"
       >
-        <WhatsappIcon className="h-5 w-5" aria-hidden="true" />
-        Enviar seleção completa no WhatsApp
-        <ArrowRight aria-hidden="true" />
+        <WhatsappIcon className="h-5 w-5 shrink-0" aria-hidden="true" />
+        <span>Enviar seleção completa no WhatsApp</span>
+        <ArrowRight className="shrink-0" aria-hidden="true" />
       </Button>
     </form>
   );
@@ -149,7 +150,7 @@ function QuoteField({
   children: ReactNode;
 }) {
   return (
-    <label className={full ? "sm:col-span-2" : ""}>
+    <label className={cn("block w-full min-w-0", full ? "sm:col-span-2" : "")}>
       <span className="text-xs font-bold uppercase tracking-wider text-white/60">
         {label}
       </span>

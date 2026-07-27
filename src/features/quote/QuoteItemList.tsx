@@ -27,7 +27,7 @@ export function QuoteItemList({
   removeFromQuote,
 }: QuoteItemListProps) {
   return (
-    <Card className="p-5 sm:p-7">
+    <Card className="w-full min-w-0 p-5 sm:p-7">
       <div className="flex items-center justify-between gap-4">
         <div>
           <p className="eyebrow text-muted">Sua seleção</p>

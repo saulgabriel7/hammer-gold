@@ -86,6 +86,7 @@
 html {
   scroll-behavior: smooth;
   background: var(--color-background);
+  overflow-x: clip;
 }
 
 body {
@@ -93,6 +94,7 @@ body {
   color: var(--color-text);
   font-family: var(--font-sans);
   text-rendering: optimizeLegibility;
+  overflow-x: clip;
 }
 
 button,
