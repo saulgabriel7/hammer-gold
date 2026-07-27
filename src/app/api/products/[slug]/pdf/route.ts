@@ -133,25 +133,31 @@ export async function GET(
   pdf.setSubject("Ficha técnica de equipamento profissional");
   pdf.setCreator("Hammer Gold");
 
+  const readAssetBuffer = async (relativePath: string) => {
+    try {
+      const fullPath = path.join(process.cwd(), "public", relativePath.replace(/^\//, ""));
+      return await readFile(fullPath);
+    } catch {
+      const origin = new URL(_request.url).origin;
+      const cleanPath = relativePath.startsWith("/") ? relativePath : `/${relativePath}`;
+      const res = await fetch(`${origin}${cleanPath}`);
+      if (!res.ok) throw new Error(`Failed to fetch asset ${relativePath}`);
+      return Buffer.from(await res.arrayBuffer());
+    }
+  };
+
   let logo: Awaited<ReturnType<typeof pdf.embedPng>> | null = null;
   try {
-    logo = await pdf.embedPng(
-      await readFile(
-        path.join(process.cwd(), "public", "assets", "logo-hammer-gold-transparente.png")
-      )
-    );
+    const logoBytes = await readAssetBuffer("assets/logo-hammer-gold-transparente.png");
+    logo = await pdf.embedPng(logoBytes);
   } catch {
     logo = null;
   }
 
   let productImage: Awaited<ReturnType<typeof pdf.embedJpg>> | null = null;
   try {
-    const productPath = path.join(
-      process.cwd(),
-      "public",
-      product.image.replace(/^\//, "")
-    );
-    const jpegBytes = await sharp(await readFile(productPath), { page: 0 })
+    const sourceBuffer = await readAssetBuffer(product.image);
+    const jpegBytes = await sharp(sourceBuffer, { page: 0 })
       .rotate()
       .resize({
         width: 1000,

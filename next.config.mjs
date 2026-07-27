@@ -39,6 +39,9 @@ const nextConfig = {
       },
     ];
   },
+  outputFileTracingIncludes: {
+    "/api/**/*": ["./public/**/*"],
+  },
   async headers() {
     return [
       {
