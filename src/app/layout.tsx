@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { HammerAssistantLoader } from "@/components/assistant/HammerAssistantLoader";
@@ -42,6 +43,7 @@ export default function RootLayout({
         <main>{children}</main>
         <HammerAssistantLoader />
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
