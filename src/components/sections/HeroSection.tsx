@@ -1,10 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
 import { ArrowRight, MessageCircle } from "lucide-react";
+import { ButtonLink } from "@/components/ui/button-link";
 import { WHATSAPP_NUMBER } from "@/lib/constants";
 
 export default function HeroSection() {
-
   return (
     <section
       id="hero"
@@ -23,7 +22,7 @@ export default function HeroSection() {
       </div>
 
       <div className="site-container relative z-10 flex min-w-0 flex-1 items-center py-10 sm:py-14 lg:py-10">
-        <div className="min-w-0 max-w-4xl">
+        <div className="max-w-4xl min-w-0">
           <p className="t-stagger-line eyebrow max-w-full text-pretty text-white/55">
             Importadora de equipamentos profissionais
           </p>
@@ -32,25 +31,30 @@ export default function HeroSection() {
           </h1>
           <div className="t-stagger-line t-stagger-line--3">
             <p className="body-large mt-5 max-w-2xl text-pretty text-white/65 sm:mt-7">
-              Hammer Gold. Equipamentos preparados para suportar a força dos atletas e a
-              rotina das melhores academias.
+              Hammer Gold. Equipamentos preparados para suportar a força dos
+              atletas e a rotina das melhores academias.
             </p>
             <div className="mt-7 flex flex-col gap-3 sm:mt-9 sm:flex-row">
-              <Link href="/products" className="button-secondary w-full sm:w-auto">
+              <ButtonLink
+                href="/products"
+                variant="inverse"
+                className="w-full sm:w-auto"
+              >
                 Explorar equipamentos
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
-              </Link>
-              <a
+              </ButtonLink>
+              <ButtonLink
                 href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-                  "Olá, gostaria de falar com um consultor da Hammer Gold."
+                  "Olá, gostaria de falar com um consultor da Hammer Gold.",
                 )}`}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full border border-white/25 px-6 text-xs font-bold uppercase tracking-wider text-white transition-colors duration-200 hover:border-white hover:bg-white/10 sm:w-auto"
+                variant="outline"
+                className="w-full border-white/25 text-white hover:border-white hover:bg-white/10 sm:w-auto"
               >
                 <MessageCircle className="h-4 w-4" aria-hidden="true" />
                 Falar com consultor
-              </a>
+              </ButtonLink>
             </div>
           </div>
         </div>
@@ -60,19 +64,19 @@ export default function HeroSection() {
         <div className="site-container grid grid-cols-3 divide-x divide-white/10 py-4 text-center sm:py-5">
           <div className="min-w-0 px-1 sm:px-3">
             <p className="text-xl font-black sm:text-2xl">289</p>
-            <p className="mt-1 text-[8px] leading-tight uppercase tracking-[0.06em] text-white/45 sm:text-[10px] sm:tracking-wider">
+            <p className="mt-1 text-kicker leading-tight tracking-[0.06em] text-on-dark-muted uppercase sm:text-xs sm:tracking-wider">
               Equipamentos
             </p>
           </div>
           <div className="min-w-0 px-1 sm:px-3">
             <p className="text-xl font-black sm:text-2xl">8</p>
-            <p className="mt-1 text-[8px] leading-tight uppercase tracking-[0.06em] text-white/45 sm:text-[10px] sm:tracking-wider">
+            <p className="mt-1 text-kicker leading-tight tracking-[0.06em] text-on-dark-muted uppercase sm:text-xs sm:tracking-wider">
               Categorias
             </p>
           </div>
           <div className="min-w-0 px-1 sm:px-3">
             <p className="text-xl font-black sm:text-2xl">1/5</p>
-            <p className="mt-1 text-[8px] leading-tight uppercase tracking-[0.06em] text-white/45 sm:text-[10px] sm:tracking-wider">
+            <p className="mt-1 text-kicker leading-tight tracking-[0.06em] text-on-dark-muted uppercase sm:text-xs sm:tracking-wider">
               Do preço de grandes marcas
             </p>
           </div>

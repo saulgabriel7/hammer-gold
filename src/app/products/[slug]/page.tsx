@@ -69,7 +69,9 @@ export default async function ProductDetailPage({ params }: Props) {
           <div className="min-w-0">
             <div className="mb-4 flex items-center justify-between gap-4">
               <p className="eyebrow text-muted">Visão geral</p>
-              {hasAnimatedOverview && <Badge variant="muted">Visualização 360°</Badge>}
+              {hasAnimatedOverview && (
+                <Badge variant="muted">Visualização 360°</Badge>
+              )}
             </div>
             <Card className="overflow-hidden">
               <ProductMedia
@@ -79,7 +81,9 @@ export default async function ProductDetailPage({ params }: Props) {
                     ? `${product.name} em visualização rotativa`
                     : product.name
                 }
-                unoptimized={hasAnimatedOverview || overviewImageUrl === staticImageUrl}
+                unoptimized={
+                  hasAnimatedOverview || overviewImageUrl === staticImageUrl
+                }
                 sizes="(max-width: 1024px) 100vw, 52vw"
                 priority
               />
@@ -91,16 +95,18 @@ export default async function ProductDetailPage({ params }: Props) {
               <Badge>{product.category}</Badge>
               <Badge>{product.series}</Badge>
             </div>
-            <p className="mt-6 text-xs font-bold uppercase tracking-[0.15em] text-muted">
+            <p className="mt-6 text-xs font-bold tracking-[0.15em] text-muted uppercase">
               {product.modelCode}
             </p>
             <h1
               id="product-overview-title"
-              className="mt-3 text-balance text-4xl font-black leading-[0.98] tracking-[-0.045em] sm:text-5xl"
+              className="mt-3 text-4xl leading-[0.98] font-black tracking-[-0.045em] text-balance sm:text-5xl"
             >
               {product.name}
             </h1>
-            <p className="mt-5 text-base leading-7 text-muted">{product.description}</p>
+            <p className="mt-5 text-base leading-7 text-muted">
+              {product.description}
+            </p>
 
             <div className="mt-5 flex flex-wrap gap-2">
               {product.muscleGroups.map((group) => (
@@ -111,12 +117,12 @@ export default async function ProductDetailPage({ params }: Props) {
             </div>
 
             <div className="mt-6 border-t border-border pt-5">
-              <p className="text-xs font-extrabold uppercase tracking-[0.12em] text-black">
+              <p className="text-xs font-extrabold tracking-[0.12em] text-black uppercase">
                 Solicite uma proposta
               </p>
               <p className="mt-2 text-sm leading-6 text-muted">
-                Produto sem preço público. Informe a quantidade e receba atendimento
-                consultivo para o seu projeto.
+                Produto sem preço público. Informe a quantidade e receba
+                atendimento consultivo para o seu projeto.
               </p>
               <div
                 className="mt-5 space-y-3"
@@ -128,7 +134,7 @@ export default async function ProductDetailPage({ params }: Props) {
                   href={`/api/products/${product.slug}/pdf`}
                   className={cn(
                     buttonVariants({ variant: "outline" }),
-                    "w-full bg-white"
+                    "w-full bg-white",
                   )}
                   download
                 >
@@ -138,7 +144,7 @@ export default async function ProductDetailPage({ params }: Props) {
               </div>
             </div>
 
-            <dl className="mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-[var(--radius-lg)] border border-border bg-border text-sm">
+            <dl className="mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-border bg-border text-sm">
               <div className="bg-white p-4">
                 <dt className="text-xs text-muted">Tipo de carga</dt>
                 <dd className="mt-1 font-bold">{product.loadType}</dd>
@@ -161,12 +167,12 @@ export default async function ProductDetailPage({ params }: Props) {
             <p className="eyebrow text-muted">Imagem do produto</p>
             <h2
               id="static-product-image-title"
-              className="mt-5 text-3xl font-black leading-none tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]"
+              className="mt-5 text-3xl leading-none font-black tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]"
             >
               Uma vista limpa para analisar cada detalhe.
             </h2>
             <p className="body-large mt-6 text-muted">
-              Imagem estática, sem rotação, preparada para facilitar a leitura do
+              Imagem estática, sem rotação, preparada para facilitar a leitura do 
               equipamento, dos apoios e da estrutura.
             </p>
           </div>
@@ -189,12 +195,18 @@ export default async function ProductDetailPage({ params }: Props) {
               Recursos apresentados de forma clara.
             </h2>
             <div
-              className={`mt-10 grid gap-6 ${
-                product.gallery.length > 1 ? "md:grid-cols-2" : "mx-auto max-w-3xl"
-              }`}
+              className={cn(
+                "mt-10 grid gap-6",
+                product.gallery.length > 1
+                  ? "md:grid-cols-2"
+                  : "mx-auto max-w-3xl",
+              )}
             >
               {product.gallery.map((image, index) => (
-                <Card key={image} className="overflow-hidden border-black/10 bg-black">
+                <Card
+                  key={image}
+                  className="overflow-hidden border-black/10 bg-black"
+                >
                   <ProductMedia
                     src={image}
                     alt={`${product.name}, detalhe ${index + 1}`}
@@ -216,17 +228,24 @@ export default async function ProductDetailPage({ params }: Props) {
       {product.detailSections && product.detailSections.length > 0 && (
         <section className="section-space bg-black text-white">
           <div className="site-container">
-            <p className="eyebrow text-white/45">Detalhes do equipamento</p>
+            <p className="eyebrow text-on-dark-muted">
+              Detalhes do equipamento
+            </p>
             <h2 className="section-title mt-5 max-w-4xl">
               Construído para uma rotina profissional.
             </h2>
-            <div className="mt-12 grid gap-px overflow-hidden rounded-[var(--radius-xl)] border border-white/10 bg-white/10 md:grid-cols-2">
+            <div className="mt-12 grid gap-px overflow-hidden rounded-xl border border-white/10 bg-white/10 md:grid-cols-2">
               {product.detailSections.map((section, index) => (
-                <article key={`${section.title}-${index}`} className="bg-black p-7 sm:p-9">
-                  <p className="text-xs font-bold text-white/35">
+                <article
+                  key={`${section.title}-${index}`}
+                  className="bg-black p-7 sm:p-9"
+                >
+                  <p className="text-xs font-bold text-on-dark-muted">
                     {String(index + 1).padStart(2, "0")}
                   </p>
-                  <h3 className="mt-5 text-xl font-extrabold">{section.title}</h3>
+                  <h3 className="mt-5 text-xl font-extrabold">
+                    {section.title}
+                  </h3>
                   <ul className="mt-6 space-y-3">
                     {section.bullets.map((bullet) => (
                       <li
@@ -249,13 +268,19 @@ export default async function ProductDetailPage({ params }: Props) {
           <div className="site-container">
             <p className="eyebrow text-muted">Ficha técnica</p>
             <h2 className="section-title mt-5">Especificações disponíveis.</h2>
-            <dl className="mt-10 grid gap-px overflow-hidden rounded-[var(--radius-xl)] border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
+            <dl className="mt-10 grid gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
               {product.specifications.map((specification, index) => (
-                <div key={`${specification.label}-${index}`} className="bg-white p-6">
-                  <dt className="text-[10px] font-bold uppercase tracking-wider text-muted">
-                    {TRANSLATED_SPECS[specification.label] ?? specification.label}
+                <div
+                  key={`${specification.label}-${index}`}
+                  className="bg-white p-6"
+                >
+                  <dt className="text-kicker font-bold tracking-wider text-muted uppercase">
+                    {TRANSLATED_SPECS[specification.label] ??
+                      specification.label}
                   </dt>
-                  <dd className="mt-3 text-lg font-extrabold">{specification.value}</dd>
+                  <dd className="mt-3 text-lg font-extrabold">
+                    {specification.value}
+                  </dd>
                 </div>
               ))}
             </dl>
@@ -275,7 +300,7 @@ export default async function ProductDetailPage({ params }: Props) {
                 href="/products"
                 className={cn(
                   buttonVariants({ variant: "outline" }),
-                  "hidden sm:inline-flex"
+                  "hidden sm:inline-flex",
                 )}
               >
                 Catálogo completo

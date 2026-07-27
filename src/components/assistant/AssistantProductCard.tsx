@@ -16,16 +16,15 @@ export function AssistantProductCard({
   product,
   onNavigate,
 }: AssistantProductCardProps) {
-  const specHighlight =
-    product.specifications?.[0]
-      ? `${product.specifications[0].label}: ${product.specifications[0].value}`
-      : product.loadType;
+  const specHighlight = product.specifications?.[0]
+    ? `${product.specifications[0].label}: ${product.specifications[0].value}`
+    : product.loadType;
 
   return (
-    <Card className="group relative overflow-hidden border border-black/10 bg-white p-3 shadow-xs transition-all duration-300 hover:border-[#D4AF37]/50 hover:shadow-md">
-      <div className="flex items-center gap-3.5">
+    <Card className="group relative overflow-hidden border border-black/10 bg-white p-3 shadow-xs transition-[border-color,box-shadow] duration-300 hover:border-brand-gold/50 hover:shadow-md">
+      <div className="grid grid-cols-[4rem_minmax(0,1fr)] items-center gap-3 sm:grid-cols-[5rem_minmax(0,1fr)] sm:gap-3.5">
         {/* Product Thumbnail */}
-        <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-lg border border-black/5 bg-[#f8f8f6] p-1.5">
+        <div className="relative size-16 overflow-hidden rounded-lg border border-black/5 bg-assistant-surface p-1.5 sm:size-20">
           <Image
             src={product.image}
             alt={product.name}
@@ -41,11 +40,11 @@ export function AssistantProductCard({
             <div className="mb-1 flex items-center gap-1.5">
               <Badge
                 variant="outline"
-                className="h-4 border-[#D4AF37]/40 bg-[#D4AF37]/10 px-1.5 text-[9px] font-extrabold text-[#9A7B1C]"
+                className="min-h-5 border-brand-gold/40 bg-brand-gold/10 px-1.5 py-0 text-kicker font-extrabold text-brand-gold-deep"
               >
                 {product.modelCode}
               </Badge>
-              <span className="truncate text-[10px] font-medium text-muted">
+              <span className="truncate text-kicker font-medium text-muted">
                 {product.series}
               </span>
             </div>
@@ -55,19 +54,22 @@ export function AssistantProductCard({
           </div>
 
           {/* Technical Spec Highlight & Action Link */}
-          <div className="mt-1 flex items-center justify-between gap-2">
-            <span className="inline-flex max-w-[140px] items-center gap-1 rounded bg-[#f4f4f1] px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700">
-              <Layers className="h-2.5 w-2.5 shrink-0 text-[#D4AF37]" />
+          <div className="mt-1 flex flex-col items-stretch gap-2 min-[360px]:flex-row min-[360px]:items-center min-[360px]:justify-between">
+            <span className="inline-flex max-w-35 items-center gap-1 rounded bg-paper px-1.5 py-0.5 text-kicker font-semibold text-neutral-700">
+              <Layers className="h-2.5 w-2.5 shrink-0 text-brand-gold" />
               <span className="truncate">{specHighlight}</span>
             </span>
 
             <Link
               href={`/products/${product.slug}`}
               onClick={onNavigate}
-              className="inline-flex items-center gap-0.5 rounded-full bg-black px-2.5 py-1 text-[10px] font-extrabold text-[#D4AF37] transition-all duration-200 hover:bg-[#1a1a1c] hover:text-white"
+              className="inline-flex min-h-10 items-center justify-center gap-0.5 rounded-full bg-black px-3 py-1 text-kicker font-extrabold text-brand-gold transition-colors duration-200 hover:bg-assistant-hover hover:text-white"
             >
               Ver produto
-              <ArrowUpRight className="h-3 w-3 text-[#D4AF37]" />
+              <ArrowUpRight
+                className="h-3 w-3 text-brand-gold"
+                aria-hidden="true"
+              />
             </Link>
           </div>
         </div>

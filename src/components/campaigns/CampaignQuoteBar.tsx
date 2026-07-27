@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import { ArrowUpRight, ClipboardList } from "lucide-react";
+import { ButtonLink } from "@/components/ui/button-link";
 import { useAppStore } from "@/store/useAppStore";
 
 interface CampaignQuoteBarProps {
@@ -16,7 +16,7 @@ export function CampaignQuoteBar({ productIds }: CampaignQuoteBarProps) {
   );
 
   return (
-    <aside className="mt-8 flex flex-col gap-5 rounded-[var(--radius-xl)] bg-black p-6 text-white sm:flex-row sm:items-center sm:justify-between sm:p-8">
+    <aside className="mt-8 flex flex-col gap-5 rounded-xl bg-black p-6 text-white sm:flex-row sm:items-center sm:justify-between sm:p-8">
       <div className="flex items-start gap-4">
         <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white/10">
           <ClipboardList className="h-5 w-5" aria-hidden="true" />
@@ -32,10 +32,10 @@ export function CampaignQuoteBar({ productIds }: CampaignQuoteBarProps) {
           </p>
         </div>
       </div>
-      <Link href="/quote" className="button-secondary shrink-0">
+      <ButtonLink href="/quote" variant="inverse" className="shrink-0">
         Abrir minha cotação
         <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-      </Link>
+      </ButtonLink>
     </aside>
   );
 }

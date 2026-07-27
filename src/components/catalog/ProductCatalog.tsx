@@ -9,11 +9,7 @@ import {
   X,
 } from "lucide-react";
 import { TRANSLATED_MUSCLE_GROUPS } from "@/lib/constants";
-import type {
-  CustomerSegment,
-  LoadType,
-  MuscleGroup,
-} from "@/types/product";
+import type { CustomerSegment, LoadType, MuscleGroup } from "@/types/product";
 import ProductCard from "@/components/catalog/ProductCard";
 import { CatalogPagination } from "./CatalogPagination";
 import { useProductCatalogFilters } from "./useProductCatalogFilters";
@@ -72,7 +68,7 @@ export function ProductCatalog(props: ProductCatalogProps) {
     filteredProducts.length === 0 ? 0 : (currentPage - 1) * itemsPerPage + 1;
   const lastVisibleProduct = Math.min(
     currentPage * itemsPerPage,
-    filteredProducts.length
+    filteredProducts.length,
   );
 
   return (
@@ -84,7 +80,7 @@ export function ProductCatalog(props: ProductCatalogProps) {
         <div className="p-4 sm:p-6 lg:p-7">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <p className="text-[11px] font-extrabold uppercase tracking-[0.16em] text-muted">
+              <p className="text-caption font-extrabold tracking-[0.16em] text-muted uppercase">
                 Busca inteligente
               </p>
               <h2 className="mt-2 text-2xl font-black tracking-[-0.035em] sm:text-3xl">
@@ -118,7 +114,7 @@ export function ProductCatalog(props: ProductCatalogProps) {
                 placeholder="Busque por código, equipamento, série ou descrição"
                 value={searchQuery}
                 onChange={(event) => setSearchQuery(event.target.value)}
-                className="h-14 rounded-[var(--radius-lg)] border-black/15 bg-paper/55 ps-12 pe-12 text-sm font-medium placeholder:text-muted focus-visible:bg-white"
+                className="h-14 rounded-lg border-black/15 bg-paper/55 ps-12 pe-12 text-sm font-medium placeholder:text-muted focus-visible:bg-white"
               />
               {searchQuery && (
                 <button
@@ -144,7 +140,7 @@ export function ProductCatalog(props: ProductCatalogProps) {
                 id="catalog-sort"
                 value={sortBy}
                 onChange={(event) => setSortBy(event.target.value)}
-                className="h-14 rounded-[var(--radius-lg)] border-black/15 ps-11"
+                className="h-14 rounded-lg border-black/15 ps-11"
                 aria-label="Ordenar equipamentos"
               >
                 <option value="modelCode-asc">Código do modelo</option>
@@ -153,7 +149,6 @@ export function ProductCatalog(props: ProductCatalogProps) {
               </NativeSelect>
             </div>
           </div>
-
         </div>
 
         <div className="border-t border-border bg-paper/70 p-4 sm:p-6">
@@ -174,14 +169,13 @@ export function ProductCatalog(props: ProductCatalogProps) {
                 {filtersOpen ? "Ocultar" : "Abrir"}
               </span>
             </Button>
-
           </div>
 
           <div
             id="catalog-advanced-filters"
             className={cn(
               "gap-3 pt-4 sm:grid-cols-2 lg:grid lg:grid-cols-4 lg:pt-0",
-              filtersOpen ? "grid" : "hidden"
+              filtersOpen ? "grid" : "hidden",
             )}
           >
             <FilterSelect label="Série" htmlFor="catalog-series">
@@ -226,7 +220,7 @@ export function ProductCatalog(props: ProductCatalogProps) {
                 value={selectedSegment}
                 onChange={(event) =>
                   setSelectedSegment(
-                    event.target.value as CustomerSegment | "all"
+                    event.target.value as CustomerSegment | "all",
                   )
                 }
                 className="h-11 bg-white font-semibold"
@@ -257,7 +251,6 @@ export function ProductCatalog(props: ProductCatalogProps) {
                 ))}
               </NativeSelect>
             </FilterSelect>
-
           </div>
         </div>
       </Card>
@@ -309,8 +302,8 @@ export function ProductCatalog(props: ProductCatalogProps) {
             Nenhum equipamento encontrado
           </h3>
           <p className="mx-auto mt-2 max-w-md text-sm leading-6 text-muted">
-            Tente ajustar o termo de busca ou remover alguns filtros para ampliar
-            os resultados.
+            Tente ajustar o termo de busca ou remover alguns filtros para
+            ampliar os resultados.
           </p>
           <Button onClick={clearFilters} className="mt-6">
             Limpar todos os filtros
@@ -340,7 +333,7 @@ function FilterSelect({
     <div>
       <label
         htmlFor={htmlFor}
-        className="mb-2 block text-[10px] font-extrabold uppercase tracking-[0.14em] text-muted"
+        className="mb-2 block text-kicker font-extrabold tracking-[0.14em] text-muted uppercase"
       >
         {label}
       </label>

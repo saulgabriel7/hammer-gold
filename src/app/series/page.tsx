@@ -45,7 +45,7 @@ export default function SeriesIndexPage() {
                     {item.description}
                   </p>
                 </div>
-                <span className="mt-7 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider">
+                <span className="mt-7 inline-flex items-center gap-2 text-xs font-bold tracking-wider uppercase">
                   Ver equipamentos
                   <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
                 </span>

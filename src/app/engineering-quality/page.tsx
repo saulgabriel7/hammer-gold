@@ -6,7 +6,8 @@ import ContactCTA from "@/components/sections/ContactCTA";
 
 export const metadata: Metadata = {
   title: "Engenharia e Qualidade | Hammer Gold",
-  description: "Conheça os critérios de seleção técnica, resistência mecânica e qualidade biomecânica dos equipamentos Hammer Gold.",
+  description:
+    "Conheça os critérios de seleção técnica, resistência mecânica e qualidade biomecânica dos equipamentos Hammer Gold.",
 };
 
 const pillars = [
@@ -36,22 +37,26 @@ const details = [
   {
     image: "/images/institucional/estrutura-aco-qualidade.png",
     title: "Chassi em Aço Reforçado",
-    description: "Soldagem robotizada e pintura eletrostática de alta resistência mecânica.",
+    description:
+      "Soldagem robotizada e pintura eletrostática de alta resistência mecânica.",
   },
   {
     image: "/images/institucional/leg-press-engenharia.jpeg",
     title: "Movimentos Guiados Convergentes",
-    description: "Sensação natural de peso livre com segurança articular completa.",
+    description:
+      "Sensação natural de peso livre com segurança articular completa.",
   },
   {
     image: "/images/institucional/design-biomecanico-original.png",
     title: "Polias e Sistema de Transmissão",
-    description: "Eliminação de pontos mortos para repetições fluidas e contínuas.",
+    description:
+      "Eliminação de pontos mortos para repetições fluidas e contínuas.",
   },
   {
     image: "/images/series/serie-forja-racing.jpeg",
     title: "Estofados e Ergonomia de Contato",
-    description: "Densidade ideal de espuma e suporte anatômico em todos os exercícios.",
+    description:
+      "Densidade ideal de espuma e suporte anatômico em todos os exercícios.",
   },
 ] as const;
 
@@ -81,7 +86,7 @@ export default function EngineeringQualityPage() {
               return (
                 <article
                   key={pillar.title}
-                  className="rounded-2xl border border-black/8 bg-white p-8 shadow-2xs transition-all duration-300 hover:border-black/20 hover:shadow-md"
+                  className="rounded-2xl border border-black/8 bg-white p-7 shadow-2xs transition-[border-color,box-shadow] duration-300 hover:border-black/20 hover:shadow-md"
                 >
                   <div className="flex items-center justify-between">
                     <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-black text-white">
@@ -130,8 +135,13 @@ export default function EngineeringQualityPage() {
                 </div>
                 <div className="p-6 sm:p-8">
                   <div className="flex items-center gap-3">
-                    <CheckCircle2 className="h-5 w-5 shrink-0 text-emerald-400" aria-hidden="true" />
-                    <h3 className="text-lg font-bold text-white">{item.title}</h3>
+                    <CheckCircle2
+                      className="h-5 w-5 shrink-0 text-emerald-400"
+                      aria-hidden="true"
+                    />
+                    <h3 className="text-lg font-bold text-white">
+                      {item.title}
+                    </h3>
                   </div>
                   <p className="mt-2 text-xs leading-5 text-white/60">
                     {item.description}

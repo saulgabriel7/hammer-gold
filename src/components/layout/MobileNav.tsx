@@ -3,7 +3,9 @@
 import { useEffect, useRef } from "react";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import { ButtonLink } from "@/components/ui/button-link";
 import { NAV_LINKS } from "@/lib/constants";
+import { cn } from "@/lib/utils";
 
 interface MobileNavProps {
   open: boolean;
@@ -26,15 +28,19 @@ export default function MobileNav({ open, onClose }: MobileNavProps) {
 
   return (
     <div
-      className={`fixed inset-0 z-40 xl:hidden ${open ? "pointer-events-auto" : "pointer-events-none"}`}
+      className={cn(
+        "fixed inset-0 z-40 xl:hidden",
+        open ? "pointer-events-auto" : "pointer-events-none",
+      )}
       aria-hidden={!open}
     >
       <button
         type="button"
         onClick={onClose}
-        className={`absolute inset-0 bg-black/70 transition-opacity duration-300 ${
-          open ? "opacity-100" : "opacity-0"
-        }`}
+        className={cn(
+          "absolute inset-0 bg-black/70 transition-opacity duration-300",
+          open ? "opacity-100" : "opacity-0",
+        )}
         aria-label="Fechar menu"
         tabIndex={open ? 0 : -1}
       />
@@ -43,9 +49,12 @@ export default function MobileNav({ open, onClose }: MobileNavProps) {
         ref={panelRef}
         tabIndex={-1}
         data-open={open}
-        className="t-panel-slide absolute inset-x-0 top-[88px] max-h-[calc(100dvh-88px)] overflow-y-auto border-t border-white/10 bg-black px-5 py-8 text-white"
+        className="t-panel-slide absolute inset-x-0 top-(--header-height) max-h-[calc(100dvh-var(--header-height))] overflow-y-auto border-t border-white/10 bg-black px-5 py-8 text-white"
       >
-        <nav className="site-container flex flex-col" aria-label="Navegação mobile">
+        <nav
+          className="site-container flex flex-col"
+          aria-label="Navegação mobile"
+        >
           {NAV_LINKS.map((link, index) => (
             <Link
               key={link.href}
@@ -55,22 +64,26 @@ export default function MobileNav({ open, onClose }: MobileNavProps) {
               className="flex items-center justify-between border-b border-white/10 py-4 text-xl font-bold tracking-tight"
             >
               <span>
-                <span className="mr-3 text-xs font-medium text-white/35">
+                <span className="mr-3 text-xs font-medium text-on-dark-muted">
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 {link.label}
               </span>
-              <ArrowUpRight className="h-5 w-5 text-white/50" aria-hidden="true" />
+              <ArrowUpRight
+                className="h-5 w-5 text-white/50"
+                aria-hidden="true"
+              />
             </Link>
           ))}
-          <Link
+          <ButtonLink
             href="/quote"
             onClick={onClose}
             tabIndex={open ? 0 : -1}
-            className="button-secondary mt-7 w-full"
+            variant="inverse"
+            className="mt-7 w-full"
           >
             Abrir minha cotação
-          </Link>
+          </ButtonLink>
         </nav>
       </div>
     </div>

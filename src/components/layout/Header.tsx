@@ -7,6 +7,7 @@ import { NAV_LINKS } from "@/lib/constants";
 import { Logo } from "@/components/layout/Logo";
 import { QuoteCountLink } from "@/components/layout/QuoteCountLink";
 import MobileNav from "@/components/layout/MobileNav";
+import { cn } from "@/lib/utils";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -20,16 +21,19 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed inset-x-0 top-0 z-50 h-[88px] border-b border-white/10 bg-black/95 text-white backdrop-blur-md">
+      <header className="fixed inset-x-0 top-0 z-50 h-(--header-height) border-b border-white/10 bg-black/95 text-white backdrop-blur-md">
         <div className="site-container flex h-full items-center justify-between gap-3 sm:gap-6">
           <Logo />
 
-          <nav className="hidden items-center gap-5 xl:flex" aria-label="Navegação principal">
+          <nav
+            className="hidden items-center gap-5 xl:flex"
+            aria-label="Navegação principal"
+          >
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-[12px] font-semibold uppercase tracking-[0.08em] text-white/70 transition-colors duration-200 hover:text-white"
+                className="text-xs font-semibold tracking-[0.08em] text-white/70 uppercase transition-colors duration-200 hover:text-white"
               >
                 {link.label}
               </Link>
@@ -47,15 +51,17 @@ export default function Header() {
               aria-label={mobileOpen ? "Fechar menu" : "Abrir menu"}
             >
               <Menu
-                className={`absolute h-5 w-5 transition-[transform,opacity] duration-200 ${
-                  mobileOpen ? "scale-0 opacity-0" : "scale-100 opacity-100"
-                }`}
+                className={cn(
+                  "absolute h-5 w-5 transition-[transform,opacity] duration-200",
+                  mobileOpen ? "scale-0 opacity-0" : "scale-100 opacity-100",
+                )}
                 aria-hidden="true"
               />
               <X
-                className={`absolute h-5 w-5 transition-[transform,opacity] duration-200 ${
-                  mobileOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"
-                }`}
+                className={cn(
+                  "absolute h-5 w-5 transition-[transform,opacity] duration-200",
+                  mobileOpen ? "scale-100 opacity-100" : "scale-0 opacity-0",
+                )}
                 aria-hidden="true"
               />
             </button>

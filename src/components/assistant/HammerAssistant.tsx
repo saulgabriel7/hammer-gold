@@ -33,6 +33,7 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { catalogProducts } from "@/data/catalog-products";
 import { WHATSAPP_NUMBER } from "@/lib/constants";
+import { cn } from "@/lib/utils";
 import type { CatalogProduct } from "@/types/product";
 
 const STORAGE_OPEN_KEY = "hammer-gold-assistant-open-state";
@@ -118,12 +119,20 @@ function cleanAssistantText(text: string, hasProductCards: boolean): string {
     });
 
     cleaned = nonBulletLines.join("\n");
-    cleaned = cleaned.replace(/Para mais informações ou para cotar[^\n]*\n?/gi, "");
-    cleaned = cleaned.replace(/Se tiver alguma dúvida ou precisar de mais ajuda[^\n]*\n?/gi, "");
+    cleaned = cleaned.replace(
+      /Para mais informações ou para cotar[^\n]*\n?/gi,
+      "",
+    );
+    cleaned = cleaned.replace(
+      /Se tiver alguma dúvida ou precisar de mais ajuda[^\n]*\n?/gi,
+      "",
+    );
     cleaned = cleaned.replace(/\n{2,}/g, "\n\n").trim();
 
     if (!cleaned) {
-      cleaned = text.split("\n")[0] || "Para a sua operação, estes são os modelos recomendados:";
+      cleaned =
+        text.split("\n")[0] ||
+        "Para a sua operação, estes são os modelos recomendados:";
     }
   }
 
@@ -231,7 +240,7 @@ export function HammerAssistant() {
 
   const transport = useMemo(
     () => new DefaultChatTransport({ api: "/api/chat" }),
-    []
+    [],
   );
   const {
     messages,
@@ -257,7 +266,7 @@ export function HammerAssistant() {
       } else {
         window.localStorage.setItem(
           STORAGE_KEY,
-          serializeStoredMessages(messages)
+          serializeStoredMessages(messages),
         );
       }
     } catch {
@@ -346,9 +355,17 @@ export function HammerAssistant() {
           aria-label="Abrir Assistente Hammer Gold"
           aria-haspopup="dialog"
           aria-expanded={open}
-          className="group fixed bottom-6 right-[calc(2rem-12.5px)] z-40 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-[#D4AF37]/35 bg-gradient-to-b from-[#1c1c1e] via-[#121214] to-[#08080a] text-[#D4AF37] shadow-[0_4px_24px_rgba(212,175,55,0.28),0_12px_36px_rgba(0,0,0,0.7)] transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:border-[#D4AF37]/65 hover:shadow-[0_6px_32px_rgba(212,175,55,0.45),0_16px_44px_rgba(0,0,0,0.85)] sm:h-14 sm:w-14"
+          className={cn(
+            "group fixed right-[calc(2rem-12.5px)] bottom-6 z-40 flex size-12 items-center justify-center rounded-full sm:size-14",
+            "border border-brand-gold/35 bg-linear-to-b from-assistant-elevated via-assistant-mid to-assistant-deep text-brand-gold",
+            "shadow-assistant-trigger transition-[transform,border-color,box-shadow] duration-300",
+            "hover:-translate-y-1 hover:scale-105 hover:border-brand-gold/65 hover:shadow-assistant-trigger-hover",
+          )}
         >
-          <Bot className="h-5 w-5 text-[#D4AF37] transition-transform duration-300 group-hover:scale-110 sm:h-6 sm:w-6" aria-hidden="true" />
+          <Bot
+            className="h-5 w-5 text-brand-gold transition-transform duration-300 group-hover:scale-110 sm:h-6 sm:w-6"
+            aria-hidden="true"
+          />
         </button>
       )}
 
@@ -356,11 +373,12 @@ export function HammerAssistant() {
         <>
           <button
             type="button"
-            className={`fixed inset-0 z-50 bg-black/45 transition-opacity ${
+            className={cn(
+              "fixed inset-0 z-50 bg-black/45 transition-opacity",
               isAnimated
                 ? "opacity-100 duration-450 ease-out"
-                : "opacity-0 duration-200 ease-in"
-            }`}
+                : "opacity-0 duration-200 ease-in",
+            )}
             onClick={() => setOpen(false)}
             aria-label="Fechar assistente"
           />
@@ -378,11 +396,17 @@ export function HammerAssistant() {
                 : "scale(0.88) translateY(14px)",
               opacity: isAnimated ? 1 : 0,
             }}
-            className="fixed inset-x-3 bottom-[max(0.75rem,env(safe-area-inset-bottom))] top-[max(0.75rem,env(safe-area-inset-top))] z-60 flex min-h-0 flex-col overflow-hidden overscroll-contain rounded-xl bg-white shadow-[0_28px_90px_rgba(0,0,0,0.4)] sm:inset-x-auto sm:right-[calc(2rem-12.5px)] sm:bottom-6 sm:top-auto sm:h-[min(680px,calc(100dvh-2.5rem))] sm:w-[min(420px,calc(100vw-2.5rem))]"
+            className={cn(
+              "fixed inset-x-3 z-60 flex min-h-0 flex-col overflow-hidden overscroll-contain rounded-xl bg-white",
+              "top-[max(0.75rem,env(safe-area-inset-top))] bottom-[max(0.75rem,env(safe-area-inset-bottom))]",
+              "shadow-[0_28px_90px_rgba(0,0,0,0.4)]",
+              "sm:inset-x-auto sm:top-auto sm:right-[calc(2rem-12.5px)] sm:bottom-6",
+              "sm:h-[min(680px,calc(100dvh-2.5rem))] sm:w-[min(420px,calc(100vw-2.5rem))]",
+            )}
           >
             <header className="flex shrink-0 items-center justify-between gap-4 bg-black px-4 py-3.5 text-white">
               <div className="flex min-w-0 items-center gap-3">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#D4AF37]/35 bg-[#141416] text-[#D4AF37]">
+                <span className="flex size-10 shrink-0 items-center justify-center rounded-full border border-brand-gold/35 bg-assistant-panel text-brand-gold">
                   <Bot className="h-5 w-5" aria-hidden="true" />
                 </span>
                 <div className="min-w-0">
@@ -392,7 +416,7 @@ export function HammerAssistant() {
                   >
                     Assistente Hammer Gold
                   </h2>
-                  <p className="mt-0.5 text-[10px] uppercase tracking-wider text-white/50">
+                  <p className="mt-0.5 text-kicker tracking-wider text-white/50 uppercase">
                     Catálogo e atendimento
                   </p>
                 </div>
@@ -401,7 +425,7 @@ export function HammerAssistant() {
                 {messages.length > 0 && (
                   <Button
                     variant="ghost"
-                    size="icon-sm"
+                    size="icon"
                     onClick={clearConversation}
                     className="text-white hover:bg-white/10 hover:text-white"
                     aria-label="Limpar conversa"
@@ -412,7 +436,7 @@ export function HammerAssistant() {
                 <Button
                   ref={closeButtonRef}
                   variant="ghost"
-                  size="icon-sm"
+                  size="icon"
                   onClick={() => setOpen(false)}
                   className="text-white hover:bg-white/10 hover:text-white"
                   aria-label="Fechar assistente"
@@ -428,7 +452,7 @@ export function HammerAssistant() {
                   <ConversationEmptyState
                     className="min-h-96 items-start justify-center p-1 text-left"
                     icon={
-                      <span className="flex h-11 w-11 items-center justify-center rounded-full border border-[#D4AF37]/30 bg-black text-[#D4AF37]">
+                      <span className="flex h-11 w-11 items-center justify-center rounded-full border border-brand-gold/30 bg-black text-brand-gold">
                         <Bot className="h-5 w-5" aria-hidden="true" />
                       </span>
                     }
@@ -436,14 +460,15 @@ export function HammerAssistant() {
                     description="Consulte produtos, compare especificações ou solicite sua cotação."
                   >
                     <div className="w-full">
-                      <span className="flex h-11 w-11 items-center justify-center rounded-full border border-[#D4AF37]/30 bg-black text-[#D4AF37]">
+                      <span className="flex h-11 w-11 items-center justify-center rounded-full border border-brand-gold/30 bg-black text-brand-gold">
                         <Bot className="h-5 w-5" aria-hidden="true" />
                       </span>
                       <h3 className="mt-4 text-xl font-extrabold tracking-tight text-black">
                         Como posso ajudar?
                       </h3>
                       <p className="mt-2 text-sm leading-6 text-muted">
-                        Consulte produtos, compare especificações ou solicite sua cotação.
+                        Consulte produtos, compare especificações ou solicite
+                        sua cotação.
                       </p>
                       <div className="mt-6 flex flex-col gap-2">
                         {suggestions.map((suggestion) => (
@@ -452,7 +477,7 @@ export function HammerAssistant() {
                             type="button"
                             onClick={() => submitMessage(suggestion)}
                             disabled={configuration !== "ready" || busy}
-                            className="rounded-lg border border-border bg-[#f8f8f6] px-4 py-3 text-left text-sm font-semibold leading-5 text-black transition-all duration-200 hover:border-[#D4AF37] hover:bg-white hover:shadow-xs disabled:cursor-not-allowed disabled:opacity-50"
+                            className="rounded-lg border border-border bg-assistant-surface px-4 py-3 text-left text-sm leading-5 font-semibold text-black transition-[background-color,border-color,box-shadow] duration-200 hover:border-brand-gold hover:bg-white hover:shadow-xs disabled:cursor-not-allowed disabled:opacity-50"
                           >
                             {suggestion}
                           </button>
@@ -479,11 +504,11 @@ export function HammerAssistant() {
                       <div key={message.id} className="flex flex-col gap-3">
                         <Message from={message.role}>
                           <MessageContent
-                            className={
+                            className={cn(
                               message.role === "user"
-                                ? "rounded-xl rounded-br-xs border border-[#D4AF37]/20 bg-black px-4 py-3 text-white shadow-xs"
-                                : "w-full wrap-break-words rounded-xl rounded-bl-xs border border-black/10 bg-[#fbfbf9] px-4 py-3 text-sm leading-6 text-black shadow-xs"
-                            }
+                                ? "rounded-xl rounded-br-xs border border-brand-gold/20 bg-black px-4 py-3 text-white shadow-xs"
+                                : "wrap-break-words w-full rounded-xl rounded-bl-xs border border-black/10 bg-assistant-message px-4 py-3 text-sm leading-6 text-black shadow-xs",
+                            )}
                           >
                             <MessageResponse>{displayText}</MessageResponse>
                           </MessageContent>
@@ -491,7 +516,7 @@ export function HammerAssistant() {
 
                         {/* Render Product Cards when products are mentioned */}
                         {matchedProducts.length > 0 && (
-                          <div className="ml-1 mt-1 grid gap-2.5 sm:grid-cols-1">
+                          <div className="mt-1 ml-1 grid gap-2.5 sm:grid-cols-1">
                             {matchedProducts.map((product) => (
                               <AssistantProductCard
                                 key={product.id}
@@ -512,7 +537,7 @@ export function HammerAssistant() {
                     role="status"
                   >
                     <LoaderCircle
-                      className="h-4 w-4 animate-spin text-[#D4AF37]"
+                      className="h-4 w-4 animate-spin text-brand-gold"
                       aria-hidden="true"
                     />
                     Consultando o catálogo Hammer Gold…
@@ -521,14 +546,15 @@ export function HammerAssistant() {
 
                 {(configuration === "missing" || error) && (
                   <div
-                    className="rounded-lg border border-border bg-[#f8f8f6] p-4 text-sm leading-6"
+                    className="rounded-lg border border-border bg-assistant-surface p-4 text-sm leading-6"
                     role="alert"
                   >
                     <strong className="block text-black">
                       Atendimento por IA indisponível.
                     </strong>
                     <span className="text-muted">
-                      Continue pelo WhatsApp para não perder o contexto do atendimento.
+                      Continue pelo WhatsApp para não perder o contexto do
+                      atendimento.
                     </span>
                   </div>
                 )}
@@ -547,12 +573,15 @@ export function HammerAssistant() {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="mb-3 inline-flex h-10 w-full items-center justify-center gap-2 rounded-xl border border-[#D4AF37]/40 bg-black px-4 text-[11px] font-extrabold uppercase tracking-wider text-[#D4AF37] shadow-2xs transition-all duration-200 hover:bg-[#141416] hover:border-[#D4AF37]"
+                className="mb-3 inline-flex min-h-10 w-full items-center justify-center gap-2 rounded-xl border border-brand-gold/40 bg-black px-4 text-caption font-extrabold tracking-wider text-brand-gold uppercase shadow-2xs transition-colors duration-200 hover:border-brand-gold hover:bg-assistant-panel"
               >
-                <MessageCircle className="h-4 w-4 text-[#D4AF37]" aria-hidden="true" />
+                <MessageCircle
+                  className="h-4 w-4 text-brand-gold"
+                  aria-hidden="true"
+                />
                 Continuar no WhatsApp
               </a>
-              <div className="flex items-center gap-2 rounded-xl border border-black/10 bg-[#f5f5f3] p-1.5 transition-all duration-200 focus-within:border-[#D4AF37] focus-within:bg-white focus-within:ring-2 focus-within:ring-[#D4AF37]/25 shadow-2xs">
+              <div className="flex items-center gap-2 rounded-xl border border-black/10 bg-assistant-input p-1.5 shadow-2xs transition-[background-color,border-color,box-shadow] duration-200 focus-within:border-brand-gold focus-within:bg-white focus-within:ring-2 focus-within:ring-brand-gold/25">
                 <label htmlFor="hammer-assistant-input" className="sr-only">
                   Mensagem para o Assistente Hammer Gold
                 </label>
@@ -561,7 +590,9 @@ export function HammerAssistant() {
                   ref={inputRef}
                   name="assistant-message"
                   value={input}
-                  onChange={(event) => setInput(event.target.value.slice(0, 1_200))}
+                  onChange={(event) =>
+                    setInput(event.target.value.slice(0, 1_200))
+                  }
                   onKeyDown={(event) => {
                     if (event.key === "Enter" && !event.shiftKey) {
                       event.preventDefault();
@@ -572,9 +603,8 @@ export function HammerAssistant() {
                   maxLength={1_200}
                   disabled={configuration !== "ready" || busy}
                   autoComplete="off"
-                  style={{ border: "none", outline: "none", boxShadow: "none" }}
                   placeholder="Pergunte sobre produtos, séries ou aplicações…"
-                  className="min-h-[38px] max-h-24 w-full resize-none border-none bg-transparent px-3 py-2 text-sm text-black placeholder:text-black/40 outline-none focus:border-none focus:outline-none focus:ring-0 focus-visible:border-none focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
+                  className="max-h-24 min-h-10 w-full resize-none border-none bg-transparent px-3 py-2 text-sm text-black outline-none placeholder:text-black/40 focus:border-none focus:ring-0 focus:outline-none focus-visible:border-none focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:outline-none"
                 />
                 {busy ? (
                   <Button
@@ -582,7 +612,7 @@ export function HammerAssistant() {
                     size="icon"
                     onClick={() => void stop()}
                     aria-label="Parar resposta"
-                    className="h-9 w-9 shrink-0 rounded-lg bg-black text-[#D4AF37] hover:bg-[#1a1a1c]"
+                    className="size-10 shrink-0 rounded-lg bg-black text-brand-gold hover:bg-assistant-hover"
                   >
                     <Square className="h-4 w-4" aria-hidden="true" />
                   </Button>
@@ -592,13 +622,13 @@ export function HammerAssistant() {
                     size="icon"
                     disabled={!input.trim() || configuration !== "ready"}
                     aria-label="Enviar mensagem"
-                    className="h-9 w-9 shrink-0 rounded-lg bg-black text-[#D4AF37] hover:bg-[#1a1a1c] hover:text-white disabled:opacity-30 transition-all"
+                    className="size-10 shrink-0 rounded-lg bg-black text-brand-gold transition-colors hover:bg-assistant-hover hover:text-white disabled:opacity-30"
                   >
                     <Send className="h-4 w-4" aria-hidden="true" />
                   </Button>
                 )}
               </div>
-              <p className="mt-2 text-center text-[10px] font-medium leading-4 text-black/45">
+              <p className="mt-2 text-center text-kicker leading-4 font-medium text-black/55">
                 IA oficial Hammer Gold • Catálogo & Atendimento
               </p>
             </form>
