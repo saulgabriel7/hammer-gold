@@ -1,0 +1,33 @@
+name: CI Checks
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  verify:
+    name: Typecheck, Lint e Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Configurar Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Instalar dependências
+        run: bun install --frozen-lockfile
+
+      - name: Checar tipos (TypeScript)
+        run: bun x tsc --noEmit
+
+      - name: Executar Linter
+        run: bun run lint
+
+      - name: Validar Build de Produção
+        run: bun run build
