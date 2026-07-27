@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import type { UseFormReturn } from "react-hook-form";
 import { ArrowRight } from "lucide-react";
-import { WhatsappLogo } from "@phosphor-icons/react";
+import { WhatsappIcon } from "@/components/icons";
 import type { QuoteFormValues } from "@/lib/validations";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -125,7 +125,7 @@ export function QuoteContactForm({ form, onSubmit, disabled }: QuoteContactFormP
         disabled={disabled || isSubmitting}
         className="mt-7 w-full gap-2"
       >
-        <WhatsappLogo className="h-5 w-5 text-emerald-400" aria-hidden="true" />
+        <WhatsappIcon className="h-5 w-5 text-emerald-400" aria-hidden="true" />
         Enviar seleção completa no WhatsApp
         <ArrowRight aria-hidden="true" />
       </Button>

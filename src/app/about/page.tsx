@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight, Award, Cpu, ShieldCheck, Zap } from "lucide-react";
-import { WhatsappLogo } from "@phosphor-icons/react/dist/ssr";
+import { WhatsappIcon } from "@/components/icons";
 import { WHATSAPP_NUMBER } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -226,7 +226,7 @@ export default function AboutPage() {
                   rel="noreferrer"
                   className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full border border-white/25 px-6 text-xs font-bold uppercase tracking-wider text-white hover:border-white"
                 >
-                  <WhatsappLogo className="h-4 w-4" aria-hidden="true" />
+                  <WhatsappIcon className="h-4 w-4" aria-hidden="true" />
                   Falar no WhatsApp
                 </a>
               </div>

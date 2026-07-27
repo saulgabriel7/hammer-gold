@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { WhatsappLogo } from "@phosphor-icons/react/dist/ssr";
+import { WhatsappIcon } from "@/components/icons";
 import { WHATSAPP_NUMBER } from "@/lib/constants";
 
 export default function ContactCTA() {
@@ -31,7 +31,7 @@ export default function ContactCTA() {
                 rel="noreferrer"
                 className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full border border-white/25 px-6 text-xs font-bold uppercase tracking-wider text-white hover:border-white"
               >
-                <WhatsappLogo className="h-4 w-4" aria-hidden="true" />
+                <WhatsappIcon className="h-4 w-4" aria-hidden="true" />
                 Conversa rápida
               </a>
             </div>

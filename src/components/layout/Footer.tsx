@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import { InstagramLogo, WhatsappLogo } from "@phosphor-icons/react/dist/ssr";
+import { InstagramIcon, WhatsappIcon } from "@/components/icons";
 import { FOOTER_COLUMNS, SITE_NAME, WHATSAPP_NUMBER } from "@/lib/constants";
 import { Logo } from "@/components/layout/Logo";
 
@@ -27,7 +27,7 @@ export default function Footer() {
                 className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 text-xs font-bold tracking-wider text-white/80 transition-all duration-200 hover:border-white hover:bg-white hover:text-black"
                 aria-label="Siga a Hammer Gold no Instagram"
               >
-                <InstagramLogo weight="bold" className="h-4 w-4 shrink-0" />
+                <InstagramIcon className="h-4 w-4 shrink-0" />
                 <span>@hammergold.br</span>
               </a>
             </div>
@@ -65,7 +65,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="flex items-center gap-2 transition-colors duration-200 hover:text-white"
             >
-              <InstagramLogo weight="bold" className="h-4 w-4" />
+              <InstagramIcon className="h-4 w-4" />
               <span>Instagram</span>
             </a>
             <a
@@ -74,7 +74,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="flex items-center gap-2 transition-colors duration-200 hover:text-white"
             >
-              <WhatsappLogo className="h-4 w-4" />
+              <WhatsappIcon className="h-4 w-4" />
               <span>WhatsApp</span>
             </a>
           </div>
